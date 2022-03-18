@@ -1,0 +1,27 @@
+.svg-general--arrow-simple {
+	background: url("svg/sprite.css-e5c1825e.svg") 0 0 no-repeat;
+}
+
+.svg-general--arrow-simple-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-general--check {
+	background: url("svg/sprite.css-e5c1825e.svg") 100% 0 no-repeat;
+}
+
+.svg-general--check-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-general--close {
+	background: url("svg/sprite.css-e5c1825e.svg") 0 100% no-repeat;
+}
+
+.svg-general--close-dims {
+	width: 24px;
+	height: 24px;
+}
+

@@ -1,0 +1,34 @@
+%svg-common {
+	background: url("svg/sprite.css-e5c1825e.svg") no-repeat;
+}
+
+.svg-general--arrow-simple {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-general--arrow-simple-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-general--check {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-general--check-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-general--close {
+	@extend %svg-common;
+	background-position: 0 100%;
+}
+
+.svg-general--close-dims {
+	width: 24px;
+	height: 24px;
+}
+

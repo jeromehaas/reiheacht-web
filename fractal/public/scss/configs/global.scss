@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto-Thin';
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+	min-height: calc(100vh - (100px + 390px));
+}
+
+@media (max-width: 750px) {
+
+	main {
+		min-height: calc(100vh - (75px + 600px));
+	}
+
+}

@@ -1,0 +1,135 @@
+/*--------------------------------
+
+Nucleo Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+/* @font-face {
+  font-family: 'Nucleo';
+  src: url('../fonts/Nucleo.eot');
+  src: 
+		url('../fonts/Nucleo.eot') format('embedded-opentype'), 
+		url('../fonts/Nucleo.woff2') format('woff2'), 
+		url('../fonts/Nucleo.woff') format('woff'), 
+		url('../fonts/Nucleo.ttf') format('truetype'), 
+		url('../fonts/Nucleo.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+
+@font-face {
+  font-family: "Nucleo";
+  src:
+    local('fonts/nucleo'), url("/fonts/nucleo/nucleo.ttf") format("ttf"),
+    local('fonts/nucleo'), url("/fonts/nucleo/nucleo.woff") format("woff"),
+    local('fonts/nucleo'), url("/fonts/nucleo/nucleo.woff2") format("woff2");
+  font-display: block;
+}
+
+/*------------------------
+	base class definition
+-------------------------*/
+
+.icon {
+  display: inline-block;
+  font: normal normal normal 1em/1 'nucleo';
+  color: inherit;
+  flex-shrink: 0;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------
+  change icon size
+-------------------------*/
+
+/* relative units */
+.icon-sm {
+  font-size: 0.8em;
+}
+.icon-lg {
+  font-size: 1.2em;
+}
+/* absolute units */
+.icon-16 {
+  font-size: 16px;
+}
+.icon-32 {
+  font-size: 32px;
+}
+
+/*------------------------
+  spinning icons
+-------------------------*/
+
+.icon-is-spinning {
+  animation: icon-spin 1s infinite linear;
+}
+
+@keyframes icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+
+.icon-rotate-90  {
+	transform: rotate(90deg);
+}
+
+.icon-rotate-180 {
+	transform: rotate(180deg);
+}
+
+.icon-rotate-270 {
+	transform: rotate(270deg);
+}
+
+.icon-flip-y {
+	transform: scaleY(-1);
+}
+.icon-flip-x {
+	transform: scaleX(-1);
+}
+
+/*------------------------
+	icons
+-------------------------*/
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$icon-logo-github: unicode(ea02);
+$icon-logo-linkedin: unicode(ea03);
+$icon-logo-youtube: unicode(ea04);
+$icon-logo-instagram: unicode(ea05);
+$icon-right-arrow: unicode(ea06);
+
+.icon-logo-github::before {
+  content: $icon-logo-github;
+}
+
+.icon-logo-linkedin::before {
+  content: $icon-logo-linkedin;
+}
+
+.icon-logo-youtube::before {
+  content: $icon-logo-youtube;
+}
+
+.icon-logo-instagram::before {
+  content: $icon-logo-instagram;
+}
+
+.icon-right-arrow::before {
+  content: $icon-right-arrow;
+}

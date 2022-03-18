@@ -1,0 +1,51 @@
+* {
+  font-family: 'Roboto-Light';
+	line-height: 1;
+	color: black;
+}
+
+.heading, h1, h2, h3, h4,
+.paragraph, p {
+	line-height: 1.5;
+}
+
+.heading--h1, h1 {
+	font-size: 40px;
+}
+
+.heading--h2, h2 {
+	font-size: 30px;
+}
+
+.heading--h3, h3 {
+	font-size: 25px;
+}
+
+.heading--h4, h4 {
+	font-size: 20px;
+	font-family: 'Roboto-Bold';
+}
+
+.heading--h4, h4 {
+	font-size: 20px;
+	font-family: 'Roboto-Bold';
+}
+
+.heading--h5, h5 {
+	font-size: 20px;
+}
+
+.paragraph, p {
+	font-size: 18px;
+}
+
+.link-navigation {
+	font-size: 18px;
+}
+
+.input, input,
+.textarea, textarea {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
