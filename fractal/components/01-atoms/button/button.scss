@@ -1,0 +1,31 @@
+.button {
+  min-width: 200px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 1.5;
+  background-color: $orange;
+  color: $white;
+
+  &--orange {
+    background-color: $orange;
+
+    &:hover {
+      background-color: darken($orange, 10%)
+    }
+
+  }
+
+  &--blue {
+    background-color: $blue;
+
+    &:hover {
+      background-color: darken($blue, 10%)
+    }
+  }
+
+}
