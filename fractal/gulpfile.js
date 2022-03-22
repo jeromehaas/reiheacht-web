@@ -141,28 +141,6 @@ const iconTask = (done) => {
 	done();
 }
 
-// ICON SPRITE TASK
-const iconSpriteTask = (done) => {
-	gulp.src(filePaths.iconSprite.src, {"allowEmpty": true})
-		.pipe(svgmin())
-		.pipe(svgSprite({
-			mode: {
-        css: { 
-					dest: '.',
-					sprite: 'sprite.svg',
-					bust: false,
-					render: {
-              scss: true,
-              css: true
-            }
-        }
-    }
-	}))
-		.pipe(dest(filePaths.iconSprite.dist[0]))
-		.pipe(notifier.success('iconSprite'))
-	done();
-}
-
 // FAVICON TASK
 const faviconTask = (done) => {
 	gulp.src(filePaths.favicon.src)
@@ -214,5 +192,5 @@ const watchTask = () => {
 	gulp.watch(filePaths.js.src, jsTask).on("change", browserSync.reload);
 }
 
-exports.build = parallel(iconSpriteTask, scssTask, fontTask, jsTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask);
+exports.build = parallel(scssTask, fontTask, jsTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask);
 exports.default = series(exports.build, watchTask);
