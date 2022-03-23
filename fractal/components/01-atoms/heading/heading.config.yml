@@ -24,15 +24,3 @@ variants:
     type: h3
     lookLike: h3
     marked: '[]'
-- name: h4
-  context:
-    text: This is a H4
-    type: h4
-    lookLike: h4
-    marked: '["H4", "."]'
-- name: h5
-  context:
-    text: This is a H5
-    type: h5
-    lookLike: h5
-    marked: '["H5", "."]'
