@@ -4,23 +4,23 @@ context:
   type: h1
   lookLike: h1
   class: ''
-  highlight: '["reiheacht", "."]'
+  highlight: '"reiheacht", "."'
 variants:
 - name: h1
   context:
     text: Hallo, wir sind reiheacht, eine Motion Design und Werbefilm Agentur aus Luzern.
     type: h1
     lookLike: h1
-    highlight: '["reiheacht", "."]'
+    highlight: '"reiheacht", "."'
 - name: h2
   context:
     text: Perfekte Aussicht, aus der besten reihe.
     type: h2
     lookLike: h2
-    highlight: '["reihe"]'
+    highlight: '"reihe"'
 - name: h3
   context:
     text: Videokonzeption
     type: h3
     lookLike: h3
-    highlight: '[]'
+    highlight: '""'
