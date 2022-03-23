@@ -1,0 +1,44 @@
+.icon {
+  display: inline-block;
+  font: normal normal normal 16px 'Icon';
+  color: inherit;
+  flex-shrink: 0;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sm {
+  font-size: 12px;
+}
+.icon-md {
+  font-size: 16px;
+}
+
+.icon-lg {
+  font-size: 24px;
+}
+.icon-bg {
+  font-size: 32px;
+}
+
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$icon-double-arrow: unicode(ea02);
+$icon-arrow: unicode(ea04);
+$icon-email: unicode(ea05);
+
+.icon-double-arrow::before {
+  content: $icon-double-arrow;
+}
+
+.icon-arrow::before {
+  content: $icon-arrow;
+}
+
+.icon-email::before {
+  content: $icon-email;
+}
+
