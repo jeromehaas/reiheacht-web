@@ -32,7 +32,7 @@ const filePaths = {
 		dist: ['../craft/web/public/fonts']
 	},
 	js: {
-		src: ['./public/js/main.js'],
+		src: ['./public/js/main.js', './components/**/*.js'],
 		dist: ['./public/js', '../craft/web/public/js']
 	},
 	image: {
@@ -192,5 +192,15 @@ const watchTask = () => {
 	gulp.watch(filePaths.js.src, jsTask).on("change", browserSync.reload);
 }
 
-exports.build = parallel(scssTask, fontTask, jsTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask);
-exports.default = series(exports.build, watchTask);
+// exports.build = parallel(scssTask, fontTask, jsTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask);
+// exports.default = series(exports.build, watchTask);
+
+const buildTask = parallel(scssTask, fontTask, jsTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask);
+const developTask = series(scssTask, jsTask, watchTask);
+const assetTask = series(fontTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask, watchTask);
+
+module.exports = {
+	default: developTask,
+	build: buildTask,
+	assets: assetTask,
+}

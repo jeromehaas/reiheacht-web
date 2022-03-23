@@ -1,0 +1,38 @@
+name: Heading
+context:
+  text: Hallo, wir sind reiheacht, eine Motion Design und Werbefilm Agentur aus Luzern.
+  type: h1
+  lookLike: h1
+  class: ''
+  marked: '["reiheacht", "."]'
+variants:
+- name: h1
+  context:
+    text: Hallo, wir sind reiheacht, eine Motion Design und Werbefilm Agentur aus Luzern.
+    type: h1
+    lookLike: h1
+    marked: '["reiheacht", "."]'
+- name: h2
+  context:
+    text: Perfekte Aussicht, aus der besten reihe.
+    type: h2
+    lookLike: h2
+    marked: '["reihe"]'
+- name: h3
+  context:
+    text: Videokonzeption
+    type: h3
+    lookLike: h3
+    marked: '[]'
+- name: h4
+  context:
+    text: This is a H4
+    type: h4
+    lookLike: h4
+    marked: '["H4", "."]'
+- name: h5
+  context:
+    text: This is a H5
+    type: h5
+    lookLike: h5
+    marked: '["H5", "."]'
