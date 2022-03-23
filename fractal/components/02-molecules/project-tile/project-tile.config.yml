@@ -1,0 +1,7 @@
+name: Project Tile
+context:
+  image: '/media/images/clean-code.jpg'
+  title: Schweizer Bauernverband
+  subtitle: Extreme Agrarinitiative
+  color: 'black'
+  href: '#'
