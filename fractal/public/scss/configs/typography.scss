@@ -5,9 +5,11 @@
 }
 
 .heading, h1, h2, h3, h4, h5,
-.paragraph, p {
+.paragraph, p, 
+.link, a {
 	line-height: 1.25;
 	font-weight: 400;
+	color: $white;
 }
 
 .heading--h1 {
@@ -24,7 +26,7 @@
 }
 
 .heading--h3 {
-	font-size: 25px;
+	font-size: 30px;
 	font-weight: 500;
 }
 
@@ -37,9 +39,18 @@
 	font-size: 20px;
 }
 
-.paragraph {
+.paragraph, p {
 	font-size: 25px;
 	font-weight: 300;
+}
+
+.link, a {
+	font-size: 25px;
+	font-weight: 300;	
+	text-decoration: underline;
+	text-decoration-color: $white;
+	text-decoration-thickness: 2px;
+	text-underline-position: under;
 }
 
 .link-navigation {

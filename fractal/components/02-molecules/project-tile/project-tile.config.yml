@@ -1,6 +1,6 @@
 name: Project Tile
 context:
-  image: '/media/images/clean-code.jpg'
+  image: '/media/images/project-tiles/reiheacht-showreel.png'
   title: Schweizer Bauernverband
   subtitle: Extreme Agrarinitiative
   color: 'black'
