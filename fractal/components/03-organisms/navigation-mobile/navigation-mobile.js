@@ -85,31 +85,17 @@ class NavigationMobile {
 	};
 
 	showLinks() {
-		gsap.fromTo(this.elements.links, {
-			opacity: 0
-		}, {
-			opacity: 1,
-			duration: 0.5,
-			delay: 1,
-			stagger: {
-				from: 'start',
-				amount: 0.5
-			}
-		});
+		gsap.fromTo(this.elements.links, 
+			{ opacity: 0 }, 
+			{ opacity: 1, duration: 0.5, delay: 1, stagger: { from: 'start', amount: 0.5 } }
+		);
 	};
 
 	hideLinks() {
-		gsap.fromTo(this.elements.links, {
-			opacity: 1
-		}, {
-			opacity: 0,
-			duration: 0.5,
-			stagger: {
-				from: 'end',
-				amount: 0.5
-			},
-			delay: 0
-		});
+		gsap.fromTo(this.elements.links, 
+			{ opacity: 1 }, 
+			{ opacity: 0, duration: 0.5, stagger: { from: 'end', amount: 0.5 } }
+		);
 	};
 
 };
