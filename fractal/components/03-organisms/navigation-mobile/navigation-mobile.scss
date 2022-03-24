@@ -1,0 +1,67 @@
+.navigation-mobile {
+	box-shadow: $box-shadow;
+	display: none;
+	
+	&__bar {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		height: 50px;
+		z-index: 5;
+		background-color: $black;
+	}
+
+	&__logo {
+		width: 120px;
+	}
+
+	&__hamburger {
+		width: 40px;
+	}
+
+	&__panel {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 16px;
+		height: calc(100vh - 50px);
+		position: absolute;
+		top: -100vh;
+		left: 0;
+		right: 0;
+		width: 100%;
+		transition: all 1s ease-in-out;
+		background-color: $black;
+
+		&--active {
+			top: 50px;
+		}
+
+	}
+	
+	&__link {
+		padding: 8px;
+		color: $white;
+
+		&--active {
+			color: $orange;
+		}
+
+	}
+
+	@media (max-width: 900px) {
+		display: block;
+	}
+	
+	@media (max-height: 500px) {
+	
+		&__panel {
+			gap: 8px;
+		}
+			
+	}
+
+}

@@ -1,19 +1,26 @@
 import lottieWeb from 'lottie-web';
 
-class DesktopNavigation {
+class NavigationDesktop {
 
 	constructor() {
+		this.name = 'navigation-desktop';
 		this.elements = {
 			logo: document.querySelector('.navigation-desktop__logo')
 		};
 		this.logo = {
-			element: this.lottie = this.createLottie(),
+			element: null,
 			container: this.elements.logo
 		}
+		this.init();
 	}
 
-	createLottie() {
-		return lottieWeb.loadAnimation({
+	init() {
+		if (document.querySelector(`.js-${this.name}`)) return;
+		this.createLogo();	
+	}
+
+	createLogo() {
+		this.logo.element = lottieWeb.loadAnimation({
 			container: this.elements.logo,
 			renderer: 'svg',
 			loop: true,
@@ -24,4 +31,4 @@ class DesktopNavigation {
 
 };
 
-export default DesktopNavigation;
+export default NavigationDesktop;

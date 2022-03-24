@@ -1,0 +1,21 @@
+name: Home
+context: 
+  items:
+    - label: Home
+      href: '#'
+      section: 'home'
+    - label: Leistungen 
+      href: '#'
+      section: 'leistungen'
+    - label: Projekte
+      href: '#'
+      section: 'projekte'
+    - label: Team
+      href: '#'
+      section: 'team'
+    - label: Kontakt
+      href: '#'
+      section: 'kontakt'
+    - label: Blog
+      href: '#'
+      section: 'blog'

@@ -1,5 +1,7 @@
 import Heading from '../../components/01-atoms/heading/heading';
-import DesktopNavigation from '../../components/03-organisms/navigation-desktop/navigation-desktop';
+import NavigationDesktop from '../../components/03-organisms/navigation-desktop/navigation-desktop';
+import NavigationMobile from '../../components/03-organisms/navigation-mobile/navigation-mobile';
 
 const heading = new Heading();
-const desktopNavigation = new DesktopNavigation();
+const navigationDesktop = new NavigationDesktop();
+const navigationMobile = new NavigationMobile();
