@@ -1,9 +1,13 @@
 .navigation-mobile {
 	box-shadow: $box-shadow;
 	display: none;
+	position: relative;
+
+	&__inner {
+		background-color: $black;
+	}
 	
 	&__bar {
-		position: relative;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -33,8 +37,8 @@
 		left: 0;
 		right: 0;
 		width: 100%;
-		transition: all 1s ease-in-out;
-		background-color: $black;
+		z-index: -5;
+		background-color: $orange;
 
 		&--active {
 			top: 50px;

@@ -75,19 +75,25 @@ class NavigationMobile {
 	};
 
 	showPanel() {
-		this.elements.panel.classList.add('navigation-mobile__panel--active');
+		gsap.fromTo(this.elements.panel, 
+			{ top: '-100vh' },
+			{ top: '50px', duration: 1 }
+		);
 		this.showLinks();
 	};
 
 	hidePanel() {
-		this.elements.panel.classList.remove('navigation-mobile__panel--active');
+		gsap.fromTo(this.elements.panel, 
+			{ top: '50px' },
+			{ top: '-100vh', duration: 1 },
+		);
 		this.hideLinks();
 	};
 
 	showLinks() {
 		gsap.fromTo(this.elements.links, 
 			{ opacity: 0 }, 
-			{ opacity: 1, duration: 0.5, delay: 1, stagger: { from: 'start', amount: 0.5 } }
+			{ opacity: 1, duration: 0.5, delay: 0.75, stagger: { from: 'start', amount: 0.5 } }
 		);
 	};
 
