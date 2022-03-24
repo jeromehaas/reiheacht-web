@@ -8,6 +8,7 @@
 		"@frctl/twig": "^1.2.12",
 		"autoprefixer": "^10.4.2",
 		"babel-loader": "^8.2.3",
+		"bodymovin": "^4.13.0",
 		"browser-sync": "^2.27.7",
 		"concurrently": "^6.5.1",
 		"del": "^6.0.0",

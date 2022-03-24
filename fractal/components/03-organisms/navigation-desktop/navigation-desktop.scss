@@ -1,0 +1,43 @@
+.navigation-desktop {
+	width: 100%;
+	box-shadow: $box-shadow;
+	position: sticky;
+	inset: 0 0 unset 0;
+
+	&__inner {
+		display: flex;
+		flex-direction: row;
+		gap: 40px;
+		align-items: center;
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	&__logo {
+		margin-left: auto;
+		width: 160px;
+	}
+
+	&__link {
+		line-height: 1;
+		color: $white;
+
+		&--active {
+			color: $orange;
+		}
+
+	}
+
+	@media (max-width: 1050px) {
+
+		&__inner {
+			gap: 24px;
+		}
+
+	}
+
+	@media (max-width: 900px) {
+			display: none;
+	}
+
+}

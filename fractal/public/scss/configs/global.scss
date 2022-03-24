@@ -12,3 +12,14 @@
 body {
 	background-color: $black
 }
+
+.section {
+
+}
+
+.section__inner {
+	max-width: $max-width;
+	margin: 0 auto;
+	padding-left: 40px;
+	padding-right: 40px;
+}
