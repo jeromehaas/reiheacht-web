@@ -61,6 +61,20 @@
 	line-height: 1;
 }
 
+.reference-slider__quote {
+	font-size: 30px;
+	line-height: 1.6;
+	font-weight: 300;
+}
+
+.reference-slider__author .author__name {
+	font-size: 22px;
+}
+
+.reference-slider__author .author__role {
+	font-size: 18px;
+}
+
 .input, input,
 .textarea, textarea {
 	font-size: 18px;
@@ -86,4 +100,8 @@
 	.heading--h2 { font-size: 22px; }
 	.heading--h3 { font-size: 18px; }
 	.heading--h4 { font-size: 18px; }
+}
+
+@media (max-width: 650px) {
+	.reference-slider__quote { font-size: 22px; }
 }

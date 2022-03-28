@@ -1,0 +1,16 @@
+ <div class="reference-slider swiper mySwiper">
+      <div class="reference-slider__wrapper swiper-wrapper">
+				{{#each items}}
+        	<div class="reference-slider__slide swiper-slide">
+						<p class="reference-slider__quote">{{ quote }}</p> 
+						<div class="reference-slider__author author">
+							<p class="author__name">{{ author }}</p>
+							<p class="author__role">{{ role }}</p>
+						</div>
+						<img class="reference-slider__logo" src="{{ logo }}" alt="logo">
+					</div>
+				{{/each}}
+      </div>
+      	<div class="reference-slider__arrow arrow reference-slider__arrow--next swiper-button-next"><i class="icon-arrow icon"></i></div>
+      	<div class="reference-slider__arrow arrow reference-slider__arrow--prev swiper-button-prev"><i class="icon-arrow icon"></i></div>
+    </div>

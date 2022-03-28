@@ -26,7 +26,7 @@ class NavigationMobile {
 	};
 
 	init() {
-		if (document.querySelector(`.js-${this.name}`)) return;
+		if (!document.querySelector(`.js-${this.name}`)) return;
 		this.createLogo();
 		this.createHamburger();
 	};
