@@ -50,6 +50,18 @@
 	text-decoration: none;
 }
 
+.cookie-banner__text {
+		font-size: 12px;
+}
+
+.cookie-banner__link {
+		font-size: 12px;
+}
+
+.cookie-banner__button {
+	font-size: 12px;
+}
+
 
 .scroller__text {
 	font-weight: 300;
@@ -104,4 +116,8 @@
 
 @media (max-width: 650px) {
 	.reference-slider__quote { font-size: 22px; }
+}
+
+@media (max-width: 550px) {
+	.cookie-banner__text, .cookie-banner__link { font-size: 12px; }
 }
