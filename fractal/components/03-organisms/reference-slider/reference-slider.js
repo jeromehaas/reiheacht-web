@@ -4,7 +4,6 @@ class ReferenceSlider {
 
 	constructor() {
 		this.init();
-		console.log('hello sipwer')
 	}
 
 	init() {

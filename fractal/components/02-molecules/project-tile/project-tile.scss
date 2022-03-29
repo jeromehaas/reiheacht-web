@@ -1,4 +1,4 @@
-.tile {
+.project-tile {
 	height : 100%;
 	min-height: 60px;
 	position: relative;
@@ -67,7 +67,7 @@
 	}
 
 	&:hover {
-		.tile__front { inset: 0;  }
+		.project-tile__front { inset: 0;  }
 		.front__title, 
 		.front__subtitle, 
 		.front__link {

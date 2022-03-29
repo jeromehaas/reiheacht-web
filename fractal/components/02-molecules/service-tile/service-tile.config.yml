@@ -1,0 +1,5 @@
+name: Service Tile
+context: 
+  image: '/media/images/service-tiles/erklaervideo.png'
+  title: Videokonzeption
+  href: '#'
