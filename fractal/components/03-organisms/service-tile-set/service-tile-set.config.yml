@@ -1,0 +1,22 @@
+name: Service Tile Set
+context: 
+  items: 
+    - image: '/media/images/service-tiles/videokonzeption.png'
+      title: Videokonzeption
+      href: '#'
+    - image: '/media/images/service-tiles/storytelling.png'
+      title: Storytelling
+      href: '#'
+    - image: '/media/images/service-tiles/motion-design.png'
+      title: Motion Design
+      href: '#'
+    - image: '/media/images/service-tiles/erklaervideo.png'
+      title: Erklärvideo
+      href: '#'
+    - image: '/media/images/service-tiles/realfilm.png'
+      title: Realfilm
+      href: '#'
+    - image: '/media/images/service-tiles/sound-design.png'
+      title: Sound-Design
+      href: '#'
+   
