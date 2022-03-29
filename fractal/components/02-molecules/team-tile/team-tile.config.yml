@@ -1,0 +1,6 @@
+name: Team Tile
+context: 
+  image: '/media/images/team/marc.png'
+  name: Marc Sen
+  role: Inhaber
+  email: marc.sen@reiheacht.ch
