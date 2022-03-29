@@ -28,17 +28,17 @@
 
 $icon-double-arrow: unicode(ea02);
 $icon-arrow: unicode(ea04);
-$icon-email: unicode(ea05);
+$icon-twitter: unicode(ea06);
+$icon-vimeo: unicode(ea07);
+$icon-linkedin: unicode(ea08);
+$icon-youtube: unicode(ea09);
+$icon-email: unicode(ea0b);
 
-.icon-double-arrow::before {
-  content: $icon-double-arrow;
-}
-
-.icon-arrow::before {
-  content: $icon-arrow;
-}
-
-.icon-email::before {
-  content: $icon-email;
-}
+.icon-double-arrow::before { content: $icon-double-arrow; }
+.icon-arrow::before { content: $icon-arrow; }
+.icon-twitter::before { content: $icon-twitter; }
+.icon-vimeo::before { content: $icon-vimeo; }
+.icon-linkedin::before { content: $icon-linkedin; }
+.icon-youtube::before { content: $icon-youtube; }
+.icon-email::before { content: $icon-email; }
 

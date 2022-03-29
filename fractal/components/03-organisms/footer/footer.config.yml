@@ -1,0 +1,26 @@
+name: Footer
+context: 
+  address:
+    - text: reiheacht Marketing GmbH
+    - text: Spillgässli 12
+    - text: 6205 Eich
+    - text: hallo@reiheacht.ch
+      href: mailto:hallo@reiheacht.ch
+    - text: +41 41 552 06 00
+      href: tel:+41415520600
+  socialMedia:
+    - icon: youtube
+      href: '#'   
+    - icon: vimeo
+      href: '#'   
+    - icon: linkedin
+      href: '#'      
+    - icon: twitter
+      href: '#'
+  links:
+    - text: Impressum
+      href: ''
+    - text: Datenschutz
+      href: ''
+    - text: AGB
+      href: ''
