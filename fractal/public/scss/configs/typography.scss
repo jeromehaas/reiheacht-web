@@ -97,6 +97,19 @@
 	font-size: 18px;
 }
 
+.contact-form__input, 
+.contact-form__input::placeholder,
+.contact-form__button {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.contact-form__input, 
+.contact-form__input::placeholder {
+	font-size: 20px;
+	font-weight: 300;
+}
+
 .input, input,
 .textarea, textarea {
 	font-size: 18px;
