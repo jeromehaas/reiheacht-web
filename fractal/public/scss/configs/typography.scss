@@ -79,6 +79,11 @@
 	font-weight: 300;
 }
 
+.quote__text {
+	font-size: 50px;
+	font-weight: 800;
+}
+
 .reference-slider__author .author__name {
 	font-size: 22px;
 }
@@ -143,4 +148,9 @@
 
 @media (max-width: 550px) {
 	.cookie-banner__text, .cookie-banner__link { font-size: 12px; }
+}
+
+@media (max-width: 550px) {
+	.quote__text { font-size: 30px }
+	.quote__author { font-size: 18px; }
 }
