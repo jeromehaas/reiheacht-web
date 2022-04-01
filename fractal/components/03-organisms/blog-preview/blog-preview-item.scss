@@ -1,0 +1,18 @@
+.blog-preview-item {
+	background-color: $white;
+	margin-bottom: 64px;
+
+	&__image {
+		margin-bottom: 24px;
+	}
+
+	&__category {
+		color: $blue;
+		margin-bottom: 8px;
+	}
+
+	&__title {
+		margin-bottom: 24px;
+	}
+
+}
