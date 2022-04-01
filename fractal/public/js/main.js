@@ -4,6 +4,7 @@ import NavigationMobile from '../../components/03-organisms/navigation-mobile/na
 import ReferenceSlider from '../../components/03-organisms/reference-slider/reference-slider'
 import CookieBanner from '../../components/03-organisms/cookie-banner/cookie-banner';
 import ContactForm from '../../components/02-molecules/contact-form/contact-form';
+import Video from '../../components/01-atoms/video/video';
 
 const heading = new Heading();
 const navigationDesktop = new NavigationDesktop();
@@ -11,3 +12,4 @@ const navigationMobile = new NavigationMobile();
 const referenceSlider = new ReferenceSlider();
 const cookieBanner = new CookieBanner();
 const contactForm = new ContactForm();
+const video = new Video();

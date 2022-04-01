@@ -6,6 +6,7 @@
 		"@babel/preset-env": "^7.16.11",
 		"@frctl/fractal": "^1.5.13",
 		"@frctl/twig": "^1.2.12",
+		"@vimeo/player": "^2.16.4",
 		"autoprefixer": "^10.4.2",
 		"babel-loader": "^8.2.3",
 		"bodymovin": "^4.13.0",
