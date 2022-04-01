@@ -1,0 +1,37 @@
+.project-switcher {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 64px;
+
+	&__control, .control {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 120px;
+
+		&__icon {
+			font-size: 24px;
+			margin-bottom: 16px;
+		}
+
+		&__text {
+			text-align: center;
+		}
+
+		&--prev {
+			.control__icon { transform: rotate(90deg);	}
+		}
+
+		&--next {
+			.control__icon { transform: rotate(270deg);	}
+		}
+
+	}
+
+	@media (max-width: 650px) {
+		gap: 32px;
+	}
+
+}
