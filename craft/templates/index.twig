@@ -14,7 +14,7 @@
 
 		<div class="project-tile-set">
 			{% for item in projects %}
-				{% include "molecules/project-tile" with { class: "project-tile-set__item", heading: item.projectTileHeading, subheading: item.projectTileSubheading, href: "#", color: "blue", image: "#" } %}	
+				{% include "molecules/project-tile" with { class: "project-tile-set__item", heading: item.projectTileHeading, subheading: item.projectTileSubheading, href: item.uri, color: item.projectTileColor, image: item.projectTileImage.one().url() } %}	
 			{% endfor %}
 		</div>
 

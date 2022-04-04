@@ -1,4 +1,4 @@
-dateModified: 1649077024
+dateModified: 1649111939
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Reiheacht
@@ -13,9 +13,11 @@ meta:
     36bccdfa-ddb0-4bce-a12b-1e1e71d96519: 'Project Infobox Logo' # Project Infobox Logo
     41c3ceb6-6f88-48e4-a579-1b127b734427: 'Project Detail Description' # Project Detail Description
     045c86b9-5f90-4c25-ada4-964b3afc3d96: 'Project Tile Heading' # Project Tile Heading
+    83e9b224-389c-4e6d-868d-ef2be96f917d: 'Project Tile Image' # Project Tile Image
     557d13d8-bdf7-470b-8df9-c5b75b762d47: Reiheacht # Reiheacht
     639cd615-fa76-49be-a252-a4af968023e9: Reiheacht # Reiheacht
     5030cc07-b585-4851-bce9-2813cf3af1f1: 'Project Infobox Subheading' # Project Infobox Subheading
+    51475d29-cdbd-4826-aaaa-d31201dc50df: 'Project Tiles' # Project Tiles
     21408961-3404-4135-a29e-4aa2e9d688e3: 'Project Tile Subheading' # Project Tile Subheading
     a3b55356-2035-4f54-8225-2026513ec0ef: Color # Color
     a58ea7dc-6a9e-4b2d-9ea8-514de7490bc9: Target # Target

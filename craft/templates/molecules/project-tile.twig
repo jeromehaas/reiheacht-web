@@ -9,10 +9,8 @@
 	<div class="project-tile__front front front--{{ color }}" style="background-color: {{ color }}">
 		<div class="front__inner">
 			{% include "atoms/heading" with { class: "front__title", type: "h3", text: heading, color: "white"} %}
-			{# {% include "atoms/heading" with { class: "front__title", type: "h3", text: heading, color: "white"} %} #}
-			{# {{> @heading class="front__title" type="h3" text=title class="front__title" color="white" }}
-			{{> @paragraph class="front__subtitle" type="h5" text=subtitle class="front__subtitle" color="white" }}
-			{{> @link class="front__link" text="Mehr erfahren" }} #}
+			{% include "atoms/paragraph" with { class: "front__subtitle", text: subheading, color: "white"} %}
+			{% include "atoms/link" with { class: "front__link", text: "Mehr erfahren", href: href } %} 
 		</div>
 	</div>
 
