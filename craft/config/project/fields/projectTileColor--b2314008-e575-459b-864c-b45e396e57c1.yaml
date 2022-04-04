@@ -1,0 +1,57 @@
+columnSuffix: sbgkkuag
+contentColumnType: string
+fieldGroup: c656f1bc-b3e7-4e6b-bea8-da1f3254e94e # Project
+handle: projectTileColor
+instructions: ''
+name: 'Project Tile Color'
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - orange
+        -
+          - value
+          - orange
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - blue
+        -
+          - value
+          - blue
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - white
+        -
+          - value
+          - white
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - black
+        -
+          - value
+          - black
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

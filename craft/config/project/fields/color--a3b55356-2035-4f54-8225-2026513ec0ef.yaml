@@ -1,0 +1,57 @@
+columnSuffix: ziyjjtsb
+contentColumnType: string
+fieldGroup: c723ce3a-0eb9-41dd-84a1-e97ed43fce23 # Common
+handle: color
+instructions: ''
+name: Color
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - white
+        -
+          - value
+          - white
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - black
+        -
+          - value
+          - black
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - orange
+        -
+          - value
+          - orange
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - blue
+        -
+          - value
+          - blue
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

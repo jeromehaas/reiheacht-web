@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: projects
+name: Projects
+propagationMethod: all
+siteSettings:
+  639cd615-fa76-49be-a252-a4af968023e9: # Reiheacht
+    enabledByDefault: true
+    hasUrls: true
+    template: projects/_entry
+    uriFormat: 'projects/{slug}'
+structure:
+  maxLevels: null
+  uid: e3f1dd06-8307-43ec-afbb-4c932835fc0c
+type: structure
