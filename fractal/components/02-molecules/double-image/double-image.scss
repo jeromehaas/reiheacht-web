@@ -1,0 +1,11 @@
+.double-image {
+	display: flex;
+	flex-direction: row;
+	max-width: 100%;
+	gap: 32px;
+
+	&__item {
+		width: calc(50% - 16px);
+	}
+	
+}

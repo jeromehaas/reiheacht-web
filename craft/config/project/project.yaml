@@ -1,0 +1,22 @@
+dateModified: 1649063054
+email:
+  fromEmail: tools@haaswebsolutions.io
+  fromName: Reiheacht
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    557d13d8-bdf7-470b-8df9-c5b75b762d47: Reiheacht # Reiheacht
+    639cd615-fa76-49be-a252-a4af968023e9: Reiheacht # Reiheacht
+    c723ce3a-0eb9-41dd-84a1-e97ed43fce23: Common # Common
+system:
+  edition: solo
+  live: true
+  name: Reiheacht
+  schemaVersion: 3.7.33
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

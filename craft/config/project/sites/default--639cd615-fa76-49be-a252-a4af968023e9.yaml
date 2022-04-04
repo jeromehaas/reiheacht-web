@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: de-CH
+name: Reiheacht
+primary: true
+siteGroup: 557d13d8-bdf7-470b-8df9-c5b75b762d47 # Reiheacht
+sortOrder: 1
