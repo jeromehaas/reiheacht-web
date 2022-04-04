@@ -1,0 +1,23 @@
+
+{% extends "layouts/default" %}
+{% set title = entry.title %}
+
+{% block main %}
+
+<div class="project-detail">
+<span class="project-detail__heading heading--h2">{{ entry.projectDetailHeading }}</span>
+<span class="project-detail__description paragraph">{{ entry.projectDetailDescription }}</span>
+</div>
+
+
+<div class="project-infos">
+	<img class="project-infos__logo" src="{{ entry.projectInfoboxLogo.one().url() }}" alt="Logo">
+	{% include "atoms/line" with { class: "project-infos__line project-infos__line--vertical", direction: "vertical" } %}
+	{% include "atoms/line" with { class: "project-infos__line project-infos__line--horizontal", direction: "horizontal" } %}
+	<span>
+		<p class="project-infos__title">{{ entry.projectInfoboxHeading }}</p>
+		<p class="project-infos__subtitle">{{ entry.projectInfoboxSubheading }}</p>
+	</span>
+</div>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/css/main.min.css">
+		<link rel="icon" href="/media/favicons/favicon.ico">
+		{% if title is defined %}
+			<title>reiheacht | {{ title }} </title>
+		{% else %}
+			<title>Motion Design & Werbefilm Agentur aus Luzern </title>
+		{% endif %}
+	</head>
+	<body>
+
+		{% block main %}
+
+		{% endblock %}
+
+	<script src="/js/main.build.js"></script>
+	</body>
+</html>

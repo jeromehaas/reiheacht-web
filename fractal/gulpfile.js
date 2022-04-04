@@ -91,6 +91,7 @@ const scssTask = (done) => {
 	.pipe(cssnano())
 	.pipe(sourcemaps.write('.'))
 	.pipe(dest(filePaths.scss.dist[0]))
+	.pipe(dest(filePaths.scss.dist[1]))
 	.pipe(notifier.success('scss'));
 	done();
 }
@@ -191,9 +192,6 @@ const watchTask = () => {
 	gulp.watch(filePaths.scss.src, scssTask).on("change", browserSync.reload);
 	gulp.watch(filePaths.js.src, jsTask).on("change", browserSync.reload);
 }
-
-// exports.build = parallel(scssTask, fontTask, jsTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask);
-// exports.default = series(exports.build, watchTask);
 
 const buildTask = parallel(scssTask, fontTask, jsTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask);
 const developTask = series(scssTask, jsTask, watchTask);
