@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: services
+name: Services
+propagationMethod: all
+siteSettings:
+  639cd615-fa76-49be-a252-a4af968023e9: # Reiheacht
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/service.twig
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: c754a6ed-eb68-444f-b50a-282a3867a37a
+type: structure

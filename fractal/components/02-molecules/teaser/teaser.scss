@@ -1,17 +1,26 @@
 .teaser {
 
-	&__heading {
-		margin-bottom: 24px;
-		max-width: 440px;
-	}
+  &__heading,
+  h2 {
+    margin-bottom: 24px;
+    max-width: 580px;
 
-	&__line {
-		margin-bottom: 32px;
-	}
+    strong {
+      color: $blue;
+      font-weight: inherit;
+    }
 
-	&__text {
-		margin-bottom: 48px;
-		max-width: 880px;
-	}
+  }
+
+  &__line {
+    margin-bottom: 32px;
+  }
+
+  &__text,
+  p {
+    margin-bottom: 48px;
+    max-width: 880px;
+    margin-bottom: 32px;
+  }
 
 }

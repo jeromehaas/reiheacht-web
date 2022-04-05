@@ -1,0 +1,18 @@
+{# {% set project = craft.entries.section('projects').level(3).all() %} #}
+{% set projects = craft.entries.section('projects') %}
+{% set projectTeaser = craft.entries.section('projects').slug('projekte').one() %}
+{% set projectItems = craft.entries.section('projects').level(3).all() %}
+
+<section class="projects section">
+  <div class="projects__inner section__inner">
+
+	{% include "molecules/teaser" with { class: "project-infos__line project-infos__line--vertical", heading: projectTeaser.heading, subheading: projectTeaser.richText } %}
+
+	<div class="project-tile-set">
+		{% for item in projectItems %}
+			{% include "molecules/project-tile" with { class: "project-tile-set__item", heading: item.projectTileHeading, subheading: item.projectTileSubheading, href: item.uri, color: item.projectTileColor, image: item.projectTileImage.one().url() } %}	
+		{% endfor %}
+  </div>
+
+  </div>
+</section>

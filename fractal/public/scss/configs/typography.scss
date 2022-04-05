@@ -1,170 +1,226 @@
 * {
-  font-family: 'Helvetica Neue' serif;
-	line-height: 1;
-	color: $white;
+  font-family: 'Helvetica Neue'serif;
+  line-height: 1;
+  color: $white;
 }
 
-.heading, h1, h2, h3, h4, h5,
-.paragraph, p, 
-.link, a {
-	line-height: 1.25;
-	font-weight: 400;
-	color: $white;
+.heading,
+h1,
+h2,
+h3,
+h4,
+h5,
+.paragraph,
+p,
+.link,
+a {
+  line-height: 1.25;
+  font-weight: 400;
+  color: $white;
 }
 
-.heading--h1 {
-  font-size: 75px; 
+.heading--h1,
+h1 {
+  font-size: 75px;
   margin-right: 0px;
   font-family: 'Helvetica Neue';
-	font-weight: 800;
-	font-weight: 800;
+  font-weight: 800;
+  font-weight: 800;
 }
 
-.heading--h2 {
-	font-size: 50px;
-	font-weight: 800;
+.heading--h2,
+h2 {
+  font-size: 50px;
+  font-weight: 800;
 }
 
-.heading--h3 {
-	font-size: 30px;
-	font-weight: 500;
+.heading--h3,
+h3 {
+  font-size: 30px;
+  font-weight: 500;
 }
 
-.heading--h4 {
-	font-size: 20px;
-	font-weight: 500;
+.heading--h4,
+h4 {
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.heading--h5 {
-	font-size: 20px;
+.heading--h5,
+h4 {
+  font-size: 20px;
 }
 
-.paragraph, p {
-	font-size: 25px;
-	font-weight: 300;
+.paragraph,
+p {
+  font-size: 25px;
+  font-weight: 300;
 }
 
-.link, a {
-	font-size: 25px;
-	font-weight: 300;	
-	text-decoration: none;
+.link,
+a {
+  font-size: 25px;
+  font-weight: 300;
+  text-decoration: none;
 }
 
 .cookie-banner__text {
-		font-size: 12px;
+  font-size: 12px;
 }
 
 .cookie-banner__link {
-		font-size: 12px;
+  font-size: 12px;
 }
 
 .cookie-banner__button {
-	font-size: 12px;
+  font-size: 12px;
 }
 
 
 .scroller__text {
-	font-weight: 300;
+  font-weight: 300;
 }
 
 .navigation-mobile__link {
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 1;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .reference-slider__quote {
-	font-size: 30px;
-	line-height: 1.6;
-	font-weight: 300;
+  font-size: 30px;
+  line-height: 1.6;
+  font-weight: 300;
 }
 
 .quote__text {
-	font-size: 50px;
-	font-weight: 800;
+  font-size: 50px;
+  font-weight: 800;
 }
 
 .reference-slider__author .author__name {
-	font-size: 22px;
+  font-size: 22px;
 }
 
 .footer__address .address__item {
-	font-size: 20px;
-	line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .footer__links .links__item {
-	font-size: 20px;
-	line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .reference-slider__author .author__role {
-	font-size: 18px;
+  font-size: 18px;
 }
 
-.contact-form__input, 
+.contact-form__input,
 .contact-form__input::placeholder,
 .contact-form__button {
-	font-size: 20px;
-	font-weight: 300;
+  font-size: 20px;
+  font-weight: 300;
 }
 
-.contact-form__input, 
+.contact-form__input,
 .contact-form__input::placeholder {
-	font-size: 20px;
-	font-weight: 300;
+  font-size: 20px;
+  font-weight: 300;
 }
 
-.input, input,
-.textarea, textarea {
-	font-size: 18px;
-	line-height: 1.5;
+.input,
+input,
+.textarea,
+textarea {
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .project-infos__subtitle {
-		font-size: 14px;
+  font-size: 14px;
 }
 
 .project-infos__title {
-		font-size: 25px;
-		font-weight: 500;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .project-switcher__control .control__text {
-	font-size: 14px;
+  font-size: 14px;
 }
 
 
 @media (max-width: 900px) {
-	.heading--h1 { font-size: 60px; }
+  .heading--h1 {
+    font-size: 60px;
+  }
 }
+
 @media (max-width: 750px) {
-	.heading--h1 { font-size: 50px; }
+  .heading--h1 {
+    font-size: 50px;
+  }
 }
+
 @media (max-width: 600px) {
-	.heading--h1 { font-size: 40px; }
-	.heading--h2 { font-size: 40px; }
+  .heading--h1 {
+    font-size: 40px;
+  }
+
+  .heading--h2 {
+    font-size: 40px;
+  }
 }
+
 @media (max-width: 450px) {
-	.heading--h1 { font-size: 30px; }
-	.heading--h2 { font-size: 30px; }
+  .heading--h1 {
+    font-size: 30px;
+  }
+
+  .heading--h2 {
+    font-size: 30px;
+  }
 }
+
 @media (max-width: 350px) {
-	.heading--h1 { font-size: 22px; }
-	.heading--h2 { font-size: 22px; }
-	.heading--h3 { font-size: 18px; }
-	.heading--h4 { font-size: 18px; }
+  .heading--h1 {
+    font-size: 22px;
+  }
+
+  .heading--h2 {
+    font-size: 22px;
+  }
+
+  .heading--h3 {
+    font-size: 18px;
+  }
+
+  .heading--h4 {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 650px) {
-	.reference-slider__quote { font-size: 22px; }
+  .reference-slider__quote {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 550px) {
-	.cookie-banner__text, .cookie-banner__link { font-size: 12px; }
+
+  .cookie-banner__text,
+  .cookie-banner__link {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 550px) {
-	.quote__text { font-size: 30px }
-	.quote__author { font-size: 18px; }
+  .quote__text {
+    font-size: 30px
+  }
+
+  .quote__author {
+    font-size: 18px;
+  }
 }

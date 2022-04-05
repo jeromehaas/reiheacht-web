@@ -1,0 +1,27 @@
+columnSuffix: ulkfudbt
+contentColumnType: text
+fieldGroup: ba93179b-304c-4eec-94e9-53eae4670e3f # Service
+handle: serviceDetailHeading
+instructions: ''
+name: 'Service Detail Heading'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: '1'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

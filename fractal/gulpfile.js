@@ -25,15 +25,15 @@ const webpackStream = require('webpack-stream');
 const filePaths = {
 	scss: {
 		src: ['./public/scss/configs/reset.scss', './public/scss/configs/icons.scss', './public/scss/configs/fonts.scss', './public/fonts/nucleo/nucleo.scss', './public/scss/configs/variables.scss', './public/scss/configs/keyframes.scss', './public/scss/configs/typography.scss', './public/scss/configs/mixins.scss', './public/scss/configs/global.scss', './public/media/icons/sprite/sprite.scss', './components/**/*.scss'],
-		dist: ['./public/css', '../craft/web/public/css']
+		dist: ['./public/css', '../craft/web/css']
 	},
 	fonts: {
 		src: ['./public/fonts/**/*.+(ttf|woff|woff2)'],
-		dist: ['../craft/web/public/fonts']
+		dist: ['../craft/web/fonts']
 	},
 	js: {
 		src: ['./public/js/main.js', './components/**/*.js'],
-		dist: ['./public/js', '../craft/web/public/js']
+		dist: ['./public/js', '../craft/web/js']
 	},
 	image: {
 		src: ['./public/media/images/**/*.+(png|jpg|jpeg|gif)'],
@@ -41,23 +41,23 @@ const filePaths = {
 	},
 	graphic: {
 		src: ['./public/media/graphics/**/*.+(png|jpg|jpeg|gif|svg)'],
-		dist: ['../craft/web/public/media/graphics']
+		dist: ['../craft/web/media/graphics']
 	},
 	icon : {
 		src: ['./public/media/icons/**/*.svg'],
-		dist: ['../craft/web/public/media/icons']
+		dist: ['../craft/web/media/icons']
 	},
 	iconSprite : {
 		src: ['./public/media/icons/**/*.svg'],
-		dist: ['./public/media/icons/sprite', '../craft/web/public/media/icons/sprite']
+		dist: ['./public/media/icons/sprite', '../craft/web/media/icons/sprite']
 	},
 	favicon: {
 		src: ['./public/media/favicons/**/*.+(png|ico)'],
-		dist: ['./public/media/favicons', '../craft/web/public/media/favicons']
+		dist: ['./public/media/favicons', '../craft/web/media/favicons']
 	},
 	lottie: {
 		src: ['./public/media/lotties/**/*.json'],
-		dist: ['../craft/web/public/media/lotties']
+		dist: ['../craft/web/media/lotties']
 	}
 }
 
