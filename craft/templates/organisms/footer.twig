@@ -9,7 +9,7 @@
     <address class="footer__address address">
         <p class="address__item">{{ address.addressCompany}}</p>
         <p class="address__item">{{ address.addressStreet }}</p>
-        <p class="address__item">{{ address.addressCompany }}</p>
+        <p class="address__item">{{ address.addressTown }}</p>
         <a class="address__item" href="mailto:{{ address.addressEmail }}">{{ address.addressEmail }}</a>
         <a class="address__item" href="tel:{{ address.addressPhone|replace(' ', '') }}">{{ address.addressPhone }}</a>
     </address>
