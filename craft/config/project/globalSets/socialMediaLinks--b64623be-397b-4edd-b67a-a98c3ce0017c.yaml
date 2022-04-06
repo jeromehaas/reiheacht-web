@@ -1,0 +1,46 @@
+fieldLayouts:
+  9120234e-4801-467a-a086-f3eab76e2216:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 917d1883-78ae-422c-89bb-5a5af3a60c82 # YouTube
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0a115a3a-459d-4ad5-859a-dfc76886759b # Vimeo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0015aa03-2218-4660-b56a-b2eca6920ee3 # LinkedIn
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: c3c44ca0-1763-4a9f-bc07-38869342d4be # Twitter
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Links
+        sortOrder: 1
+handle: socialMediaLinks
+name: 'Social Media Links'
+sortOrder: 1

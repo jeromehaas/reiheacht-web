@@ -1,22 +1,28 @@
-dateModified: 1649202962
+dateModified: 1649206736
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Reiheacht
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0a115a3a-459d-4ad5-859a-dfc76886759b: Vimeo # Vimeo
+    0f4f4198-96dc-4062-a155-fde33b1b6877: 'Address Company' # Address Company
     1b49fd40-d90f-4f3d-bf96-7cb4f2bedffd: Text # Text
     1e2a8ec8-bbf2-4ebe-95a4-91b4a49f13b1: Project # Project
     1e4e377a-85e5-4dc3-ac61-20057973505f: 'Rich Text' # Rich Text
     2f2691b6-d6aa-476f-860f-d03633e0aaa0: Intro # Intro
+    4a3b4d64-85c8-4837-a1bf-d436b80f5e66: Address # Address
     4c545e64-d0cb-4c00-88a0-a1e12963cda9: Reference # Reference
     4c614a57-4511-4b31-8cc7-01f589ea3987: Projects # Projects
+    4d0c44d3-2a40-4862-bbb6-3e65820d886b: 'Social Media Links' # Social Media Links
     5f690fe1-25a1-40d5-b841-96a26d9d86be: 'Team Tile Email' # Team Tile Email
     6a99c432-5e9e-4deb-8658-58ee98ec27db: 'Project Assets' # Project Assets
     6dbcd30b-b235-4b2a-b257-41cb7044dcf3: Client # Client
     6f1f3b3a-38c7-4ecb-8288-fae54de22df6: 'Service Tile Heading' # Service Tile Heading
     7e8b65c1-e184-4d9b-817c-ab73ff4fb220: 'Team Tile Role' # Team Tile Role
     09aa1ffb-6601-431f-9955-4b1b0d42ce23: Reference # Reference
+    0015aa03-2218-4660-b56a-b2eca6920ee3: LinkedIn # LinkedIn
+    16d114b8-8151-4c10-bc89-83f8ed671f7e: 'Address Phone' # Address Phone
     36bccdfa-ddb0-4bce-a12b-1e1e71d96519: 'Project Infobox Logo' # Project Infobox Logo
     41c3ceb6-6f88-48e4-a579-1b127b734427: 'Project Detail Description' # Project Detail Description
     045c86b9-5f90-4c25-ada4-964b3afc3d96: 'Project Tile Heading' # Project Tile Heading
@@ -28,6 +34,7 @@ meta:
     547f0aea-9305-45cf-85cf-4aeee42709b0: 'Team Tile Firstname' # Team Tile Firstname
     557d13d8-bdf7-470b-8df9-c5b75b762d47: Reiheacht # Reiheacht
     639cd615-fa76-49be-a252-a4af968023e9: Reiheacht # Reiheacht
+    917d1883-78ae-422c-89bb-5a5af3a60c82: YouTube # YouTube
     944c9d68-c5ca-4023-9c29-44ab7add275d: Services # Services
     5030cc07-b585-4851-bce9-2813cf3af1f1: 'Project Infobox Subheading' # Project Infobox Subheading
     06941c4d-93a8-4248-ae7a-66b38dcde9ff: 'Service Assets' # Service Assets
@@ -38,22 +45,28 @@ meta:
     88407022-7dc0-4957-81e8-53514da38e80: 'Project Tile Order' # Project Tile Order
     a3b55356-2035-4f54-8225-2026513ec0ef: Color # Color
     a5c0d0fa-d611-4e4c-9d0a-d39cd0a18b15: Team # Team
+    a8c2a0cc-8f9a-42b0-8c01-6211cdb116f4: 'Address Street' # Address Street
     a31ba079-4154-4b6e-bca4-f3e0434175d9: References # References
     a58ea7dc-6a9e-4b2d-9ea8-514de7490bc9: Target # Target
     a911b60c-a0c9-4023-8585-a646364e75a6: 'Service Tiles' # Service Tiles
     ae766595-dac6-4467-b496-54f74ab25a62: 'Project Detail Heading' # Project Detail Heading
     af508af9-d355-4b8c-ba92-b0db4ad26825: Intro # Intro
     b0df425f-c398-425c-b8c9-8f1245a080cc: 'Project Infobox Heading' # Project Infobox Heading
+    b64623be-397b-4edd-b67a-a98c3ce0017c: 'Social Media Links' # Social Media Links
+    b989425a-7c2a-4e8e-94e7-a3cee7683639: 'Address Town' # Address Town
     b2314008-e575-459b-864c-b45e396e57c1: 'Project Tile Color' # Project Tile Color
     ba93179b-304c-4eec-94e9-53eae4670e3f: Service # Service
     bcb328af-f26b-4687-80c2-af0d1ae93a5b: Logos # Logos
     bfdd21c0-5a85-45fc-bee2-ec582eebdb4e: 'Reference Quote' # Reference Quote
+    c3c44ca0-1763-4a9f-bc07-38869342d4be: Twitter # Twitter
     c656f1bc-b3e7-4e6b-bea8-da1f3254e94e: Project # Project
     c723ce3a-0eb9-41dd-84a1-e97ed43fce23: Common # Common
     c9355ce4-c6de-477f-853b-db196ee5a03c: Service # Service
     d018ce1c-0277-4c1f-b715-b32f7587cdf6: Member # Member
     d68cb191-9dbd-4716-a524-7cd6f1cfde68: 'Team Tile Color' # Team Tile Color
     d785c2bf-803c-4581-95e8-5c3ee11dd2ed: Intro # Intro
+    e1ccac03-b405-44b2-b79a-298b69425e38: Address # Address
+    e2ffbf85-f6af-4731-b6af-9fdb897bf01c: 'Address Email' # Address Email
     e9922f3f-2ba7-41ac-8905-016cda69b8a8: 'Service Tile Image' # Service Tile Image
     e76798f3-f541-423e-ac56-aa2fb217a23e: 'Reference Role' # Reference Role
     edda66b7-c42a-4454-9755-9c28dda0d07a: Heading # Heading
