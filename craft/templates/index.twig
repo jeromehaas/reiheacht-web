@@ -6,19 +6,22 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" href="/css/main.min.css">
 		<link rel="icon" href="/media/favicons/favicon.ico">
-		<title>Motion Design & Werbefilm Agentur aus Luzern </title>
+		<title>Motion Design & Werbefilm Agentur aus Luzern
+		</title>
 	</head>
 	<body>
 
-    {% include "organisms/navigation-desktop" %}
+		{% include "organisms/navigation-desktop" %}
+		{% include "organisms/navigation-mobile" %}
 
-  	{% include "organisms/projects-overview" %}
-  	{% include "organisms/services-overview" %}
-    {% include "organisms/team-overview" %}
-    {% include "organisms/reference-slider" %}
+		{% include "organisms/hero" %}
+		{% include "organisms/projects-overview" %}
+		{% include "organisms/services-overview" %}
+		{% include "organisms/team-overview" %}
+		{% include "organisms/reference-slider" %}
 
-    {% include "organisms/footer" %}
+		{% include "organisms/footer" %}
 
-	<script src="/js/main.build.js"></script>
+		<script src="/js/main.build.js"></script>
 	</body>
 </html>

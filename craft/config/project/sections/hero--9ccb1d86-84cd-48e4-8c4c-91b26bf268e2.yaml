@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: hero
+name: Hero
+propagationMethod: all
+siteSettings:
+  639cd615-fa76-49be-a252-a4af968023e9: # Reiheacht
+    enabledByDefault: true
+    hasUrls: true
+    template: null
+    uriFormat: hero
+type: single

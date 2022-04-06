@@ -1,0 +1,19 @@
+{% set hero = craft.entries.section('hero').one() %}
+
+<div class="hero section">
+	<div class="hero__inner section__inner">
+		<h1 class="heading  heading--h1  heading--white  hero__heading js-heading" data-highlight="[]">{{ hero.heroHeading }}</h1>
+		<figure class="line  line--horizontal  hero__line"></figure>
+		<p class="paragraph  paragraph--white  hero__teaser">{{ hero.heroTeaser }}</p>
+		<p class="paragraph  paragraph--white  hero__slogan">Wir bewegen alle und alles – setz dich in die reiheacht.</p>
+		<div class="hero__button-wrapper">
+			<a class="button button--blue hero__button hero__button--showreel" href="#">Showreel</a>
+			<a class="button button--orange hero__button hero__button--projects" href="#">Projekte</a>
+			<a class="button button--orange hero__button hero__button--contact" href="#">Sitzplatz buchen</a>
+		</div>
+		<div class="scroller hero__scroller">
+			<div class="scroller__text ">Popcorn nicht vergessen</div>
+			<i class="scroller__icon icon-double-arrow icon"></i>
+		</div>
+	</div>
+</div>

@@ -1,13 +1,14 @@
 <div class="navigation-mobile section js-navigation-mobile">
-	<div class="navigation-mobile__inner section__inner">
-		<div class="navigation-mobile__bar">
-			<a href="#" class="navigation-mobile__logo"></a>
-			<button href="#" class="navigation-mobile__hamburger"></button>
-		</div>
-		<div class="navigation-mobile__panel">
-			{{#each items}}
-				<a class="navigation-mobile__link" href="{{ href }}" data-section="{{ section }}">{{ label }}</a>
-			{{/each}}
-		</div>
-	</div>
+  <div class="navigation-mobile__inner section__inner">
+    <div class="navigation-mobile__bar">
+      <a href="#" class="navigation-mobile__logo"></a>
+      <button href="#" class="navigation-mobile__hamburger"></button>
+    </div>
+    <div class="navigation-mobile__panel">
+      {{#each items}}
+      <a class="navigation-mobile__link" href="{{ href }}" data-section="{{ section }}">{{ label }}</a>
+      {{/each}}
+    </div>
+  </div>
 </div>
+<div class="navigation-mobile__placeholder"></div>

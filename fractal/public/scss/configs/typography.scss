@@ -76,7 +76,6 @@ a {
   font-size: 12px;
 }
 
-
 .scroller__text {
   font-weight: 300;
 }
@@ -150,6 +149,11 @@ textarea {
   font-size: 14px;
 }
 
+.hero__teaser,
+.hero__slogan {
+  font-size: 30px;
+  line-height: 1.5;
+}
 
 @media (max-width: 900px) {
   .heading--h1 {
@@ -223,4 +227,13 @@ textarea {
   .quote__author {
     font-size: 18px;
   }
+}
+
+@media (max-width: 600px) {
+
+  .hero__teaser,
+  .hero__slogan {
+    font-size: 20px;
+  }
+
 }

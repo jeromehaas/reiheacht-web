@@ -1,4 +1,4 @@
-dateModified: 1649206736
+dateModified: 1649213682
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Reiheacht
@@ -21,6 +21,7 @@ meta:
     6f1f3b3a-38c7-4ecb-8288-fae54de22df6: 'Service Tile Heading' # Service Tile Heading
     7e8b65c1-e184-4d9b-817c-ab73ff4fb220: 'Team Tile Role' # Team Tile Role
     09aa1ffb-6601-431f-9955-4b1b0d42ce23: Reference # Reference
+    9ccb1d86-84cd-48e4-8c4c-91b26bf268e2: Hero # Hero
     0015aa03-2218-4660-b56a-b2eca6920ee3: LinkedIn # LinkedIn
     16d114b8-8151-4c10-bc89-83f8ed671f7e: 'Address Phone' # Address Phone
     36bccdfa-ddb0-4bce-a12b-1e1e71d96519: 'Project Infobox Logo' # Project Infobox Logo
@@ -36,14 +37,17 @@ meta:
     639cd615-fa76-49be-a252-a4af968023e9: Reiheacht # Reiheacht
     917d1883-78ae-422c-89bb-5a5af3a60c82: YouTube # YouTube
     944c9d68-c5ca-4023-9c29-44ab7add275d: Services # Services
+    2862eee5-144d-4052-904f-42da2dd4b20c: 'Hero  Heading' # Hero  Heading
     5030cc07-b585-4851-bce9-2813cf3af1f1: 'Project Infobox Subheading' # Project Infobox Subheading
     06941c4d-93a8-4248-ae7a-66b38dcde9ff: 'Service Assets' # Service Assets
     51475d29-cdbd-4826-aaaa-d31201dc50df: 'Project Tiles' # Project Tiles
     86678cb0-39c3-4425-b563-f120e7a2ac6d: 'Service Detail Image' # Service Detail Image
+    1662360e-fabd-4bb5-9ce8-2588370bf3c8: 'Hero Scroller Text' # Hero Scroller Text
     9782279f-5660-477f-a768-9e99c1ed2243: 'Reference Logo' # Reference Logo
     21408961-3404-4135-a29e-4aa2e9d688e3: 'Project Tile Subheading' # Project Tile Subheading
     88407022-7dc0-4957-81e8-53514da38e80: 'Project Tile Order' # Project Tile Order
     a3b55356-2035-4f54-8225-2026513ec0ef: Color # Color
+    a5a23fd7-d90a-42df-8fed-a019a2fd2247: Hero # Hero
     a5c0d0fa-d611-4e4c-9d0a-d39cd0a18b15: Team # Team
     a8c2a0cc-8f9a-42b0-8c01-6211cdb116f4: 'Address Street' # Address Street
     a31ba079-4154-4b6e-bca4-f3e0434175d9: References # References
@@ -57,11 +61,14 @@ meta:
     b2314008-e575-459b-864c-b45e396e57c1: 'Project Tile Color' # Project Tile Color
     ba93179b-304c-4eec-94e9-53eae4670e3f: Service # Service
     bcb328af-f26b-4687-80c2-af0d1ae93a5b: Logos # Logos
+    bd95c630-a4c4-4814-93b3-efc79b489aea: Hero # Hero
     bfdd21c0-5a85-45fc-bee2-ec582eebdb4e: 'Reference Quote' # Reference Quote
     c3c44ca0-1763-4a9f-bc07-38869342d4be: Twitter # Twitter
     c656f1bc-b3e7-4e6b-bea8-da1f3254e94e: Project # Project
     c723ce3a-0eb9-41dd-84a1-e97ed43fce23: Common # Common
     c9355ce4-c6de-477f-853b-db196ee5a03c: Service # Service
+    d0f50440-c036-4f04-99f1-7467d9278f47: 'Hero Slogan' # Hero Slogan
+    d01da563-ed59-4782-968f-65e458745a03: 'Hero Teaser' # Hero Teaser
     d018ce1c-0277-4c1f-b715-b32f7587cdf6: Member # Member
     d68cb191-9dbd-4716-a524-7cd6f1cfde68: 'Team Tile Color' # Team Tile Color
     d785c2bf-803c-4581-95e8-5c3ee11dd2ed: Intro # Intro
