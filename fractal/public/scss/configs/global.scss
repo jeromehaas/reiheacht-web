@@ -3,7 +3,7 @@
   box-sizing: border-box;
   scrollbar-width: none;
   scroll-behavior: smooth;
-	appearance: none;
+  appearance: none;
 }
 
 *::-webkit-scrollbar {
@@ -11,32 +11,32 @@
 }
 
 body {
-	background-color: $black;
+  background-color: $black;
 }
 
 .section {
-
+  margin-bottom: 150px;
 }
 
 .section__inner {
-	max-width: $max-width;
-	margin: 0 auto;
-	padding-left: 40px;
-	padding-right: 40px;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 button {
-	background-color: transparent;
-	border: none;
-	outline: none;
-	padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
 }
 
 @media (max-width: 500px) {
 
-	.section__inner {
-		padding-left: 24px;
-		padding-right: 24px;
-	}
+  .section__inner {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 
 }

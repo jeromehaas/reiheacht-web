@@ -1,0 +1,19 @@
+columnSuffix: harsxfkb
+contentColumnType: text
+fieldGroup: 09aa1ffb-6601-431f-9955-4b1b0d42ce23 # Reference
+handle: referenceQuote
+instructions: ''
+name: 'Reference Quote'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

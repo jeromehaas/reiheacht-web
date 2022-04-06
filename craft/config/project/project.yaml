@@ -1,4 +1,4 @@
-dateModified: 1649125833
+dateModified: 1649202962
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Reiheacht
@@ -9,15 +9,23 @@ meta:
     1e2a8ec8-bbf2-4ebe-95a4-91b4a49f13b1: Project # Project
     1e4e377a-85e5-4dc3-ac61-20057973505f: 'Rich Text' # Rich Text
     2f2691b6-d6aa-476f-860f-d03633e0aaa0: Intro # Intro
+    4c545e64-d0cb-4c00-88a0-a1e12963cda9: Reference # Reference
     4c614a57-4511-4b31-8cc7-01f589ea3987: Projects # Projects
+    5f690fe1-25a1-40d5-b841-96a26d9d86be: 'Team Tile Email' # Team Tile Email
     6a99c432-5e9e-4deb-8658-58ee98ec27db: 'Project Assets' # Project Assets
     6dbcd30b-b235-4b2a-b257-41cb7044dcf3: Client # Client
     6f1f3b3a-38c7-4ecb-8288-fae54de22df6: 'Service Tile Heading' # Service Tile Heading
+    7e8b65c1-e184-4d9b-817c-ab73ff4fb220: 'Team Tile Role' # Team Tile Role
+    09aa1ffb-6601-431f-9955-4b1b0d42ce23: Reference # Reference
     36bccdfa-ddb0-4bce-a12b-1e1e71d96519: 'Project Infobox Logo' # Project Infobox Logo
     41c3ceb6-6f88-48e4-a579-1b127b734427: 'Project Detail Description' # Project Detail Description
     045c86b9-5f90-4c25-ada4-964b3afc3d96: 'Project Tile Heading' # Project Tile Heading
+    66a7004f-9f0c-4598-9156-7adc0eb1b78d: 'Reference Name' # Reference Name
     75d71c28-598d-437c-b42b-c36a1745dc8b: 'Service Detail Heading' # Service Detail Heading
     83e9b224-389c-4e6d-868d-ef2be96f917d: 'Project Tile Image' # Project Tile Image
+    94ca0d20-ac36-4f6f-a4d6-8b7a5ca0c735: 'Team Tile Image' # Team Tile Image
+    478cffc9-7bfd-4a96-8fde-21ede6b46b63: 'Team Tiles' # Team Tiles
+    547f0aea-9305-45cf-85cf-4aeee42709b0: 'Team Tile Firstname' # Team Tile Firstname
     557d13d8-bdf7-470b-8df9-c5b75b762d47: Reiheacht # Reiheacht
     639cd615-fa76-49be-a252-a4af968023e9: Reiheacht # Reiheacht
     944c9d68-c5ca-4023-9c29-44ab7add275d: Services # Services
@@ -25,8 +33,12 @@ meta:
     06941c4d-93a8-4248-ae7a-66b38dcde9ff: 'Service Assets' # Service Assets
     51475d29-cdbd-4826-aaaa-d31201dc50df: 'Project Tiles' # Project Tiles
     86678cb0-39c3-4425-b563-f120e7a2ac6d: 'Service Detail Image' # Service Detail Image
+    9782279f-5660-477f-a768-9e99c1ed2243: 'Reference Logo' # Reference Logo
     21408961-3404-4135-a29e-4aa2e9d688e3: 'Project Tile Subheading' # Project Tile Subheading
+    88407022-7dc0-4957-81e8-53514da38e80: 'Project Tile Order' # Project Tile Order
     a3b55356-2035-4f54-8225-2026513ec0ef: Color # Color
+    a5c0d0fa-d611-4e4c-9d0a-d39cd0a18b15: Team # Team
+    a31ba079-4154-4b6e-bca4-f3e0434175d9: References # References
     a58ea7dc-6a9e-4b2d-9ea8-514de7490bc9: Target # Target
     a911b60c-a0c9-4023-8585-a646364e75a6: 'Service Tiles' # Service Tiles
     ae766595-dac6-4467-b496-54f74ab25a62: 'Project Detail Heading' # Project Detail Heading
@@ -35,11 +47,18 @@ meta:
     b2314008-e575-459b-864c-b45e396e57c1: 'Project Tile Color' # Project Tile Color
     ba93179b-304c-4eec-94e9-53eae4670e3f: Service # Service
     bcb328af-f26b-4687-80c2-af0d1ae93a5b: Logos # Logos
+    bfdd21c0-5a85-45fc-bee2-ec582eebdb4e: 'Reference Quote' # Reference Quote
     c656f1bc-b3e7-4e6b-bea8-da1f3254e94e: Project # Project
     c723ce3a-0eb9-41dd-84a1-e97ed43fce23: Common # Common
     c9355ce4-c6de-477f-853b-db196ee5a03c: Service # Service
+    d018ce1c-0277-4c1f-b715-b32f7587cdf6: Member # Member
+    d68cb191-9dbd-4716-a524-7cd6f1cfde68: 'Team Tile Color' # Team Tile Color
+    d785c2bf-803c-4581-95e8-5c3ee11dd2ed: Intro # Intro
     e9922f3f-2ba7-41ac-8905-016cda69b8a8: 'Service Tile Image' # Service Tile Image
+    e76798f3-f541-423e-ac56-aa2fb217a23e: 'Reference Role' # Reference Role
     edda66b7-c42a-4454-9755-9c28dda0d07a: Heading # Heading
+    f695d912-3263-42f9-8139-3b2c5924f342: 'Team Tile Lastname' # Team Tile Lastname
+    f4727773-dd07-4b66-a356-100798d9a6dc: Team # Team
     fa515eef-b21f-41a1-86ce-67d911fe848d: 'Service Detail Quote' # Service Detail Quote
 plugins:
   redactor:

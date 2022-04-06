@@ -1,0 +1,92 @@
+fieldLayouts:
+  199b5965-ecfb-41f4-9256-4f8e9c426edb:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 94ca0d20-ac36-4f6f-a4d6-8b7a5ca0c735 # Team Tile Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 547f0aea-9305-45cf-85cf-4aeee42709b0 # Team Tile Firstname
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: f695d912-3263-42f9-8139-3b2c5924f342 # Team Tile Lastname
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 7e8b65c1-e184-4d9b-817c-ab73ff4fb220 # Team Tile Role
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5f690fe1-25a1-40d5-b841-96a26d9d86be # Team Tile Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: d68cb191-9dbd-4716-a524-7cd6f1cfde68 # Team Tile Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Tile
+        sortOrder: 1
+handle: member
+hasTitleField: false
+name: Member
+section: a5c0d0fa-d611-4e4c-9d0a-d39cd0a18b15 # Team
+sortOrder: 1
+titleFormat: '{teamTileFirstname} {teamTileLastname}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

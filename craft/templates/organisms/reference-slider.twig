@@ -1,0 +1,26 @@
+ {% set references = craft.entries.section('references') %}
+{# {% set projectTeaser = craft.entries.section('projects').slug('projekte').one() %}
+{% set projectItems = craft.entries.section('projects').level(3).orderBy('projectTileOrder').all() %} #}
+
+
+
+ <section class="reference-slider section swiper ">
+  <div class="reference-slider__inner section__inner mySwiper">
+
+      <div class="reference-slider__wrapper swiper-wrapper">
+        {% for item in references %}
+          <div class="reference-slider__slide swiper-slide">
+						<p class="reference-slider__quote">{{ item.referenceQuote }}</p> 
+						<div class="reference-slider__author author">
+							<p class="author__name">{{ item.referenceName }}</p>
+							<p class="author__role">{{ item.referenceRole }}</p>
+						</div>
+						<img class="reference-slider__logo" src="{{ item.referenceLogo.one().url() }}" alt="logo">
+					</div>
+        {% endfor %}
+      </div>
+      <div class="reference-slider__arrow arrow reference-slider__arrow--next swiper-button-next"><i class="icon-arrow icon"></i></div>
+      <div class="reference-slider__arrow arrow reference-slider__arrow--prev swiper-button-prev"><i class="icon-arrow icon"></i></div>
+
+    </div>
+    </section>

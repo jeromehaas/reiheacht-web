@@ -62,6 +62,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+          -
+            fieldUid: 88407022-7dc0-4957-81e8-53514da38e80 # Project Tile Order
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Tile
         sortOrder: 1
       -

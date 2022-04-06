@@ -1,0 +1,19 @@
+columnSuffix: pkzhmuus
+contentColumnType: text
+fieldGroup: f4727773-dd07-4b66-a356-100798d9a6dc # Team
+handle: teamTileLastname
+instructions: ''
+name: 'Team Tile Lastname'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

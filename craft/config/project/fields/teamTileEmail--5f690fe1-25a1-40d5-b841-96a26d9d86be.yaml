@@ -1,0 +1,12 @@
+columnSuffix: cgwfoitw
+contentColumnType: string
+fieldGroup: f4727773-dd07-4b66-a356-100798d9a6dc # Team
+handle: teamTileEmail
+instructions: ''
+name: 'Team Tile Email'
+searchable: false
+settings:
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email

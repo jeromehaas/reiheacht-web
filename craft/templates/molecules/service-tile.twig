@@ -1,27 +1,7 @@
-{# <div class="service-tile {% if class is defined %} {{ class }} {% endif %}">
-
-	<div class="service-tile__back back">
-		<div class="back__inner">
-			<img class="back__image" src="{{ image }}" alt="Image">
-		</div>
-	</div>
-
-	<div class="service-tile__front front front--{{ color }}" style="background-color: {{ color }}">
-		<div class="front__inner">
-			{% include "atoms/heading" with { class: "front__title", type: "h3", text: heading, color: "white"} %}
-			{% include "atoms/paragraph" with { class: "front__subtitle", text: subheading, color: "white"} %}
-			{% include "atoms/link" with { class: "front__link", text: "Mehr erfahren", href: href } %} 
-		</div>
-	</div>
-
-</div> #}
-
-
 <div class="service-tile {% if class is defined %} {{ class }} {% endif %}">
 	<img class="service-tile__image" src="{{ image }}" alt="Image">
 	<a class="service-tile__label label" href="{{ href }}">
   	{% include "atoms/heading" with { class: "label__title", type: "h4", text: heading, color: "white"} %}
-		{# {{> @heading class="label__title" type="h4" text=title class="front__title" color="white" }} #}
 		<i class="label__icon icon-double-arrow icon"></i>
 	</a>
 </div>

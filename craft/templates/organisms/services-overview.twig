@@ -1,14 +1,14 @@
 {% set services = craft.entries.section('services') %}
-{% set serviceTeaser = craft.entries.section('services').slug('leistungen').one() %}
-{% set serviceItems = craft.entries.section('services').level(2).all() %}
+{% set servicesTeaser = craft.entries.section('services').slug('leistungen').one() %}
+{% set servicesItems = craft.entries.section('services').level(2).all() %}
 
 <section class="services section">
   <div class="services__inner section__inner">
 
-	{% include "molecules/teaser" with { class: "service-infos__line service-infos__line--vertical", heading: serviceTeaser.heading, subheading: serviceTeaser.richText } %}
+	{% include "molecules/teaser" with { class: "service-infos__line service-infos__line--vertical", heading: servicesTeaser.heading, subheading: servicesTeaser.richText } %}
 
 	<div class="service-tile-set">
-		{% for item in serviceItems %}
+		{% for item in servicesItems %}
 			{% include "molecules/service-tile" with { class: "service-tile-set__item", heading: item.serviceTileHeading, href: item.uri, image: item.serviceTileImage.one().url() } %}	
 		{% endfor %}
   </div>

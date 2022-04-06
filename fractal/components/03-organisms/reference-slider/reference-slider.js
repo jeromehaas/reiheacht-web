@@ -10,7 +10,7 @@ class ReferenceSlider {
 		var swiper = new Swiper(".mySwiper", {
 			slidesPerView: 1,
 			spaceBetween: 30,
-			speed: 750,
+			speed: 1250,
 			loop: true,
 			autoplay: {
 				delay: 10000,

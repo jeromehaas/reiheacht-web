@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: team
+name: Team
+propagationMethod: all
+siteSettings:
+  639cd615-fa76-49be-a252-a4af968023e9: # Reiheacht
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: null
+  uid: d540deaf-3a28-457a-bdc9-2300c909f224
+type: structure
