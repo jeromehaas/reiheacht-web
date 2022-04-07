@@ -86,6 +86,28 @@ fieldLayouts:
             width: 100
         name: Detail
         sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: 56f01196-22f1-4172-b98a-a6fbdbf80eeb # Service Meta Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: ce45a178-b86a-465f-a418-86b40d43ab64 # Service Meta Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Meta
+        sortOrder: 3
 handle: service
 hasTitleField: true
 name: Service

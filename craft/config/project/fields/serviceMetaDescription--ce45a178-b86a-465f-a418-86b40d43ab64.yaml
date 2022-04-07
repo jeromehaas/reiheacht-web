@@ -1,0 +1,19 @@
+columnSuffix: pfrjjdup
+contentColumnType: text
+fieldGroup: ba93179b-304c-4eec-94e9-53eae4670e3f # Service
+handle: serviceMetaDescription
+instructions: ''
+name: 'Service Meta Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

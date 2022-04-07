@@ -17,7 +17,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   685bd32c-466e-47c2-8fdd-46039b00b9c3: # Source
-    columnSuffix: dkjltvtq
+    columnSuffix: null
     contentColumnType: string(255)
     fieldGroup: null
     handle: source

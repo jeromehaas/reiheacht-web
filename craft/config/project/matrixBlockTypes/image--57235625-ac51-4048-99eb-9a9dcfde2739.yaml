@@ -12,7 +12,16 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 100
+            width: 50
+          -
+            fieldUid: 4edb3910-5230-42ce-8fd7-307eccc25034 # Alt-Tag
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 50
         name: Content
         sortOrder: 1
 fields:
@@ -27,15 +36,16 @@ fields:
     settings:
       allowSelfRelations: false
       allowUploads: true
-      allowedKinds: null
+      allowedKinds:
+        - image
       defaultUploadLocationSource: 'volume:6a99c432-5e9e-4deb-8658-58ee98ec27db' # Project Assets
       defaultUploadLocationSubpath: ''
       limit: '2'
       localizeRelations: false
       previewMode: full
-      restrictFiles: ''
+      restrictFiles: '1'
       selectionLabel: ''
-      showSiteMenu: false
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       singleUploadLocationSource: 'volume:bcb328af-f26b-4687-80c2-af0d1ae93a5b' # Logos
@@ -50,6 +60,26 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  4edb3910-5230-42ce-8fd7-307eccc25034: # Alt-Tag
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: altTag
+    instructions: ''
+    name: Alt-Tag
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
 handle: image
 name: Image
 sortOrder: 1

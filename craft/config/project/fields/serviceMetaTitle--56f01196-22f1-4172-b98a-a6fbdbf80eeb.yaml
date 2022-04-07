@@ -1,0 +1,19 @@
+columnSuffix: aeujpalt
+contentColumnType: text
+fieldGroup: ba93179b-304c-4eec-94e9-53eae4670e3f # Service
+handle: serviceMetaTitle
+instructions: ''
+name: 'Service Meta Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

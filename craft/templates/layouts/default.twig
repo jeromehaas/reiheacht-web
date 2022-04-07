@@ -6,14 +6,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" href="/css/main.min.css">
 		<link rel="icon" href="/media/favicons/favicon.ico">
-		{% if title is defined %}
-			<title>reiheacht |
-				{{ title }}
-			</title>
-		{% else %}
-			<title>Motion Design & Werbefilm Agentur aus Luzern
-			</title>
-		{% endif %}
+		<title>
+			{{ title is defined ? title : 'Motion Design & Werbefilm Agentur aus Luzern' }}
+			| reiheacht
+		</title>
+		<meta name="description" content="{{ description }}">
 	</head>
 	<body>
 
@@ -26,4 +23,4 @@
 
 		<script src="/js/main.build.js"></script>
 	</body>
-</html>
+</html></head></html></head></html>

@@ -1,9 +1,7 @@
 {% extends "layouts/default" %}
-{% set title = entry.title %}
+{% set title = entry.projectMetaTitle %}
+{% set description = entry.projectMetaDescription %}
 
 {% block main %}
-
 	{% include "organisms/project-detail" %}
-
-
 {% endblock %}

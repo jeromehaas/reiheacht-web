@@ -20,6 +20,9 @@ return [
     // Whether generated URLs should omit "index.php"
     'omitScriptNameInUrls' => true,
 
+    // Whether GIF files should be cleansed/transformed.
+    'transformGifs' => false,
+
     // The URI segment that tells Craft to load the control panel
     'cpTrigger' => App::env('CP_TRIGGER') ?: 'admin',
 

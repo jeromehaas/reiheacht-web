@@ -1,4 +1,4 @@
-dateModified: 1649297681
+dateModified: 1649368692
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Reiheacht
@@ -20,6 +20,7 @@ meta:
     4c545e64-d0cb-4c00-88a0-a1e12963cda9: Reference # Reference
     4c614a57-4511-4b31-8cc7-01f589ea3987: Projects # Projects
     4d0c44d3-2a40-4862-bbb6-3e65820d886b: 'Social Media Links' # Social Media Links
+    4edb3910-5230-42ce-8fd7-307eccc25034: Alt-Tag # Alt-Tag
     5f690fe1-25a1-40d5-b841-96a26d9d86be: 'Team Tile Email' # Team Tile Email
     6a99c432-5e9e-4deb-8658-58ee98ec27db: 'Project Assets' # Project Assets
     6dbcd30b-b235-4b2a-b257-41cb7044dcf3: Client # Client
@@ -33,6 +34,7 @@ meta:
     36bccdfa-ddb0-4bce-a12b-1e1e71d96519: 'Project Infobox Logo' # Project Infobox Logo
     41c3ceb6-6f88-48e4-a579-1b127b734427: 'Project Detail Description' # Project Detail Description
     045c86b9-5f90-4c25-ada4-964b3afc3d96: 'Project Tile Heading' # Project Tile Heading
+    56f01196-22f1-4172-b98a-a6fbdbf80eeb: 'Service Meta Title' # Service Meta Title
     66a7004f-9f0c-4598-9156-7adc0eb1b78d: 'Reference Name' # Reference Name
     68b8c0a1-aa06-42d4-937d-04cd7138344c: Color # Color
     75d71c28-598d-437c-b42b-c36a1745dc8b: 'Service Detail Heading' # Service Detail Heading
@@ -51,6 +53,7 @@ meta:
     06941c4d-93a8-4248-ae7a-66b38dcde9ff: 'Service Assets' # Service Assets
     51475d29-cdbd-4826-aaaa-d31201dc50df: 'Project Tiles' # Project Tiles
     86678cb0-39c3-4425-b563-f120e7a2ac6d: 'Service Detail Image' # Service Detail Image
+    364808e3-b0f2-4da0-a838-87118159e3f1: 'Project Meta Title' # Project Meta Title
     1662360e-fabd-4bb5-9ce8-2588370bf3c8: 'Hero Scroller Text' # Hero Scroller Text
     9782279f-5660-477f-a768-9e99c1ed2243: 'Reference Logo' # Reference Logo
     21408961-3404-4135-a29e-4aa2e9d688e3: 'Project Tile Subheading' # Project Tile Subheading
@@ -66,6 +69,7 @@ meta:
     ae766595-dac6-4467-b496-54f74ab25a62: 'Project Detail Heading' # Project Detail Heading
     af508af9-d355-4b8c-ba92-b0db4ad26825: Intro # Intro
     b0df425f-c398-425c-b8c9-8f1245a080cc: 'Project Infobox Heading' # Project Infobox Heading
+    b765b835-b0a9-4f6e-8d17-b9096d1cdfa5: 'Project Meta Description' # Project Meta Description
     b3124c88-5c15-4888-ae36-e44043ce1a52: Paragraph # Paragraph
     b64623be-397b-4edd-b67a-a98c3ce0017c: 'Social Media Links' # Social Media Links
     b989425a-7c2a-4e8e-94e7-a3cee7683639: 'Address Town' # Address Town
@@ -79,9 +83,11 @@ meta:
     c723ce3a-0eb9-41dd-84a1-e97ed43fce23: Common # Common
     c9355ce4-c6de-477f-853b-db196ee5a03c: Service # Service
     cd8ceb3b-40fe-4b1e-96e4-9ecb7ea60f4b: Source # Source
+    ce45a178-b86a-465f-a418-86b40d43ab64: 'Service Meta Description' # Service Meta Description
     d0f50440-c036-4f04-99f1-7467d9278f47: 'Hero Slogan' # Hero Slogan
     d01da563-ed59-4782-968f-65e458745a03: 'Hero Teaser' # Hero Teaser
     d018ce1c-0277-4c1f-b715-b32f7587cdf6: Member # Member
+    d4dee677-4abc-4680-92a5-1b26590da898: Alt-Tag # Alt-Tag
     d68cb191-9dbd-4716-a524-7cd6f1cfde68: 'Team Tile Color' # Team Tile Color
     d785c2bf-803c-4581-95e8-5c3ee11dd2ed: Intro # Intro
     e1ccac03-b405-44b2-b79a-298b69425e38: Address # Address
