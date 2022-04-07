@@ -1,0 +1,7 @@
+<div class="image">
+	{% for item in block.source %}
+		<div class="image__wrapper">
+			<img class="image__item" src="{{ item.url() }}" alt=""/>
+		</div>
+	{% endfor %}
+</div>

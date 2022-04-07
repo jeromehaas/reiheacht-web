@@ -17,10 +17,10 @@ settings:
   previewMode: full
   restrictFiles: '1'
   selectionLabel: ''
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:a911b60c-a0c9-4023-8585-a646364e75a6' # Service Tiles
+  singleUploadLocationSource: 'volume:06941c4d-93a8-4248-ae7a-66b38dcde9ff' # Service Assets
   singleUploadLocationSubpath: ''
   source: null
   sources: '*'

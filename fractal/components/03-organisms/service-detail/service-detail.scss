@@ -1,0 +1,53 @@
+.service-detail {
+
+  padding-top: 100px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    margin-bottom: 16px;
+
+    strong {
+      color: $blue;
+    }
+
+  }
+
+  &__content {}
+
+  &__image,
+  .image {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+    margin-bottom: 32px;
+
+    div {
+      width: 100%;
+    }
+
+    &__item {
+      height: auto;
+      display: block;
+
+      &:first-child {
+        width: 100%;
+      }
+
+    }
+
+  }
+
+  &__quote {
+    margin-bottom: 64px;
+  }
+
+
+  p {
+    margin-bottom: 32px;
+  }
+
+}

@@ -1,0 +1,55 @@
+field: e83254d2-a710-4844-b29b-a3fcc916433b # Project Detail Content
+fieldLayouts:
+  d5b5d71d-6e8b-4a70-9d5c-08e05a1c92c5:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 3fc5fdcb-c070-4f5c-8e6b-2de1c1598418 # Source
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  3fc5fdcb-c070-4f5c-8e6b-2de1c1598418: # Source
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: source
+    instructions: ''
+    name: Source
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowUploads: true
+      allowedKinds: null
+      defaultUploadLocationSource: 'volume:6a99c432-5e9e-4deb-8658-58ee98ec27db' # Project Assets
+      defaultUploadLocationSubpath: ''
+      limit: '2'
+      localizeRelations: false
+      previewMode: full
+      restrictFiles: ''
+      selectionLabel: ''
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      singleUploadLocationSource: 'volume:bcb328af-f26b-4687-80c2-af0d1ae93a5b' # Logos
+      singleUploadLocationSubpath: ''
+      source: null
+      sources:
+        - 'volume:6a99c432-5e9e-4deb-8658-58ee98ec27db' # Project Assets
+      targetSiteId: null
+      useSingleFolder: false
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: image
+name: Image
+sortOrder: 1
