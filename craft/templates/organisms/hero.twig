@@ -1,8 +1,9 @@
 {% set hero = craft.entries.section('hero').one() %}
 
+<div class="projects__anchor-target anchor-target" id="home"></div>
 <div class="hero section">
 	<div class="hero__inner section__inner">
-		<h1 class="heading  heading--h1  heading--white  hero__heading js-heading" data-highlight="[]">{{ hero.heroHeading }}</h1>
+		{{ hero.heroHeading }}
 		<figure class="line  line--horizontal  hero__line"></figure>
 		<p class="paragraph  paragraph--white  hero__teaser">{{ hero.heroTeaser }}</p>
 		<p class="paragraph  paragraph--white  hero__slogan">Wir bewegen alle und alles – setz dich in die reiheacht.</p>

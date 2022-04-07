@@ -1,6 +1,6 @@
 .navigation-desktop {
   width: 100%;
-  height: 100px;
+  height: 60px;
   box-shadow: $box-shadow;
   position: fixed;
   inset: 0 0 unset 0;
@@ -12,13 +12,12 @@
     flex-direction: row;
     gap: 40px;
     align-items: center;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    height: 100%;
   }
 
   &__logo {
     margin-left: auto;
-    width: 160px;
+    width: 112px;
   }
 
   &__link {
