@@ -13,7 +13,6 @@ class Scroller {
 
 	init() {
 		if (!document.querySelector(`.js-${this.name}`)) return;
-		console.log('scroller');
 		this.addEventListener();
 	}
 
