@@ -17,7 +17,7 @@ class Scroller {
 		this.addEventListener();
 	}
 
-	addEventListener() {console.log('ko');
+	addEventListener() {
 		this.elements.arrow.addEventListener('click', this.scrollDown)
 	}
 
