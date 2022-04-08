@@ -4,6 +4,7 @@
 	position: relative;
 	overflow: hidden;
 	aspect-ratio: 1;
+	transition-delay: 3s;
 	
 	&__back, .back {
 		width: 100%;
@@ -30,6 +31,7 @@
 		height: 100%;
 		position: absolute;
 		transition: all 0.6s ease;
+		transition-delay: 0.15s;
 		inset: 100% 0 0 0;
 		background-color: $white;
 		
@@ -47,6 +49,11 @@
 		&__title {
 			margin-top: 48px;
 			margin-bottom: 8px;
+		}
+
+		&__title, 
+		&__subtitle {
+			cursor: default;
 		}
 
 		&__link {
@@ -67,7 +74,13 @@
 	}
 
 	&:hover {
-		.project-tile__front { inset: 0;  }
+
+		.project-tile__front { 
+			inset: 0;  
+			transition-delay: 0s;
+		}
+
+
 		.front__title, 
 		.front__subtitle, 
 		.front__link {
