@@ -41,9 +41,16 @@
   &__address,
   .address {
     margin-bottom: 16px;
+		display: flex;
+		flex-direction: row;
 
     &__item {
       display: block;
+
+			&:not(:last-child)::after {
+				content: "|";
+				padding: 0 16px;
+			}
     }
 
   }
@@ -57,5 +64,26 @@
     }
 
   }
+
+	@media (max-width: 1000px) {
+
+		&__address,
+		.address {
+			margin-bottom: 16px;
+			display: flex;
+			flex-direction: column;
+	
+			&__item {
+				display: block;
+	
+				&:not(:last-child)::after {
+					display: none;
+				}
+
+			}
+	
+		}
+
+	}
 
 }
