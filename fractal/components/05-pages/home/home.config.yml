@@ -1,21 +1,123 @@
 name: Home
 context: 
-  items:
-    - label: Home
+  members:
+    - image: '/media/images/team/marc.png'
+      name: Marc Sen
+      role: Inhaber
+      email: marc.sen@reiheacht.ch
+    - image: '/media/images/team/andrea.png'
+      name: Marc Sen
+      role: Inhaber
+      email: marc.sen@reiheacht.ch
+    - image: '/media/images/team/julia.png'
+      name: Marc Sen
+      role: Inhaber
+      email: marc.sen@reiheacht.ch
+  services: 
+    - image: '/media/images/service-tiles/videokonzeption.png'
+      title: Videokonzeption
       href: '#'
+    - image: '/media/images/service-tiles/storytelling.png'
+      title: Storytelling
+      href: '#'
+    - image: '/media/images/service-tiles/motion-design.png'
+      title: Motion Design
+      href: '#'
+    - image: '/media/images/service-tiles/erklaervideo.png'
+      title: Erklärvideo
+      href: '#'
+    - image: '/media/images/service-tiles/realfilm.png'
+      title: Realfilm
+      href: '#'
+    - image: '/media/images/service-tiles/sound-design.png'
+      title: Sound-Design
+      href: '#'
+  projects: 
+    - title: reiheacht
+      subtitle: Showreel
+      image: '/media/images/project-tiles/reiheacht-showreel.png'
+      color: '#0374B6'
+      href: 
+    - title: Sportcard
+      subtitle: Sporty als Chatbot
+      image: '/media/images/project-tiles/sportcard-sporty.png'
+      color: '#0071A6'
+      href: 
+    - title: ITpoint
+      subtitle: Imagefilm 2021
+      image: '/media/images/project-tiles/itpoint-imagefilm.png'
+      color: '#004A8F'
+      href: 
+    - title: Holliger Imballegno 
+      subtitle: Altuna Box
+      image: '/media/images/project-tiles/holliger-imballegno-altuna-box.png'
+      color: '#0072BC'
+      href: 
+    - title: Schweizer Bauernverband
+      subtitle: Extreme Agrarinitiative
+      image: '/media/images/project-tiles/schweizer-bauernverband-extreme-agratinitiative.png'
+      color: '#9EA600'
+      href: 
+    - title: HotellerieSuisse
+      subtitle: Adventskampagne 2021
+      image: '/media/images/project-tiles/hotelleriesuisse-adventskampagne.jpeg'
+      color: '#DA291C'
+      href: 
+    - title: Schweizer Bauernverband
+      subtitle: Trinkwasserinitiative
+      image: '/media/images/project-tiles/schweizer-bauernerband-trinkwasserinitiative.png'
+      color: '#9EA600'
+      href: 
+    - title: Schweizer Bauernverband
+      subtitle: diverse Erklärfilme
+      image: '/media/images/project-tiles/schweizer-bauernverband-diverse-erklaerfilme.png'
+      color: '#9EA600'
+      href: 
+    - title: Gallo Suisse
+      subtitle: Extreme Agrarinitiative
+      image: '/media/images/project-tiles/gallosuisse-extreme-agrarinitiative.png'
+      color: '#C70103'
+      href: 
+  links:
+    - label: Home
+      href: '/#home'
       section: 'home'
     - label: Leistungen 
-      href: '#'
+      href: '/#leistungen'
       section: 'leistungen'
     - label: Projekte
-      href: '#'
+      href: '/#projekte'
       section: 'projekte'
     - label: Team
-      href: '#'
+      href: '/#team'
       section: 'team'
     - label: Kontakt
-      href: '#'
+      href: '/#kontakt'
       section: 'kontakt'
     - label: Blog
-      href: '#'
+      href: '/blog'
       section: 'blog'
+  address:
+    - text: reiheacht Marketing GmbH
+    - text: Spillgässli 12
+    - text: 6205 Eich
+    - text: hallo@reiheacht.ch
+      href: mailto:hallo@reiheacht.ch
+    - text: +41 41 552 06 00
+      href: tel:+41415520600
+  socialMedia:
+    - icon: youtube
+      href: '#'   
+    - icon: vimeo
+      href: '#'   
+    - icon: linkedin
+      href: '#'      
+    - icon: twitter
+      href: '#'
+  anchors:
+    - text: Impressum
+      href: ''
+    - text: Datenschutz
+      href: ''
+    - text: AGB
+      href: ''

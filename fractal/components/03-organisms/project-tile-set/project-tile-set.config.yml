@@ -1,6 +1,6 @@
 name: Project Tile Set
 context: 
-  items: 
+  projects: 
     - title: reiheacht
       subtitle: Showreel
       image: '/media/images/project-tiles/reiheacht-showreel.png'

@@ -1,6 +1,6 @@
 name: Navigation Mobile
 context: 
-  items:
+  links:
     - label: Home
       href: '#'
       section: 'home'

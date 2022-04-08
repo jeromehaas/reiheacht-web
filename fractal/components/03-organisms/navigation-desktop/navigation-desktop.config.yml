@@ -1,6 +1,6 @@
 name: Navigation Desktop
 context: 
-  items:
+  links:
     - label: Home
       href: '/#home'
       section: 'home'

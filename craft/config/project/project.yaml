@@ -1,4 +1,4 @@
-dateModified: 1649368692
+dateModified: 1649450515
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Reiheacht
@@ -33,6 +33,7 @@ meta:
     16d114b8-8151-4c10-bc89-83f8ed671f7e: 'Address Phone' # Address Phone
     36bccdfa-ddb0-4bce-a12b-1e1e71d96519: 'Project Infobox Logo' # Project Infobox Logo
     41c3ceb6-6f88-48e4-a579-1b127b734427: 'Project Detail Description' # Project Detail Description
+    43f7ff8d-58a9-431c-92f4-99cd460b2301: Contact # Contact
     045c86b9-5f90-4c25-ada4-964b3afc3d96: 'Project Tile Heading' # Project Tile Heading
     56f01196-22f1-4172-b98a-a6fbdbf80eeb: 'Service Meta Title' # Service Meta Title
     66a7004f-9f0c-4598-9156-7adc0eb1b78d: 'Reference Name' # Reference Name
@@ -79,6 +80,7 @@ meta:
     bd95c630-a4c4-4814-93b3-efc79b489aea: Hero # Hero
     bfdd21c0-5a85-45fc-bee2-ec582eebdb4e: 'Reference Quote' # Reference Quote
     c3c44ca0-1763-4a9f-bc07-38869342d4be: Twitter # Twitter
+    c73ef4b5-e81c-4eee-b250-10621a661f94: Intro # Intro
     c656f1bc-b3e7-4e6b-bea8-da1f3254e94e: Project # Project
     c723ce3a-0eb9-41dd-84a1-e97ed43fce23: Common # Common
     c9355ce4-c6de-477f-853b-db196ee5a03c: Service # Service

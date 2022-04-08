@@ -17,7 +17,7 @@ context:
       href: '#'      
     - icon: twitter
       href: '#'
-  links:
+  anchors:
     - text: Impressum
       href: ''
     - text: Datenschutz

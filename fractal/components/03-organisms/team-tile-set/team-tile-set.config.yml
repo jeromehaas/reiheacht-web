@@ -1,6 +1,6 @@
 name: Team Tile Set
 context: 
-  items: 
+  members: 
     - image: '/media/images/team/marc.png'
       name: Marc Sen
       role: Inhaber

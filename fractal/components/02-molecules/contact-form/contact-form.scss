@@ -1,83 +1,97 @@
 .contact-form {
-	display: grid;
-	grid-template-areas:
-		"name name"
-		"email phone"
-		"message message"
-		"button button";
-	grid-gap: 16px;
+  display: grid;
+  grid-template-areas:
+    "name name"
+    "email phone"
+    "message message"
+    "button button";
+  grid-gap: 16px;
+  max-width: 500px;
 
-	
-	&__input, &__submit-button .submit-button__input {
-		border: none;
-		outline: none;
-		box-shadow: none;
-		border-radius: 4px;
-		padding: 16px;
-	}
 
-	&__input {
-		background-color: $white;
-		color: $black;
+  &__input,
+  &__submit-button .submit-button__input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    border-radius: 4px;
+    padding: 16px;
+  }
 
-		&--name { grid-area: name; }
-		&--email { grid-area: email; }
-		&--phone { grid-area: phone; }
-		&--message { grid-area: message; }
+  &__input {
+    background-color: $white;
+    color: $black;
 
-		&::placeholder {
-			top: 4px;
-			position: relative;
-		}
+    &--name {
+      grid-area: name;
+    }
 
-	}
+    &--email {
+      grid-area: email;
+    }
 
-	&__submit-button, .submit-button {
-		grid-area: button;
-		position: relative;
+    &--phone {
+      grid-area: phone;
+    }
 
-		&__input {
-			width: 100%;
-			background-color: $orange;
-			color: $white;
-			
-			&:hover {
-				background-color: darken($orange, 10%);
-			}
+    &--message {
+      grid-area: message;
+    }
 
-		}
+    &::placeholder {
+      top: 4px;
+      position: relative;
+    }
 
-		&__error-label {
-			background-color: $white;
-			color: $black;
-			display: inline-block;
-			padding: 8px;
-			font-size: 12px;
-			border-radius: 4px;
-			position: absolute;
-			right: 0;
-			top: 100%;	
-			transform-origin: 0% 0%;
-			transform: rotateX(-180deg);
-			backface-visibility: none;
-			z-index: -1;
-			transition: all 1s cubic-bezier(.81,1.91,.32,.72);
+  }
 
-			&--visible {
-				transform: rotateX(0deg);
-			}
+  &__submit-button,
+  .submit-button {
+    grid-area: button;
+    position: relative;
 
-		}
+    &__input {
+      width: 100%;
+      background-color: $orange;
+      color: $white;
 
-	}
+      &:hover {
+        background-color: darken($orange, 10%);
+      }
 
-	@media (max-width: 600px) {
-		grid-template-areas:
-		"name"
-		"email" 
-		"phone"
-		"message"
-		"button";
-	}
+    }
+
+    &__error-label {
+      background-color: $white;
+      color: $black;
+      display: inline-block;
+      padding: 8px;
+      font-size: 12px;
+      border-radius: 4px;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      transform-origin: 0% 0%;
+      transform: rotateX(-180deg);
+      backface-visibility: none;
+      z-index: -1;
+      transition: all 1s cubic-bezier(.81, 1.91, .32, .72);
+
+      &--visible {
+        transform: rotateX(0deg);
+      }
+
+    }
+
+  }
+
+  @media (max-width: 600px) {
+    grid-template-areas:
+      "name"
+      "email"
+      "phone"
+      "message"
+      "button";
+  }
 
 }

@@ -1,6 +1,6 @@
 name: Service Tile Set
 context: 
-  items: 
+  services: 
     - image: '/media/images/service-tiles/videokonzeption.png'
       title: Videokonzeption
       href: '#'

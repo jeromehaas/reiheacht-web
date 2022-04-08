@@ -2,7 +2,7 @@ name: Projects Overview
 context:  
   heading: Heading
   subheading: Subheading
-  items: 
+  projects: 
     - title: reiheacht
       subtitle: Showreel
       image: '/media/images/project-tiles/reiheacht-showreel.png'
