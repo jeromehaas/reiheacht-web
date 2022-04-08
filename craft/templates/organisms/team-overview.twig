@@ -3,7 +3,7 @@
 {% set teamItems = craft.entries.section('team').level(2).all() %}
 
 <div class="team__anchor-target anchor-target" id="team"></div>
-<section class="team section" id="team">
+<section class="team section section--linked" id="team">
 	<div class="team__inner section__inner">
 
 		{% include "molecules/teaser" with { class: "team__line team__line--vertical", heading: teamTeaser.heading, subheading: teamTeaser.richText } %}

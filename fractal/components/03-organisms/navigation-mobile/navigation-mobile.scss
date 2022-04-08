@@ -52,8 +52,10 @@
   &__link {
     padding: 8px;
     color: $white;
+    transition: all 0.3s ease;
 
-    &--active {
+    &--active,
+    &:hover {
       color: $orange;
     }
 

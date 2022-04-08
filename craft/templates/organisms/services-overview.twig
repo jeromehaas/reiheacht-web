@@ -3,7 +3,7 @@
 {% set servicesItems = craft.entries.section('services').level(2).all() %}
 
 <div class="services__anchor-target anchor-target" id="leistungen"></div>
-<section class="services section">
+<section class="services section section--linked">
 	<div class="services__inner section__inner">
 
 		{% include "molecules/teaser" with { class: "service-infos__line service-infos__line--vertical", heading: servicesTeaser.heading, subheading: servicesTeaser.richText } %}

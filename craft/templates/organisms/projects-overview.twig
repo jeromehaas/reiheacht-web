@@ -3,7 +3,7 @@
 {% set projectItems = craft.entries.section('projects').level(3).orderBy('projectTileOrder').all() %}
 
 <div class="projects__anchor-target anchor-target" id="projekte"></div>
-<section class="projects section">
+<section class="projects section section--linked">
 	<div class="projects__inner section__inner">
 
 		{% include "molecules/teaser" with { class: "project__line project__line--vertical", heading: projectTeaser.heading, subheading: projectTeaser.richText } %}

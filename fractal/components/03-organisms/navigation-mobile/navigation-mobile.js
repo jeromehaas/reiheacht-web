@@ -29,7 +29,26 @@ class NavigationMobile {
 		if (!document.querySelector(`.js-${this.name}`)) return;
 		this.createLogo();
 		this.createHamburger();
+    this.addEventListener();
 	};
+
+  addEventListener() {
+    this.elements.logo
+    const links = gsap.utils.toArray(this.elements.links);
+    links.forEach((link) => {
+      link.addEventListener('click', () => {
+        this.toggleStatus();
+      });
+    })
+    if (window.location.pathname === '/components/preview/home' || window.location.pathname === '/') {
+      this.elements.logo.addEventListener('click', (event) => this.scrollToTop(event));
+    }
+  }
+  
+  scrollToTop(event) {
+    event.preventDefault();
+    gsap.to(window, { scrollTo: '#home', duration: 1, ease: 'power2' });
+  }
 
 	createLogo() {
 		this.logo.element = lottieWeb.loadAnimation({

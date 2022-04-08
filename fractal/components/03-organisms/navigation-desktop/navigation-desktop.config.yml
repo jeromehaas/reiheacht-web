@@ -2,20 +2,20 @@ name: Navigation Desktop
 context: 
   items:
     - label: Home
-      href: '#'
+      href: '/#home'
       section: 'home'
     - label: Leistungen 
-      href: '#'
+      href: '/#leistungen'
       section: 'leistungen'
     - label: Projekte
-      href: '#'
+      href: '/#projekte'
       section: 'projekte'
     - label: Team
-      href: '#'
+      href: '/#team'
       section: 'team'
     - label: Kontakt
-      href: '#'
+      href: '/#kontakt'
       section: 'kontakt'
     - label: Blog
-      href: '#'
+      href: '/blog'
       section: 'blog'
