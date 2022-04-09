@@ -2,30 +2,37 @@
   margin: 0;
   box-sizing: border-box;
   scrollbar-width: none;
-  appearance: none;	
+  appearance: none;
 }
 
 *::selection {
-	background-color: rgba(3, 116, 182, 0.99);
-	color: rgb(255, 255, 255);
-	opacity: 0.99;
+  background-color: rgba(3, 116, 182, 0.99);
+  color: rgb(255, 255, 255);
+  opacity: 0.99;
 }
+
 strong::selection {
-	text-shadow:
-	1px 0 $white,
-	-1px 0 $white,
-	0 1px $white, 
-	0 -1px  $white;
-	color: $blue;
+  text-shadow:
+    1px 0 $white,
+    -1px 0 $white,
+    0 1px $white,
+    0 -1px $white;
+  color: $blue;
 }
 
 *::-webkit-scrollbar {
   display: none;
 }
 
-body {
+body,
+.body {
   background-color: $black;
   position: relative;
+
+  &--bright {
+    background-color: $white;
+  }
+
 }
 
 .section {
@@ -42,6 +49,10 @@ body {
 .anchor-target {
   position: relative;
   top: -88px;
+}
+
+strong {
+  color: $blue;
 }
 
 button {

@@ -1,0 +1,16 @@
+name: Blog Overview
+preview: "@bright"
+context: 
+  items:
+    - image: '/media/images/blog/welt-der-farben.jpeg'
+      category: Know-How
+      title: Welt der Farben.
+      description: In diesem Blogbeitrag erkunden wir die Welt der Farben, weit über den Horizont von Schwarz und Weiss hinaus.
+    - image: '/media/images/blog/welt-der-farben.jpeg'
+      category: Know-How
+      title: Welt der Farben.
+      description: In diesem Blogbeitrag erkunden wir die Welt der Farben, weit über den Horizont von Schwarz und Weiss hinaus.
+    - image: '/media/images/blog/welt-der-farben.jpeg'
+      category: Know-How
+      title: Welt der Farben.
+      description: In diesem Blogbeitrag erkunden wir die Welt der Farben, weit über den Horizont von Schwarz und Weiss hinaus.

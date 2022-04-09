@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28540338f34764c9aa411cb3231a00f7",
+    "content-hash": "943c2a24d507c5a0222e5f071655da28",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -596,16 +596,16 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.10.5",
+            "version": "2.10.6",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/b4d5d8e9b034e8f0018c560505022d0b8f5750ce",
-                "reference": "b4d5d8e9b034e8f0018c560505022d0b8f5750ce",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/3ae12028303dc5ef95ccdd6b47a9307510080011",
+                "reference": "3ae12028303dc5ef95ccdd6b47a9307510080011",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.6.0",
-                "craftcms/html-field": "^1.0.4"
+                "craftcms/html-field": "^1.0.5"
             },
             "type": "craft-plugin",
             "extra": {
@@ -642,7 +642,7 @@
                 "docs": "https://github.com/craftcms/redactor/blob/v2/README.md",
                 "rss": "https://github.com/craftcms/redactor/commits/v2.atom"
             },
-            "time": "2022-02-25T08:14:08+00:00"
+            "time": "2022-04-07T23:15:08+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -3375,11 +3375,6 @@
         {
             "name": "twig/twig",
             "version": "v2.14.13",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/twigphp/Twig.git",
-                "reference": "66856cd0459df3dc97d32077a98454dc2a0ee75a"
-            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/twigphp/Twig/zipball/66856cd0459df3dc97d32077a98454dc2a0ee75a",
@@ -3391,10 +3386,6 @@
                 "symfony/polyfill-ctype": "^1.8",
                 "symfony/polyfill-mbstring": "^1.3",
                 "symfony/polyfill-php72": "^1.8"
-            },
-            "require-dev": {
-                "psr/container": "^1.0",
-                "symfony/phpunit-bridge": "^4.4.9|^5.0.9|^6.0"
             },
             "type": "library",
             "extra": {
@@ -3410,7 +3401,6 @@
                     "Twig\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -3435,20 +3425,6 @@
             "homepage": "https://twig.symfony.com",
             "keywords": [
                 "templating"
-            ],
-            "support": {
-                "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v2.14.13"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/twig/twig",
-                    "type": "tidelift"
-                }
             ],
             "time": "2022-04-06T06:45:17+00:00"
         },

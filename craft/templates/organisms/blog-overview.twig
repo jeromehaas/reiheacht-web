@@ -1,0 +1,26 @@
+{% set blog = craft.entries.section('blog') %}
+{% set blogTeaser = craft.entries.section('blog').slug('blog').one() %}
+{% set blogItems = craft.entries.section('blog').level(2).all() %}
+
+<section class="blog-overview section">
+	<div class="blog-overview section__inner">
+
+		{% include "atoms/heading" with { class: "blog-overview__title", text: blogTeaser.heading } %}
+
+		{% for item in blogItems %}
+
+			<div class="blog-preview__item item">
+				<a href="{{ item.uri }}">
+					{% include "atoms/image" with { class: "item__image", src: item.blogPreviewImage.one().url() } %}
+				</a>
+				{% include "atoms/paragraph" with { class: "item__category", text: item.blogPreviewCategory } %}
+				<a href="{{ item.uri }}">
+					{{ item.blogPreviewTitle }}
+				</a>
+				{% include "atoms/paragraph" with { class: "item__description", text: item.blogPreviewDescription} %}
+			</div>
+
+		{% endfor %}
+
+	</div>
+</section>

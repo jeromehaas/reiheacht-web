@@ -12,14 +12,12 @@
 		</title>
 		<meta name="description" content="{{ description is defined ? description : 'Wir sind reiheacht. Wir erwecken deine Botschaft mit kreativen Motion Design- und Filmlösungen zum Leben.' }}">
 	</head>
-	<body>
+	<body class="body {% if theme is defined %} body--{{theme}} {% endif %} ">
 
 		{% include "organisms/navigation-desktop" %}
 		{% include "organisms/navigation-mobile" %}
 
 		{% block main %}{% endblock %}
-
-		{% include "organisms/footer" %}
 
 		<script src="/js/main.build.js"></script>
 	</body>

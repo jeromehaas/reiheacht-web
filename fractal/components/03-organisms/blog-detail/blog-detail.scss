@@ -1,0 +1,20 @@
+.blog-detail {
+
+  &__image {
+    margin-bottom: 32px;
+    width: 100%;
+    display: block;
+  }
+
+  &__heading,
+  h2 {
+    margin-bottom: 16px;
+    color: $black;
+  }
+
+  &__paragraph,
+  p {
+    color: $black;
+  }
+
+}

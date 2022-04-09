@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: blog
+name: Blog
+propagationMethod: all
+siteSettings:
+  639cd615-fa76-49be-a252-a4af968023e9: # Reiheacht
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/blog.twig
+    uriFormat: '{parent.uri}/{slug}'
+structure:
+  maxLevels: null
+  uid: 239feaa0-8acf-4ad4-a3a9-7ccced900a53
+type: structure
