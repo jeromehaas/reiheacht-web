@@ -1,0 +1,15 @@
+@keyframes scroller-pulse {
+  0% { transform: translate(0, 0) }
+  30% { transform: translate(0, 10px) }
+  60%, 100% { transform: translate(0, 0) }
+}
+
+@keyframes line-vertical-grow {
+	0% { height: 0px }
+	100% { height: 80px }
+}
+
+@keyframes line-horizontal-grow {
+	0% { width: 0px }
+	100% { width: 80px }
+}

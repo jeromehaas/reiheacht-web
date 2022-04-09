@@ -1,0 +1,102 @@
+.hero {
+  position: relative;
+
+  &__inner {
+    padding-top: 100px;
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  &__heading,
+  h1 {
+    margin-bottom: 24px;
+
+    strong {
+      color: $blue;
+      font-weight: inherit;
+    }
+
+  }
+
+  &__line {
+    margin-bottom: 24px;
+  }
+
+  &__teaser {
+    margin-bottom: 24px;
+  }
+
+  &__slogan {
+    margin-bottom: 80px;
+  }
+
+  &__button-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 80px;
+  }
+
+  &__scroller {
+    margin-top: auto;
+    justify-self: flex-end;
+    margin-bottom: 24px;
+  }
+	
+	&__showreel, .showreel {
+		border: 10px solid red;
+		position: fixed;
+		inset: 0 0 0 0;
+		background-color: rgba(0, 0, 0, 0.75);
+
+		&__inner {
+			width: 100%;
+			height: auto;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border: 10px solid blue;
+			position: relative;
+			max-width: 75%;
+		}
+
+		&__video {
+			border: 10px solid green;
+			display: relative;
+			overflow: unset;
+
+			// &::after {
+			// 	content: "x";
+			// 	position: absolute;
+			// 	right: 0;
+			// 	top: -30px;
+			// }
+
+		}
+
+	}
+
+
+  @media (max-width: 900px) {
+
+    &__inner {
+      padding-top: 50px;
+      min-height: calc(100vh - 50px);
+    }
+
+  }
+
+  @media (max-width: 650px) {
+
+    &__button-wrapper {
+      flex-direction: column;
+      gap: 16px;
+    }
+
+  }
+
+
+}

@@ -1,0 +1,55 @@
+.navigation-desktop {
+  width: 100%;
+  height: 60px;
+  box-shadow: $box-shadow;
+  position: fixed;
+  inset: 0 0 unset 0;
+  z-index: 10;
+  background-color: $black;
+
+  &__inner {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__logo {
+    margin-left: auto;
+    width: 112px;
+  }
+
+  &__link {
+    line-height: 1;
+    color: $white;
+    transition: all 0.3s ease 0.3s;
+
+    &--active {
+      color: $orange;
+    }
+
+  }
+
+  &__placeholder {
+    height: 100px;
+  }
+
+  @media (max-width: 1050px) {
+
+    &__inner {
+      gap: 24px;
+    }
+
+  }
+
+  @media (max-width: 900px) {
+    display: none;
+
+    &__placeholder {
+      display: none;
+    }
+
+  }
+
+}

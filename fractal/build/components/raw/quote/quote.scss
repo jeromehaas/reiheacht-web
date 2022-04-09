@@ -1,0 +1,35 @@
+.quote {
+	position: relative;
+	max-width: 800px;
+	margin: 0 auto;
+	
+	&__text {
+		color: $white;
+		display: block;
+		padding: 32px;
+		text-align: center;
+		width: 100%;
+	
+		&::before, 
+		&::after {
+			color: $blue;
+			position: relative;
+			white-space: pre;
+		}
+		
+		&::before {content: '« '; }
+		&::after { content: ' »'; }
+	
+	}
+
+	&__author {
+		position: absolute;
+		right: 0;
+
+		&::before {
+			content: '- '
+		}
+		
+	}
+
+}

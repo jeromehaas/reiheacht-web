@@ -52,7 +52,7 @@ const filePaths = {
 		dist: ['./public/media/icons/sprite', '../craft/web/media/icons/sprite']
 	},
 	favicon: {
-		src: ['./public/media/favicons/**/*.+(png|ico)'],
+		src: ['./public/media/favicons/*.png'],
 		dist: ['./public/media/favicons', '../craft/web/media/favicons']
 	},
 	lottie: {
@@ -194,6 +194,7 @@ const watchTask = () => {
 }
 
 const buildTask = parallel(scssTask, fontTask, jsTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask);
+// const buildTask = parallel(scssTask, fontTask, jsTask, imageTask, iconTask, graphicTask, lottieTask);
 const developTask = series(scssTask, jsTask, watchTask);
 const assetTask = series(fontTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask, watchTask);
 

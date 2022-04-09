@@ -45,7 +45,58 @@
     justify-self: flex-end;
     margin-bottom: 24px;
   }
+	
+	&__showreel, .showreel {
+		position: fixed;
+		inset: 0 0 0 0;
+		background-color: rgba(0, 0, 0, 0.75);
+		display: none;
 
+		&--active {
+			display: block;
+		}
+
+		&__inner {
+			width: 100%;
+			height: auto;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			position: relative;
+			max-width: calc(100% - (2 * 32px));
+		}
+		
+		&__video {
+			display: relative;
+			overflow: unset;
+		}
+
+		&__icon {
+			color: $white;
+			width: 32px;
+			height: 32px;
+			font-size: 32px;
+			position: absolute;
+			top: -32px;
+			right: 0;
+			cursor: pointer;
+		}
+
+	}
+
+	@media (orientation: landscape) {
+
+		.showreel__icon {
+			width: 40px;
+			height: 40px;
+			top: 16px;
+			left: 16px;
+			padding: 4px;
+			border-radius: 4px;
+			background-color: #1e1e1ee6;
+		}
+
+	}
 
   @media (max-width: 900px) {
 

@@ -1,0 +1,170 @@
+.reference-slider {
+  width: 100%;
+  height: auto;
+  color: black;
+
+  &__inner {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+    cursor: default;
+  }
+
+  &__slide {
+    height: auto;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: grid;
+    grid-template-areas:
+      "quote quote"
+      "author logo";
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 64px 140px 64px 140px;
+  }
+
+  &__quote {
+    grid-area: quote;
+    margin-bottom: 32px;
+    position: relative;
+
+    &::after,
+    &::before {
+      position: absolute;
+      content: "";
+      width: 48px;
+      height: 48px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &::before {
+      background-image: url('/media/graphics/quotes/quote-start.svg');
+      left: -64px;
+      top: -16px;
+    }
+
+    &::after {
+      background-image: url('/media/graphics/quotes/quote-end.svg');
+      right: -64px;
+      bottom: -16px;
+    }
+
+  }
+
+  &__author {
+    grid-area: author;
+    border-right: 1px solid $white;
+    padding-right: 32px;
+    display: block;
+  }
+
+  &__logo {
+    grid-area: logo;
+    padding-left: 32px;
+    display: block;
+    height: 56px;
+  }
+
+  &__arrow {
+    width: 32px;
+    height: 32px;
+    z-index: 119;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $white;
+    cursor: pointer;
+
+    .icon {
+      font-size: 16px;
+      color: $black
+    }
+
+    &--next {
+      transform: translateY(-50%) rotate(270deg);
+      right: 40px;
+    }
+
+    &--prev {
+      transform: translateY(-50%) rotate(90deg);
+      left: 40px;
+    }
+
+  }
+
+  @media (max-width: 850px) {
+
+    &__wrapper {
+      transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+
+    &__slide {
+      padding: 64px;
+    }
+
+    &__arrow {
+      display: none;
+    }
+
+    &__quote {
+
+      &::before {
+        left: -64px;
+      }
+
+      &::after {
+        right: -64px;
+      }
+
+    }
+
+  }
+
+  @media (max-width: 650px) {
+
+    &__slide {
+      grid-template-areas:
+        "quote"
+        "author"
+        "logo";
+      grid-template-columns: auto;
+    }
+
+    &__author {
+      border-right: 0;
+      margin-bottom: 16px;
+    }
+
+    &__logo {
+      padding-left: 0;
+    }
+
+  }
+
+}
+
+.swiper-slide {
+  transition: all 0.3s ease;
+  opacity: 0;
+  transition: all 0.3s ease .0s !important;
+  color: transparent;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  transition: all 0.3s ease .0s !important;
+  z-index: 10000;
+  transition-delay: .0s;
+  color: white;
+}

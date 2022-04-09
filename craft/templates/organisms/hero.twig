@@ -1,7 +1,7 @@
 {% set hero = craft.entries.section('hero').one() %}
 
 <div class="projects__anchor-target anchor-target" id="home"></div>
-<div class="hero section section--linked">
+<div class="hero section section--linked js-hero">
 	<div class="hero__inner section__inner">
 		{{ hero.heroHeading }}
 		<figure class="line  line--horizontal  hero__line"></figure>
@@ -17,4 +17,11 @@
 			<i class="scroller__icon icon-double-arrow icon"></i>
 		</div>
 	</div>
+	<div class="hero__showreel showreel">
+	<div class="showreel__inner">
+		{# {{> @video class="showreel__video" }} #}
+		{% include "atoms/video" with { class: "showreel__video", src: "https://player.vimeo.com/video/546612359" } %}
+		<i class="showreel__icon icon-close icon"></i>
+	</div>
+</div>
 </div>
