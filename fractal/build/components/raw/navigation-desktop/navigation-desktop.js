@@ -26,7 +26,7 @@ class NavigationDesktop {
 	}
 
 	init() {
-    if (document.querySelector(`.js-${this.name}`)) return;
+    if (!document.querySelector(`.js-${this.name}`)) return;
     gsap.to(window, { scrollTo: window.location.hash || '#home' || '#', ease: 'none', duration: 0 });
     if (window.location.pathname === '/components/preview/home' || window.location.pathname === '/') {
       this.setupScrollTrigger();

@@ -22,5 +22,7 @@
 				{% include "blocks/" ~ block.type ignore missing %}
 			{% endfor %}
 		</div>
+		
+		{% include "molecules/project-switcher" with { next: entry.projectDetailNextEntry.one().url, prev: entry.projectDetailPrevEntry.one().url } %}
 
 	</div>

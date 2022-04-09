@@ -1,4 +1,4 @@
-dateModified: 1649474205
+dateModified: 1649530961
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Reiheacht
@@ -24,6 +24,7 @@ meta:
     4d0c44d3-2a40-4862-bbb6-3e65820d886b: 'Social Media Links' # Social Media Links
     4d20f976-6f8b-4684-9e0b-b9c75ee39f7c: 'Blog Preview Title' # Blog Preview Title
     4edb3910-5230-42ce-8fd7-307eccc25034: Alt-Tag # Alt-Tag
+    5da4cf54-e2f0-497c-97f6-01e045e1cb9c: 'Project Detail Next Entry' # Project Detail Next Entry
     5f690fe1-25a1-40d5-b841-96a26d9d86be: 'Team Tile Email' # Team Tile Email
     6a99c432-5e9e-4deb-8658-58ee98ec27db: 'Project Assets' # Project Assets
     6dbcd30b-b235-4b2a-b257-41cb7044dcf3: Client # Client
@@ -55,6 +56,7 @@ meta:
     94ca0d20-ac36-4f6f-a4d6-8b7a5ca0c735: 'Team Tile Image' # Team Tile Image
     478cffc9-7bfd-4a96-8fde-21ede6b46b63: 'Team Tiles' # Team Tiles
     0491c40f-1304-4855-bb8e-72970aff4a71: Author # Author
+    535c087d-ae3d-4d74-8004-97edfcb5f18c: 'Project Detail Prev Entry' # Project Detail Prev Entry
     547f0aea-9305-45cf-85cf-4aeee42709b0: 'Team Tile Firstname' # Team Tile Firstname
     557d13d8-bdf7-470b-8df9-c5b75b762d47: Reiheacht # Reiheacht
     571b8342-17e6-456a-aa15-a50a81cd0e35: Video # Video
