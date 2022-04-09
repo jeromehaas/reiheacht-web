@@ -26,7 +26,7 @@ fieldLayouts:
         sortOrder: 1
 fields:
   d6457f11-2a05-46e9-97d9-3f319037fb35: # Color
-    columnSuffix: tssuluyx
+    columnSuffix: null
     contentColumnType: string
     fieldGroup: null
     handle: color
@@ -62,7 +62,7 @@ fields:
     translationMethod: none
     type: craft\fields\Dropdown
   ebc4bf8d-f213-4101-ac40-853208f5b06f: # Text
-    columnSuffix: gfvgtony
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: text

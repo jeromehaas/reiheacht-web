@@ -1,0 +1,6 @@
+<div class="quote">
+	<p class="quote__text">{{ block.text }}</p>
+	{% if block.author is defined %}
+		<p class="quote__author">{{ block.author }}</p>
+	{% endif %}
+</div>

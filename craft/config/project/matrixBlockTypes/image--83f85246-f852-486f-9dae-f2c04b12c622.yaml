@@ -40,7 +40,7 @@ fields:
         - image
       defaultUploadLocationSource: 'volume:a8ede5ae-0341-4999-ab0d-f322f9a6e60f' # Blog Assets
       defaultUploadLocationSubpath: ''
-      limit: '1'
+      limit: '3'
       localizeRelations: false
       previewMode: full
       restrictFiles: '1'

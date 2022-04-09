@@ -60,7 +60,7 @@ fields:
     translationMethod: site
     type: craft\fields\Assets
   d4dee677-4abc-4680-92a5-1b26590da898: # Alt-Tag
-    columnSuffix: wvivskpg
+    columnSuffix: null
     contentColumnType: text
     fieldGroup: null
     handle: altTag

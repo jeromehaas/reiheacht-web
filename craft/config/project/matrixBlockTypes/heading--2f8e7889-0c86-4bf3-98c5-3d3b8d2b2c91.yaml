@@ -1,11 +1,11 @@
-field: 1dd04d2d-76aa-4f79-98e2-15667bb18762 # Service Detail Content
+field: 8f3701ae-b853-4cdc-8277-b196dbf3efd0 # Blog Detail Content
 fieldLayouts:
-  2e3a04d6-5750-442a-8a8e-5c8482049a54:
+  05810822-62b8-4e6e-a5a1-b91b73546f16:
     tabs:
       -
         elements:
           -
-            fieldUid: f9a4f208-386c-4c54-b227-23fed38c8443 # Text
+            fieldUid: 0ef451cf-adc2-4b03-88de-819fe2d1fe69 # Text
             instructions: null
             label: null
             required: false
@@ -14,27 +14,47 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 68b8c0a1-aa06-42d4-937d-04cd7138344c # Color
+            fieldUid: 760a3780-08ee-4b06-bc26-fcaf8244b8c9 # Color
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 25
+            width: 100
           -
-            fieldUid: 8cbcb54e-f568-4000-ae26-3687382f0088 # Tag
+            fieldUid: 16f5cce3-659f-41b6-9b77-72bf4d772941 # Tag
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             warning: null
-            width: 25
+            width: 100
         name: Content
         sortOrder: 1
 fields:
-  8cbcb54e-f568-4000-ae26-3687382f0088: # Tag
+  0ef451cf-adc2-4b03-88de-819fe2d1fe69: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  16f5cce3-659f-41b6-9b77-72bf4d772941: # Tag
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -81,7 +101,7 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
-  68b8c0a1-aa06-42d4-937d-04cd7138344c: # Color
+  760a3780-08ee-4b06-bc26-fcaf8244b8c9: # Color
     columnSuffix: null
     contentColumnType: string
     fieldGroup: null
@@ -102,7 +122,7 @@ fields:
               - white
             -
               - default
-              - '1'
+              - ''
         -
           __assoc__:
             -
@@ -118,10 +138,10 @@ fields:
           __assoc__:
             -
               - label
-              - blue
+              - orange
             -
               - value
-              - blue
+              - orange
             -
               - default
               - ''
@@ -129,36 +149,16 @@ fields:
           __assoc__:
             -
               - label
-              - orange
+              - blue
             -
               - value
-              - orange
+              - blue
             -
               - default
               - ''
     translationKeyFormat: null
     translationMethod: none
     type: craft\fields\Dropdown
-  f9a4f208-386c-4c54-b227-23fed38c8443: # Text
-    columnSuffix: null
-    contentColumnType: text
-    fieldGroup: null
-    handle: text
-    instructions: ''
-    name: Text
-    searchable: false
-    settings:
-      byteLimit: null
-      charLimit: null
-      code: ''
-      columnType: null
-      initialRows: '4'
-      multiline: ''
-      placeholder: null
-      uiMode: normal
-    translationKeyFormat: null
-    translationMethod: none
-    type: craft\fields\PlainText
 handle: heading
 name: Heading
-sortOrder: 1
+sortOrder: 5

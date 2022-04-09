@@ -1,4 +1,4 @@
-dateModified: 1649463502
+dateModified: 1649474205
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Reiheacht
@@ -7,12 +7,14 @@ meta:
   __names__:
     0a115a3a-459d-4ad5-859a-dfc76886759b: Vimeo # Vimeo
     0d99d2e2-cc1b-4cf4-91d6-409255743142: Video # Video
+    0ef451cf-adc2-4b03-88de-819fe2d1fe69: Text # Text
     0f4f4198-96dc-4062-a155-fde33b1b6877: 'Address Company' # Address Company
     0f573eff-0272-4650-854c-7f1117d67210: Heading # Heading
     1b49fd40-d90f-4f3d-bf96-7cb4f2bedffd: Text # Text
     1dd04d2d-76aa-4f79-98e2-15667bb18762: 'Service Detail Content' # Service Detail Content
     1e2a8ec8-bbf2-4ebe-95a4-91b4a49f13b1: Project # Project
     1e4e377a-85e5-4dc3-ac61-20057973505f: 'Rich Text' # Rich Text
+    2f8e7889-0c86-4bf3-98c5-3d3b8d2b2c91: Heading # Heading
     2f2691b6-d6aa-476f-860f-d03633e0aaa0: Intro # Intro
     3a3e4fc3-09d2-4271-8e8d-330aecc39a2a: Text # Text
     3fc5fdcb-c070-4f5c-8e6b-2de1c1598418: Source # Source
@@ -36,6 +38,7 @@ meta:
     9e033571-2487-4cfe-bf95-878adcaeafbd: 'Blog Detail Title' # Blog Detail Title
     0015aa03-2218-4660-b56a-b2eca6920ee3: LinkedIn # LinkedIn
     16d114b8-8151-4c10-bc89-83f8ed671f7e: 'Address Phone' # Address Phone
+    16f5cce3-659f-41b6-9b77-72bf4d772941: Tag # Tag
     25fa5457-a6ee-4d41-8a10-e5da741ffaec: Source # Source
     36bccdfa-ddb0-4bce-a12b-1e1e71d96519: 'Project Infobox Logo' # Project Infobox Logo
     41c3ceb6-6f88-48e4-a579-1b127b734427: 'Project Detail Description' # Project Detail Description
@@ -51,18 +54,21 @@ meta:
     087d042a-ff60-49b0-adb5-6bec8a6275c4: Color # Color
     94ca0d20-ac36-4f6f-a4d6-8b7a5ca0c735: 'Team Tile Image' # Team Tile Image
     478cffc9-7bfd-4a96-8fde-21ede6b46b63: 'Team Tiles' # Team Tiles
+    0491c40f-1304-4855-bb8e-72970aff4a71: Author # Author
     547f0aea-9305-45cf-85cf-4aeee42709b0: 'Team Tile Firstname' # Team Tile Firstname
     557d13d8-bdf7-470b-8df9-c5b75b762d47: Reiheacht # Reiheacht
     571b8342-17e6-456a-aa15-a50a81cd0e35: Video # Video
     639cd615-fa76-49be-a252-a4af968023e9: Reiheacht # Reiheacht
     685bd32c-466e-47c2-8fdd-46039b00b9c3: Source # Source
     685f9305-ce0b-4d90-b619-3f2e706add4f: Intro # Intro
+    760a3780-08ee-4b06-bc26-fcaf8244b8c9: Color # Color
     917d1883-78ae-422c-89bb-5a5af3a60c82: YouTube # YouTube
     944c9d68-c5ca-4023-9c29-44ab7add275d: Services # Services
     2862eee5-144d-4052-904f-42da2dd4b20c: 'Hero  Heading' # Hero  Heading
     5030cc07-b585-4851-bce9-2813cf3af1f1: 'Project Infobox Subheading' # Project Infobox Subheading
     6451d4e2-9ca7-49f7-9c75-e8a7b283fbc8: Paragraph # Paragraph
     06941c4d-93a8-4248-ae7a-66b38dcde9ff: 'Service Assets' # Service Assets
+    33087f99-2dcf-4e72-bedc-c374b0a73fcc: Quote # Quote
     51475d29-cdbd-4826-aaaa-d31201dc50df: 'Project Tiles' # Project Tiles
     86678cb0-39c3-4425-b563-f120e7a2ac6d: 'Service Detail Image' # Service Detail Image
     364808e3-b0f2-4da0-a838-87118159e3f1: 'Project Meta Title' # Project Meta Title
@@ -113,6 +119,7 @@ meta:
     e05eb25d-ecfd-46c3-8e92-c7b3f9a7973e: Alt-Tag # Alt-Tag
     e1ccac03-b405-44b2-b79a-298b69425e38: Address # Address
     e2ffbf85-f6af-4731-b6af-9fdb897bf01c: 'Address Email' # Address Email
+    e39b0ae5-aa24-4a7d-974b-f90e071a9e7f: Text # Text
     e9922f3f-2ba7-41ac-8905-016cda69b8a8: 'Service Tile Image' # Service Tile Image
     e76798f3-f541-423e-ac56-aa2fb217a23e: 'Reference Role' # Reference Role
     e83254d2-a710-4844-b29b-a3fcc916433b: 'Project Detail Content' # Project Detail Content

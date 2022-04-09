@@ -1,12 +1,16 @@
-.heading h2 {
+.heading {
   color: $white;
 
   &--black {
-    color: $black;
+    color: $black !important;
   }
 
-  &--highlight {
-    color: $blue;
+  &--blue {
+    color: $blue !important;
+  }
+
+  &--orange {
+    color: $orange !important;
   }
 
 }

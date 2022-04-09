@@ -1,22 +1,30 @@
 <footer class="footer section">
-  <div class="footer__inner section__inner">
-    <div class="footer__social-media social-media">
-        <a class="social-media__item" href="{{ socialMediaLinks.youtube }}"><i class="social-media__icon icon-youtube icon"></i></a>
-        <a class="social-media__item" href="{{ socialMediaLinks.vimeo }}"><i class="social-media__icon icon-vimeo icon"></i></a>
-        <a class="social-media__item" href="{{ socialMediaLinks.linkedin }}"><i class="social-media__icon icon-linkedin icon"></i></a>
-        <a class="social-media__item" href="{{ socialMediaLinks.twitter }}"><i class="social-media__icon icon-twitter icon"></i></a>
-    </div>
-    <address class="footer__address address">
-        <p class="address__item">{{ address.addressCompany}}</p>
-        <p class="address__item">{{ address.addressStreet }}</p>
-        <p class="address__item">{{ address.addressTown }}</p>
-        <a class="address__item" href="mailto:{{ address.addressEmail }}">{{ address.addressEmail }}</a>
-        <a class="address__item" href="tel:{{ address.addressPhone|replace(' ', '') }}">{{ address.addressPhone }}</a>
-    </address>
-    <div class="footer__links links">
-        <a href="" class="links__item">Impressum</a>
-        <a href="" class="links__item">Datenschutz</a>
-        <a href="" class="links__item">AGB</a>
-    </div>
-  </div>
+	<div class="footer__inner section__inner">
+		<div class="footer__social-media social-media">
+			<a class="social-media__item" href="{{ socialMediaLinks.youtube }}">
+				<i class="social-media__icon icon-youtube icon"></i>
+			</a>
+			<a class="social-media__item" href="{{ socialMediaLinks.vimeo }}">
+				<i class="social-media__icon icon-vimeo icon"></i>
+			</a>
+			<a class="social-media__item" href="{{ socialMediaLinks.linkedin }}">
+				<i class="social-media__icon icon-linkedin icon"></i>
+			</a>
+			<a class="social-media__item" href="{{ socialMediaLinks.twitter }}">
+				<i class="social-media__icon icon-twitter icon"></i>
+			</a>
+		</div>
+		<address class="footer__address address">
+			<p class="address__item">{{ address.addressCompany}}</p>
+			<p class="address__item">{{ address.addressStreet }}</p>
+			<p class="address__item">{{ address.addressTown }}</p>
+			<a class="address__item" href="mailto:{{ address.addressEmail }}">{{ address.addressEmail }}</a>
+			<a class="address__item" href="tel:{{ address.addressPhone|replace(' ', '') }}">{{ address.addressPhone }}</a>
+		</address>
+		<div class="footer__links links">
+			<a href="" class="links__item">Impressum</a>
+			<a href="" class="links__item">Datenschutz</a>
+			<a href="" class="links__item">AGB</a>
+		</div>
+	</div>
 </footer>
