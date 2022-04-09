@@ -1,5 +1,6 @@
 name: Home
 context: 
+  closeTriangle: true
   members:
     - image: '/media/images/team/marc.png'
       name: Marc Sen

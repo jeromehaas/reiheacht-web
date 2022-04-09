@@ -9,11 +9,25 @@ class NavigationDesktop {
 	constructor() {
 		this.name = 'navigation-desktop';
 		this.elements = {
-			logo: document.querySelector('.navigation-desktop__logo')
+			logo: document.querySelector('.navigation-desktop__logo'),
+			closeTriangle: {
+				top: document.querySelector('.close-triangle__top'),
+				bottom: document.querySelector('.close-triangle__bottom')
+			}
 		};
 		this.logo = {
 			element: null,
 			container: this.elements.logo
+		}
+		this.closeTriangle = {
+			top: {
+				element: null,
+				container: this.elements.closeTriangleTop
+			},
+			bottom: {
+				element: null,
+				container: this.elements.closeTriangleBottom
+			}
 		}
     this.links = {
       active: null,
@@ -28,13 +42,47 @@ class NavigationDesktop {
 	init() {
     if (document.querySelector(`.js-${this.name}`)) return;
     gsap.to(window, { scrollTo: window.location.hash || '#home' || '#', ease: 'none', duration: 0 });
+		this.createLogo();	
     if (window.location.pathname === '/components/preview/home' || window.location.pathname === '/') {
       this.setupScrollTrigger();
       this.setupLinkObserver();
     }
-    this.createLogo();	
+		if (this.elements.closeTriangle) {
+			this.createCloseTriangle();
+			this.checkShowTriangle();
+		}
     this.addEventListener();
 	};
+
+	checkShowTriangle() {
+		['load', 'scroll'].forEach((event) => {
+			window.addEventListener(event, () => {
+				const viewportHeight = window.innerHeight;
+				const scrollPosition = window.scrollY;
+				const pageHeight = document.body.offsetHeight;
+				if ((viewportHeight + scrollPosition + 70) >= (pageHeight)) return this.showTriangleBottom();
+				if (scrollPosition == 0) return this.showTriangleTop();
+				this.hideTriangles();	
+			});
+		});
+	};
+
+	showTriangleTop() {
+		this.closeTriangle.top.element.setDirection(1);
+		this.closeTriangle.top.element.play();
+	}
+	
+	showTriangleBottom() {
+		this.closeTriangle.bottom.element.setDirection(1);
+		this.closeTriangle.bottom.element.play();
+	}
+	
+	hideTriangles() {
+		this.closeTriangle.top.element.setDirection(-1);
+		this.closeTriangle.bottom.element.setDirection(-1);
+		this.closeTriangle.top.element.play();
+		this.closeTriangle.bottom.element.play();
+	}
 
   addEventListener() {
     if (window.location.pathname === '/components/preview/home' || window.location.pathname === '/') {
@@ -104,6 +152,27 @@ class NavigationDesktop {
 			path: '/media/lotties/logo.json'
 		});
 	};
+
+	createCloseTriangle() {
+		this.closeTriangle.top.element = lottieWeb.loadAnimation({
+			container: this.elements.closeTriangle.top,
+			renderer: 'svg',
+			loop: false,
+			autoplay: false,
+			path: '/media/lotties/close-triangle.json'
+		});
+		this.closeTriangle.top.element.setSpeed(1.5);
+		this.closeTriangle.bottom.element = lottieWeb.loadAnimation({
+			container: this.elements.closeTriangle.bottom,
+			renderer: 'svg',
+			loop: false,
+			autoplay: false,
+			path: '/media/lotties/close-triangle.json'
+		});
+		this.closeTriangle.bottom.element.setSpeed(1.5);
+	};
+
+	
 
 };
 

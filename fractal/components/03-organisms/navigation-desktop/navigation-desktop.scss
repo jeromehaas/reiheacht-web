@@ -14,6 +14,29 @@
     align-items: center;
     height: 100%;
   }
+	
+	&__close-triangle, .close-triangle {
+		width: 60px;
+		height: auto;
+		
+		&__top {
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			transform: translateX(-50%) rotate(0deg);
+			transition: top 0.3s ease;
+			z-index: -5;	
+		}
+		
+		&__bottom {
+			bottom: 0;
+			position: fixed !important;
+			left: 50%;
+			transform: translateX(-50%) rotate(180deg);
+			transition: bottom 0.3s ease;
+		}
+		
+	}
 
   &__logo {
     margin-left: auto;

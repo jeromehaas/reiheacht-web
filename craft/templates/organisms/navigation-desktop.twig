@@ -7,6 +7,10 @@
 		<a class="navigation-desktop__link" href="/#kontakt" data-section="kontakt">Kontakt</a>
 		<a class="navigation-desktop__link" href="/blog" data-section="blog">Blog</a>
 		<a href="#" class="navigation-desktop__logo"></a>
+		{% if showCloseTriangle %}
+			<a class="navigation-desktop__close-triangle close-triangle close-triangle__top" href="/#projekte"></a>
+			<a class="navigation-desktop__close-triangle close-triangle close-triangle__bottom" href="/#projekte"></a>
+		{% endif %}
 	</div>
 </div>
 <div class="navigation-desktop__placeholder"></div>

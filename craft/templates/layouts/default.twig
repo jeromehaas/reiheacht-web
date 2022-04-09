@@ -1,3 +1,10 @@
+{% set showCloseTriangle = showCloseTriangle is defined ? showCloseTriangle : false %}
+{% set closeTriangleColor = closeTriangleColor is defined ? closeTriangleColor : 'blue' %}
+{% set closeTriangleTarget = closeTriangleTarget is defined ? closeTriangleTarget : '/#home' %}
+{% set theme = theme is defined ? theme : 'dark' %}
+{% set title = title is defined ? title : 'Motion Design & Werbefilm Agentur aus Luzern' %}
+{% set description = description is defined ? description : 'Wir sind reiheacht. Wir erwecken deine Botschaft mit kreativen Motion Design- und Filmlösungen zum Leben.' %}
+
 <!DOCTYPE html>
 <html lang="de">
 
@@ -7,20 +14,17 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" href="/css/main.min.css">
 		<link rel="icon" href="/media/favicons/favicon.ico">
-		<title>
-			{{ title is defined ? title : 'Motion Design & Werbefilm Agentur aus Luzern' }}
-			| reiheacht
-		</title>
-		<meta name="description" content="{{ description is defined ? description : 'Wir sind reiheacht. Wir erwecken deine Botschaft mit kreativen Motion Design- und Filmlösungen zum Leben.' }}">
+		<title>{{ title }} | reiheacht</title>
+		<meta name="description" content="{{ description }}">
 	</head>
-	<body class="body {% if theme is defined %} body--{{theme}} {% endif %} ">
+	<body class="body body--{{theme}}">
 
-		{% include "organisms/navigation-desktop" %}
+		{% include "organisms/navigation-desktop" with { showCloseTriangle: showCloseTriangle, closeTriangleColor: closeTriangleColor } %}
 		{% include "organisms/navigation-mobile" %}
 
 		{% block main %}{% endblock %}
 
-		{% include "organisms/footer" %}
+		{# {% include "organisms/footer" %} #}
 
 		<script src="/js/main.build.js"></script>
 	</body>
