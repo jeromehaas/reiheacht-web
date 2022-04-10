@@ -1,0 +1,16 @@
+{% extends "layouts/default" %}
+{% set theme = 'bright' %}
+{% set title = entry.metaTitle %}
+{% set description = entry.metaDescription %}
+{% set showCloseTriangle = true %}
+{% set closeTriangleColor = 'blue' %}
+{% set closeTriangleTarget = '/#home' %}
+
+{% block main %}
+	<section class="agbs section">
+		<div class="abgs section__inner">
+			{{ entry.heading }}
+			{{ entry.richText }}
+		</div>
+	</section>
+{% endblock %}

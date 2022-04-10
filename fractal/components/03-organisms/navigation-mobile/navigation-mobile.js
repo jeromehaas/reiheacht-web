@@ -13,10 +13,25 @@ class NavigationMobile {
 			hamburger: document.querySelector('.navigation-mobile__hamburger'),
 			panel: document.querySelector('.navigation-mobile__panel'),
 			links: document.querySelectorAll('.navigation-mobile__link'),
+			closeTriangle: {
+				top: document.querySelector('.navigation-mobile__close-triangle.close-triangle.close-triangle__top'),
+				bottom: document.querySelector('.navigation-mobile__close-triangle.close-triangle.close-triangle__bottom')
+			}
 		};
 		this.logo = {
 			element: null,
 			container: this.elements.logo
+		};
+		this.closeTriangle = {
+			color: null,
+			top: {
+				element: null,
+				container: this.elements.closeTriangleTop
+			},
+			bottom: {
+				element: null,
+				container: this.elements.closeTriangleBottom
+			}
 		};
 		this.hamburger = {
 			element: null,
@@ -30,6 +45,60 @@ class NavigationMobile {
 		this.createLogo();
 		this.createHamburger();
     this.addEventListener();
+		if (this.elements.closeTriangle.top) {
+			this.createCloseTriangle();
+			this.checkShowTriangle();
+		}
+	};
+	
+	checkShowTriangle() {
+		['load', 'scroll'].forEach((event) => {
+			window.addEventListener(event, () => {
+				const viewportHeight = window.innerHeight;
+				const scrollPosition = window.scrollY;
+				const pageHeight = document.body.offsetHeight;
+				if ((viewportHeight + scrollPosition + 70) >= (pageHeight)) return this.showTriangleBottom();
+				if (scrollPosition == 0) return this.showTriangleTop();
+				this.hideTriangles();	
+			});
+		});
+	};
+
+	showTriangleTop() {
+		this.closeTriangle.top.element.setDirection(1);
+		this.closeTriangle.top.element.play();
+	}
+
+	showTriangleBottom() {
+		this.closeTriangle.bottom.element.setDirection(1);
+		this.closeTriangle.bottom.element.play();
+	}
+
+	hideTriangles() {
+		this.closeTriangle.top.element.setDirection(-1);
+		this.closeTriangle.bottom.element.setDirection(-1);
+		this.closeTriangle.top.element.play();
+		this.closeTriangle.bottom.element.play();
+	}
+
+	createCloseTriangle() {
+		this.closeTriangle.color = document.querySelector('.close-triangle__top').dataset.color;
+		this.closeTriangle.top.element = lottieWeb.loadAnimation({
+			container: this.elements.closeTriangle.top,
+			renderer: 'svg',
+			loop: false,
+			autoplay: false,
+			path: `/media/lotties/close-triangle-${ this.closeTriangle.color || 'orange' }.json`
+		});
+		this.closeTriangle.top.element.setSpeed(1.5);
+		this.closeTriangle.bottom.element = lottieWeb.loadAnimation({
+			container: this.elements.closeTriangle.bottom,
+			renderer: 'svg',
+			loop: false,
+			autoplay: false,
+			path: `/media/lotties/close-triangle-${ this.closeTriangle.color || 'orange' }.json`
+		});
+		this.closeTriangle.bottom.element.setSpeed(1.5);
 	};
 
   addEventListener() {

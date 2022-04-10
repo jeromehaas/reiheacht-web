@@ -1,4 +1,4 @@
-dateModified: 1649556789
+dateModified: 1649564336
 email:
   fromEmail: tools@haaswebsolutions.io
   fromName: Reiheacht
@@ -11,6 +11,7 @@ meta:
     0f4f4198-96dc-4062-a155-fde33b1b6877: 'Address Company' # Address Company
     0f573eff-0272-4650-854c-7f1117d67210: Heading # Heading
     1b49fd40-d90f-4f3d-bf96-7cb4f2bedffd: Text # Text
+    1b57769a-23cf-480b-ab7c-46ad0e3c0e57: Imprint # Imprint
     1dd04d2d-76aa-4f79-98e2-15667bb18762: 'Service Detail Content' # Service Detail Content
     1e2a8ec8-bbf2-4ebe-95a4-91b4a49f13b1: Project # Project
     1e4e377a-85e5-4dc3-ac61-20057973505f: 'Rich Text' # Rich Text
@@ -24,10 +25,12 @@ meta:
     4d0c44d3-2a40-4862-bbb6-3e65820d886b: 'Social Media Links' # Social Media Links
     4d20f976-6f8b-4684-9e0b-b9c75ee39f7c: 'Blog Preview Title' # Blog Preview Title
     4edb3910-5230-42ce-8fd7-307eccc25034: Alt-Tag # Alt-Tag
+    5c050e09-f1cb-42f3-81ee-4d2aec652d46: 'Data Privacy' # Data Privacy
     5da4cf54-e2f0-497c-97f6-01e045e1cb9c: 'Project Detail Next Entry' # Project Detail Next Entry
     5f690fe1-25a1-40d5-b841-96a26d9d86be: 'Team Tile Email' # Team Tile Email
     6a99c432-5e9e-4deb-8658-58ee98ec27db: 'Project Assets' # Project Assets
     6dbcd30b-b235-4b2a-b257-41cb7044dcf3: Client # Client
+    6ee738f0-13b0-47d4-a041-9dc23428a5ab: Imprint # Imprint
     6f1f3b3a-38c7-4ecb-8288-fae54de22df6: 'Service Tile Heading' # Service Tile Heading
     7e8b65c1-e184-4d9b-817c-ab73ff4fb220: 'Team Tile Role' # Team Tile Role
     8abb2693-b39a-449a-9254-842c71199c61: 'Blog Preview Category' # Blog Preview Category
@@ -51,11 +54,13 @@ meta:
     68b8c0a1-aa06-42d4-937d-04cd7138344c: Color # Color
     75d71c28-598d-437c-b42b-c36a1745dc8b: 'Service Detail Heading' # Service Detail Heading
     78b9ac1c-f0bc-4335-af8c-b8ccd97a8982: 'Blog Meta Description' # Blog Meta Description
+    83e01f63-530d-444e-b43d-4620ab1c5d8a: agbs # agbs
     83e9b224-389c-4e6d-868d-ef2be96f917d: 'Project Tile Image' # Project Tile Image
     83f85246-f852-486f-9dae-f2c04b12c622: Image # Image
     87a41bd1-9632-4023-8116-da611405b752: 'Meta Title' # Meta Title
     087d042a-ff60-49b0-adb5-6bec8a6275c4: Color # Color
     94ca0d20-ac36-4f6f-a4d6-8b7a5ca0c735: 'Team Tile Image' # Team Tile Image
+    261c494e-5ba1-4317-8f76-8c4edb9f3f31: 'Data Privacy' # Data Privacy
     478cffc9-7bfd-4a96-8fde-21ede6b46b63: 'Team Tiles' # Team Tiles
     0491c40f-1304-4855-bb8e-72970aff4a71: Author # Author
     535c087d-ae3d-4d74-8004-97edfcb5f18c: 'Project Detail Prev Entry' # Project Detail Prev Entry
@@ -94,6 +99,7 @@ meta:
     ae766595-dac6-4467-b496-54f74ab25a62: 'Project Detail Heading' # Project Detail Heading
     af508af9-d355-4b8c-ba92-b0db4ad26825: Intro # Intro
     b0df425f-c398-425c-b8c9-8f1245a080cc: 'Project Infobox Heading' # Project Infobox Heading
+    b82c2de4-85c8-4ac5-a296-5c527a624486: agbs # agbs
     b765b835-b0a9-4f6e-8d17-b9096d1cdfa5: 'Project Meta Description' # Project Meta Description
     b3124c88-5c15-4888-ae36-e44043ce1a52: Paragraph # Paragraph
     b64623be-397b-4edd-b67a-a98c3ce0017c: 'Social Media Links' # Social Media Links

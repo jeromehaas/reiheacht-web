@@ -56,7 +56,6 @@ class NavigationDesktop {
 	};
 
 	checkShowTriangle() {
-		this.closeTriangle.color = document.querySelector('.close-triangle__top').dataset.color;
 		['load', 'scroll'].forEach((event) => {
 			window.addEventListener(event, () => {
 				const viewportHeight = window.innerHeight;
@@ -156,6 +155,7 @@ class NavigationDesktop {
 	};
 
 	createCloseTriangle() {
+		this.closeTriangle.color = document.querySelector('.close-triangle__top').dataset.color;
 		this.closeTriangle.top.element = lottieWeb.loadAnimation({
 			container: this.elements.closeTriangle.top,
 			renderer: 'svg',

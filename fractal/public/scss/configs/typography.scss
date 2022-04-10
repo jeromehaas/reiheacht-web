@@ -69,7 +69,6 @@ a {
   text-decoration: none;
 }
 
-
 .cookie-banner__text {
   font-size: 12px;
 }
@@ -174,45 +173,49 @@ textarea {
 }
 
 @media (max-width: 750px) {
-  .heading--h1 {
+  .heading--h1, h1 {
     font-size: 50px;
   }
 }
 
 @media (max-width: 600px) {
-  .heading--h1 {
+  .heading--h1, h1 {
     font-size: 40px;
   }
 
-  .heading--h2 {
+  .heading--h2, h2 {
     font-size: 40px;
   }
 }
 
 @media (max-width: 450px) {
-  .heading--h1 {
+  .heading--h1, h1 {
     font-size: 30px;
   }
 
-  .heading--h2 {
+  .heading--h2, h2 {
     font-size: 30px;
   }
+
+	.paragraph, p,
+	.link, a, 
+	li {
+		font-size: 20px;
+	}
+	
 }
 
 @media (max-width: 350px) {
-  .heading--h1 {
-    font-size: 22px;
+
+  .heading--h2, h2 {
+    font-size: 25px;
   }
 
-  .heading--h2 {
-    font-size: 22px;
-  }
-
-  .heading--h3 {
+  .heading--h3, h3 {
     font-size: 18px;
   }
 
-  .heading--h4 {
+  .heading--h4, h4 {
     font-size: 18px;
   }
 }
