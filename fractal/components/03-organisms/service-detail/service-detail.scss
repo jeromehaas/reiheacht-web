@@ -1,6 +1,10 @@
 .service-detail {
-
   padding-top: 150px;
+
+	&__image {
+		width: 100%;
+		display: block;
+	}
 
   h1 {
 		margin-bottom: 16px; 

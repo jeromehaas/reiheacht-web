@@ -4,7 +4,8 @@ class ContactForm {
 		this.name = 'contact-form';
 		this.elements = {
 			button: document.querySelector('.contact-form__submit-button'),
-			errorLabel: document.querySelector('.submit-button__error-label')
+			errorLabel: document.querySelector('.submit-button__error-label'),
+			form: document.querySelector('.contact-form ')
 		};
 		this.inputs = {
 			name: {
@@ -57,6 +58,7 @@ class ContactForm {
 
 	send() {
 		console.log('send');
+		this.elements.form.submit();
 	}
 
 	validateInputs = () => {

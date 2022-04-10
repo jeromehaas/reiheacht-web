@@ -4,7 +4,8 @@
     "name name"
     "email phone"
     "message message"
-    "button button";
+    "button button"
+		"flash flash";
   grid-gap: 16px;
   max-width: 500px;
 
@@ -84,6 +85,49 @@
     }
 
   }
+
+	&__flash, .flash {
+		grid-area: flash;
+
+		&__message {
+			position: relative;
+			font-size: 12px;
+			text-align: center;
+			
+			&::after {
+				content: "✔";
+				font-size: 4px;
+				position: absolute;
+				color: white;
+				border-radius: 50%;
+				width: 8px;
+				height: 8px;
+				background-color: green;
+				margin-left: 8px;
+				margin-top: 2px;
+			}
+
+			&--success {
+
+				&::after {
+					content: "";
+					background-color: green;
+				}
+				
+			}
+
+			&--error {
+
+				&::after {
+					content: "";
+					background-color: $orange;
+				}
+				
+			}
+
+		}
+
+	}
 
   @media (max-width: 600px) {
     grid-template-areas:
