@@ -1,0 +1,16 @@
+.blog-posts {
+
+	
+	&__image {
+		margin-top: 64px;
+    margin-bottom: 64px;
+    width: 100%;
+    display: block;
+  }
+	
+	h2 {
+		color: $black;
+		margin-bottom: 32px;
+	}
+
+}

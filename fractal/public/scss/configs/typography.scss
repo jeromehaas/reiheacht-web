@@ -1,5 +1,5 @@
 * {
-  font-family: 'Helvetica Neue'serif;
+  font-family: 'Helvetica Neue', serif;
   line-height: 1;
   color: $white;
 }
@@ -13,7 +13,7 @@ h5,
 .paragraph,
 p,
 .link,
-a {
+a, li {
   line-height: 1.25;
   font-weight: 400;
   color: $white;
@@ -57,12 +57,18 @@ p {
   font-weight: 300;
 }
 
+li {
+  font-size: 25px;
+  font-weight: 300;
+}
+
 .link,
 a {
   font-size: 25px;
   font-weight: 300;
   text-decoration: none;
 }
+
 
 .cookie-banner__text {
   font-size: 12px;

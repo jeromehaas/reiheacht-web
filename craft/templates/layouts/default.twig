@@ -1,5 +1,5 @@
 {% set showCloseTriangle = showCloseTriangle is defined ? showCloseTriangle : false %}
-{% set closeTriangleColor = closeTriangleColor is defined ? closeTriangleColor : 'blue' %}
+{% set closeTriangleColor = closeTriangleColor is defined ? closeTriangleColor : 'orange' %}
 {% set closeTriangleTarget = closeTriangleTarget is defined ? closeTriangleTarget : '/#home' %}
 {% set theme = theme is defined ? theme : 'dark' %}
 {% set title = title is defined ? title : 'Motion Design & Werbefilm Agentur aus Luzern' %}
@@ -23,8 +23,6 @@
 		{% include "organisms/navigation-mobile" %}
 
 		{% block main %}{% endblock %}
-
-		{# {% include "organisms/footer" %} #}
 
 		<script src="/js/main.build.js"></script>
 	</body>

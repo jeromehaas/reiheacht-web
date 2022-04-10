@@ -20,6 +20,7 @@ class NavigationDesktop {
 			container: this.elements.logo
 		}
 		this.closeTriangle = {
+			color: null,
 			top: {
 				element: null,
 				container: this.elements.closeTriangleTop
@@ -47,7 +48,7 @@ class NavigationDesktop {
       this.setupScrollTrigger();
       this.setupLinkObserver();
     }
-		if (this.elements.closeTriangle) {
+		if (this.elements.closeTriangle.top) {
 			this.createCloseTriangle();
 			this.checkShowTriangle();
 		}
@@ -55,6 +56,7 @@ class NavigationDesktop {
 	};
 
 	checkShowTriangle() {
+		this.closeTriangle.color = document.querySelector('.close-triangle__top').dataset.color;
 		['load', 'scroll'].forEach((event) => {
 			window.addEventListener(event, () => {
 				const viewportHeight = window.innerHeight;
@@ -159,7 +161,7 @@ class NavigationDesktop {
 			renderer: 'svg',
 			loop: false,
 			autoplay: false,
-			path: '/media/lotties/close-triangle.json'
+			path: `/media/lotties/close-triangle-${ this.closeTriangle.color || 'orange' }.json`
 		});
 		this.closeTriangle.top.element.setSpeed(1.5);
 		this.closeTriangle.bottom.element = lottieWeb.loadAnimation({
@@ -167,7 +169,7 @@ class NavigationDesktop {
 			renderer: 'svg',
 			loop: false,
 			autoplay: false,
-			path: '/media/lotties/close-triangle.json'
+			path: `/media/lotties/close-triangle-${ this.closeTriangle.color || 'orange' }.json`
 		});
 		this.closeTriangle.bottom.element.setSpeed(1.5);
 	};

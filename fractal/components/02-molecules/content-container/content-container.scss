@@ -1,0 +1,86 @@
+.content-container {
+
+	&--dark { h2, h3, h4, a, li { color: $white } }
+	&--bright { h2, h3, h4, a, li { color: $black } }
+
+	.quote {
+    margin-bottom: 80px;
+  }
+
+  p {
+    color: $black;
+    margin-bottom: 32px;
+  }
+
+	a {
+		color: $blue;
+	}
+
+	h2, 
+	h2 a {
+		font-size: 50px;
+		margin-bottom: 16px;
+		color: $blue !important;
+	}
+	
+	h3, 
+	h3 a {
+		font-size: 30px;;
+		margin-bottom: 16px;
+		color: $blue !important;
+	}
+
+	h4, 
+	h4 a {
+		font-size: 20px;
+		margin-bottom: 0;
+		color: $orange;
+	}
+
+
+	strong {
+		font-weight: inherit;
+	}
+	
+	ul {
+		margin-bottom: 32px;
+	}
+
+	li {
+		list-style-type: none;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: -16px;
+			background-color: $black;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			top: 12px;
+		}
+
+	}
+
+	.image {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 100%;
+		margin-top: 32px;
+    margin-bottom: 32px;
+
+    &__wrapper {
+      width: 100%;
+    }
+
+    &__item {
+      height: auto;
+      display: block;
+			width: 100%;
+    }
+
+  }
+
+}

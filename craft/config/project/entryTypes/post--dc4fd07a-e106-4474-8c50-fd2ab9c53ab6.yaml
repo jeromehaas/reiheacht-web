@@ -98,7 +98,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: d99a8a4a-480f-4a4e-81bf-fe8d25a05b30 # Blog Meta Title
+            fieldUid: 87a41bd1-9632-4023-8116-da611405b752 # Meta Title
             instructions: null
             label: null
             required: false
@@ -107,7 +107,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 78b9ac1c-f0bc-4335-af8c-b8ccd97a8982 # Blog Meta Description
+            fieldUid: 62ec9f1e-36fd-4669-97ec-03615ece3286 # Meta Description
             instructions: null
             label: null
             required: false
@@ -120,7 +120,7 @@ fieldLayouts:
 handle: post
 hasTitleField: true
 name: Post
-section: 7944098d-e401-4ce5-8978-77973ce69099 # Blog
+section: 7944098d-e401-4ce5-8978-77973ce69099 # Blog Posts
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

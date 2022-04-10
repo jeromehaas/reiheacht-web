@@ -1,0 +1,21 @@
+{% extends "layouts/default" %}
+{% set theme = 'bright' %}
+{% set title = entry.metaTitle %}
+{% set description = entry.metaDescription %}
+{% set showCloseTriangle = true %}
+{% set closeTriangleColor = 'blue' %}
+{% set closeTriangleTarget = '/blog-overview' %}
+
+{% block main %}
+	<section class="blog-posts section">
+		<div class="blog-posts section__inner">
+			{% include "atoms/image" with { src: entry.blogDetailImage.one().url(), class:"blog-posts__image" } %}
+			{{ entry.blogDetailTitle }}
+			<div class="blog-posts__content-container content-container content-container--{{ theme }}">
+				{% for block in entry.blogDetailContent %}
+					{% include "blocks/" ~ block.type ignore missing %}
+				{% endfor %}
+			</div>
+		</div>
+	</section>
+{% endblock %}

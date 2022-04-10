@@ -22,6 +22,15 @@ fieldLayouts:
             type: craft\fieldlayoutelements\CustomField
             warning: null
             width: 100
+          -
+            fieldUid: 619de734-5e70-4b95-81b5-7f1d7a1563cf # Anchor
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
         name: Content
         sortOrder: 1
 fields:
@@ -60,6 +69,22 @@ fields:
     translationKeyFormat: null
     translationMethod: site
     type: craft\fields\Assets
+  619de734-5e70-4b95-81b5-7f1d7a1563cf: # Anchor
+    columnSuffix: jkmllgnt
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: anchor
+    instructions: ''
+    name: Anchor
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
   e05eb25d-ecfd-46c3-8e92-c7b3f9a7973e: # Alt-Tag
     columnSuffix: null
     contentColumnType: text

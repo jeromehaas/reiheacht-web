@@ -1,6 +1,6 @@
 columnSuffix: null
 contentColumnType: string
-fieldGroup: c723ce3a-0eb9-41dd-84a1-e97ed43fce23 # Common
+fieldGroup: c656f1bc-b3e7-4e6b-bea8-da1f3254e94e # Project
 handle: projectTileImage
 instructions: ''
 name: 'Project Tile Image'
@@ -17,7 +17,7 @@ settings:
   previewMode: full
   restrictFiles: '1'
   selectionLabel: ''
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   singleUploadLocationSource: 'volume:51475d29-cdbd-4826-aaaa-d31201dc50df' # Project Tiles

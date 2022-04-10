@@ -1,0 +1,29 @@
+{% extends "layouts/default" %}
+{% set theme = 'bright' %}
+{% set title = entry.metaTitle %}
+{% set description = entry.metaDescription %}
+{% set showCloseTriangle = true %}
+{% set closeTriangleColor = 'blue' %}
+{% set closeTriangleTarget = '/#home' %}
+{% set blogOverview = craft.entries.section('blogOverview').slug('blog-overview').one() %}
+{% set blogItems = craft.entries.section('blogPosts').orderBy('dateCreated asc').all() %}
+
+{% block main %}
+	<section class="blog-overview section">
+		<div class="blog-overview section__inner">
+			{{ blogOverview.heading }}
+			{% for item in blogItems %}
+				<div class="blog-overview__item item">
+					<a href="{{ item.uri }}">
+						{% include "atoms/image" with { class: "item__image", src: item.blogPreviewImage.one().url() } %}
+					</a>
+					{% include "atoms/paragraph" with { class: "item__category", text: item.blogPreviewCategory } %}
+					<a href="{{ item.uri }}">
+						{{ item.blogPreviewTitle }}
+					</a>
+					{% include "atoms/paragraph" with { class: "item__description", text: item.blogPreviewDescription} %}
+				</div>
+			{% endfor %}
+		</div>
+	</section>
+{% endblock %}

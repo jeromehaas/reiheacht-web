@@ -5,10 +5,10 @@
 		<a class="navigation-desktop__link" href="/#projekte" data-section="projekte">Projekte</a>
 		<a class="navigation-desktop__link" href="/#team" data-section="team">Team</a>
 		<a class="navigation-desktop__link" href="/#kontakt" data-section="kontakt">Kontakt</a>
-		<a class="navigation-desktop__link" href="/blog" data-section="blog">Blog</a>
+		<a class="navigation-desktop__link" href="/blog-overview" data-section="blog">Blog</a>
 		<a href="#" class="navigation-desktop__logo"></a>
 		{% if showCloseTriangle %}
-			<a class="navigation-desktop__close-triangle close-triangle close-triangle__top" href="/#projekte"></a>
+			<a class="navigation-desktop__close-triangle close-triangle close-triangle__top" data-color="{{ closeTriangleColor }}" href="{{ closeTriangleTarget }}"></a>
 			<a class="navigation-desktop__close-triangle close-triangle close-triangle__bottom" href="/#projekte"></a>
 		{% endif %}
 	</div>

@@ -89,7 +89,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 56f01196-22f1-4172-b98a-a6fbdbf80eeb # Service Meta Title
+            fieldUid: 87a41bd1-9632-4023-8116-da611405b752 # Meta Title
             instructions: null
             label: null
             required: false
@@ -98,7 +98,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: ce45a178-b86a-465f-a418-86b40d43ab64 # Service Meta Description
+            fieldUid: 62ec9f1e-36fd-4669-97ec-03615ece3286 # Meta Description
             instructions: null
             label: null
             required: false
