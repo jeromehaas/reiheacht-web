@@ -52,7 +52,10 @@
   &__showreel,
   .showreel {
     position: fixed;
-    inset: 0 0 0 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.75);
     display: none;
 
@@ -61,18 +64,18 @@
     }
 
     &__inner {
-      width: 100%;
       height: auto;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       position: relative;
-      max-width: calc(100% - (2 * 32px));
+      width: 1440px;
+      max-width: calc(100% - 80px);
     }
 
     &__video {
-      display: relative;
       overflow: unset;
+      margin: 0 auto;
     }
 
     &__icon {
@@ -119,6 +122,5 @@
     }
 
   }
-
 
 }
