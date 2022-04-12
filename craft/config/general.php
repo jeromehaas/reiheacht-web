@@ -32,6 +32,9 @@ return [
     // Whether Dev Mode should be enabled (see https://craftcms.com/guides/what-dev-mode-does)
     'devMode' => $isDev,
 
+    // Path to error pages
+    'errorTemplatePrefix' => "error-pages/",
+
     // Whether administrative changes should be allowed
     'allowAdminChanges' => $isDev,
 
