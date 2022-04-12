@@ -13,7 +13,6 @@ class Teaser {
   }
 
   init() {
-    console.log(this.elements.teaser);
     if (!document.querySelector(`.js-${this.name}`)) return;
     this.setupScrollTrigger();
   }
@@ -24,7 +23,7 @@ class Teaser {
       gsap.to(teaser, {
         scrollTrigger: {
           trigger: teaser,
-          markers: true,
+          markers: false,
           once: true,
           start: "bottom 100%",
           end: "top 100%",

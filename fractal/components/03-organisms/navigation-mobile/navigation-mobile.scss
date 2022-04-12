@@ -1,13 +1,16 @@
 .navigation-mobile {
   display: none;
   position: fixed;
-  inset: 0 0 auto 0;
+  top: -60px;
+  right: 0;
+  left: 0;
   z-index: 5;
 
   &__inner {
     box-shadow: $box-shadow;
     background-color: $black;
     position: relative;
+    border-bottom: 1px solid $black;
   }
 
   &__bar {

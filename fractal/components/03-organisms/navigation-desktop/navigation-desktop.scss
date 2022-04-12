@@ -3,7 +3,9 @@
   height: 60px;
   box-shadow: $box-shadow;
   position: fixed;
-  inset: 0 0 unset 0;
+  top: -60px;
+  right: 0;
+  left: 0;
   z-index: 10;
   background-color: $black;
 
