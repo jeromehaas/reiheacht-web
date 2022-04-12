@@ -1,4 +1,4 @@
-dateModified: 1649605181
+dateModified: 1649805369
 email:
   fromEmail: info@haaswebsolutions.io
   fromName: 'Haas Web Solutoins'
@@ -141,6 +141,7 @@ meta:
     e1ccac03-b405-44b2-b79a-298b69425e38: Address # Address
     e2ffbf85-f6af-4731-b6af-9fdb897bf01c: 'Address Email' # Address Email
     e39b0ae5-aa24-4a7d-974b-f90e071a9e7f: Text # Text
+    e678b2f8-db46-4cd0-97c2-b93c18e4d450: Start # Start
     e9922f3f-2ba7-41ac-8905-016cda69b8a8: 'Service Tile Image' # Service Tile Image
     e76798f3-f541-423e-ac56-aa2fb217a23e: 'Reference Role' # Reference Role
     e83254d2-a710-4844-b29b-a3fcc916433b: 'Project Detail Content' # Project Detail Content
@@ -149,6 +150,7 @@ meta:
     edda66b7-c42a-4454-9755-9c28dda0d07a: Heading # Heading
     ede5947e-f52e-4c38-ae90-98ece415391d: 'Blog Preview Image' # Blog Preview Image
     eeee8b39-7524-4160-866e-c47d5bdeca1a: Image # Image
+    f6c37758-49af-41c0-823a-9f1a85e79393: Start # Start
     f9a4f208-386c-4c54-b227-23fed38c8443: Text # Text
     f695d912-3263-42f9-8139-3b2c5924f342: 'Team Tile Lastname' # Team Tile Lastname
     f57166dc-8c65-4439-92c5-dadba8317127: Source # Source
@@ -192,6 +194,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  sitemap:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.2
   super-table:
     edition: standard
     enabled: true
