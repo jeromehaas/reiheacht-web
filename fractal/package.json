@@ -34,7 +34,7 @@
 		"gulp-uglify": "^3.0.2",
 		"js-cookie": "^3.0.1",
 		"lottie-web": "^5.9.1",
-		"moment": "^2.29.1",
+		"moment": "^2.29.2",
 		"node-sass": "^7.0.0",
 		"sass": "^1.49.9",
 		"swiper": "^8.0.7",

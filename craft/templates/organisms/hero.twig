@@ -4,7 +4,7 @@
 <div class="hero section section--linked js-hero">
 	<div class="hero__inner section__inner">
 		{{ hero.heroHeading }}
-		<figure class="line  line--horizontal  hero__line"></figure>
+		<span class="hero__line"></span>
 		<p class="paragraph  paragraph--white  hero__teaser">{{ hero.heroTeaser }}</p>
 		<p class="paragraph  paragraph--white  hero__slogan">Wir bewegen alle und alles – setz dich in die reiheacht.</p>
 		<div class="hero__button-wrapper">
@@ -18,9 +18,9 @@
 		</div>
 	</div>
 	<div class="hero__showreel showreel">
-	<div class="showreel__inner">
-		{% include "atoms/video" with { class: "showreel__video", src: "https://player.vimeo.com/video/546612359" } %}
-		<i class="showreel__icon icon-close icon"></i>
+		<div class="showreel__inner">
+			{% include "atoms/video" with { class: "showreel__video", src: "https://player.vimeo.com/video/546612359" } %}
+			<i class="showreel__icon icon-close icon"></i>
+		</div>
 	</div>
-</div>
 </div>

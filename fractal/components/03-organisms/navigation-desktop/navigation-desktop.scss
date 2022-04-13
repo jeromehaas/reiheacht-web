@@ -42,12 +42,14 @@
 
   &__logo {
     margin-left: auto;
-    width: 112px;
+    width: 120px;
+    display: flex;
   }
 
   &__link {
     line-height: 1;
     color: $white;
+    margin-top: 12px;
     transition: color 0.3s ease 0.3s;
 
     &:not(:first-child) {
@@ -62,14 +64,6 @@
 
   &__placeholder {
     height: 100px;
-  }
-
-  @media (max-width: 1050px) {
-
-    &__inner {
-      gap: 24px;
-    }
-
   }
 
   @media (max-width: 900px) {

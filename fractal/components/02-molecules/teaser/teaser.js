@@ -35,7 +35,6 @@ class Teaser {
         }
       });
     })
-    console.log(teasers);
   }
 
 }
