@@ -121,6 +121,10 @@
       gap: 16px;
     }
 
+    &__button:not(:last-child) {
+      margin-right: 0;
+    }
+
   }
 
 }

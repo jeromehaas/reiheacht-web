@@ -11,7 +11,7 @@ class NavigationMobile {
 		this.elements = {
 			logo: document.querySelector('.navigation-mobile__logo'),
 			hamburger: document.querySelector('.navigation-mobile__hamburger'),
-			bar: document.querySelector('.navigation-mobile'),
+      bar: document.querySelector('.navigation-mobile__inner'),
 			panel: document.querySelector('.navigation-mobile__panel'),
 			links: document.querySelectorAll('.navigation-mobile__link'),
 			closeTriangle: {
@@ -44,19 +44,13 @@ class NavigationMobile {
 	init() {
 		if (!document.querySelector(`.js-${this.name}`)) return;
 		this.createLogo();
-    this.showNavigation();
 		this.createHamburger();
     this.addEventListener();
 		if (this.elements.closeTriangle.top) {
 			this.createCloseTriangle();
 			this.checkShowTriangle();
-		};
+		}
 	};
-
-  showNavigation() {
-    gsap.to(this.elements.bar, { y: 60, duration: 0.6 })
-
-  }
 	
 	checkShowTriangle() {
 		['load', 'scroll'].forEach((event) => {
