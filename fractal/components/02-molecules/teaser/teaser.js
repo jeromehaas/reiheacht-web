@@ -29,14 +29,14 @@ class Teaser {
           end: "top 100%",
           onEnter: () => { 
             gsap.fromTo(teaser, 
-              { y: -40, opacity: 0 },
-              { y: 0, opacity: 1, duration: 2, delay: 0.1, ease: "ease" });
+              { y: -24, opacity: 0 },
+              { y: 0, opacity: 1, duration: 1, delay: 0.1, ease: "power4" });
           }
         }
       });
-    })
-  }
+    });
+  };
 
-}
+};
 
 export default Teaser;

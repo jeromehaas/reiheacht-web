@@ -15,68 +15,68 @@ context:
       role: Inhaber
       email: marc.sen@reiheacht.ch
   services: 
-    - image: '/media/images/service-tiles/videokonzeption.png'
+    - image: 'http://vlzrpwyey.cyon.link/uploads/service-tiles/web.webp'
       title: Videokonzeption
       href: '#'
-    - image: '/media/images/service-tiles/storytelling.png'
+    - image: 'http://vlzrpwyey.cyon.link/uploads/service-tiles/storytelling.webp'
       title: Storytelling
       href: '#'
-    - image: '/media/images/service-tiles/motion-design.png'
+    - image: 'http://vlzrpwyey.cyon.link/uploads/service-tiles/illustration.webp'
       title: Motion Design
       href: '#'
-    - image: '/media/images/service-tiles/erklaervideo.png'
+    - image: 'http://vlzrpwyey.cyon.link/uploads/service-tiles/film.webp'
       title: Erklärvideo
       href: '#'
-    - image: '/media/images/service-tiles/realfilm.png'
+    - image: 'http://vlzrpwyey.cyon.link/uploads/service-tiles/web.webp'
       title: Realfilm
       href: '#'
-    - image: '/media/images/service-tiles/sound-design.png'
+    - image: 'http://vlzrpwyey.cyon.link/uploads/service-tiles/sound.webp'
       title: Sound-Design
       href: '#'
   projects: 
     - title: reiheacht
       subtitle: Showreel
-      image: '/media/images/project-tiles/reiheacht-showreel.png'
+      image: 'http://vlzrpwyey.cyon.link/uploads/project-tiles/reiheacht.webp'
       color: '#0374B6'
       href: 
     - title: Sportcard
       subtitle: Sporty als Chatbot
-      image: '/media/images/project-tiles/sportcard-sporty.png'
+      image: 'http://vlzrpwyey.cyon.link/uploads/project-tiles/sporty.webp'
       color: '#0071A6'
       href: 
     - title: ITpoint
       subtitle: Imagefilm 2021
-      image: '/media/images/project-tiles/itpoint-imagefilm.png'
+      image: 'http://vlzrpwyey.cyon.link/uploads/project-tiles/it-point.webp'
       color: '#004A8F'
       href: 
     - title: Holliger Imballegno 
       subtitle: Altuna Box
-      image: '/media/images/project-tiles/holliger-imballegno-altuna-box.png'
+      image: 'http://vlzrpwyey.cyon.link/uploads/project-tiles/altuna-box.webp'
       color: '#0072BC'
       href: 
     - title: Schweizer Bauernverband
       subtitle: Extreme Agrarinitiative
-      image: '/media/images/project-tiles/schweizer-bauernverband-extreme-agratinitiative.png'
+      image: 'http://vlzrpwyey.cyon.link/uploads/project-tiles/extreme-agrarinitiative.webp'
       color: '#9EA600'
       href: 
     - title: HotellerieSuisse
       subtitle: Adventskampagne 2021
-      image: '/media/images/project-tiles/hotelleriesuisse-adventskampagne.jpeg'
+      image: 'http://vlzrpwyey.cyon.link/uploads/project-tiles/adventsaktion.webp'
       color: '#DA291C'
       href: 
     - title: Schweizer Bauernverband
       subtitle: Trinkwasserinitiative
-      image: '/media/images/project-tiles/schweizer-bauernerband-trinkwasserinitiative.png'
+      image: 'http://vlzrpwyey.cyon.link/uploads/project-tiles/trinkwasserinitiative.webp'
       color: '#9EA600'
       href: 
     - title: Schweizer Bauernverband
       subtitle: diverse Erklärfilme
-      image: '/media/images/project-tiles/schweizer-bauernverband-diverse-erklaerfilme.png'
+      image: 'http://vlzrpwyey.cyon.link/uploads/project-tiles/sbv-div.webp'
       color: '#9EA600'
       href: 
     - title: Gallo Suisse
       subtitle: Extreme Agrarinitiative
-      image: '/media/images/project-tiles/gallosuisse-extreme-agrarinitiative.png'
+      image: 'http://vlzrpwyey.cyon.link/uploads/project-tiles/agrarinitiative.webp'
       color: '#C70103'
       href: 
   links:
