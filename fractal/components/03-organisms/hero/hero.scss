@@ -75,8 +75,10 @@
       transform: translate(-50%, -50%);
       position: relative;
       width: 1440px;
-      max-width: calc(100% - 80px);
+      max-width: min(calc(100% - 80px), 100vh);
+      margin-top: 32px;
     }
+
 
     &__video {
       overflow: unset;
