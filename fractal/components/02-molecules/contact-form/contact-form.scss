@@ -84,7 +84,8 @@
 
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 950px) {
+    max-width: unset;
     grid-template-areas:
       "name"
       "email"

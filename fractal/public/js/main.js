@@ -8,6 +8,7 @@ import Scroller from '../../components/01-atoms/scroller/scroller';
 import Hero from '../../components/03-organisms/hero/hero';
 import PageNotFound from '../../components/03-organisms/page-not-found/page-not-found';
 import Teaser from '../../components/02-molecules/teaser/teaser';
+import Contact from '../../components/03-organisms/contact/contact';
 
 const heading = new Heading();
 const navigationDesktop = new NavigationDesktop();
@@ -19,3 +20,4 @@ const scroller = new Scroller();
 const hero = new Hero();
 const pageNotFound = new PageNotFound();
 const teaser = new Teaser();
+const contact = new Contact();
