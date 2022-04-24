@@ -1,17 +1,17 @@
-dateModified: 1649805369
+dateModified: 1650639792
 email:
-  fromEmail: info@haaswebsolutions.io
-  fromName: 'Haas Web Solutoins'
-  replyToEmail: info@haaswebsolutions.io
+  fromEmail: info@yellowreach.io
+  fromName: yellowreach
+  replyToEmail: info@yellowreach.io
   template: null
   transportSettings:
     encryptionMethod: ssl
     host: mail.cyon.ch
-    password: Tbnb!El19QdW
+    password: z1CZ!aMQa6%9
     port: '465'
     timeout: '10'
     useAuthentication: '1'
-    username: info@haaswebsolutions.io
+    username: info@yellowreach.io
   transportType: craft\mail\transportadapters\Smtp
 meta:
   __names__:
