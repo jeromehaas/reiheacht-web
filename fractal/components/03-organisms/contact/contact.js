@@ -16,7 +16,6 @@ class Contact {
 
   init() {
     if (!document.querySelector(`.js-${this.name}`)) return;
-    console.log('hello');
     this.createObserver();
   }
 
