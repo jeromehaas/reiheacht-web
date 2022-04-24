@@ -10,6 +10,7 @@ class NavigationDesktop {
 		this.name = 'navigation-desktop';
 		this.elements = {
 			logo: document.querySelector('.navigation-desktop__logo'),
+      bar: document.querySelector('.navigation-desktop'),
 			closeTriangle: {
 				top: document.querySelector('.close-triangle__top'),
 				bottom: document.querySelector('.close-triangle__bottom')
@@ -43,6 +44,7 @@ class NavigationDesktop {
 	init() {
     if (document.querySelector(`.js-${this.name}`)) return;
     gsap.to(window, { scrollTo: window.location.hash || '#home' || '#', ease: 'none', duration: 0 });
+    this.showNavigation();
 		this.createLogo();	
     if (window.location.pathname === '/components/preview/home' || window.location.pathname === '/') {
       this.setupScrollTrigger();
@@ -68,6 +70,13 @@ class NavigationDesktop {
 		});
 	};
 
+  showNavigation() {
+    gsap.to(this.elements.bar, {
+      top: 0, 
+      duration: 0.6
+    })
+  }
+
 	showTriangleTop() {
 		this.closeTriangle.top.element.setDirection(1);
 		this.closeTriangle.top.element.play();
@@ -88,8 +97,8 @@ class NavigationDesktop {
   addEventListener() {
     if (window.location.pathname === '/components/preview/home' || window.location.pathname === '/') {
       this.elements.logo.addEventListener('click', (event) => this.scrollToTop(event));
-    }
-  }
+    };
+  };
   
   scrollToTop(event) {
     event.preventDefault();
@@ -173,8 +182,6 @@ class NavigationDesktop {
 		});
 		this.closeTriangle.bottom.element.setSpeed(1.5);
 	};
-
-	
 
 };
 

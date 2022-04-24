@@ -1,7 +1,7 @@
 <div class="team-tile {{ class }}">
 	<figure class="team-tile__square"></figure>
 	<img class="team-tile__image" src="{{ image }}" alt="Image">
-	<a class="team-tile__label label" href="#">
+	<a class="team-tile__label label" href="mailto:{{ email }}">
 		{% include "atoms/heading" with { class: "label__name", type: "h4", text: heading, color: "black"} %}
 		{% include "atoms/paragraph" with { class: "label__role", text: role, color: "black"} %}
 		<i class="label__icon icon-email icon"></i>

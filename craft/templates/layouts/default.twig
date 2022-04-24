@@ -14,7 +14,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="stylesheet" href="/css/main.min.css">
 		<link rel="icon" href="/media/favicons/favicon.ico">
-		<title>{{ title }} | reiheacht</title>
+		<title>{{ title }}
+			| reiheacht</title>
 		<meta name="description" content="{{ description }}">
 	</head>
 	<body class="body body--{{theme}}">
@@ -24,6 +25,8 @@
 
 		{% block main %}{% endblock %}
 
+		{% include "organisms/cookie-banner" %}
+
 		<script src="/js/main.build.js"></script>
 	</body>
-</html></head></html></head></html>
+</html>

@@ -67,7 +67,6 @@
       color: $black;
       display: inline-block;
       padding: 8px;
-      font-size: 12px;
       border-radius: 4px;
       position: absolute;
       right: 0;
@@ -130,6 +129,7 @@
 	}
 
   @media (max-width: 600px) {
+
     grid-template-areas:
       "name"
       "email"

@@ -11,6 +11,7 @@ class NavigationMobile {
 		this.elements = {
 			logo: document.querySelector('.navigation-mobile__logo'),
 			hamburger: document.querySelector('.navigation-mobile__hamburger'),
+      bar: document.querySelector('.navigation-mobile__inner'),
 			panel: document.querySelector('.navigation-mobile__panel'),
 			links: document.querySelectorAll('.navigation-mobile__link'),
 			closeTriangle: {

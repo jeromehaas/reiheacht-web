@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: start
+name: Start
+propagationMethod: all
+siteSettings:
+  639cd615-fa76-49be-a252-a4af968023e9: # Reiheacht
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/start.twig
+    uriFormat: __home__
+type: single

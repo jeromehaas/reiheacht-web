@@ -4,7 +4,8 @@
     {{> @heading class="hero__heading" type="h1" color="white" text="Hallo, wir sind reiheacht, eine Motion Design
     und
     Werbefilm Agentur aus Luzern." }}
-    {{> @line class="hero__line" direction="horizontal" }}
+    <span class="hero__line"></span>
+    {{!-- {{> @line class="hero__line" direction="horizontal" }} --}}
     {{> @paragraph class="hero__teaser" color="white" text="reiheacht ist eine digitale Kreativagentur, die mit
     Innovation und Zusammenarbeit einzigartige Motion Design- und Filmlösungen anbietet, damit du deine Marke da stärken
     kannst, wo du deine Kunden am besten erreichst. Wir bringen deine Botschaft in Bewegung und machen diese zu einer
@@ -16,11 +17,11 @@
       {{> @button text="Sitzplatz buchen" class="hero__button hero__button--contact" color="orange" }}
     </div>
     {{> @scroller class="hero__scroller" text="Popcorn nicht vergessen" }}
-		</div>
-		<div class="hero__showreel showreel">
-			<div class="showreel__inner">
-				{{> @video class="showreel__video" src="https://player.vimeo.com/video/546612359" }}
-  			<i class="showreel__icon icon-close icon"></i>
-			</div>
-		</div>
+  </div>
+  <div class="hero__showreel showreel">
+    <div class="showreel__inner">
+      {{> @video class="showreel__video" src="https://player.vimeo.com/video/546612359" }}
+      <i class="showreel__icon icon-close icon"></i>
+    </div>
+  </div>
 </div>

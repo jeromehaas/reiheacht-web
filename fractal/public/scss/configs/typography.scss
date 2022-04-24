@@ -147,11 +147,11 @@ textarea {
   line-height: 1.5;
 }
 
-.project-infos__subtitle {
+.infobox__subtitle {
   font-size: 14px;
 }
 
-.project-infos__title {
+.infobox__title {
   font-size: 25px;
   font-weight: 500;
 }
@@ -165,6 +165,27 @@ textarea {
   font-size: 30px;
   line-height: 1.5;
 }
+
+.project-switcher .control__icon {
+	font-size: 24px;
+}
+
+.team-tile .label__role {
+  font-size: 12px;
+}
+
+.reference-slider__slide {
+  font-size: 18px;
+}
+
+.contact-form .submit-button__error-label {
+  font-size: 12px;
+}
+
+.cookie-banner__text, 
+.cookie-banner__link {
+  font-size: 16px;
+} 
 
 @media (max-width: 900px) {
   .heading--h1 {

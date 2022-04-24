@@ -14,8 +14,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 50px;
+    height: 60px;
     z-index: 5;
     background-color: $black;
   }
@@ -45,6 +46,7 @@
 
   &__logo {
     width: 120px;
+    display: flex;
   }
 
   &__hamburger {

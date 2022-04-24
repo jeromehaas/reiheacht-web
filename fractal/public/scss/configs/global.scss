@@ -55,6 +55,11 @@ strong {
   color: $blue;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 button {
   background-color: transparent;
   border: none;
