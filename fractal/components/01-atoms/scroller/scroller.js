@@ -21,7 +21,7 @@ class Scroller {
 	}
 
 	scrollDown() {
-		gsap.to(window, { scrollTo: '#leistungen', ease: 'power2', duration: 0.5 })
+		gsap.to(window, { scrollTo: '#leistungen', ease: 'circ.out', duration: 1 })
 	}
 
 }
