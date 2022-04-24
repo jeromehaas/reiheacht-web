@@ -1,3 +1,6 @@
+import emailjs from '@emailjs/browser';
+import { gsap } from 'gsap';
+
 class ContactForm {
 
 	constructor() {
@@ -5,7 +8,11 @@ class ContactForm {
 		this.elements = {
 			button: document.querySelector('.contact-form__submit-button'),
 			errorLabel: document.querySelector('.submit-button__error-label'),
-			form: document.querySelector('.contact-form ')
+			form: document.querySelector('.contact-form '),
+			confirmationFlash: {
+				success: document.querySelector('.flash__message--success'),
+				error: document.querySelector('.flash__message--error'),
+			}
 		};
 		this.inputs = {
 			name: {
@@ -42,7 +49,7 @@ class ContactForm {
 	};
 
 	addEventListener() {
-		this.elements.button.addEventListener('click', () => {
+		this.elements.button.addEventListener('click', (event) => {
 			event.preventDefault();
 			this.validateInputs();
 		});
@@ -56,10 +63,20 @@ class ContactForm {
 		this.elements.errorLabel.classList.remove('submit-button__error-label--visible');
 	}
 
-	send() {
-		console.log('send');
-		this.elements.form.submit();
-	}
+	send = async () => {
+		let res = await emailjs.send("yellowreach","reiheacht",{
+			name: this.inputs.name.node.value,
+			email: this.inputs.email.node.value,
+			phone: this.inputs.phone.node.value,
+			message: this.inputs.message.node.value,
+			}, process.env.EMAILJS_PUBLICKEY);
+		if (res.status === 200) {
+			this.showConfirmationFlash('success');
+			this.resetForm();
+		} else {
+			this.showConfirmationFlash('error');
+		};
+	};
 
 	validateInputs = () => {
 		this.errors = [];
@@ -73,16 +90,31 @@ class ContactForm {
 			if (res === false) { 
 				this.errors.push(name);
 				this.showErrorLabel();
-				break;	
 			};	
-		}
-		console.log(this.errors);
+		};
 		if (this.errors.length === 0) {
 			this.hideErrorLabel();
 			this.send();	
-		}
-	}
+		} else {
+			console.error('The contactform could not send because the following fields are not valid:')
+			console.error(this.errors);
+		};
+	};
 
-}
+	resetForm = () => {
+		for (const input in this.inputs) {
+			this.inputs[input].node.value = '';
+		};
+	};
+
+	showConfirmationFlash = (type) => {
+		if ( type === undefined ) return (console.error('Please provide a type to trigger the flash.'))
+		gsap.fromTo(this.elements.confirmationFlash[type], 
+				{ top: -10, opacity: 0, display: 'block' },
+				{ top: 0, opacity: 1 }
+			);
+		};
+
+};
 
 export default ContactForm;

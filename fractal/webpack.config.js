@@ -1,4 +1,5 @@
 const path = require('path');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
 	entry: './public/js/main.js',
@@ -20,11 +21,14 @@ module.exports = {
 					options: {
 						presets: ['@babel/preset-env'],
 						plugins: [
-							["@babel/transform-runtime"]
+							["@babel/transform-runtime"],
 						]
 					},
 				}
 			}
 		]
-	}
+	}, 
+	plugins: [
+		new Dotenv({ path: '../craft/.env'})
+	]
 }

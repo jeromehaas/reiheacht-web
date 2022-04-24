@@ -86,7 +86,6 @@ class Hero {
 
 
   checkAnimationCookie() {
-    console.log('hwllo you');
     const animationCookie = Cookies.get('last-hero-animation-render');
     if (!animationCookie) {
       this.playLongAnimation();

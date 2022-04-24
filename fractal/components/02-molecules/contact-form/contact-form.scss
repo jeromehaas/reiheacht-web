@@ -87,14 +87,15 @@
 
 	&__flash, .flash {
 		grid-area: flash;
-
+		
 		&__message {
 			position: relative;
 			font-size: 12px;
 			text-align: center;
+			display: none;
 			
 			&::after {
-				content: "✔";
+				content: "";
 				font-size: 4px;
 				position: absolute;
 				color: white;
@@ -109,7 +110,6 @@
 			&--success {
 
 				&::after {
-					content: "";
 					background-color: green;
 				}
 				
@@ -118,7 +118,6 @@
 			&--error {
 
 				&::after {
-					content: "";
 					background-color: $orange;
 				}
 				
