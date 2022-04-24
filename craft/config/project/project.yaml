@@ -1,4 +1,4 @@
-dateModified: 1650639792
+dateModified: 1650821779
 email:
   fromEmail: info@yellowreach.io
   fromName: yellowreach
@@ -157,16 +157,6 @@ meta:
     f4727773-dd07-4b66-a356-100798d9a6dc: Team # Team
     fa515eef-b21f-41a1-86ce-67d911fe848d: 'Service Detail Quote' # Service Detail Quote
 plugins:
-  contact-form:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
-    settings:
-      allowAttachments: ''
-      prependSender: 'reiheacht | '
-      prependSubject: 'Neue Nachricht von der Website'
-      successFlashMessage: 'Die Nachricht wurde erfolgreich versendet.'
-      toEmail: hello@haaswebsolutions.io
   contact-form-extensions:
     edition: standard
     enabled: true
@@ -198,10 +188,6 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.2
-  super-table:
-    edition: standard
-    enabled: true
-    schemaVersion: 2.2.1
 system:
   edition: solo
   live: true
