@@ -14,6 +14,7 @@ class Hero {
       teaser: document.querySelector('.hero__teaser'),
       slogan: document.querySelector('.hero__slogan'),
       scroller: document.querySelector('.hero__scroller'),
+			blocker: document.querySelector('.hero__blocker'),
       section: document.querySelector('.hero__inner'),
 			buttons: {
         all: document.querySelectorAll('.button'),
@@ -30,13 +31,15 @@ class Hero {
 		};
     this.timelines = {
       long: null,
-      short: null
+      short: null, 
+			blocker: null
     };
 		this.init()
 	}
 	
 	init() {
 		if (!document.querySelector(`.js-${this.name}`)) return;
+		this.removeBlocker();
 		this.setupPlayer();
 		this.addEventListener();
     this.checkAnimationCookie();
@@ -95,6 +98,15 @@ class Hero {
       this.playShortAnimation();
     };
   };
+
+	removeBlocker() {
+		this.timelines.blocker = gsap.timeline({ ease: 'expo' });
+		this.timelines.blocker.to(this.elements.blocker, { autoAlpha: 0, duration: 0.5 }, '+=1')
+		this.timelines.blocker.to(this.elements.blocker, { display: 'none', duration: 0 })
+		gsap.to(this.elements.blocker, {
+			
+		})
+	}
 
 };
 
