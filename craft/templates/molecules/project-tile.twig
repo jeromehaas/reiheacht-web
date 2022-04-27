@@ -7,11 +7,11 @@
 	</div>
 
 	<div class="project-tile__front front front--{{ color }}" style="background-color: {{ color }}">
-		<div class="front__inner">
+		<a class="front__inner" href="{{ href }}">
 			{% include "atoms/heading" with { class: "front__title", type: "h3", text: heading, color: "white"} %}
 			{% include "atoms/paragraph" with { class: "front__subtitle", text: subheading, color: "white"} %}
-			{% include "atoms/link" with { class: "front__link", text: "Mehr erfahren", href: href } %} 
-		</div>
+			{% include "atoms/paragraph" with { class: "front__link link", text: "Mehr erfahren" } %} 
+		</a>
 	</div>
 
 </div>

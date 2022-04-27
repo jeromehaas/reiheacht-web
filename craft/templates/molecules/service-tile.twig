@@ -1,7 +1,7 @@
-<div class="service-tile {% if class is defined %} {{ class }} {% endif %}">
+<a class="service-tile {% if class is defined %} {{ class }} {% endif %}" href="{{ href }}">
 	<img class="service-tile__image" src="{{ image }}" alt="Image">
-	<a class="service-tile__label label" href="{{ href }}">
+	<div class="service-tile__label label">
   	{% include "atoms/heading" with { class: "label__title", type: "h4", text: heading, color: "white"} %}
 		<i class="label__icon icon-double-arrow icon"></i>
-	</a>
-</div>
+	</div>
+</a>
