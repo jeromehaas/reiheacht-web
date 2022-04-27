@@ -1,4 +1,4 @@
-dateModified: 1650821779
+dateModified: 1651054576
 email:
   fromEmail: info@yellowreach.io
   fromName: yellowreach
@@ -74,7 +74,7 @@ meta:
     478cffc9-7bfd-4a96-8fde-21ede6b46b63: 'Team Tiles' # Team Tiles
     0491c40f-1304-4855-bb8e-72970aff4a71: Author # Author
     535c087d-ae3d-4d74-8004-97edfcb5f18c: 'Project Detail Prev Entry' # Project Detail Prev Entry
-    547f0aea-9305-45cf-85cf-4aeee42709b0: 'Team Tile Firstname' # Team Tile Firstname
+    547f0aea-9305-45cf-85cf-4aeee42709b0: 'Team Tile Full Name' # Team Tile Full Name
     557d13d8-bdf7-470b-8df9-c5b75b762d47: Reiheacht # Reiheacht
     571b8342-17e6-456a-aa15-a50a81cd0e35: Video # Video
     619de734-5e70-4b95-81b5-7f1d7a1563cf: Anchor # Anchor
@@ -87,6 +87,7 @@ meta:
     5030cc07-b585-4851-bce9-2813cf3af1f1: 'Project Infobox Subheading' # Project Infobox Subheading
     6451d4e2-9ca7-49f7-9c75-e8a7b283fbc8: Paragraph # Paragraph
     06941c4d-93a8-4248-ae7a-66b38dcde9ff: 'Service Assets' # Service Assets
+    9762ac62-30f0-48eb-ab1f-d04488950dc7: 'Public Schema' # Public Schema
     33087f99-2dcf-4e72-bedc-c374b0a73fcc: Quote # Quote
     51475d29-cdbd-4826-aaaa-d31201dc50df: 'Project Tiles' # Project Tiles
     86678cb0-39c3-4425-b563-f120e7a2ac6d: 'Service Detail Image' # Service Detail Image
@@ -152,7 +153,6 @@ meta:
     eeee8b39-7524-4160-866e-c47d5bdeca1a: Image # Image
     f6c37758-49af-41c0-823a-9f1a85e79393: Start # Start
     f9a4f208-386c-4c54-b227-23fed38c8443: Text # Text
-    f695d912-3263-42f9-8139-3b2c5924f342: 'Team Tile Lastname' # Team Tile Lastname
     f57166dc-8c65-4439-92c5-dadba8317127: Source # Source
     f4727773-dd07-4b66-a356-100798d9a6dc: Team # Team
     fa515eef-b21f-41a1-86ce-67d911fe848d: 'Service Detail Quote' # Service Detail Quote
@@ -189,9 +189,10 @@ plugins:
     enabled: true
     schemaVersion: 1.0.2
 system:
-  edition: solo
+  edition: pro
   live: true
-  name: Reiheacht
+  name: reiheacht
+  retryDuration: null
   schemaVersion: 3.7.33
   timeZone: America/Los_Angeles
 users:

@@ -1,0 +1,41 @@
+isPublic: true
+name: 'Public Schema'
+scope:
+  - 'sections.b82c2de4-85c8-4ac5-a296-5c527a624486:read' # agbs
+  - 'entrytypes.83e01f63-530d-444e-b43d-4620ab1c5d8a:read' # agbs
+  - 'sections.bf173eb6-238a-468c-904c-75ef68fa6b6f:read' # Blog Overview
+  - 'entrytypes.e871087b-57b2-4f34-bd10-0e3d71f954a0:read' # Blog Overview
+  - 'sections.7944098d-e401-4ce5-8978-77973ce69099:read' # Blog Posts
+  - 'entrytypes.dc4fd07a-e106-4474-8c50-fd2ab9c53ab6:read' # Post
+  - 'sections.43f7ff8d-58a9-431c-92f4-99cd460b2301:read' # Contact
+  - 'entrytypes.c73ef4b5-e81c-4eee-b250-10621a661f94:read' # Intro
+  - 'sections.5c050e09-f1cb-42f3-81ee-4d2aec652d46:read' # Data Privacy
+  - 'entrytypes.261c494e-5ba1-4317-8f76-8c4edb9f3f31:read' # Data Privacy
+  - 'sections.9ccb1d86-84cd-48e4-8c4c-91b26bf268e2:read' # Hero
+  - 'entrytypes.a5a23fd7-d90a-42df-8fed-a019a2fd2247:read' # Hero
+  - 'sections.6ee738f0-13b0-47d4-a041-9dc23428a5ab:read' # Imprint
+  - 'entrytypes.1b57769a-23cf-480b-ab7c-46ad0e3c0e57:read' # Imprint
+  - 'sections.4c614a57-4511-4b31-8cc7-01f589ea3987:read' # Projects
+  - 'entrytypes.1e2a8ec8-bbf2-4ebe-95a4-91b4a49f13b1:read' # Project
+  - 'entrytypes.6dbcd30b-b235-4b2a-b257-41cb7044dcf3:read' # Client
+  - 'entrytypes.af508af9-d355-4b8c-ba92-b0db4ad26825:read' # Intro
+  - 'sections.a31ba079-4154-4b6e-bca4-f3e0434175d9:read' # References
+  - 'entrytypes.4c545e64-d0cb-4c00-88a0-a1e12963cda9:read' # Reference
+  - 'sections.944c9d68-c5ca-4023-9c29-44ab7add275d:read' # Services
+  - 'entrytypes.2f2691b6-d6aa-476f-860f-d03633e0aaa0:read' # Intro
+  - 'entrytypes.c9355ce4-c6de-477f-853b-db196ee5a03c:read' # Service
+  - 'sections.f6c37758-49af-41c0-823a-9f1a85e79393:read' # Start
+  - 'entrytypes.e678b2f8-db46-4cd0-97c2-b93c18e4d450:read' # Start
+  - 'sections.a5c0d0fa-d611-4e4c-9d0a-d39cd0a18b15:read' # Team
+  - 'entrytypes.d785c2bf-803c-4581-95e8-5c3ee11dd2ed:read' # Intro
+  - 'entrytypes.d018ce1c-0277-4c1f-b715-b32f7587cdf6:read' # Member
+  - 'volumes.bcb328af-f26b-4687-80c2-af0d1ae93a5b:read' # Logos
+  - 'volumes.51475d29-cdbd-4826-aaaa-d31201dc50df:read' # Project Tiles
+  - 'volumes.a911b60c-a0c9-4023-8585-a646364e75a6:read' # Service Tiles
+  - 'volumes.6a99c432-5e9e-4deb-8658-58ee98ec27db:read' # Project Assets
+  - 'volumes.06941c4d-93a8-4248-ae7a-66b38dcde9ff:read' # Service Assets
+  - 'volumes.478cffc9-7bfd-4a96-8fde-21ede6b46b63:read' # Team Tiles
+  - 'volumes.a8ede5ae-0341-4999-ab0d-f322f9a6e60f:read' # Blog Assets
+  - 'globalsets.b64623be-397b-4edd-b67a-a98c3ce0017c:read' # Social Media Links
+  - 'globalsets.e1ccac03-b405-44b2-b79a-298b69425e38:read' # Address
+  - 'usergroups.everyone:read'

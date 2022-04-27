@@ -36,16 +36,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: 547f0aea-9305-45cf-85cf-4aeee42709b0 # Team Tile Firstname
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: f695d912-3263-42f9-8139-3b2c5924f342 # Team Tile Lastname
+            fieldUid: 547f0aea-9305-45cf-85cf-4aeee42709b0 # Team Tile Full Name
             instructions: null
             label: null
             required: false
@@ -87,6 +78,6 @@ hasTitleField: false
 name: Member
 section: a5c0d0fa-d611-4e4c-9d0a-d39cd0a18b15 # Team
 sortOrder: 1
-titleFormat: '{teamTileFirstname} {teamTileLastname}'
+titleFormat: '{teamTileFullName} '
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
