@@ -1,7 +1,7 @@
-<div class="service-tile {{ class }}">
+<a class="service-tile {{ class }}" href="#">
 	<img class="service-tile__image" src="{{ image }}" alt="Image">
-	<a class="service-tile__label label" href="#">
+	<div class="service-tile__label label" href="#">
 		{{> @heading class="label__title" type="h4" text=title class="front__title" color="white" }}
 		<i class="label__icon icon-double-arrow icon"></i>
-	</a>
-</div>
+	</div>
+</a>
