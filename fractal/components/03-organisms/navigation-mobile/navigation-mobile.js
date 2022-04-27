@@ -117,7 +117,7 @@ class NavigationMobile {
   
   scrollToTop(event) {
     event.preventDefault();
-    gsap.to(window, { scrollTo: '#home', duration: 1, ease: 'power2' });
+    gsap.to(window, { scrollTo: '#home', duration: 1, ease: 'circ' });
   }
 
 	createLogo() {
