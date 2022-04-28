@@ -21,9 +21,21 @@
 
     margin-bottom: 32px;
 
-    strong {
-      color: $blue;
-    }
+		strong {
+			font-weight: inherit;
+			color: $orange;
+	
+			&.bold { font-weight: 800; }	
+			&.blue { color: $blue; }	
+			&.orange { color: $orange; }	
+			&.underline { 
+				text-decoration: underline;
+				text-decoration-color: $white;
+				text-decoration-thickness: 2px;
+				text-underline-position: under;
+			 }	
+			 
+		}
 
   }
 

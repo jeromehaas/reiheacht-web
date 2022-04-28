@@ -52,8 +52,19 @@ body,
 }
 
 strong {
-  color: $blue;
 	font-weight: inherit;
+	color: $blue;
+
+	&.bold { font-weight: 800; }	
+	&.blue { color: $blue; }	
+	&.orange { color: $orange; }	
+	&.underline { 
+		text-decoration: underline;
+		text-decoration-color: $white;
+		text-decoration-thickness: 2px;
+		text-underline-position: under;
+	 }	
+
 }
 
 img {

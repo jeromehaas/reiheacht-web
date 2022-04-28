@@ -58,7 +58,7 @@ class Hero {
 
 	scrollTo(target, event) {
 		event.preventDefault();
-		gsap.to(window, { scrollTo: target, ease: 'power2', duration: 1 })
+		gsap.to(window, { scrollTo: target, duration: 1.3, ease: 'Power4.easeInOut' })
 	};
 
 	showShowreel() {

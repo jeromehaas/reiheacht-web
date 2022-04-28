@@ -109,6 +109,7 @@ const jsTask = (done) => {
 	gulp.src(filePaths.js.src)
 		.pipe(plumber({ errorHandler: notifier.error }))
 		.pipe(webpackStream(webpackConfig))
+		.pipe(uglify())
 		.pipe(dest(filePaths.js.dist[0]))
 		.pipe(dest(filePaths.js.dist[1]))
 		.pipe(notifier.success('js'));

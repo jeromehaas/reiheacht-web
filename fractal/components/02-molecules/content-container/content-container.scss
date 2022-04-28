@@ -36,10 +36,6 @@
 	}
 
 
-	strong {
-		font-weight: inherit;
-	}
-	
 	ul {
 		margin-bottom: 32px;
 	}
@@ -85,6 +81,12 @@
     margin-bottom: 32px;
   }
 
+	@media (max-width: 500px) {
 
+		.video {
+			margin-bottom: 24px;
+		}
+
+	}
 
 }

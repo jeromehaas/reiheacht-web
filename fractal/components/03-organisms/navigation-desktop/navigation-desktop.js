@@ -172,7 +172,7 @@ class NavigationDesktop {
 			autoplay: false,
 			path: `/media/lotties/close-triangle-${ this.closeTriangle.color || 'orange' }.json`
 		});
-		this.closeTriangle.top.element.setSpeed(1.5);
+		this.closeTriangle.top.element.setSpeed(1);
 		this.closeTriangle.bottom.element = lottieWeb.loadAnimation({
 			container: this.elements.closeTriangle.bottom,
 			renderer: 'svg',
@@ -180,7 +180,7 @@ class NavigationDesktop {
 			autoplay: false,
 			path: `/media/lotties/close-triangle-${ this.closeTriangle.color || 'orange' }.json`
 		});
-		this.closeTriangle.bottom.element.setSpeed(1.5);
+		this.closeTriangle.bottom.element.setSpeed(1);
 	};
 
 };
