@@ -45,12 +45,12 @@ h3 {
 
 .heading--h4,
 h4 {
-  font-size: 25px;
+  font-size: 27px;
   font-weight: 500;
 }
 
 .heading--h5,
-h4 {
+h5 {
   font-size: 20px;
 }
 
@@ -183,12 +183,18 @@ textarea {
   font-size: 18px;
 }
 
+
+
 .reference-slider__slide {
   font-size: 18px;
 }
 
 .contact-form .submit-button__error-label {
   font-size: 12px;
+}
+
+.project-tile .front__subtitle {
+	font-size: 22px;
 }
 
 .cookie-banner__text, 
