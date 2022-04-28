@@ -13,6 +13,10 @@
 
   }
 
+	h2, h3, h4 {
+		hyphens: auto;
+	}
+
   &__infobox {
     margin-bottom: 64px;
   }
