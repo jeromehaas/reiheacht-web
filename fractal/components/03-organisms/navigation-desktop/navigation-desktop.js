@@ -102,7 +102,7 @@ class NavigationDesktop {
   
   scrollToTop(event) {
     event.preventDefault();
-    gsap.to(window, { scrollTo: '#home', duration: 1, ease: 'circ' });
+    gsap.to(window, { scrollTo: '#home', duration: 1.3, ease: 'Power4.easeInOut' });
   }
 
   setupScrollTrigger() {
@@ -116,7 +116,7 @@ class NavigationDesktop {
 
   scrollToSection(hash, event) {
     event.preventDefault();
-    gsap.to(window, { scrollTo: hash, duration: 1, ease: 'circ' });
+    gsap.to(window, { scrollTo: hash, duration: 1.3, ease: 'Power4.easeInOut' });
   };
 
   removeActiveLink() {

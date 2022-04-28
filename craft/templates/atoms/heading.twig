@@ -1,3 +1,3 @@
 {% set level = type is defined ? type : "h1" %}
 
-<div class="heading heading--{{ level }} {% if looklike is defined %} {{ looklike }} {% endif %} {% if class is defined %} {{ class }} {% endif %}">{{ text }}</div>
+<{{level}} class="heading heading--{{ level }} {% if looklike is defined %} {{ looklike }} {% endif %} {% if class is defined %} {{ class }} {% endif %}">{{ text }}</{{level}}>
