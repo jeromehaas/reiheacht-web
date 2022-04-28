@@ -23,7 +23,7 @@
 	
 	h3, 
 	h3 a {
-		font-size: 40px;
+		font-size: 30px;
 		font-weight: 800;
 		margin-bottom: 16px;
 	}
@@ -81,12 +81,61 @@
     margin-bottom: 32px;
   }
 
-	@media (max-width: 500px) {
-
-		.video {
-			margin-bottom: 24px;
-		}
-
+@media (max-width: 600px) {
+	
+	h2, 
+	h2 a {
+		font-size: 40px;
 	}
+
+}
+
+@media (max-width: 500px) {
+
+	.video {
+		margin-bottom: 24px;
+	}
+
+}
+
+@media (max-width: 450px) {
+	h1, 
+	h1 a {
+		font-size: 30px;
+	}
+
+	h2, 
+	h2 a {
+		font-size: 30px;
+	}
+	
+	h3, 
+	h3 a {
+		font-size: 30px;
+	}
+
+	
+}
+
+@media (max-width: 350px) {
+
+	h2, 
+	h2 a {
+		font-size: 25px;
+	}
+
+	h3, 
+	h3 a {
+		font-size: 25px;
+	}
+
+	h4, 
+	h4 a {
+		font-size: 25px;
+	}
+
+}
+
+
 
 }
