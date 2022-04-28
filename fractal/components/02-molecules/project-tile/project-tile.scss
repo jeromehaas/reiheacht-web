@@ -63,7 +63,7 @@
     }
 
     &__title {
-      margin-top: 48px;
+      margin-top: 80px;
       margin-bottom: 8px;
     }
 
@@ -107,5 +107,25 @@
     }
 
   }
+
+	@media (max-width: 1050px) {
+		& .front__title { margin-top: 24px; }
+	}
+	
+	@media (max-width: 900px) {
+		& .front__title { margin-top: 80px; }
+	}
+
+	@media (max-width: 750px) {
+		& .front__title { margin-top: 24px; }
+	}
+	
+	@media (max-width: 600px) {
+		& .front__title { margin-top: 80px; }
+	}
+	
+	@media (max-width: 350px) {
+		& .front__title { margin-top: 24px; }
+	}
 
 }
