@@ -10,13 +10,16 @@ h2,
 h3,
 h4,
 h5,
-.paragraph,
-p,
 .link,
 a, li {
   line-height: 1.25;
   font-weight: 400;
   color: $white;
+}
+
+.paragraph,
+p {
+	line-height: 1.5;
 }
 
 .heading--h1,
@@ -36,8 +39,8 @@ h2 {
 
 .heading--h3,
 h3 {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 800;
 }
 
 .heading--h4,
