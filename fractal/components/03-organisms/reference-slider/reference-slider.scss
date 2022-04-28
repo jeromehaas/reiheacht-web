@@ -24,7 +24,7 @@
       "author logo";
     grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 64px 140px 64px 140px;
+    padding: 64px 200px;
   }
 
   &__quote {
@@ -138,6 +138,7 @@
         "author"
         "logo";
       grid-template-columns: auto;
+			padding: 64px 32px;
     }
 
     &__author {
