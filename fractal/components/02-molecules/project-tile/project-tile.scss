@@ -44,6 +44,7 @@
     left: 0;
     background-color: $white;
     z-index: 3;
+		cursor: pointer;
 
     &--white {
       background-color: $white;
@@ -59,7 +60,6 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-			cursor: default;
     }
 
     &__title {
@@ -69,14 +69,12 @@
 
     &__title,
     &__subtitle {
-      cursor: default;
     }
 
     &__link {
       align-self: flex-end;
       margin-top: auto;
       display: block;
-			cursor: pointer;
     }
 
     &__title,

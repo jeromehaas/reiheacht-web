@@ -2,7 +2,7 @@
 	height : 100%;
 	min-height: 60px;
 	position: relative;
-	cursor: default;
+	cursor: pointer;
 	overflow: hidden;
 	display: block;
 
@@ -28,7 +28,6 @@
 		flex-direction: row;
 		justify-content: flex-start;
 		align-items: center;
-		cursor: pointer;
 
 		&__title {
 			color: black;
