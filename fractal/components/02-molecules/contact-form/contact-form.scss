@@ -129,13 +129,14 @@
 	}
 
   @media (max-width: 600px) {
-
-    grid-template-areas:
-      "name"
-      "email"
-      "phone"
-      "message"
-      "button";
+		grid-template-areas:
+			"name"
+			"email" 
+			"phone"
+			"message"
+			"button"
+			"flash";
+		max-width: unset;
   }
 
 }
