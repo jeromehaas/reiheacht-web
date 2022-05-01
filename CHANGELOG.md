@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.4] - 2022-05-01
+- Rewrite team tile component with GSAP to avoid bug in iOS 
+
+## [1.0.3] - 2022-05-01
+- Recompile CSS
+
 ## [1.0.2] - 2022-05-01
 - Add css prefixes for transform properties
 
