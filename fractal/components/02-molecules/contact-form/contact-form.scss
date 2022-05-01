@@ -72,13 +72,16 @@
       position: absolute;
       right: 0;
       top: 100%;
+      -webkit-transform-origin: 0% 0%;
       transform-origin: 0% 0%;
+      -webkit-transform: rotateX(-180deg);
       transform: rotateX(-180deg);
       backface-visibility: none;
       z-index: -1;
       transition: all 1s cubic-bezier(.81, 1.91, .32, .72);
 
       &--visible {
+        -webkit-transform: rotateX(0deg);
         transform: rotateX(0deg);
       }
 
