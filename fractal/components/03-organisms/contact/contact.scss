@@ -2,10 +2,12 @@
 
   &__inner {
     display: grid;
-    grid-template: auto auto / 500px auto;
+    grid-template: auto auto auto / 500px auto;
     grid-template-areas: 
       "teaser teaser"
-      "form observer";
+      "form observer-left"
+			"observer-up observer-up";
+
   }
 
   .teaser {
@@ -16,27 +18,44 @@
     grid-area: form;
   }
 
-  &__observer {
-    grid-area: observer;
+  &__observer--left {
+    grid-area: observer-left;
     width: 75%;
     max-width: 400px;
     justify-self: center;
+  }
+
+  &__observer--up {
+    grid-area: observer-up;
+    width: 75%;
+    max-width: 400px;
+    justify-self: center;
+		display: none;
   }
 
   @media (max-width: 950px) {
   
     &__inner {
       display: grid;
-      grid-template: auto auto auto / auto;
+      grid-template: auto auto auto auto / auto;
       grid-template-areas: 
         "teaser"
         "form"
-        "observer";  
+        "observer-left"
+        "observer-up";  
     } 
 
     .contact-form {
       margin-bottom: 64px;
     }
+
+		&__observer--left {
+			display: none;	
+		}
+	
+		&__observer--up {
+			display: block;
+		}
 
   }
 
