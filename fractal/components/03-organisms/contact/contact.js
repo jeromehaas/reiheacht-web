@@ -5,11 +5,18 @@ class Contact {
   constructor() {
     this.name = 'contact';
     this.elements = {
-      observer: document.querySelector('.contact__observer')
+      observerLeft: document.querySelector('.contact__observer--left'),
+      observerUp: document.querySelector('.contact__observer--up')
     };
     this.observer = {
-      element: null,
-      container: this.elements.observer
+			left: {
+				element: null,
+				container: this.elements.observerLeft
+			},
+			up: {
+				element: null,
+				container: this.elements.observerUp
+			}
     }
     this.init();
   }
@@ -20,12 +27,19 @@ class Contact {
   }
 
   createObserver() {
-    this.observer.element = lottieWeb.loadAnimation({
-      container: this.elements.observer,
+    this.observer.left.element = lottieWeb.loadAnimation({
+      container: this.elements.observerLeft,
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: '/media/lotties/observer.json'
+      path: '/media/lotties/observer-left.json'
+    });
+    this.observer.up.element = lottieWeb.loadAnimation({
+      container: this.elements.observerUp,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: '/media/lotties/observer-up.json'
     });
   };
 

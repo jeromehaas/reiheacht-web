@@ -22,10 +22,13 @@ class TeamTile {
 
 	showSquare(element) {
 		const square = element.querySelector('.team-tile__square');
-		gsap.to(square, {
-			width: '100%',
-			height: '100%',
-			rotate: '360',
+		gsap.fromTo(square, {			
+			translateX: '-50%',
+			translateY: '-50%'
+		}, {
+			width: '150%',
+			height: '150%',
+			rotate: '45',
 			translateX: '-50%',
 			translateY: '-50%',
 			duration: 0.9,
@@ -39,7 +42,7 @@ class TeamTile {
 		gsap.to(square, {
 			width: '0%',
 			height: '0%',
-			rotate: '0',
+			rotate: '-0',
 			translateX: '-50%',
 			translateY: '-50%',
 			duration: 0.9,
