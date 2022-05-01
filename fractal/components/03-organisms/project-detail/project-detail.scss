@@ -1,0 +1,32 @@
+.project-detail {
+  padding-top: 150px;
+
+  &__intro {
+
+    h1 {
+      margin-bottom: 32px;
+    }
+
+    p {
+      margin-bottom: 32px;
+    }
+
+  }
+
+	h2, h3, h4 {
+		hyphens: auto;
+	}
+
+  &__infobox {
+    margin-bottom: 64px;
+  }
+
+  &__quote {
+    margin-bottom: 64px;
+  }
+
+  &__content {
+    margin-bottom: 128px;
+  }
+
+}

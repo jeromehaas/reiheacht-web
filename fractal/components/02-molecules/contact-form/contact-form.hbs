@@ -1,0 +1,20 @@
+<form class="contact-form js-contact-form" action="">
+  <input class="contact-form__input contact-form__input--name" type="text" name="name" placeholder="*Name" value="">
+  <input class="contact-form__input contact-form__input--email" type="text" name="email" placeholder="*Email" value="">
+  <input class="contact-form__input contact-form__input--phone" type="text" name="phone" placeholder="Telefonnummer"
+    value="">
+  <textarea class="contact-form__input contact-form__input--message" name="message" placeholder="*Schiess los!"
+    cols="30" rows="7"></textarea>
+  <span class="contact-form__submit-button submit-button">
+    <input class="submit-button__input button" type="submit" value="Senden">
+    <p class="submit-button__error-label">Bitte fülle zuerst alle *Felder aus.</p>
+  </span>
+		<div class="contact-form__flash flash">	
+			<p class="flash__message flash__message--success">
+				Die Nachricht wurde erfolgreich übermittelt!
+			</p>
+			<p class="flash__message flash__message--error">
+				Ein Fehler ist aufgetreten - wir konnten die Nachricht nicht übermitteln.
+			</p>
+	</div>
+</form>

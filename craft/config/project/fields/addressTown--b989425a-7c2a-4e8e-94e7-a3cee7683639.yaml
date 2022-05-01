@@ -1,0 +1,19 @@
+columnSuffix: dymxfzqa
+contentColumnType: text
+fieldGroup: 4a3b4d64-85c8-4837-a1bf-d436b80f5e66 # Address
+handle: addressTown
+instructions: ''
+name: 'Address Town'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

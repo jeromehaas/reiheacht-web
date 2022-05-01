@@ -1,0 +1,74 @@
+fieldLayouts:
+  c7e7a01f-8da7-4ed6-82ee-45af021f9cfc:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: bfdd21c0-5a85-45fc-bee2-ec582eebdb4e # Reference Quote
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 66a7004f-9f0c-4598-9156-7adc0eb1b78d # Reference Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e76798f3-f541-423e-ac56-aa2fb217a23e # Reference Role
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 9782279f-5660-477f-a768-9e99c1ed2243 # Reference Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: reference
+hasTitleField: false
+name: Reference
+section: a31ba079-4154-4b6e-bca4-f3e0434175d9 # References
+sortOrder: 1
+titleFormat: '{referenceAuthor}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

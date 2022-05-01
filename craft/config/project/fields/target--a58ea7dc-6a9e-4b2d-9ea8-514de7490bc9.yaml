@@ -1,0 +1,15 @@
+columnSuffix: monpgdlh
+contentColumnType: string(255)
+fieldGroup: c723ce3a-0eb9-41dd-84a1-e97ed43fce23 # Common
+handle: target
+instructions: ''
+name: Target
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

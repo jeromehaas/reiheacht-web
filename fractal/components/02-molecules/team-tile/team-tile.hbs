@@ -1,0 +1,9 @@
+<div class="team-tile {{ class }}">
+	<figure class="team-tile__square"></figure>
+	<img class="team-tile__image" src="{{ image }}" alt="Image">
+	<a class="team-tile__label label" href="#">
+		{{> @heading class="label__name" type="h4" text=name color="white" }}
+		{{> @paragraph class="label__role" text=role }}
+		<i class="label__icon icon-email icon"></i>
+	</a>
+</div>

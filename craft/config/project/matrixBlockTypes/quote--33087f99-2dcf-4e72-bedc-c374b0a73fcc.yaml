@@ -1,0 +1,70 @@
+field: 8f3701ae-b853-4cdc-8277-b196dbf3efd0 # Blog Detail Content
+fieldLayouts:
+  12b762af-1efc-474b-bd01-b17f8b77fd20:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: e39b0ae5-aa24-4a7d-974b-f90e071a9e7f # Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 0491c40f-1304-4855-bb8e-72970aff4a71 # Author
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  0491c40f-1304-4855-bb8e-72970aff4a71: # Author
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: author
+    instructions: ''
+    name: Author
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e39b0ae5-aa24-4a7d-974b-f90e071a9e7f: # Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: ''
+    name: Text
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: quote
+name: Quote
+sortOrder: 4

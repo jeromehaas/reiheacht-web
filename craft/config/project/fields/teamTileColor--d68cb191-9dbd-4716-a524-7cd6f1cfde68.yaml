@@ -1,0 +1,12 @@
+columnSuffix: oqiaksha
+contentColumnType: string(7)
+fieldGroup: f4727773-dd07-4b66-a356-100798d9a6dc # Team
+handle: teamTileColor
+instructions: ''
+name: 'Team Tile Color'
+searchable: false
+settings:
+  defaultColor: '#0374b6'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Color

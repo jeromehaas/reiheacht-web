@@ -1,0 +1,2277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
+<style>
+    :root {
+        
+        
+        
+    }
+</style>
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.10.1" type="text/css">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.1" type="text/css">
+
+
+<title>Navigation Desktop | Reiheacht | Component Libary</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <div class="Header-navToggleIcon Header-navToggleIcon--open">
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        </div>
+        <div class="Header-navToggleIcon Header-navToggleIcon--closed">
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+        </div>
+    </button>
+    <a href="../../index.html" class="Header-title" data-pjax>Reiheacht | Component Libary</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+<div class="Pen" data-behaviour="pen" id="pen-14f27516badb5da986c16aa3628fee2f">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/navigation-desktop.html" title="Preview">
+            Navigation Desktop
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+
+    <span class="Pen-preview-size" data-role="preview-size"></span>
+
+    
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+
+</div>
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-14f27516badb5da986c16aa3628fee2f">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/navigation-desktop.html"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-14f27516badb5da986c16aa3628fee2f">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-14f27516badb5da986c16aa3628fee2f-panel-html">
+                HTML
+            </a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-14f27516badb5da986c16aa3628fee2f-panel-view">
+                View
+            </a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-14f27516badb5da986c16aa3628fee2f-panel-context">
+                Context
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-14f27516badb5da986c16aa3628fee2f-panel-assets">Assets</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-14f27516badb5da986c16aa3628fee2f-panel-info">
+                Info
+            </a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-14f27516badb5da986c16aa3628fee2f-panel-notes">
+                Notes
+            </a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-14f27516badb5da986c16aa3628fee2f-panel-html">
+    <code class="Code Code--lang-html hljs">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop section&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__inner section__inner&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./#home&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;home&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./#home&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;leistungen&quot;</span>&gt;</span>Leistungen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./#home&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;projekte&quot;</span>&gt;</span>Projekte<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./#home&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;team&quot;</span>&gt;</span>Team<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./#home&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;kontakt&quot;</span>&gt;</span>Kontakt<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./#home&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;blog&quot;</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/#home&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__logo&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__placeholder&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-14f27516badb5da986c16aa3628fee2f-panel-view">
+    <code class="Code Code--lang-handlebars hljs">
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop section&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__inner section__inner&quot;</span>&gt;</span>
+    </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> links}}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./#home&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">section</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">label</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/#home&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__logo&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__placeholder&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-14f27516badb5da986c16aa3628fee2f-panel-context">
+    <code class="Code Code--lang-json hljs">
+        
+            
+            <pre>{
+  <span class="hljs-attr">&quot;links&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Home&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;/#home&quot;</span>,
+      <span class="hljs-attr">&quot;section&quot;</span>: <span class="hljs-string">&quot;home&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Leistungen&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;/#leistungen&quot;</span>,
+      <span class="hljs-attr">&quot;section&quot;</span>: <span class="hljs-string">&quot;leistungen&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Projekte&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;/#projekte&quot;</span>,
+      <span class="hljs-attr">&quot;section&quot;</span>: <span class="hljs-string">&quot;projekte&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Team&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;/#team&quot;</span>,
+      <span class="hljs-attr">&quot;section&quot;</span>: <span class="hljs-string">&quot;team&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Kontakt&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;/#kontakt&quot;</span>,
+      <span class="hljs-attr">&quot;section&quot;</span>: <span class="hljs-string">&quot;kontakt&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Blog&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;/blog&quot;</span>,
+      <span class="hljs-attr">&quot;section&quot;</span>: <span class="hljs-string">&quot;blog&quot;</span>
+    }
+  ]
+}</pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-14f27516badb5da986c16aa3628fee2f-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-de9228b1caacd412bf9e1996795901aa">navigation-desktop.js</option>
+                
+                <option value="file-b5902b4a4d294151c3d0d70e4083998b">navigation-desktop.scss</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-de9228b1caacd412bf9e1996795901aa" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
+                                <pre><span class="hljs-keyword">import</span> lottieWeb <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;lottie-web&#x27;</span>;
+<span class="hljs-keyword">import</span> { gsap } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gsap&quot;</span>;
+<span class="hljs-keyword">import</span> { ScrollTrigger } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gsap/ScrollTrigger&quot;</span>;
+<span class="hljs-keyword">import</span> { ScrollToPlugin } <span class="hljs-keyword">from</span> <span class="hljs-string">&quot;gsap/ScrollToPlugin&quot;</span>;
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">NavigationDesktop</span> </span>{
+
+	<span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.name = <span class="hljs-string">&#x27;navigation-desktop&#x27;</span>;
+		<span class="hljs-built_in">this</span>.elements = {
+			<span class="hljs-attr">logo</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.navigation-desktop__logo&#x27;</span>)
+		};
+		<span class="hljs-built_in">this</span>.logo = {
+			<span class="hljs-attr">element</span>: <span class="hljs-literal">null</span>,
+			<span class="hljs-attr">container</span>: <span class="hljs-built_in">this</span>.elements.logo
+		}
+    <span class="hljs-built_in">this</span>.links = {
+      <span class="hljs-attr">active</span>: <span class="hljs-literal">null</span>,
+      <span class="hljs-attr">all</span>: <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.navigation-desktop__link&#x27;</span>),
+      <span class="hljs-attr">home</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.navigation-desktop [data-section=&quot;home&quot;]&#x27;</span>),
+    };
+    <span class="hljs-built_in">this</span>.sections = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.section--linked&#x27;</span>);
+    <span class="hljs-built_in">this</span>.anchorTargets = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.anchor-target&#x27;</span>);
+		<span class="hljs-built_in">this</span>.init();
+	}
+
+	<span class="hljs-function"><span class="hljs-title">init</span>(<span class="hljs-params"></span>)</span> {
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">`.js-<span class="hljs-subst">${<span class="hljs-built_in">this</span>.name}</span>`</span>)) <span class="hljs-keyword">return</span>;
+    gsap.to(<span class="hljs-built_in">window</span>, { <span class="hljs-attr">scrollTo</span>: <span class="hljs-built_in">window</span>.location.hash || <span class="hljs-string">&#x27;#home&#x27;</span> || <span class="hljs-string">&#x27;#&#x27;</span>, <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;none&#x27;</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">0</span> });
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.location.pathname === <span class="hljs-string">&#x27;/components/preview/home&#x27;</span> || <span class="hljs-built_in">window</span>.location.pathname === <span class="hljs-string">&#x27;/&#x27;</span>) {
+      <span class="hljs-built_in">this</span>.setupScrollTrigger();
+      <span class="hljs-built_in">this</span>.setupLinkObserver();
+    }
+    <span class="hljs-built_in">this</span>.createLogo();	
+    <span class="hljs-built_in">this</span>.addEventListener();
+	};
+
+  <span class="hljs-function"><span class="hljs-title">addEventListener</span>(<span class="hljs-params"></span>)</span> {
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.location.pathname === <span class="hljs-string">&#x27;/components/preview/home&#x27;</span> || <span class="hljs-built_in">window</span>.location.pathname === <span class="hljs-string">&#x27;/&#x27;</span>) {
+      <span class="hljs-built_in">this</span>.elements.logo.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> <span class="hljs-built_in">this</span>.scrollToTop(event));
+    }
+  }
+  
+  <span class="hljs-function"><span class="hljs-title">scrollToTop</span>(<span class="hljs-params">event</span>)</span> {
+    event.preventDefault();
+    gsap.to(<span class="hljs-built_in">window</span>, { <span class="hljs-attr">scrollTo</span>: <span class="hljs-string">&#x27;#home&#x27;</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;power2&#x27;</span> });
+  }
+
+  <span class="hljs-function"><span class="hljs-title">setupScrollTrigger</span>(<span class="hljs-params"></span>)</span> {
+    <span class="hljs-keyword">const</span> links = gsap.utils.toArray(<span class="hljs-built_in">this</span>.links.all);
+    links.forEach(<span class="hljs-function">(<span class="hljs-params">link</span>) =&gt;</span> {
+      <span class="hljs-keyword">if</span> (link.hash) {
+        link.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> <span class="hljs-built_in">this</span>.scrollToSection(link.hash, event));
+      };
+    });
+  };
+
+  <span class="hljs-function"><span class="hljs-title">scrollToSection</span>(<span class="hljs-params">hash, event</span>)</span> {
+    event.preventDefault();
+    gsap.to(<span class="hljs-built_in">window</span>, { <span class="hljs-attr">scrollTo</span>: hash, <span class="hljs-attr">duration</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;power2&#x27;</span> });
+  };
+
+  <span class="hljs-function"><span class="hljs-title">removeActiveLink</span>(<span class="hljs-params"></span>)</span> {
+    <span class="hljs-keyword">const</span> links = gsap.utils.toArray(<span class="hljs-built_in">this</span>.links.all);
+    links.forEach(<span class="hljs-function">(<span class="hljs-params">link</span>) =&gt;</span> link.classList.remove(<span class="hljs-string">&#x27;navigation-desktop__link--active&#x27;</span>)); 
+  };
+
+  <span class="hljs-function"><span class="hljs-title">setActiveLink</span>(<span class="hljs-params">link</span>)</span> {
+    link.classList.add(<span class="hljs-string">&#x27;navigation-desktop__link--active&#x27;</span>) 
+  };
+
+  <span class="hljs-function"><span class="hljs-title">updateActiveLink</span>(<span class="hljs-params">link</span>)</span> {
+    <span class="hljs-built_in">this</span>.removeActiveLink();
+    link.classList.add(<span class="hljs-string">&#x27;navigation-desktop__link--active&#x27;</span>)
+  };
+
+  <span class="hljs-function"><span class="hljs-title">setupLinkObserver</span>(<span class="hljs-params"></span>)</span> {
+    <span class="hljs-keyword">const</span> sections = gsap.utils.toArray(<span class="hljs-built_in">this</span>.sections);
+    sections.forEach(<span class="hljs-function">(<span class="hljs-params">section, i</span>) =&gt;</span> {
+      ScrollTrigger.create({
+        <span class="hljs-attr">trigger</span>: section, 
+        <span class="hljs-attr">start</span>: <span class="hljs-string">&quot;top 50%&quot;</span>,
+        <span class="hljs-attr">end</span>: <span class="hljs-string">&quot;top 50%&quot;</span>,
+        <span class="hljs-attr">markers</span>: <span class="hljs-literal">false</span>,
+        <span class="hljs-attr">onEnter</span>: <span class="hljs-function">() =&gt;</span> {
+          <span class="hljs-built_in">this</span>.removeActiveLink();
+          <span class="hljs-built_in">this</span>.setActiveLink(<span class="hljs-built_in">this</span>.links.all[i]);
+        },
+        <span class="hljs-attr">onEnterBack</span>: <span class="hljs-function">() =&gt;</span> {
+          <span class="hljs-built_in">this</span>.removeActiveLink();
+          <span class="hljs-built_in">this</span>.setActiveLink(<span class="hljs-built_in">this</span>.links.all[i - <span class="hljs-number">1</span>]);
+        }
+      });
+    });
+  };
+
+	<span class="hljs-function"><span class="hljs-title">createLogo</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.logo.element = lottieWeb.loadAnimation({
+			<span class="hljs-attr">container</span>: <span class="hljs-built_in">this</span>.elements.logo,
+			<span class="hljs-attr">renderer</span>: <span class="hljs-string">&#x27;svg&#x27;</span>,
+			<span class="hljs-attr">loop</span>: <span class="hljs-literal">true</span>,
+			<span class="hljs-attr">autoplay</span>: <span class="hljs-literal">true</span>,
+			<span class="hljs-attr">path</span>: <span class="hljs-string">&#x27;/media/lotties/logo.json&#x27;</span>
+		});
+	};
+
+};
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> NavigationDesktop;</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/navigation-desktop/navigation-desktop.js"><span>/components/raw/navigation-desktop/navigation-desktop.js</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">components/03-organisms/navigation-desktop/navigation-desktop.js</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">3.1 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-b5902b4a4d294151c3d0d70e4083998b" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code hljs">
+                                <pre><span class="hljs-selector-class">.navigation-desktop</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
+  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$box-shadow</span>;
+  <span class="hljs-attribute">position</span>: fixed;
+  inset: <span class="hljs-number">0</span> <span class="hljs-number">0</span> unset <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">z-index</span>: <span class="hljs-number">10</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$black</span>;
+
+  &amp;__inner {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">flex-direction</span>: row;
+    gap: <span class="hljs-number">40px</span>;
+    <span class="hljs-attribute">align-items</span>: center;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  }
+
+  &amp;__logo {
+    <span class="hljs-attribute">margin-left</span>: auto;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">112px</span>;
+  }
+
+  &amp;__link {
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease <span class="hljs-number">0.3s</span>;
+
+    &amp;--active {
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange</span>;
+    }
+
+  }
+
+  &amp;__placeholder {
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
+  }
+
+  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1050px</span>) {
+
+    &amp;__inner {
+      gap: <span class="hljs-number">24px</span>;
+    }
+
+  }
+
+  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">900px</span>) {
+    <span class="hljs-attribute">display</span>: none;
+
+    &amp;__placeholder {
+      <span class="hljs-attribute">display</span>: none;
+    }
+
+  }
+
+}</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/navigation-desktop/navigation-desktop.scss"><span>/components/raw/navigation-desktop/navigation-desktop.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">components/03-organisms/navigation-desktop/navigation-desktop.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">705 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-14f27516badb5da986c16aa3628fee2f-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@navigation-desktop</span>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/navigation-desktop.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/navigation-desktop.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">components/03-organisms/navigation-desktop/navigation-desktop.hbs</span>
+        </li>
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Referenced by <em class="Meta-count">(1)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="./home.html">@<span>home</span></a>
+            
+            </span>
+        </li>
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-14f27516badb5da986c16aa3628fee2f-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">No notes defined.</p>
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            
+
+    
+    
+
+
+<nav class="Navigation" data-behaviour="navigation">
+    <div class="Navigation-panel Navigation-panel--main" data-role="main-panel">
+    
+        <div class="Navigation-group Navigation-search">
+    <form action="" class="Search" data-behaviour="search">
+        <label class="Search-label" for="search-input">Search</label>
+        <input class="Search-input" id="search-input" type="search" placeholder="Search…" data-role="input" autocomplete="off">
+        <button type="button" data-behaviour="clear-search" class="Search-clearButton" aria-label="Clear search" hidden>
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        </button>
+    </form>
+</div>
+
+    
+        
+
+    
+    
+    <div class="Navigation-group">
+        
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <div class="Tree-header">
+        <h3 class="Tree-title">components</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-atoms">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-atoms-items">
+                    Atoms
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-atoms-items">
+                
+                
+                
+                
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-button">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-button-items">
+                    Button
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-button-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--default.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--default"
+                data-handle="button--default"
+            >
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--orange.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--orange"
+                data-handle="button--orange"
+            >
+                <span>Orange</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--blue.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--blue"
+                data-handle="button--blue"
+            >
+                <span>Blue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-heading">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-heading-items">
+                    Heading
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-heading-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./heading--default.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="heading--default"
+                data-handle="heading--default"
+            >
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./heading--h1.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="heading--h1"
+                data-handle="heading--h1"
+            >
+                <span>H 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./heading--h2.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="heading--h2"
+                data-handle="heading--h2"
+            >
+                <span>H 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./heading--h3.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="heading--h3"
+                data-handle="heading--h3"
+            >
+                <span>H 3</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./image.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="image"
+                data-handle="image"
+            >
+                <span>Image</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./line.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="line"
+                data-handle="line"
+            >
+                <span>Line</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./link.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="link"
+                data-handle="link"
+            >
+                <span>Link</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./paragraph.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="paragraph"
+                data-handle="paragraph"
+            >
+                <span>Paragraph</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./quote.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="quote"
+                data-handle="quote"
+            >
+                <span>Quote</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./scroller.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="scroller"
+                data-handle="scroller"
+            >
+                <span>Scroller</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./video.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="video"
+                data-handle="video"
+            >
+                <span>Video</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-molecules">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-molecules-items">
+                    Molecules
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-molecules-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./contact-form.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="contact-form"
+                data-handle="contact-form"
+            >
+                <span>Contact Form</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./contact-teaser.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="contact-teaser"
+                data-handle="contact-teaser"
+            >
+                <span>Contact Teaser</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./double-image.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="double-image"
+                data-handle="double-image"
+            >
+                <span>Double Image</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./infobox.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="infobox"
+                data-handle="infobox"
+            >
+                <span>Infobox</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./project-switcher.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="project-switcher"
+                data-handle="project-switcher"
+            >
+                <span>Project Switcher</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./project-tile.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="project-tile"
+                data-handle="project-tile"
+            >
+                <span>Project Tile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./service-tile.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="service-tile"
+                data-handle="service-tile"
+            >
+                <span>Service Tile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./team-tile.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="team-tile"
+                data-handle="team-tile"
+            >
+                <span>Team Tile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./teaser.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="teaser"
+                data-handle="teaser"
+            >
+                <span>Teaser</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-organisms">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-organisms-items">
+                    Organisms
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-organisms-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./blog-detail.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="blog-detail"
+                data-handle="blog-detail"
+            >
+                <span>Blog Detail</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./blog-overview.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="blog-overview"
+                data-handle="blog-overview"
+            >
+                <span>Blog Overview</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./contact.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="contact"
+                data-handle="contact"
+            >
+                <span>Contact</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./cookie-banner.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="cookie-banner"
+                data-handle="cookie-banner"
+            >
+                <span>Cookie Banner</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./footer.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="footer"
+                data-handle="footer"
+            >
+                <span>Footer</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./hero.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="hero"
+                data-handle="hero"
+            >
+                <span>Hero</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./navigation-desktop.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="navigation-desktop"
+                data-handle="navigation-desktop"
+            >
+                <span>Navigation Desktop</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./navigation-mobile.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="navigation-mobile"
+                data-handle="navigation-mobile"
+            >
+                <span>Navigation Mobile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./project-detail.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="project-detail"
+                data-handle="project-detail"
+            >
+                <span>Project Detail</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./project-tile-set.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="project-tile-set"
+                data-handle="project-tile-set"
+            >
+                <span>Project Tile Set</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./projects-overview.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="projects-overview"
+                data-handle="projects-overview"
+            >
+                <span>Projects Overview</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./reference-slider.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="reference-slider"
+                data-handle="reference-slider"
+            >
+                <span>Reference Slider</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./service-detail.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="service-detail"
+                data-handle="service-detail"
+            >
+                <span>Service Detail</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./service-tile-set.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="service-tile-set"
+                data-handle="service-tile-set"
+            >
+                <span>Service Tile Set</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./services-overview.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="services-overview"
+                data-handle="services-overview"
+            >
+                <span>Services Overview</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./team-overview.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="team-overview"
+                data-handle="team-overview"
+            >
+                <span>Team Overview</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./team-tile-set.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="team-tile-set"
+                data-handle="team-tile-set"
+            >
+                <span>Team Tile Set</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-pages">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-pages-items">
+                    Pages
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-pages-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./home.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="home"
+                data-handle="home"
+            >
+                <span>Home</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-06_layouts">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-06_layouts-items">
+                    06 Layouts
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-06_layouts-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./bright.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="bright"
+                data-handle="bright"
+            >
+                <span>Bright</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./dark.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="dark"
+                data-handle="dark"
+            >
+                <span>Dark</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+
+    </ul>
+</div>
+
+    </div>
+    
+
+
+    
+        
+
+    
+        
+
+    
+        
+<div class="Navigation-group">
+    <div class="Tree">
+        <div class="Tree-header">
+            <h3 class="Tree-title">
+                Information
+            </h3>
+        </div>
+        <dl class="Tree-aside">
+            
+                <div>
+                    <dt class="Tree-asideTerm">Built on:</dt>
+                    <dd class="Tree-asideDescription">
+                        
+                            <time datetime="2022-04-09T17:03:35.187Z">
+                                4/9/2022
+                            </time>
+                        
+                    </dd>
+                </div>
+            
+        </dl>
+    </div>
+</div>
+
+
+    
+    </div>
+
+    
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.10.1"></script>
+
+
+
+</body>
+</html>

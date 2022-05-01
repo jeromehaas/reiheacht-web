@@ -1,0 +1,28 @@
+<div class="hero__anchor-target anchor-target" id="home"></div>
+<div class="hero section section--linked js-hero">
+  <div class="hero__inner section__inner">
+    {{> @heading class="hero__heading" type="h1" color="white" text="Hallo, wir sind reiheacht, eine Motion Design
+    und
+    Werbefilm Agentur aus Luzern." }}
+    <span class="hero__line"></span>
+    {{!-- {{> @line class="hero__line" direction="horizontal" }} --}}
+    {{> @paragraph class="hero__teaser" color="white" text="reiheacht ist eine digitale Kreativagentur, die mit
+    Innovation und Zusammenarbeit einzigartige Motion Design- und Filmlösungen anbietet, damit du deine Marke da stärken
+    kannst, wo du deine Kunden am besten erreichst. Wir bringen deine Botschaft in Bewegung und machen diese zu einer
+    unvergesslichen Markenerfahrung."}}
+    {{> @paragraph class="hero__slogan" color="white" text="Wir bewegen alle und alles – setz dich in die reiheacht." }}
+    <div class="hero__button-wrapper">
+      {{> @button text="Showreel" class="hero__button hero__button--showreel" color="blue" }}
+      {{> @button text="Projekte" class="hero__button hero__button--projects" color="orange" }}
+      {{> @button text="Sitzplatz buchen" class="hero__button hero__button--contact" color="orange" }}
+    </div>
+    {{> @scroller class="hero__scroller" text="Popcorn nicht vergessen" }}
+  </div>
+  <div class="hero__showreel showreel">
+    <div class="showreel__inner">
+      {{> @video class="showreel__video" src="https://player.vimeo.com/video/546612359" }}
+      <i class="showreel__icon icon-close icon"></i>
+    </div>
+  </div>
+	<div class="hero__blocker"></div>
+</div>

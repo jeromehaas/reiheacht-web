@@ -1,0 +1,19 @@
+columnSuffix: vrftxqpd
+contentColumnType: text
+fieldGroup: 8daf1290-45ec-4d11-99a6-7a8b666465a2 # Blog
+handle: blogPreviewDescription
+instructions: ''
+name: 'Blog Preview Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

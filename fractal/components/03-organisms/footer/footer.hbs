@@ -1,0 +1,24 @@
+<footer class="footer section">
+  <div class="footer__inner section__inner">
+
+    <div class="footer__social-media social-media">
+      {{#each socialMedia}}
+      <a class="social-media__item" href=""><i class="social-media__icon icon-{{ icon }} icon"></i></a>
+      {{/each}}
+    </div>
+    <address class="footer__address address">
+      {{#each address}}
+      {{#if href}}
+      <a class="address__item" href="{{ href }}">{{ text }}</a>
+      {{else}}
+      <p class="address__item">{{ text }}</p>
+      {{/if}}
+      {{/each}}
+    </address>
+    <div class="footer__links links">
+      {{#each anchors}}
+      <a href="{{ href }}" class="links__item">{{ text }}</a>
+      {{/each}}
+    </div>
+  </div>
+</footer>

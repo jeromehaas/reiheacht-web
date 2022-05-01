@@ -1,0 +1,10 @@
+{% switch block.tag %}
+	{% case "h2" %}
+		<h2 class="heading heading--h2 heading--{{ block.color }}">{{ block.text }}</h1>
+	{% case "h3" %}
+		<h3 class="heading heading--h3 heading--{{ block.color }}">{{ block.text }}</h1>
+	{% case "h4" %}
+		<h4 class="heading heading--h3 heading--{{ block.color }}">{{ block.text }}</h1>
+	{% default %}
+		<h2 class="heading heading--h2 heading--{{ block.color }}">{{ block.text }}</h1>
+{% endswitch %}

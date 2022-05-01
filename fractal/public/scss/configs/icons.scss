@@ -1,0 +1,46 @@
+.icon {
+  display: inline-block;
+  font: normal normal normal 16px 'Icon';
+  color: inherit;
+  flex-shrink: 0;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-sm {
+  font-size: 12px;
+}
+.icon-md {
+  font-size: 16px;
+}
+
+.icon-lg {
+  font-size: 24px;
+}
+.icon-bg {
+  font-size: 32px;
+}
+
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$icon-double-arrow: unicode(ea02);
+$icon-arrow: unicode(ea04);
+$icon-twitter: unicode(ea06);
+$icon-vimeo: unicode(ea07);
+$icon-linkedin: unicode(ea08);
+$icon-youtube: unicode(ea09);
+$icon-email: unicode(ea0b);
+$icon-close: unicode(ea0c);
+
+.icon-double-arrow::before { content: $icon-double-arrow; }
+.icon-arrow::before { content: $icon-arrow; }
+.icon-twitter::before { content: $icon-twitter; }
+.icon-vimeo::before { content: $icon-vimeo; }
+.icon-linkedin::before { content: $icon-linkedin; }
+.icon-youtube::before { content: $icon-youtube; }
+.icon-email::before { content: $icon-email; }
+.icon-close::before { content: $icon-close; }
+

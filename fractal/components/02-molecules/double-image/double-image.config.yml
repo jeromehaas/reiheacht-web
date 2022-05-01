@@ -1,0 +1,4 @@
+name: Double Image
+context: 
+  img1: '/media/images/blog/motion-graphics-typen.png'
+  img2: '/media/images/blog/welt-der-farben.jpeg'

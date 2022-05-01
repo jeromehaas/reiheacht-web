@@ -24,16 +24,16 @@ const webpackStream = require('webpack-stream');
 // SOURCE PATHS
 const filePaths = {
 	scss: {
-		src: ['./public/scss/configs/reset.scss', './public/scss/configs/fonts.scss', './public/fonts/nucleo/nucleo.scss', './public/scss/configs/variables.scss', './public/scss/configs/keyframes.scss', './public/scss/configs/typography.scss', './public/scss/configs/mixins.scss', './public/scss/configs/global.scss', './public/media/icons/sprite/sprite.scss', './components/**/*.scss'],
-		dist: ['./public/css', '../craft/web/public/css']
+		src: ['./public/scss/configs/reset.scss', './public/scss/configs/icons.scss', './public/scss/configs/fonts.scss', './public/fonts/nucleo/nucleo.scss', './public/scss/configs/variables.scss', './public/scss/configs/keyframes.scss', './public/scss/configs/typography.scss', './public/scss/configs/mixins.scss', './public/scss/configs/global.scss', './public/media/icons/sprite/sprite.scss', './components/**/*.scss'],
+		dist: ['./public/css', '../craft/web/css']
 	},
 	fonts: {
 		src: ['./public/fonts/**/*.+(ttf|woff|woff2)'],
-		dist: ['../craft/web/public/fonts']
+		dist: ['../craft/web/fonts']
 	},
 	js: {
-		src: ['./public/js/main.js'],
-		dist: ['./public/js', '../craft/web/public/js']
+		src: ['./public/js/main.js', './components/**/*.js'],
+		dist: ['./public/js', '../craft/web/js']
 	},
 	image: {
 		src: ['./public/media/images/**/*.+(png|jpg|jpeg|gif)'],
@@ -41,23 +41,23 @@ const filePaths = {
 	},
 	graphic: {
 		src: ['./public/media/graphics/**/*.+(png|jpg|jpeg|gif|svg)'],
-		dist: ['../craft/web/public/media/graphics']
+		dist: ['../craft/web/media/graphics']
 	},
 	icon : {
 		src: ['./public/media/icons/**/*.svg'],
-		dist: ['../craft/web/public/media/icons']
+		dist: ['../craft/web/media/icons']
 	},
 	iconSprite : {
 		src: ['./public/media/icons/**/*.svg'],
-		dist: ['./public/media/icons/sprite', '../craft/web/public/media/icons/sprite']
+		dist: ['./public/media/icons/sprite', '../craft/web/media/icons/sprite']
 	},
 	favicon: {
-		src: ['./public/media/favicons/**/*.+(png|ico)'],
-		dist: ['./public/media/favicons', '../craft/web/public/media/favicons']
+		src: ['./public/media/favicons/*.png'],
+		dist: ['./public/media/favicons', '../craft/web/media/favicons']
 	},
 	lottie: {
 		src: ['./public/media/lotties/**/*.json'],
-		dist: ['../craft/web/public/media/lotties']
+		dist: ['../craft/web/media/lotties']
 	}
 }
 
@@ -91,6 +91,7 @@ const scssTask = (done) => {
 	.pipe(cssnano())
 	.pipe(sourcemaps.write('.'))
 	.pipe(dest(filePaths.scss.dist[0]))
+	.pipe(dest(filePaths.scss.dist[1]))
 	.pipe(notifier.success('scss'));
 	done();
 }
@@ -108,6 +109,7 @@ const jsTask = (done) => {
 	gulp.src(filePaths.js.src)
 		.pipe(plumber({ errorHandler: notifier.error }))
 		.pipe(webpackStream(webpackConfig))
+		.pipe(uglify())
 		.pipe(dest(filePaths.js.dist[0]))
 		.pipe(dest(filePaths.js.dist[1]))
 		.pipe(notifier.success('js'));
@@ -138,28 +140,6 @@ const iconTask = (done) => {
 		.pipe(svgmin())
 		.pipe(dest(filePaths.icon.dist[0]))
 		.pipe(notifier.success('icon'))
-	done();
-}
-
-// ICON SPRITE TASK
-const iconSpriteTask = (done) => {
-	gulp.src(filePaths.iconSprite.src, {"allowEmpty": true})
-		.pipe(svgmin())
-		.pipe(svgSprite({
-			mode: {
-        css: { 
-					dest: '.',
-					sprite: 'sprite.svg',
-					bust: false,
-					render: {
-              scss: true,
-              css: true
-            }
-        }
-    }
-	}))
-		.pipe(dest(filePaths.iconSprite.dist[0]))
-		.pipe(notifier.success('iconSprite'))
 	done();
 }
 
@@ -214,5 +194,13 @@ const watchTask = () => {
 	gulp.watch(filePaths.js.src, jsTask).on("change", browserSync.reload);
 }
 
-exports.build = parallel(iconSpriteTask, scssTask, fontTask, jsTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask);
-exports.default = series(exports.build, watchTask);
+const buildTask = parallel(scssTask, fontTask, jsTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask);
+// const buildTask = parallel(scssTask, fontTask, jsTask, imageTask, iconTask, graphicTask, lottieTask);
+const developTask = series(scssTask, jsTask, watchTask);
+const assetTask = series(fontTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask, watchTask);
+
+module.exports = {
+	default: developTask,
+	build: buildTask,
+	assets: assetTask,
+}

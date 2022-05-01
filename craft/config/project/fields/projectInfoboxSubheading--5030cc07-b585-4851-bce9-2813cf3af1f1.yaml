@@ -1,0 +1,19 @@
+columnSuffix: lrqpyjoz
+contentColumnType: text
+fieldGroup: c656f1bc-b3e7-4e6b-bea8-da1f3254e94e # Project
+handle: projectInfoboxSubheading
+instructions: ''
+name: 'Project Infobox Subheading'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,22 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: c656f1bc-b3e7-4e6b-bea8-da1f3254e94e # Project
+handle: projectDetailNextEntry
+instructions: ''
+name: 'Project Detail Next Entry'
+searchable: false
+settings:
+  allowSelfRelations: false
+  limit: '1'
+  localizeRelations: false
+  selectionLabel: ''
+  showSiteMenu: false
+  source: null
+  sources:
+    - 'section:4c614a57-4511-4b31-8cc7-01f589ea3987' # Projects
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

@@ -1,0 +1,185 @@
+fieldLayouts:
+  e69f4925-50bd-46e3-bcef-b4198e0520e1:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\EntryTitleField
+            warning: null
+            width: 100
+          -
+            fieldUid: 045c86b9-5f90-4c25-ada4-964b3afc3d96 # Project Tile Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 21408961-3404-4135-a29e-4aa2e9d688e3 # Project Tile Subheading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 83e9b224-389c-4e6d-868d-ef2be96f917d # Project Tile Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b2314008-e575-459b-864c-b45e396e57c1 # Project Tile Color
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 88407022-7dc0-4957-81e8-53514da38e80 # Project Tile Order
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Tile
+        sortOrder: 1
+      -
+        elements:
+          -
+            fieldUid: ae766595-dac6-4467-b496-54f74ab25a62 # Project Detail Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 41c3ceb6-6f88-48e4-a579-1b127b734427 # Project Detail Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e83254d2-a710-4844-b29b-a3fcc916433b # Project Detail Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5da4cf54-e2f0-497c-97f6-01e045e1cb9c # Project Detail Next Entry
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 535c087d-ae3d-4d74-8004-97edfcb5f18c # Project Detail Prev Entry
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Detail
+        sortOrder: 2
+      -
+        elements:
+          -
+            fieldUid: b0df425f-c398-425c-b8c9-8f1245a080cc # Project Infobox Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 5030cc07-b585-4851-bce9-2813cf3af1f1 # Project Infobox Subheading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 36bccdfa-ddb0-4bce-a12b-1e1e71d96519 # Project Infobox Logo
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Infobox
+        sortOrder: 3
+      -
+        elements:
+          -
+            fieldUid: 87a41bd1-9632-4023-8116-da611405b752 # Meta Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 62ec9f1e-36fd-4669-97ec-03615ece3286 # Meta Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Meta
+        sortOrder: 4
+handle: project
+hasTitleField: false
+name: Project
+section: 4c614a57-4511-4b31-8cc7-01f589ea3987 # Projects
+sortOrder: 1
+titleFormat: '{projectTileSubheading}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

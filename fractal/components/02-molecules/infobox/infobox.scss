@@ -1,0 +1,64 @@
+.infobox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgb(0 0 0 / 25%) 0px 4px 4px, rgb(0 0 0 / 25%) 0px -4px 4px;
+  padding: 32px 0;
+
+  &__logo {
+    grid-area: logo;
+    height: 80px;
+    width: unset;
+  }
+
+  &__line {
+
+    &--vertical {
+      margin: 0 32px;
+    }
+
+    &--horizontal {
+      display: none;
+      margin: 32px 0;
+    }
+
+  }
+
+  &__title {
+    grid-area: title;
+  }
+
+  &__subtitle {
+    grid-area: subtitle;
+  }
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+
+    &__logo {
+      grid-area: logo;
+      height: 60px;
+    }
+
+    &__line {
+
+      &--vertical {
+        display: none;
+      }
+
+      &--horizontal {
+        display: block;
+        margin: 32px 0;
+      }
+
+    }
+
+    &__title,
+    &__subtitle {
+      text-align: center;
+    }
+
+  }
+
+}

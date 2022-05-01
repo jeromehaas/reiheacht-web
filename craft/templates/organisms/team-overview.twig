@@ -1,0 +1,18 @@
+{% set team = craft.entries.section('team') %}
+{% set teamTeaser = craft.entries.section('team').slug('team').one() %}
+{% set teamItems = craft.entries.section('team').level(2).all() %}
+
+<div class="team__anchor-target anchor-target" id="team"></div>
+<section class="team section section--linked" id="team">
+	<div class="team__inner section__inner">
+
+		{% include "molecules/teaser" with { class: "team__line team__line--vertical", heading: teamTeaser.heading, subheading: teamTeaser.richText } %}
+
+		<div class="team-tile-set">
+			{% for item in teamItems %}
+				{% include "molecules/team-tile" with { class: "team-tile-set__item", heading: item.teamTileFullName, role: item.teamTileRole, href: item.uri, email: item.teamTileEmail, image: item.teamTileImage.one().url() } %}
+			{% endfor %}
+		</div>
+
+	</div>
+</section>

@@ -1,0 +1,13 @@
+{% set contact = craft.entries.section('contact').one() %}
+{% set contactTeaser = craft.entries.section('contact').slug('kontakt').one() %}
+
+<div class="contact__anchor-target anchor-target" id="kontakt"></div>
+<section class="contact js-contact section section--linked">
+	<div class="contact__inner section__inner">
+
+		{% include "molecules/teaser" with { class: "contact__teaser", heading: contactTeaser.heading, subheading: contactTeaser.richText } %}
+		{% include "molecules/contact-form" %}
+		<div class="contact__observer"></div>
+
+	</div>
+</section>

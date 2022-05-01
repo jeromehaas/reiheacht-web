@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: imprint
+name: Imprint
+propagationMethod: all
+siteSettings:
+  639cd615-fa76-49be-a252-a4af968023e9: # Reiheacht
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/imprint.twig
+    uriFormat: impressum
+type: single

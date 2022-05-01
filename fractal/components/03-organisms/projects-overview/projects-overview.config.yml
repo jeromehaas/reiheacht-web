@@ -1,0 +1,50 @@
+name: Projects Overview
+context:  
+  heading: Heading
+  subheading: Subheading
+  projects: 
+    - title: reiheacht
+      subtitle: Showreel
+      image: '/media/images/project-tiles/reiheacht-showreel.png'
+      color: '#0374B6'
+      href: 
+    - title: Sportcard
+      subtitle: Sporty als Chatbot
+      image: '/media/images/project-tiles/sportcard-sporty.png'
+      color: '#0071A6'
+      href: 
+    - title: ITpoint
+      subtitle: Imagefilm 2021
+      image: '/media/images/project-tiles/itpoint-imagefilm.png'
+      color: '#004A8F'
+      href: 
+    - title: Holliger Imballegno 
+      subtitle: Altuna Box
+      image: '/media/images/project-tiles/holliger-imballegno-altuna-box.png'
+      color: '#0072BC'
+      href: 
+    - title: Schweizer Bauernverband
+      subtitle: Extreme Agrarinitiative
+      image: '/media/images/project-tiles/schweizer-bauernverband-extreme-agratinitiative.png'
+      color: '#9EA600'
+      href: 
+    - title: HotellerieSuisse
+      subtitle: Adventskampagne 2021
+      image: '/media/images/project-tiles/hotelleriesuisse-adventskampagne.jpeg'
+      color: '#DA291C'
+      href: 
+    - title: Schweizer Bauernverband
+      subtitle: Trinkwasserinitiative
+      image: '/media/images/project-tiles/schweizer-bauernerband-trinkwasserinitiative.png'
+      color: '#9EA600'
+      href: 
+    - title: Schweizer Bauernverband
+      subtitle: diverse Erklärfilme
+      image: '/media/images/project-tiles/schweizer-bauernverband-diverse-erklaerfilme.png'
+      color: '#9EA600'
+      href: 
+    - title: Gallo Suisse
+      subtitle: Extreme Agrarinitiative
+      image: '/media/images/project-tiles/gallosuisse-extreme-agrarinitiative.png'
+      color: '#C70103'
+      href: 

@@ -1,0 +1,37 @@
+field: e83254d2-a710-4844-b29b-a3fcc916433b # Project Detail Content
+fieldLayouts:
+  fe17b1fb-f923-41ef-80ce-71f945ff5890:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 685bd32c-466e-47c2-8fdd-46039b00b9c3 # Source
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+fields:
+  685bd32c-466e-47c2-8fdd-46039b00b9c3: # Source
+    columnSuffix: null
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: source
+    instructions: ''
+    name: Source
+    searchable: false
+    settings:
+      maxLength: '255'
+      placeholder: null
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: video
+name: Video
+sortOrder: 2

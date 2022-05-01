@@ -1,0 +1,19 @@
+columnSuffix: nvvedvvr
+contentColumnType: text
+fieldGroup: c656f1bc-b3e7-4e6b-bea8-da1f3254e94e # Project
+handle: projectMetaDescription
+instructions: ''
+name: 'Project Meta Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: '1'
+  placeholder: null
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

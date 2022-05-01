@@ -1,0 +1,20 @@
+columnSuffix: qjjdeztv
+contentColumnType: smallint(3)
+fieldGroup: c656f1bc-b3e7-4e6b-bea8-da1f3254e94e # Project
+handle: projectTileOrder
+instructions: ''
+name: 'Project Tile Order'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: 1
+  max: 500
+  min: 1
+  prefix: null
+  previewCurrency: ''
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

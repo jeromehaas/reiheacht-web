@@ -1,0 +1,19 @@
+columnSuffix: snkqwvpw
+contentColumnType: text
+fieldGroup: bd95c630-a4c4-4814-93b3-efc79b489aea # Hero
+handle: heroSlogan
+instructions: ''
+name: 'Hero Slogan'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

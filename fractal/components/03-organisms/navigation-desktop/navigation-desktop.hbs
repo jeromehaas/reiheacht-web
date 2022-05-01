@@ -1,0 +1,13 @@
+<div class="navigation-desktop section">
+  <div class="navigation-desktop__inner section__inner">
+    {{#each links}}
+    <a class="navigation-desktop__link" href="./#home" data-section="{{ section }}">{{ label }}</a>
+    {{/each}}
+    <a href="/#home" class="navigation-desktop__logo"></a>
+  </div>
+		{{#if closeTriangle }}
+			<a class="navigation-desktop__close-triangle close-triangle close-triangle__top" href="/#projects"></a>
+			<a class="navigation-desktop__close-triangle close-triangle close-triangle__bottom" href="/#projects"></a>
+		{{/if}}
+</div>
+<div class="navigation-desktop__placeholder"></div>

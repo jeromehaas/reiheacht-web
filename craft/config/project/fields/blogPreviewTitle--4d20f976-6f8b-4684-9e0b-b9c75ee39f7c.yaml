@@ -1,0 +1,27 @@
+columnSuffix: tkogudwo
+contentColumnType: text
+fieldGroup: 8daf1290-45ec-4d11-99a6-7a8b666465a2 # Blog
+handle: blogPreviewTitle
+instructions: ''
+name: 'Blog Preview Title'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showHtmlButtonForNonAdmins: '1'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

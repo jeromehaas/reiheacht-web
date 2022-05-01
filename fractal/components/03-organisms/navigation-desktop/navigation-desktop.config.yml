@@ -1,0 +1,21 @@
+name: Navigation Desktop
+context: 
+  links:
+    - label: Home
+      href: '/#home'
+      section: 'home'
+    - label: Leistungen 
+      href: '/#leistungen'
+      section: 'leistungen'
+    - label: Projekte
+      href: '/#projekte'
+      section: 'projekte'
+    - label: Team
+      href: '/#team'
+      section: 'team'
+    - label: Kontakt
+      href: '/#kontakt'
+      section: 'kontakt'
+    - label: Blog
+      href: '/blog'
+      section: 'blog'

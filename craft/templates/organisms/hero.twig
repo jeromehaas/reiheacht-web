@@ -1,0 +1,27 @@
+{% set hero = craft.entries.section('hero').one() %}
+
+<div class="projects__anchor-target anchor-target" id="home"></div>
+<div class="hero section section--linked js-hero">
+	<div class="hero__inner section__inner">
+		{{ hero.heroHeading }}
+		<span class="hero__line"></span>
+		<p class="paragraph  paragraph--white  hero__teaser">{{ hero.heroTeaser }}</p>
+		<p class="paragraph  paragraph--white  hero__slogan">Wir bewegen alle und alles – setz dich in die reiheacht.</p>
+		<div class="hero__button-wrapper">
+			<a class="button button--blue hero__button hero__button--showreel" href="#">Showreel</a>
+			<a class="button button--orange hero__button hero__button--projects" href="#">Projekte</a>
+			<a class="button button--orange hero__button hero__button--contact" href="#">Sitzplatz buchen</a>
+		</div>
+		<div class="scroller hero__scroller js-scroller">
+			<div class="scroller__text ">Popcorn nicht vergessen</div>
+			<i class="scroller__icon icon-double-arrow icon"></i>
+		</div>
+	</div>
+	<div class="hero__showreel showreel">
+		<div class="showreel__inner">
+			{% include "atoms/video" with { class: "showreel__video", src: "https://player.vimeo.com/video/546612359" } %}
+			<i class="showreel__icon icon-close icon"></i>
+		</div>
+	</div>
+	<div class="hero__blocker"></div>
+</div>

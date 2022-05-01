@@ -1,0 +1,22 @@
+.teaser {
+  opacity: 0;
+
+  &__heading,
+  h2 {
+    margin-bottom: 24px;
+    max-width: 580px;
+
+  }
+
+  &__line {
+    margin-bottom: 32px;
+  }
+
+  &__text,
+  p {
+    margin-bottom: 48px;
+    max-width: 880px;
+    margin-bottom: 32px;
+  }
+
+}

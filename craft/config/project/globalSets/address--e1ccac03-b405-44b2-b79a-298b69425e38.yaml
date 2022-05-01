@@ -1,0 +1,55 @@
+fieldLayouts:
+  e610bb74-efa1-45a3-ba60-26cc7e58f528:
+    tabs:
+      -
+        elements:
+          -
+            fieldUid: 0f4f4198-96dc-4062-a155-fde33b1b6877 # Address Company
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: a8c2a0cc-8f9a-42b0-8c01-6211cdb116f4 # Address Street
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: b989425a-7c2a-4e8e-94e7-a3cee7683639 # Address Town
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: e2ffbf85-f6af-4731-b6af-9fdb897bf01c # Address Email
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
+            fieldUid: 16d114b8-8151-4c10-bc89-83f8ed671f7e # Address Phone
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+        name: Address
+        sortOrder: 1
+handle: address
+name: Address
+sortOrder: 2

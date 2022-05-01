@@ -1,51 +1,292 @@
 * {
-  font-family: 'Roboto-Light';
-	line-height: 1;
-	color: black;
+  font-family: 'Helvetica Neue', serif;
+  line-height: 1;
+  color: $white;
 }
 
-.heading, h1, h2, h3, h4,
-.paragraph, p {
+.heading,
+h1,
+h2,
+h3,
+h4,
+h5,
+.link,
+a, li {
+  line-height: 1.25;
+  font-weight: 400;
+  color: $white;
+}
+
+.paragraph,
+p {
 	line-height: 1.5;
 }
 
-.heading--h1, h1 {
-	font-size: 40px;
+.heading--h1,
+h1 {
+  font-size: 75px;
+  margin-right: 0px;
+  font-family: 'Helvetica Neue';
+  font-weight: 800;
+  font-weight: 800;
 }
 
-.heading--h2, h2 {
-	font-size: 30px;
+.heading--h2,
+h2 {
+  font-size: 50px;
+  font-weight: 800;
 }
 
-.heading--h3, h3 {
+.heading--h3,
+h3 {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.heading--h4,
+h4 {
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.heading--h5,
+h5 {
+  font-size: 20px;
+}
+
+
+
+.paragraph,
+p {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+li {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.link,
+a {
+  font-size: 25px;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+.cookie-banner__text {
+  font-size: 12px;
+}
+
+.cookie-banner__link {
+  font-size: 12px;
+}
+
+.cookie-banner__button {
+  font-size: 12px;
+}
+
+.scroller__text {
+  font-weight: 300;
+}
+
+.button {
+	line-height: 1.25;
+	font-weight: 300;
 	font-size: 25px;
 }
 
-.heading--h4, h4 {
-	font-size: 20px;
-	font-family: 'Roboto-Bold';
+.navigation-mobile__link {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
 }
 
-.heading--h4, h4 {
-	font-size: 20px;
-	font-family: 'Roboto-Bold';
+.navigation-desktop__link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
 }
 
-.heading--h5, h5 {
-	font-size: 20px;
+.reference-slider__quote {
+  font-size: 30px;
+  line-height: 1.6;
+  font-weight: 300;
 }
 
-.paragraph, p {
-	font-size: 18px;
+.quote__text {
+  font-size: 50px;
+  font-weight: 800;
 }
 
-.link-navigation {
-	font-size: 18px;
+.reference-slider__author .author__name {
+  font-size: 22px;
 }
 
-.input, input,
-.textarea, textarea {
-	font-size: 18px;
-	line-height: 1.5;
+.footer__address .address__item {
+  font-size: 20px;
+  line-height: 1.5;
 }
 
+.footer__links .links__item {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.reference-slider__author .author__role {
+  font-size: 18px;
+}
+
+.contact-form__input,
+.contact-form__input::placeholder,
+.contact-form__button {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.contact-form__input,
+.contact-form__input::placeholder {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.input,
+input,
+.textarea,
+textarea {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.infobox__subtitle {
+  font-size: 14px;
+}
+
+.infobox__title {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.project-switcher__control .control__text {
+  font-size: 14px;
+}
+
+.hero__teaser,
+.hero__slogan {
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.project-switcher .control__icon {
+	font-size: 24px;
+}
+
+.team-tile .label__role {
+  font-size: 18px;
+}
+
+
+
+.reference-slider__slide {
+  font-size: 18px;
+}
+
+.contact-form .submit-button__error-label {
+  font-size: 12px;
+}
+
+.project-tile .front__subtitle {
+	font-size: 22px;
+}
+
+.cookie-banner__text, 
+.cookie-banner__link {
+  font-size: 16px;
+} 
+
+@media (max-width: 900px) {
+  .heading--h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 750px) {
+  .heading--h1, h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading--h1, h1 {
+    font-size: 40px;
+  }
+
+  .heading--h2, h2 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .heading--h1, h1 {
+    font-size: 30px;
+  }
+
+  .heading--h2, h2 {
+    font-size: 30px;
+  }
+
+	.paragraph, p,
+	.link, a, 
+	li {
+		font-size: 20px;
+	}
+	
+}
+
+@media (max-width: 350px) {
+
+  .heading--h2, h2 {
+    font-size: 25px;
+  }
+
+  .heading--h3, h3 {
+    font-size: 18px;
+  }
+
+  .heading--h4, h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 650px) {
+  .reference-slider__quote {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .cookie-banner__text,
+  .cookie-banner__link {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 550px) {
+  .quote__text {
+    font-size: 30px
+  }
+
+  .quote__author {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .hero__teaser,
+  .hero__slogan {
+    font-size: 20px;
+  }
+
+}

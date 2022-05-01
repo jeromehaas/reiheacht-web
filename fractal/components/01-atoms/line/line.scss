@@ -1,0 +1,17 @@
+.line {
+	border-radius: 2px; 
+	background-color: $orange;
+
+	&--vertical {
+		width: 4px;	
+		height: 0px;
+		animation: line-vertical-grow 0.8s ease forwards;
+	}
+	
+	&--horizontal {
+		width: 0px;
+		height: 4px;
+		animation: line-horizontal-grow 0.8s ease forwards;
+	}
+
+}

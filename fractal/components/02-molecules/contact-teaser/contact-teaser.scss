@@ -1,0 +1,13 @@
+.contact-teaser {
+	margin-bottom: 80px;
+	
+	&__text,
+	&__link {
+		font-weight: 600;
+	}
+
+	&__link {
+		color: $orange;
+	}
+
+}

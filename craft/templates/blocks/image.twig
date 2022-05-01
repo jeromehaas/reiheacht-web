@@ -1,0 +1,9 @@
+<div class="image">
+	{% for item in block.source %}
+		{% if block.anchor %} <a href="{{ block.anchor }}">{% endif %}
+			<div class="image__wrapper">
+				<img class="image__item" src="{{ item.url() }}" alt="{{ block.altTag }}"/>
+			</div>
+		{% if block.anchor %} </a> {% endif %}
+	{% endfor %}
+</div>

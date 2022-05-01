@@ -1,0 +1,18 @@
+<section class="blog-overview section">
+  <div class="blog-overview section__inner">
+    {{> @heading type="h1" text="Dein Motion Design Blog." color="black" class="blokg-overview__title" }}
+    {{#each items}}
+    <div class="blog-preview__item item">
+      <a href="{{ item.uri }}">
+        {{> @image class="item__image" src=image }}
+      </a>
+      {{> @paragraph text=category color="black" class="item__category"}}
+      <a href="{{ item.uri }}">
+        {{> @heading type="h2" text=title color="black" class="item__title" }}
+        {{ item.blogPreviewTitle }}
+      </a>
+      {{> @paragraph class="item__description" text=description color="black" }}
+    </div>
+    {{/each}}
+  </div>
+</section>

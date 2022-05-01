@@ -1,0 +1,44 @@
+.contact {
+
+  &__inner {
+    display: grid;
+    grid-template: auto auto / 500px auto;
+    grid-template-areas: 
+      "teaser teaser"
+      "form observer";
+  }
+
+  .teaser {
+    grid-area: teaser;
+  }
+
+  .contact-form {
+    grid-area: form;
+  }
+
+  &__observer {
+    grid-area: observer;
+    width: 75%;
+    max-width: 400px;
+    justify-self: center;
+  }
+
+  @media (max-width: 950px) {
+  
+    &__inner {
+      display: grid;
+      grid-template: auto auto auto / auto;
+      grid-template-areas: 
+        "teaser"
+        "form"
+        "observer";  
+    } 
+
+    .contact-form {
+      margin-bottom: 64px;
+    }
+
+  }
+
+}
+

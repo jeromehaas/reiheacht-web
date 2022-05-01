@@ -1,0 +1,203 @@
+dateModified: 1651054576
+email:
+  fromEmail: info@yellowreach.io
+  fromName: yellowreach
+  replyToEmail: info@yellowreach.io
+  template: null
+  transportSettings:
+    encryptionMethod: ssl
+    host: mail.cyon.ch
+    password: z1CZ!aMQa6%9
+    port: '465'
+    timeout: '10'
+    useAuthentication: '1'
+    username: info@yellowreach.io
+  transportType: craft\mail\transportadapters\Smtp
+meta:
+  __names__:
+    0a115a3a-459d-4ad5-859a-dfc76886759b: Vimeo # Vimeo
+    0d99d2e2-cc1b-4cf4-91d6-409255743142: Video # Video
+    0ef451cf-adc2-4b03-88de-819fe2d1fe69: Text # Text
+    0f4f4198-96dc-4062-a155-fde33b1b6877: 'Address Company' # Address Company
+    0f573eff-0272-4650-854c-7f1117d67210: Heading # Heading
+    1b49fd40-d90f-4f3d-bf96-7cb4f2bedffd: Text # Text
+    1b57769a-23cf-480b-ab7c-46ad0e3c0e57: Imprint # Imprint
+    1dd04d2d-76aa-4f79-98e2-15667bb18762: 'Service Detail Content' # Service Detail Content
+    1e2a8ec8-bbf2-4ebe-95a4-91b4a49f13b1: Project # Project
+    1e4e377a-85e5-4dc3-ac61-20057973505f: 'Rich Text' # Rich Text
+    2f8e7889-0c86-4bf3-98c5-3d3b8d2b2c91: Heading # Heading
+    2f2691b6-d6aa-476f-860f-d03633e0aaa0: Intro # Intro
+    3a3e4fc3-09d2-4271-8e8d-330aecc39a2a: Text # Text
+    3fc5fdcb-c070-4f5c-8e6b-2de1c1598418: Source # Source
+    4a3b4d64-85c8-4837-a1bf-d436b80f5e66: Address # Address
+    4c545e64-d0cb-4c00-88a0-a1e12963cda9: Reference # Reference
+    4c614a57-4511-4b31-8cc7-01f589ea3987: Projects # Projects
+    4d0c44d3-2a40-4862-bbb6-3e65820d886b: 'Social Media Links' # Social Media Links
+    4d20f976-6f8b-4684-9e0b-b9c75ee39f7c: 'Blog Preview Title' # Blog Preview Title
+    4edb3910-5230-42ce-8fd7-307eccc25034: Alt-Tag # Alt-Tag
+    5c050e09-f1cb-42f3-81ee-4d2aec652d46: 'Data Privacy' # Data Privacy
+    5da4cf54-e2f0-497c-97f6-01e045e1cb9c: 'Project Detail Next Entry' # Project Detail Next Entry
+    5f690fe1-25a1-40d5-b841-96a26d9d86be: 'Team Tile Email' # Team Tile Email
+    6a99c432-5e9e-4deb-8658-58ee98ec27db: 'Project Assets' # Project Assets
+    6dbcd30b-b235-4b2a-b257-41cb7044dcf3: Client # Client
+    6ee738f0-13b0-47d4-a041-9dc23428a5ab: Imprint # Imprint
+    6f1f3b3a-38c7-4ecb-8288-fae54de22df6: 'Service Tile Heading' # Service Tile Heading
+    7e8b65c1-e184-4d9b-817c-ab73ff4fb220: 'Team Tile Role' # Team Tile Role
+    8abb2693-b39a-449a-9254-842c71199c61: 'Blog Preview Category' # Blog Preview Category
+    8cbcb54e-f568-4000-ae26-3687382f0088: Tag # Tag
+    8daf1290-45ec-4d11-99a6-7a8b666465a2: Blog # Blog
+    8f3701ae-b853-4cdc-8277-b196dbf3efd0: 'Blog Detail Content' # Blog Detail Content
+    09aa1ffb-6601-431f-9955-4b1b0d42ce23: Reference # Reference
+    9ccb1d86-84cd-48e4-8c4c-91b26bf268e2: Hero # Hero
+    9e033571-2487-4cfe-bf95-878adcaeafbd: 'Blog Detail Title' # Blog Detail Title
+    0015aa03-2218-4660-b56a-b2eca6920ee3: LinkedIn # LinkedIn
+    16d114b8-8151-4c10-bc89-83f8ed671f7e: 'Address Phone' # Address Phone
+    16f5cce3-659f-41b6-9b77-72bf4d772941: Tag # Tag
+    25fa5457-a6ee-4d41-8a10-e5da741ffaec: Source # Source
+    36bccdfa-ddb0-4bce-a12b-1e1e71d96519: 'Project Infobox Logo' # Project Infobox Logo
+    41c3ceb6-6f88-48e4-a579-1b127b734427: 'Project Detail Description' # Project Detail Description
+    43f7ff8d-58a9-431c-92f4-99cd460b2301: Contact # Contact
+    045c86b9-5f90-4c25-ada4-964b3afc3d96: 'Project Tile Heading' # Project Tile Heading
+    56f01196-22f1-4172-b98a-a6fbdbf80eeb: 'Service Meta Title' # Service Meta Title
+    62ec9f1e-36fd-4669-97ec-03615ece3286: 'Meta Description' # Meta Description
+    66a7004f-9f0c-4598-9156-7adc0eb1b78d: 'Reference Name' # Reference Name
+    68b8c0a1-aa06-42d4-937d-04cd7138344c: Color # Color
+    75d71c28-598d-437c-b42b-c36a1745dc8b: 'Service Detail Heading' # Service Detail Heading
+    78b9ac1c-f0bc-4335-af8c-b8ccd97a8982: 'Blog Meta Description' # Blog Meta Description
+    83e01f63-530d-444e-b43d-4620ab1c5d8a: agbs # agbs
+    83e9b224-389c-4e6d-868d-ef2be96f917d: 'Project Tile Image' # Project Tile Image
+    83f85246-f852-486f-9dae-f2c04b12c622: Image # Image
+    87a41bd1-9632-4023-8116-da611405b752: 'Meta Title' # Meta Title
+    087d042a-ff60-49b0-adb5-6bec8a6275c4: Color # Color
+    94ca0d20-ac36-4f6f-a4d6-8b7a5ca0c735: 'Team Tile Image' # Team Tile Image
+    261c494e-5ba1-4317-8f76-8c4edb9f3f31: 'Data Privacy' # Data Privacy
+    478cffc9-7bfd-4a96-8fde-21ede6b46b63: 'Team Tiles' # Team Tiles
+    0491c40f-1304-4855-bb8e-72970aff4a71: Author # Author
+    535c087d-ae3d-4d74-8004-97edfcb5f18c: 'Project Detail Prev Entry' # Project Detail Prev Entry
+    547f0aea-9305-45cf-85cf-4aeee42709b0: 'Team Tile Full Name' # Team Tile Full Name
+    557d13d8-bdf7-470b-8df9-c5b75b762d47: Reiheacht # Reiheacht
+    571b8342-17e6-456a-aa15-a50a81cd0e35: Video # Video
+    619de734-5e70-4b95-81b5-7f1d7a1563cf: Anchor # Anchor
+    639cd615-fa76-49be-a252-a4af968023e9: Reiheacht # Reiheacht
+    685bd32c-466e-47c2-8fdd-46039b00b9c3: Source # Source
+    760a3780-08ee-4b06-bc26-fcaf8244b8c9: Color # Color
+    917d1883-78ae-422c-89bb-5a5af3a60c82: YouTube # YouTube
+    944c9d68-c5ca-4023-9c29-44ab7add275d: Services # Services
+    2862eee5-144d-4052-904f-42da2dd4b20c: 'Hero  Heading' # Hero  Heading
+    5030cc07-b585-4851-bce9-2813cf3af1f1: 'Project Infobox Subheading' # Project Infobox Subheading
+    6451d4e2-9ca7-49f7-9c75-e8a7b283fbc8: Paragraph # Paragraph
+    06941c4d-93a8-4248-ae7a-66b38dcde9ff: 'Service Assets' # Service Assets
+    9762ac62-30f0-48eb-ab1f-d04488950dc7: 'Public Schema' # Public Schema
+    33087f99-2dcf-4e72-bedc-c374b0a73fcc: Quote # Quote
+    51475d29-cdbd-4826-aaaa-d31201dc50df: 'Project Tiles' # Project Tiles
+    86678cb0-39c3-4425-b563-f120e7a2ac6d: 'Service Detail Image' # Service Detail Image
+    364808e3-b0f2-4da0-a838-87118159e3f1: 'Project Meta Title' # Project Meta Title
+    1662360e-fabd-4bb5-9ce8-2588370bf3c8: 'Hero Scroller Text' # Hero Scroller Text
+    6707582c-afc8-4119-a6e0-5e57bc9bb26e: 'Blog Preview Description' # Blog Preview Description
+    7944098d-e401-4ce5-8978-77973ce69099: 'Blog Posts' # Blog Posts
+    9782279f-5660-477f-a768-9e99c1ed2243: 'Reference Logo' # Reference Logo
+    21408961-3404-4135-a29e-4aa2e9d688e3: 'Project Tile Subheading' # Project Tile Subheading
+    57235625-ac51-4048-99eb-9a9dcfde2739: Image # Image
+    88407022-7dc0-4957-81e8-53514da38e80: 'Project Tile Order' # Project Tile Order
+    a3b55356-2035-4f54-8225-2026513ec0ef: Color # Color
+    a5a23fd7-d90a-42df-8fed-a019a2fd2247: Hero # Hero
+    a5c0d0fa-d611-4e4c-9d0a-d39cd0a18b15: Team # Team
+    a8c2a0cc-8f9a-42b0-8c01-6211cdb116f4: 'Address Street' # Address Street
+    a8ede5ae-0341-4999-ab0d-f322f9a6e60f: 'Blog Assets' # Blog Assets
+    a31ba079-4154-4b6e-bca4-f3e0434175d9: References # References
+    a58ea7dc-6a9e-4b2d-9ea8-514de7490bc9: Target # Target
+    a911b60c-a0c9-4023-8585-a646364e75a6: 'Service Tiles' # Service Tiles
+    ae766595-dac6-4467-b496-54f74ab25a62: 'Project Detail Heading' # Project Detail Heading
+    af508af9-d355-4b8c-ba92-b0db4ad26825: Intro # Intro
+    b0df425f-c398-425c-b8c9-8f1245a080cc: 'Project Infobox Heading' # Project Infobox Heading
+    b82c2de4-85c8-4ac5-a296-5c527a624486: agbs # agbs
+    b765b835-b0a9-4f6e-8d17-b9096d1cdfa5: 'Project Meta Description' # Project Meta Description
+    b3124c88-5c15-4888-ae36-e44043ce1a52: Paragraph # Paragraph
+    b64623be-397b-4edd-b67a-a98c3ce0017c: 'Social Media Links' # Social Media Links
+    b989425a-7c2a-4e8e-94e7-a3cee7683639: 'Address Town' # Address Town
+    b2314008-e575-459b-864c-b45e396e57c1: 'Project Tile Color' # Project Tile Color
+    ba93179b-304c-4eec-94e9-53eae4670e3f: Service # Service
+    bcb328af-f26b-4687-80c2-af0d1ae93a5b: Logos # Logos
+    bd95c630-a4c4-4814-93b3-efc79b489aea: Hero # Hero
+    bf173eb6-238a-468c-904c-75ef68fa6b6f: 'Blog Overview' # Blog Overview
+    bfdd21c0-5a85-45fc-bee2-ec582eebdb4e: 'Reference Quote' # Reference Quote
+    c3c44ca0-1763-4a9f-bc07-38869342d4be: Twitter # Twitter
+    c73ef4b5-e81c-4eee-b250-10621a661f94: Intro # Intro
+    c656f1bc-b3e7-4e6b-bea8-da1f3254e94e: Project # Project
+    c723ce3a-0eb9-41dd-84a1-e97ed43fce23: Common # Common
+    c9355ce4-c6de-477f-853b-db196ee5a03c: Service # Service
+    cd8ceb3b-40fe-4b1e-96e4-9ecb7ea60f4b: Source # Source
+    ce45a178-b86a-465f-a418-86b40d43ab64: 'Service Meta Description' # Service Meta Description
+    d0f50440-c036-4f04-99f1-7467d9278f47: 'Hero Slogan' # Hero Slogan
+    d01da563-ed59-4782-968f-65e458745a03: 'Hero Teaser' # Hero Teaser
+    d018ce1c-0277-4c1f-b715-b32f7587cdf6: Member # Member
+    d1f306c9-420b-4f71-acef-e67ca14ca98e: 'Blog Detail Image' # Blog Detail Image
+    d4dee677-4abc-4680-92a5-1b26590da898: Alt-Tag # Alt-Tag
+    d68cb191-9dbd-4716-a524-7cd6f1cfde68: 'Team Tile Color' # Team Tile Color
+    d99a8a4a-480f-4a4e-81bf-fe8d25a05b30: 'Blog Meta Title' # Blog Meta Title
+    d785c2bf-803c-4581-95e8-5c3ee11dd2ed: Intro # Intro
+    d6457f11-2a05-46e9-97d9-3f319037fb35: Color # Color
+    dc4fd07a-e106-4474-8c50-fd2ab9c53ab6: Post # Post
+    e05eb25d-ecfd-46c3-8e92-c7b3f9a7973e: Alt-Tag # Alt-Tag
+    e1ccac03-b405-44b2-b79a-298b69425e38: Address # Address
+    e2ffbf85-f6af-4731-b6af-9fdb897bf01c: 'Address Email' # Address Email
+    e39b0ae5-aa24-4a7d-974b-f90e071a9e7f: Text # Text
+    e678b2f8-db46-4cd0-97c2-b93c18e4d450: Start # Start
+    e9922f3f-2ba7-41ac-8905-016cda69b8a8: 'Service Tile Image' # Service Tile Image
+    e76798f3-f541-423e-ac56-aa2fb217a23e: 'Reference Role' # Reference Role
+    e83254d2-a710-4844-b29b-a3fcc916433b: 'Project Detail Content' # Project Detail Content
+    e871087b-57b2-4f34-bd10-0e3d71f954a0: 'Blog Overview' # Blog Overview
+    ebc4bf8d-f213-4101-ac40-853208f5b06f: Text # Text
+    edda66b7-c42a-4454-9755-9c28dda0d07a: Heading # Heading
+    ede5947e-f52e-4c38-ae90-98ece415391d: 'Blog Preview Image' # Blog Preview Image
+    eeee8b39-7524-4160-866e-c47d5bdeca1a: Image # Image
+    f6c37758-49af-41c0-823a-9f1a85e79393: Start # Start
+    f9a4f208-386c-4c54-b227-23fed38c8443: Text # Text
+    f57166dc-8c65-4439-92c5-dadba8317127: Source # Source
+    f4727773-dd07-4b66-a356-100798d9a6dc: Team # Team
+    fa515eef-b21f-41a1-86ce-67d911fe848d: 'Service Detail Quote' # Service Detail Quote
+plugins:
+  contact-form-extensions:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+    settings:
+      confirmationSubject: ''
+      confirmationTemplate: emails/contactform
+      enableConfirmationEmail: ''
+      enableDatabase: '1'
+      enableRecaptchaOverride: ''
+      enableTemplateOverwrite: '1'
+      notificationTemplate: emails/contact-form
+      recaptcha: ''
+      recaptchaDataBadge: bottomright
+      recaptchaDebug: ''
+      recaptchaHideBadge: ''
+      recaptchaSecretKey: ''
+      recaptchaSiteKey: ''
+      recaptchaThreshold: '0.5'
+      recaptchaTimeout: '5'
+      recaptchaUrl: ''
+      recaptchaVerificationUrl: ''
+      recaptchaVersion: ''
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  sitemap:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.2
+system:
+  edition: pro
+  live: true
+  name: reiheacht
+  retryDuration: null
+  schemaVersion: 3.7.33
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

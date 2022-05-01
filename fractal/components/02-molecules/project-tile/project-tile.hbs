@@ -1,0 +1,17 @@
+<div class="project-tile {{ class }}">
+
+	<div class="project-tile__back back">
+		<div class="back__inner">
+			<img class="back__image" src="{{ image }}" alt="Image">
+		</div>
+	</div>
+
+	<div class="project-tile__front front" href="#" style="background-color: {{ color }}">
+		<a class="front__inner" href="#">
+			{{> @heading class="front__title" type="h4" text=title class="front__title" color="white" }}
+			{{> @paragraph class="front__subtitle" text=subtitle class="front__subtitle" color="white" }}
+			{{> @paragraph class="front__link link" text="Mehr Infos" }}
+		</a>
+	</div>
+
+</div>

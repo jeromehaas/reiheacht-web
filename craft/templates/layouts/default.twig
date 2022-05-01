@@ -1,0 +1,32 @@
+{% set showCloseTriangle = showCloseTriangle is defined ? showCloseTriangle : false %}
+{% set closeTriangleColor = closeTriangleColor is defined ? closeTriangleColor : 'orange' %}
+{% set closeTriangleTarget = closeTriangleTarget is defined ? closeTriangleTarget : '/#home' %}
+{% set theme = theme is defined ? theme : 'dark' %}
+{% set title = title is defined ? title : 'Motion Design & Werbefilm Agentur aus Luzern' %}
+{% set description = description is defined ? description : 'Wir sind reiheacht. Wir erwecken deine Botschaft mit kreativen Motion Design- und Filmlösungen zum Leben.' %}
+
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="/css/main.min.css">
+		<link rel="icon" href="/media/favicons/favicon.ico">
+		<title>{{ title }}
+			| reiheacht</title>
+		<meta name="description" content="{{ description }}">
+	</head>
+	<body class="body body--{{theme}}">
+
+		{% include "organisms/navigation-desktop" with { showCloseTriangle: showCloseTriangle, closeTriangleColor: closeTriangleColor } %}
+		{% include "organisms/navigation-mobile" %}
+
+		{% block main %}{% endblock %}
+
+		{% include "organisms/cookie-banner" %}
+
+		<script src="/js/main.build.js"></script>
+	</body>
+</html>

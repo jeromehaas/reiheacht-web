@@ -1,0 +1,32 @@
+{% extends "layouts/default" %}
+{% set theme = 'dark' %}
+{% set title = entry.metaTitle %}
+{% set description = entry.metaDescription %}
+{% set showCloseTriangle = true %}
+{% set closeTriangleColor = 'orange' %}
+{% set closeTriangleTarget = '/#projekte' %}
+
+{% block main %}
+	<div class="project-detail section">
+		<div class="project-detail__inner section__inner">
+			<div class="project-detail__intro intro">
+				<span class="intro__heading heading--h2">{{ entry.projectDetailHeading }}</span>
+				<span class="intro__text">{{ entry.projectDetailDescription }}</span>
+			</div>
+			<div class="project-detail__infobox infobox">
+				<img class="infobox__logo" src="{{ entry.projectInfoboxLogo.one().url() }}" alt="Logo">
+				{% include "atoms/line" with { class: "infobox__line infobox__line--vertical", direction: "vertical" } %}
+				{% include "atoms/line" with { class: "infobox__line infobox__line--horizontal", direction: "horizontal" } %}
+				<span>
+					<p class="infobox__title">{{ entry.projectInfoboxHeading }}</p>
+					<p class="infobox__subtitle">{{ entry.projectInfoboxSubheading }}</p>
+				</span>
+			</div>
+			<div class="project-detail__content-container content-container content-container--{{ theme }}">
+				{% for block in entry.projectDetailContent.all() %}
+					{% include "blocks/" ~ block.type ignore missing %}
+				{% endfor %}
+			</div>
+			{% include "molecules/project-switcher" with { next: entry.projectDetailNextEntry.one().url, prev: entry.projectDetailPrevEntry.one().url } %}
+		</div>
+{% endblock %}

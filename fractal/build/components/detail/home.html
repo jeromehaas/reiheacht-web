@@ -1,0 +1,2522 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
+<style>
+    :root {
+        
+        
+        
+    }
+</style>
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/default.css?cachebust=1.10.1" type="text/css">
+
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.1" type="text/css">
+
+
+<title>Home | Reiheacht | Component Libary</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <div class="Header-navToggleIcon Header-navToggleIcon--open">
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        </div>
+        <div class="Header-navToggleIcon Header-navToggleIcon--closed">
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+        </div>
+    </button>
+    <a href="../../index.html" class="Header-title" data-pjax>Reiheacht | Component Libary</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+<div class="Pen" data-behaviour="pen" id="pen-4c7d50fa96514bf8600dfe9ce99f6caa">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/home.html" title="Preview">
+            Home
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+
+    <span class="Pen-preview-size" data-role="preview-size"></span>
+
+    
+
+<div class="Status Status--tag">
+
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
+
+</div>
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-4c7d50fa96514bf8600dfe9ce99f6caa">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/home.html"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-4c7d50fa96514bf8600dfe9ce99f6caa">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-4c7d50fa96514bf8600dfe9ce99f6caa-panel-html">
+                HTML
+            </a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-4c7d50fa96514bf8600dfe9ce99f6caa-panel-view">
+                View
+            </a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-4c7d50fa96514bf8600dfe9ce99f6caa-panel-context">
+                Context
+            </a>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-4c7d50fa96514bf8600dfe9ce99f6caa-panel-info">
+                Info
+            </a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-4c7d50fa96514bf8600dfe9ce99f6caa-panel-notes">
+                Notes
+            </a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-4c7d50fa96514bf8600dfe9ce99f6caa-panel-html">
+    <code class="Code Code--lang-html hljs">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile section js-navigation-mobile&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__inner section__inner&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__bar&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__logo&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__hamburger&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__panel&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/#home&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;home&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/#leistungen&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;leistungen&quot;</span>&gt;</span>Leistungen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/#projekte&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;projekte&quot;</span>&gt;</span>Projekte<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/#team&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;team&quot;</span>&gt;</span>Team<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/#kontakt&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;kontakt&quot;</span>&gt;</span>Kontakt<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/blog&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;blog&quot;</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__placeholder&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop section&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__inner section__inner&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./#home&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;home&quot;</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./#home&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;leistungen&quot;</span>&gt;</span>Leistungen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./#home&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;projekte&quot;</span>&gt;</span>Projekte<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./#home&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;team&quot;</span>&gt;</span>Team<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./#home&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;kontakt&quot;</span>&gt;</span>Kontakt<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;./#home&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;blog&quot;</span>&gt;</span>Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/#home&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__logo&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__placeholder&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hero__anchor-target anchor-target&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;home&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hero section section--linked js-hero&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hero__inner section__inner&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h1    heading--white  hero__heading js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Hallo, wir sind reiheacht, eine Motion Design
+            und
+            Werbefilm Agentur aus Luzern.<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;line  line--horizontal  hero__line&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  paragraph--white  hero__teaser&quot;</span>&gt;</span>reiheacht ist eine digitale Kreativagentur, die mit
+            Innovation und Zusammenarbeit einzigartige Motion Design- und Filmlösungen anbietet, damit du deine Marke da stärken
+            kannst, wo du deine Kunden am besten erreichst. Wir bringen deine Botschaft in Bewegung und machen diese zu einer
+            unvergesslichen Markenerfahrung.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  paragraph--white  hero__slogan&quot;</span>&gt;</span>Wir bewegen alle und alles – setz dich in die reiheacht.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hero__button-wrapper&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button--blue hero__button hero__button--showreel&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Showreel<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button--orange hero__button hero__button--projects&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Projekte<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;button button--orange hero__button hero__button--contact&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Sitzplatz buchen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;scroller hero__scroller js-scroller&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;scroller__text &quot;</span>&gt;</span>Popcorn nicht vergessen<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;scroller__icon icon-double-arrow icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hero__showreel showreel&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;showreel__inner&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;video showreel__video&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;video__player&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;video&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://player.vimeo.com/video/546612359&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;projects__anchor-target anchor-target&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;projekte&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;projects-overview section section--linked&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;projects-overview__inner section__inner&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&#x27;teaser&#x27;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h2    teaser__heading js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[<span class="hljs-symbol">&amp;quot;</span>Leben<span class="hljs-symbol">&amp;quot;</span>]&quot;</span>&gt;</span>Perfekte Aussicht, aus der besten reihe.<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;line  line--horizontal  teaser__line&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  teaser__text&quot;</span>&gt;</span>Das tun wir den ganzen Tag – und wir lieben es.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile-set&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile project-tile-set__item&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__back back&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/project-tiles/reiheacht-showreel.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__front front front--#0374B6&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #0374B6&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;front__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h3    heading--white  front__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>reiheacht<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  paragraph--white  front__subtitle&quot;</span>&gt;</span>Showreel<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link front__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Mehr erfahren<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile project-tile-set__item&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__back back&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/project-tiles/sportcard-sporty.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__front front front--#0071A6&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #0071A6&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;front__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h3    heading--white  front__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Sportcard<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  paragraph--white  front__subtitle&quot;</span>&gt;</span>Sporty als Chatbot<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link front__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Mehr erfahren<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile project-tile-set__item&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__back back&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/project-tiles/itpoint-imagefilm.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__front front front--#004A8F&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #004A8F&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;front__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h3    heading--white  front__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>ITpoint<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  paragraph--white  front__subtitle&quot;</span>&gt;</span>Imagefilm 2021<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link front__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Mehr erfahren<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile project-tile-set__item&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__back back&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/project-tiles/holliger-imballegno-altuna-box.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__front front front--#0072BC&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #0072BC&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;front__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h3    heading--white  front__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Holliger Imballegno<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  paragraph--white  front__subtitle&quot;</span>&gt;</span>Altuna Box<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link front__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Mehr erfahren<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile project-tile-set__item&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__back back&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/project-tiles/schweizer-bauernverband-extreme-agratinitiative.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__front front front--#9EA600&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #9EA600&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;front__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h3    heading--white  front__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Schweizer Bauernverband<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  paragraph--white  front__subtitle&quot;</span>&gt;</span>Extreme Agrarinitiative<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link front__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Mehr erfahren<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile project-tile-set__item&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__back back&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/project-tiles/hotelleriesuisse-adventskampagne.jpeg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__front front front--#DA291C&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #DA291C&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;front__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h3    heading--white  front__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>HotellerieSuisse<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  paragraph--white  front__subtitle&quot;</span>&gt;</span>Adventskampagne 2021<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link front__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Mehr erfahren<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile project-tile-set__item&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__back back&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/project-tiles/schweizer-bauernerband-trinkwasserinitiative.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__front front front--#9EA600&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #9EA600&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;front__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h3    heading--white  front__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Schweizer Bauernverband<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  paragraph--white  front__subtitle&quot;</span>&gt;</span>Trinkwasserinitiative<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link front__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Mehr erfahren<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile project-tile-set__item&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__back back&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/project-tiles/schweizer-bauernverband-diverse-erklaerfilme.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__front front front--#9EA600&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #9EA600&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;front__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h3    heading--white  front__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Schweizer Bauernverband<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  paragraph--white  front__subtitle&quot;</span>&gt;</span>diverse Erklärfilme<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link front__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Mehr erfahren<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile project-tile-set__item&quot;</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__back back&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;back__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/project-tiles/gallosuisse-extreme-agrarinitiative.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-tile__front front front--#C70103&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-color: #C70103&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;front__inner&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h3    heading--white  front__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Gallo Suisse<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  paragraph--white  front__subtitle&quot;</span>&gt;</span>Extreme Agrarinitiative<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link front__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>Mehr erfahren<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;services__anchor-target anchor-target&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;leistungen&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;services-overview section section--linked&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;services-overview__inner section__inner&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&#x27;teaser&#x27;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h2    teaser__heading js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[<span class="hljs-symbol">&amp;quot;</span>Leben<span class="hljs-symbol">&amp;quot;</span>]&quot;</span>&gt;</span>Erwecke deine Idee zum Leben.<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;line  line--horizontal  teaser__line&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  teaser__text&quot;</span>&gt;</span>Das tun wir den ganzen Tag – und wir lieben es.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile-set&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile service-tile-set__item&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/service-tiles/videokonzeption.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile__label label&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h4    heading--white  label__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Videokonzeption<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;label__icon icon-double-arrow icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile service-tile-set__item&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/service-tiles/storytelling.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile__label label&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h4    heading--white  label__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Storytelling<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;label__icon icon-double-arrow icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile service-tile-set__item&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/service-tiles/motion-design.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile__label label&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h4    heading--white  label__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Motion Design<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;label__icon icon-double-arrow icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile service-tile-set__item&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/service-tiles/erklaervideo.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile__label label&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h4    heading--white  label__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Erklärvideo<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;label__icon icon-double-arrow icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile service-tile-set__item&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/service-tiles/realfilm.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile__label label&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h4    heading--white  label__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Realfilm<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;label__icon icon-double-arrow icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile service-tile-set__item&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/service-tiles/sound-design.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;service-tile__label label&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h4    heading--white  label__title js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Sound-Design<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;label__icon icon-double-arrow icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-overview__anchor-target anchor-target&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;team&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-overview section section--linked&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-overview__inner section__inner&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&#x27;teaser&#x27;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h2    teaser__heading js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[<span class="hljs-symbol">&amp;quot;</span>Leben<span class="hljs-symbol">&amp;quot;</span>]&quot;</span>&gt;</span>Erwecke deine Idee zum Leben.<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;line  line--horizontal  teaser__line&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  teaser__text&quot;</span>&gt;</span>Das tun wir den ganzen Tag – und wir lieben es.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-tile-set&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-tile team-tile-set__item&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-tile__square&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-tile__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/team/marc.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-tile__label label&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h4    heading--white  label__name js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Marc Sen<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  label__role&quot;</span>&gt;</span>Inhaber<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;label__icon icon-email icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-tile team-tile-set__item&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-tile__square&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-tile__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/team/andrea.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-tile__label label&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h4    heading--white  label__name js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Marc Sen<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  label__role&quot;</span>&gt;</span>Inhaber<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;label__icon icon-email icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-tile team-tile-set__item&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-tile__square&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-tile__image&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/images/team/julia.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Image&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;team-tile__label label&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h4    heading--white  label__name js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Marc Sen<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  label__role&quot;</span>&gt;</span>Inhaber<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;label__icon icon-email icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">footer</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer section&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer__inner section__inner&quot;</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer__social-media social-media&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;social-media__item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;social-media__icon icon-youtube icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;social-media__item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;social-media__icon icon-vimeo icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;social-media__item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;social-media__icon icon-linkedin icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;social-media__item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;social-media__icon icon-twitter icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">address</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer__address address&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;address__item&quot;</span>&gt;</span>reiheacht Marketing GmbH<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;address__item&quot;</span>&gt;</span>Spillgässli 12<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;address__item&quot;</span>&gt;</span>6205 Eich<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;address__item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;mailto:hallo@reiheacht.ch&quot;</span>&gt;</span>hallo@reiheacht.ch<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;address__item&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;tel:+41415520600&quot;</span>&gt;</span>+41 41 552 06 00<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">address</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;footer__links links&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;links__item&quot;</span>&gt;</span>Impressum<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;links__item&quot;</span>&gt;</span>Datenschutz<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;links__item&quot;</span>&gt;</span>AGB<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">footer</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-4c7d50fa96514bf8600dfe9ce99f6caa-panel-view">
+    <code class="Code Code--lang-handlebars hljs">
+        <pre><span class="hljs-template-variable">{{&gt; @<span class="hljs-name">navigation-mobile</span> }}</span><span class="xml">
+</span><span class="hljs-template-variable">{{&gt; @<span class="hljs-name">navigation-desktop</span> }}</span><span class="xml">
+
+</span><span class="hljs-template-variable">{{&gt; @<span class="hljs-name">hero</span> }}</span><span class="xml">
+</span><span class="hljs-template-variable">{{&gt; @<span class="hljs-name">projects-overview</span> }}</span><span class="xml">
+</span><span class="hljs-template-variable">{{&gt; @<span class="hljs-name">services-overview</span> }}</span><span class="xml">
+</span><span class="hljs-template-variable">{{&gt; @<span class="hljs-name">team-overview</span> }}</span><span class="xml">
+
+</span><span class="hljs-template-variable">{{&gt; @<span class="hljs-name">footer</span> }}</span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-4c7d50fa96514bf8600dfe9ce99f6caa-panel-context">
+    <code class="Code Code--lang-json hljs">
+        
+            
+            <pre>{
+  <span class="hljs-attr">&quot;members&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/team/marc.png&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Marc Sen&quot;</span>,
+      <span class="hljs-attr">&quot;role&quot;</span>: <span class="hljs-string">&quot;Inhaber&quot;</span>,
+      <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;marc.sen@reiheacht.ch&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/team/andrea.png&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Marc Sen&quot;</span>,
+      <span class="hljs-attr">&quot;role&quot;</span>: <span class="hljs-string">&quot;Inhaber&quot;</span>,
+      <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;marc.sen@reiheacht.ch&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/team/julia.png&quot;</span>,
+      <span class="hljs-attr">&quot;name&quot;</span>: <span class="hljs-string">&quot;Marc Sen&quot;</span>,
+      <span class="hljs-attr">&quot;role&quot;</span>: <span class="hljs-string">&quot;Inhaber&quot;</span>,
+      <span class="hljs-attr">&quot;email&quot;</span>: <span class="hljs-string">&quot;marc.sen@reiheacht.ch&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;services&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/service-tiles/videokonzeption.png&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Videokonzeption&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/service-tiles/storytelling.png&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Storytelling&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/service-tiles/motion-design.png&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Motion Design&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/service-tiles/erklaervideo.png&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Erklärvideo&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/service-tiles/realfilm.png&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Realfilm&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/service-tiles/sound-design.png&quot;</span>,
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Sound-Design&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;projects&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;reiheacht&quot;</span>,
+      <span class="hljs-attr">&quot;subtitle&quot;</span>: <span class="hljs-string">&quot;Showreel&quot;</span>,
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/project-tiles/reiheacht-showreel.png&quot;</span>,
+      <span class="hljs-attr">&quot;color&quot;</span>: <span class="hljs-string">&quot;#0374B6&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-literal">null</span>
+    },
+    {
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Sportcard&quot;</span>,
+      <span class="hljs-attr">&quot;subtitle&quot;</span>: <span class="hljs-string">&quot;Sporty als Chatbot&quot;</span>,
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/project-tiles/sportcard-sporty.png&quot;</span>,
+      <span class="hljs-attr">&quot;color&quot;</span>: <span class="hljs-string">&quot;#0071A6&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-literal">null</span>
+    },
+    {
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;ITpoint&quot;</span>,
+      <span class="hljs-attr">&quot;subtitle&quot;</span>: <span class="hljs-string">&quot;Imagefilm 2021&quot;</span>,
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/project-tiles/itpoint-imagefilm.png&quot;</span>,
+      <span class="hljs-attr">&quot;color&quot;</span>: <span class="hljs-string">&quot;#004A8F&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-literal">null</span>
+    },
+    {
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Holliger Imballegno&quot;</span>,
+      <span class="hljs-attr">&quot;subtitle&quot;</span>: <span class="hljs-string">&quot;Altuna Box&quot;</span>,
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/project-tiles/holliger-imballegno-altuna-box.png&quot;</span>,
+      <span class="hljs-attr">&quot;color&quot;</span>: <span class="hljs-string">&quot;#0072BC&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-literal">null</span>
+    },
+    {
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Schweizer Bauernverband&quot;</span>,
+      <span class="hljs-attr">&quot;subtitle&quot;</span>: <span class="hljs-string">&quot;Extreme Agrarinitiative&quot;</span>,
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/project-tiles/schweizer-bauernverband-extreme-agratinitiative.png&quot;</span>,
+      <span class="hljs-attr">&quot;color&quot;</span>: <span class="hljs-string">&quot;#9EA600&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-literal">null</span>
+    },
+    {
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;HotellerieSuisse&quot;</span>,
+      <span class="hljs-attr">&quot;subtitle&quot;</span>: <span class="hljs-string">&quot;Adventskampagne 2021&quot;</span>,
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/project-tiles/hotelleriesuisse-adventskampagne.jpeg&quot;</span>,
+      <span class="hljs-attr">&quot;color&quot;</span>: <span class="hljs-string">&quot;#DA291C&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-literal">null</span>
+    },
+    {
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Schweizer Bauernverband&quot;</span>,
+      <span class="hljs-attr">&quot;subtitle&quot;</span>: <span class="hljs-string">&quot;Trinkwasserinitiative&quot;</span>,
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/project-tiles/schweizer-bauernerband-trinkwasserinitiative.png&quot;</span>,
+      <span class="hljs-attr">&quot;color&quot;</span>: <span class="hljs-string">&quot;#9EA600&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-literal">null</span>
+    },
+    {
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Schweizer Bauernverband&quot;</span>,
+      <span class="hljs-attr">&quot;subtitle&quot;</span>: <span class="hljs-string">&quot;diverse Erklärfilme&quot;</span>,
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/project-tiles/schweizer-bauernverband-diverse-erklaerfilme.png&quot;</span>,
+      <span class="hljs-attr">&quot;color&quot;</span>: <span class="hljs-string">&quot;#9EA600&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-literal">null</span>
+    },
+    {
+      <span class="hljs-attr">&quot;title&quot;</span>: <span class="hljs-string">&quot;Gallo Suisse&quot;</span>,
+      <span class="hljs-attr">&quot;subtitle&quot;</span>: <span class="hljs-string">&quot;Extreme Agrarinitiative&quot;</span>,
+      <span class="hljs-attr">&quot;image&quot;</span>: <span class="hljs-string">&quot;/media/images/project-tiles/gallosuisse-extreme-agrarinitiative.png&quot;</span>,
+      <span class="hljs-attr">&quot;color&quot;</span>: <span class="hljs-string">&quot;#C70103&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-literal">null</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;links&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Home&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;/#home&quot;</span>,
+      <span class="hljs-attr">&quot;section&quot;</span>: <span class="hljs-string">&quot;home&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Leistungen&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;/#leistungen&quot;</span>,
+      <span class="hljs-attr">&quot;section&quot;</span>: <span class="hljs-string">&quot;leistungen&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Projekte&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;/#projekte&quot;</span>,
+      <span class="hljs-attr">&quot;section&quot;</span>: <span class="hljs-string">&quot;projekte&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Team&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;/#team&quot;</span>,
+      <span class="hljs-attr">&quot;section&quot;</span>: <span class="hljs-string">&quot;team&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Kontakt&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;/#kontakt&quot;</span>,
+      <span class="hljs-attr">&quot;section&quot;</span>: <span class="hljs-string">&quot;kontakt&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;label&quot;</span>: <span class="hljs-string">&quot;Blog&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;/blog&quot;</span>,
+      <span class="hljs-attr">&quot;section&quot;</span>: <span class="hljs-string">&quot;blog&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;address&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;reiheacht Marketing GmbH&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Spillgässli 12&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;6205 Eich&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;hallo@reiheacht.ch&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;mailto:hallo@reiheacht.ch&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;+41 41 552 06 00&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;tel:+41415520600&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;socialMedia&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;icon&quot;</span>: <span class="hljs-string">&quot;youtube&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;icon&quot;</span>: <span class="hljs-string">&quot;vimeo&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;icon&quot;</span>: <span class="hljs-string">&quot;linkedin&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;icon&quot;</span>: <span class="hljs-string">&quot;twitter&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;#&quot;</span>
+    }
+  ],
+  <span class="hljs-attr">&quot;anchors&quot;</span>: [
+    {
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Impressum&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Datenschutz&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    },
+    {
+      <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;AGB&quot;</span>,
+      <span class="hljs-attr">&quot;href&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    }
+  ]
+}</pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-4c7d50fa96514bf8600dfe9ce99f6caa-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@home</span>
+        </li>
+        
+        
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/home.html"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/home.html"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">components/05-pages/home/home.hbs</span>
+        </li>
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">References <em class="Meta-count">(7)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="./navigation-mobile.html">@<span>navigation-mobile</span></a>, 
+            
+                <a href="./navigation-desktop.html">@<span>navigation-desktop</span></a>, 
+            
+                <a href="./hero.html">@<span>hero</span></a>, 
+            
+                <a href="./projects-overview.html">@<span>projects-overview</span></a>, 
+            
+                <a href="./services-overview.html">@<span>services-overview</span></a>, 
+            
+                <a href="./team-overview.html">@<span>team-overview</span></a>, 
+            
+                <a href="./footer.html">@<span>footer</span></a>
+            
+            </span>
+        </li class="Meta-item">
+        
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-4c7d50fa96514bf8600dfe9ce99f6caa-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p class="Browser-isEmptyNote">No notes defined.</p>
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            
+
+    
+    
+
+
+<nav class="Navigation" data-behaviour="navigation">
+    <div class="Navigation-panel Navigation-panel--main" data-role="main-panel">
+    
+        <div class="Navigation-group Navigation-search">
+    <form action="" class="Search" data-behaviour="search">
+        <label class="Search-label" for="search-input">Search</label>
+        <input class="Search-input" id="search-input" type="search" placeholder="Search…" data-role="input" autocomplete="off">
+        <button type="button" data-behaviour="clear-search" class="Search-clearButton" aria-label="Clear search" hidden>
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        </button>
+    </form>
+</div>
+
+    
+        
+
+    
+    
+    <div class="Navigation-group">
+        
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <div class="Tree-header">
+        <h3 class="Tree-title">components</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-atoms">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-atoms-items">
+                    Atoms
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-atoms-items">
+                
+                
+                
+                
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-button">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-button-items">
+                    Button
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-button-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--default.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--default"
+                data-handle="button--default"
+            >
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--orange.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--orange"
+                data-handle="button--orange"
+            >
+                <span>Orange</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./button--blue.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button--blue"
+                data-handle="button--blue"
+            >
+                <span>Blue</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-heading">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-heading-items">
+                    Heading
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-heading-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./heading--default.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="heading--default"
+                data-handle="heading--default"
+            >
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./heading--h1.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="heading--h1"
+                data-handle="heading--h1"
+            >
+                <span>H 1</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./heading--h2.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="heading--h2"
+                data-handle="heading--h2"
+            >
+                <span>H 2</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./heading--h3.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="heading--h3"
+                data-handle="heading--h3"
+            >
+                <span>H 3</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./image.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="image"
+                data-handle="image"
+            >
+                <span>Image</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./line.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="line"
+                data-handle="line"
+            >
+                <span>Line</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./link.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="link"
+                data-handle="link"
+            >
+                <span>Link</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./paragraph.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="paragraph"
+                data-handle="paragraph"
+            >
+                <span>Paragraph</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./quote.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="quote"
+                data-handle="quote"
+            >
+                <span>Quote</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./scroller.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="scroller"
+                data-handle="scroller"
+            >
+                <span>Scroller</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./video.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="video"
+                data-handle="video"
+            >
+                <span>Video</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-molecules">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-molecules-items">
+                    Molecules
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-molecules-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./contact-form.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="contact-form"
+                data-handle="contact-form"
+            >
+                <span>Contact Form</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./contact-teaser.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="contact-teaser"
+                data-handle="contact-teaser"
+            >
+                <span>Contact Teaser</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./double-image.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="double-image"
+                data-handle="double-image"
+            >
+                <span>Double Image</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./infobox.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="infobox"
+                data-handle="infobox"
+            >
+                <span>Infobox</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./project-switcher.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="project-switcher"
+                data-handle="project-switcher"
+            >
+                <span>Project Switcher</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./project-tile.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="project-tile"
+                data-handle="project-tile"
+            >
+                <span>Project Tile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./service-tile.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="service-tile"
+                data-handle="service-tile"
+            >
+                <span>Service Tile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./team-tile.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="team-tile"
+                data-handle="team-tile"
+            >
+                <span>Team Tile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./teaser.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="teaser"
+                data-handle="teaser"
+            >
+                <span>Teaser</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-organisms">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-organisms-items">
+                    Organisms
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-organisms-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./blog-detail.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="blog-detail"
+                data-handle="blog-detail"
+            >
+                <span>Blog Detail</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./blog-overview.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="blog-overview"
+                data-handle="blog-overview"
+            >
+                <span>Blog Overview</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./contact.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="contact"
+                data-handle="contact"
+            >
+                <span>Contact</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./cookie-banner.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="cookie-banner"
+                data-handle="cookie-banner"
+            >
+                <span>Cookie Banner</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./footer.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="footer"
+                data-handle="footer"
+            >
+                <span>Footer</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./hero.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="hero"
+                data-handle="hero"
+            >
+                <span>Hero</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./navigation-desktop.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="navigation-desktop"
+                data-handle="navigation-desktop"
+            >
+                <span>Navigation Desktop</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./navigation-mobile.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="navigation-mobile"
+                data-handle="navigation-mobile"
+            >
+                <span>Navigation Mobile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./project-detail.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="project-detail"
+                data-handle="project-detail"
+            >
+                <span>Project Detail</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./project-tile-set.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="project-tile-set"
+                data-handle="project-tile-set"
+            >
+                <span>Project Tile Set</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./projects-overview.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="projects-overview"
+                data-handle="projects-overview"
+            >
+                <span>Projects Overview</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./reference-slider.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="reference-slider"
+                data-handle="reference-slider"
+            >
+                <span>Reference Slider</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./service-detail.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="service-detail"
+                data-handle="service-detail"
+            >
+                <span>Service Detail</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./service-tile-set.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="service-tile-set"
+                data-handle="service-tile-set"
+            >
+                <span>Service Tile Set</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./services-overview.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="services-overview"
+                data-handle="services-overview"
+            >
+                <span>Services Overview</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./team-overview.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="team-overview"
+                data-handle="team-overview"
+            >
+                <span>Team Overview</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./team-tile-set.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="team-tile-set"
+                data-handle="team-tile-set"
+            >
+                <span>Team Tile Set</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-pages">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-pages-items">
+                    Pages
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-pages-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./home.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="home"
+                data-handle="home"
+            >
+                <span>Home</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-06_layouts">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-06_layouts-items">
+                    06 Layouts
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-06_layouts-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./bright.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="bright"
+                data-handle="bright"
+            >
+                <span>Bright</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./dark.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="dark"
+                data-handle="dark"
+            >
+                <span>Dark</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+
+    </ul>
+</div>
+
+    </div>
+    
+
+
+    
+        
+
+    
+        
+
+    
+        
+<div class="Navigation-group">
+    <div class="Tree">
+        <div class="Tree-header">
+            <h3 class="Tree-title">
+                Information
+            </h3>
+        </div>
+        <dl class="Tree-aside">
+            
+                <div>
+                    <dt class="Tree-asideTerm">Built on:</dt>
+                    <dd class="Tree-asideDescription">
+                        
+                            <time datetime="2022-04-09T17:03:35.187Z">
+                                4/9/2022
+                            </time>
+                        
+                    </dd>
+                </div>
+            
+        </dl>
+    </div>
+</div>
+
+
+    
+    </div>
+
+    
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.10.1"></script>
+
+
+
+</body>
+</html>
