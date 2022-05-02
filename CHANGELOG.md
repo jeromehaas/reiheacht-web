@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.7] - 2022-05-01
+- Fix bug for Android clients regarding flickering mobile navigation bar on detail pages
+- Reposition quotes in reference slider
+- Set max-width to teaser in contact section
+
 ## [1.0.6] - 2022-05-01
 - Add correct lotties to Craft
 
