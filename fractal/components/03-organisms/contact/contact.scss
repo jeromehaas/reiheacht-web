@@ -13,7 +13,7 @@
   .teaser {
     grid-area: teaser;
 
-    &__text {
+    &__text, p {
       max-width: 480px;
     }
     
