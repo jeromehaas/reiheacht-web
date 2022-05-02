@@ -12,6 +12,11 @@
 
   .teaser {
     grid-area: teaser;
+
+    &__text {
+      max-width: 480px;
+    }
+    
   }
 
   .contact-form {
