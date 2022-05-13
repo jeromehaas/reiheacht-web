@@ -64,7 +64,7 @@ class ContactForm {
 	}
 
 	send = async () => {
-		let res = await emailjs.send("yellowreach","reiheacht",{
+		let res = await emailjs.send("reiheacht","reiheacht",{
 			name: this.inputs.name.node.value,
 			email: this.inputs.email.node.value,
 			phone: this.inputs.phone.node.value,
