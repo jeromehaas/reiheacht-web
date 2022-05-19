@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 
 
+## [1.0.11] - 2022-05-20
+- Change style of second team tile
+- Change style of cookie-bar
+
 ## [1.0.10] - 2022-05-13
 - Change email service of EmailJS
 
