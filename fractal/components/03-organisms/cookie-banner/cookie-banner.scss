@@ -17,7 +17,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 40px;
+    padding: 12px 40px;
   }
 
 	&__text, &__link {
@@ -31,7 +31,7 @@
 
 	&__button {
 		background-color: $black;
-		padding: 12px;
+		padding: 12px 8px 8px 8px;
 		border-radius: 6px;
 		cursor: pointer;
 		margin-left: 12px;
