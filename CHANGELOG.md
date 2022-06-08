@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 
 
+## [1.0.12] - 2022-06-08
+- Change lottie in contact section to gif
+	
 ## [1.0.11] - 2022-05-20
 - Change style of second team tile
 - Change style of cookie-bar
