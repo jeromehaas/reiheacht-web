@@ -2,14 +2,15 @@
   margin-bottom: 0px;
 
   &__inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+		display: grid;
+		grid-template-areas:
+			"social-media social-media"
+			"address links";
   }
 
   &__social-media,
   .social-media {
+		grid-area: social-media;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -40,6 +41,7 @@
 
   &__address,
   .address {
+		grid-area: address;
     margin-bottom: 16px;
 		display: flex;
 		flex-direction: row;
@@ -51,12 +53,15 @@
 				content: "|";
 				padding: 0 16px;
 			}
+
     }
 
   }
 
   &__links,
   .links {
+		grid-area: links;
+		justify-self: end;
     margin-bottom: 32px;
 
     &__item:not(:last-child) {
@@ -64,6 +69,24 @@
     }
 
   }
+
+	@media (max-width: 1350px) {
+		
+		&__inner {
+			display: grid;
+			grid-template-areas:
+				"social-media"
+				"address" 
+				"links";
+		}
+
+		&__links,
+		.links {
+			justify-self: start;
+
+	}
+
+}
 
 	@media (max-width: 1000px) {
 

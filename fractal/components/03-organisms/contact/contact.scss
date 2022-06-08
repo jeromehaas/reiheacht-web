@@ -5,8 +5,7 @@
     grid-template: auto auto auto / 500px auto;
     grid-template-areas: 
       "teaser teaser"
-      "form observer-left"
-			"observer-up observer-up";
+      "form animation";
 
   }
 
@@ -23,20 +22,14 @@
     grid-area: form;
   }
 
-  &__observer--left {
-    grid-area: observer-left;
-    width: 75%;
-    max-width: 400px;
-    justify-self: center;
+  &__animation {
+    grid-area: animation;
+    width: 100%;
+    max-width: 600px;
+		max-height: 100%;
+    justify-self: start;
   }
 
-  &__observer--up {
-    grid-area: observer-up;
-    width: 75%;
-    max-width: 400px;
-    justify-self: center;
-		display: none;
-  }
 
   @media (max-width: 950px) {
   
@@ -46,21 +39,12 @@
       grid-template-areas: 
         "teaser"
         "form"
-        "observer-left"
-        "observer-up";  
+        "animation";  
     } 
 
     .contact-form {
       margin-bottom: 64px;
     }
-
-		&__observer--left {
-			display: none;	
-		}
-	
-		&__observer--up {
-			display: block;
-		}
 
   }
 

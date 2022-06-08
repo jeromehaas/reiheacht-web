@@ -1,0 +1,40 @@
+ .page-not-found {
+   position: fixed;
+   inset: 0 0 0 0;
+   object-fit: cover;
+   background-image: url('/media/graphics/page-not-found/404.svg'), url('/media/graphics/page-not-found/moon.svg'), url('/media/graphics/page-not-found/space-background.svg');
+   background-color: $black;
+   height: 100%;
+   background-position: center, bottom, center;
+   background-repeat: no-repeat, no-repeat, repeat;
+   background-size: 400px, 80%, 800px;
+   overflow: hidden;
+
+   &__inner {
+     position: relative;
+     min-height: 100vh;
+   }
+
+   &__heading {
+     margin: 120px 0 32px 0;
+     max-width: 520px;
+   }
+
+   &__astronaut {
+     width: 280px;
+     position: absolute;
+     top: 50%;
+     left: -75vw;
+     z-index: -5;
+   }
+
+   @media (max-width: 650px) {
+
+     &__astronaut {
+       width: 200px;
+     }
+
+   }
+
+
+ }

@@ -1,4 +1,4 @@
-dateModified: 1651054576
+dateModified: 1654694912
 email:
   fromEmail: info@yellowreach.io
   fromName: yellowreach
@@ -58,6 +58,7 @@ meta:
     41c3ceb6-6f88-48e4-a579-1b127b734427: 'Project Detail Description' # Project Detail Description
     43f7ff8d-58a9-431c-92f4-99cd460b2301: Contact # Contact
     045c86b9-5f90-4c25-ada4-964b3afc3d96: 'Project Tile Heading' # Project Tile Heading
+    47c99c48-4313-4df3-9711-9a5fb58ae5fb: Image # Image
     56f01196-22f1-4172-b98a-a6fbdbf80eeb: 'Service Meta Title' # Service Meta Title
     62ec9f1e-36fd-4669-97ec-03615ece3286: 'Meta Description' # Meta Description
     66a7004f-9f0c-4598-9156-7adc0eb1b78d: 'Reference Name' # Reference Name

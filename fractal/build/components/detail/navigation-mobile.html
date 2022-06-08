@@ -207,6 +207,10 @@
       <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__logo&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__hamburger&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		</span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> closeTriangle }}</span><span class="xml">
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__close-triangle close-triangle close-triangle__top&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/#projects&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__close-triangle close-triangle close-triangle__bottom&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/#projects&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		</span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__panel&quot;</span>&gt;</span>
       </span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">each</span></span> links}}</span><span class="xml">
       <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-mobile__link&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">href</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">data-section</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">section</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">label</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -273,15 +277,15 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-c35bb6b2a01f215c64922426ab1f493c">navigation-mobile.js</option>
+                <option value="file-5d6f410acb7a17617d7f97de8db8edf2">navigation-mobile.js</option>
                 
-                <option value="file-a2e7f0c006d579e4b6a0f57922e5e970">navigation-mobile.scss</option>
+                <option value="file-edfe3885def750ec622aa89985150194">navigation-mobile.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-c35bb6b2a01f215c64922426ab1f493c" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-5d6f410acb7a17617d7f97de8db8edf2" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -302,12 +306,28 @@
 		<span class="hljs-built_in">this</span>.elements = {
 			<span class="hljs-attr">logo</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.navigation-mobile__logo&#x27;</span>),
 			<span class="hljs-attr">hamburger</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.navigation-mobile__hamburger&#x27;</span>),
+      <span class="hljs-attr">bar</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.navigation-mobile__inner&#x27;</span>),
 			<span class="hljs-attr">panel</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.navigation-mobile__panel&#x27;</span>),
 			<span class="hljs-attr">links</span>: <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.navigation-mobile__link&#x27;</span>),
+			<span class="hljs-attr">closeTriangle</span>: {
+				<span class="hljs-attr">top</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.navigation-mobile__close-triangle.close-triangle.close-triangle__top&#x27;</span>),
+				<span class="hljs-attr">bottom</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.navigation-mobile__close-triangle.close-triangle.close-triangle__bottom&#x27;</span>)
+			}
 		};
 		<span class="hljs-built_in">this</span>.logo = {
 			<span class="hljs-attr">element</span>: <span class="hljs-literal">null</span>,
 			<span class="hljs-attr">container</span>: <span class="hljs-built_in">this</span>.elements.logo
+		};
+		<span class="hljs-built_in">this</span>.closeTriangle = {
+			<span class="hljs-attr">color</span>: <span class="hljs-literal">null</span>,
+			<span class="hljs-attr">top</span>: {
+				<span class="hljs-attr">element</span>: <span class="hljs-literal">null</span>,
+				<span class="hljs-attr">container</span>: <span class="hljs-built_in">this</span>.elements.closeTriangleTop
+			},
+			<span class="hljs-attr">bottom</span>: {
+				<span class="hljs-attr">element</span>: <span class="hljs-literal">null</span>,
+				<span class="hljs-attr">container</span>: <span class="hljs-built_in">this</span>.elements.closeTriangleBottom
+			}
 		};
 		<span class="hljs-built_in">this</span>.hamburger = {
 			<span class="hljs-attr">element</span>: <span class="hljs-literal">null</span>,
@@ -321,6 +341,60 @@
 		<span class="hljs-built_in">this</span>.createLogo();
 		<span class="hljs-built_in">this</span>.createHamburger();
     <span class="hljs-built_in">this</span>.addEventListener();
+		<span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.elements.closeTriangle.top) {
+			<span class="hljs-built_in">this</span>.createCloseTriangle();
+			<span class="hljs-built_in">this</span>.checkShowTriangle();
+		}
+	};
+	
+	<span class="hljs-function"><span class="hljs-title">checkShowTriangle</span>(<span class="hljs-params"></span>)</span> {
+		[<span class="hljs-string">&#x27;load&#x27;</span>, <span class="hljs-string">&#x27;scroll&#x27;</span>].forEach(<span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+			<span class="hljs-built_in">window</span>.addEventListener(event, <span class="hljs-function">() =&gt;</span> {
+				<span class="hljs-keyword">const</span> viewportHeight = <span class="hljs-built_in">window</span>.innerHeight;
+				<span class="hljs-keyword">const</span> scrollPosition = <span class="hljs-built_in">window</span>.scrollY;
+				<span class="hljs-keyword">const</span> pageHeight = <span class="hljs-built_in">document</span>.body.offsetHeight;
+				<span class="hljs-keyword">if</span> ((viewportHeight + scrollPosition + <span class="hljs-number">70</span>) &gt;= (pageHeight)) <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.showTriangleBottom();
+				<span class="hljs-keyword">if</span> (scrollPosition == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.showTriangleTop();
+				<span class="hljs-built_in">this</span>.hideTriangles();	
+			});
+		});
+	};
+
+	<span class="hljs-function"><span class="hljs-title">showTriangleTop</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.closeTriangle.top.element.setDirection(<span class="hljs-number">1</span>);
+		<span class="hljs-built_in">this</span>.closeTriangle.top.element.play();
+	}
+
+	<span class="hljs-function"><span class="hljs-title">showTriangleBottom</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.closeTriangle.bottom.element.setDirection(<span class="hljs-number">1</span>);
+		<span class="hljs-built_in">this</span>.closeTriangle.bottom.element.play();
+	}
+
+	<span class="hljs-function"><span class="hljs-title">hideTriangles</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.closeTriangle.top.element.setDirection(-<span class="hljs-number">1</span>);
+		<span class="hljs-built_in">this</span>.closeTriangle.bottom.element.setDirection(-<span class="hljs-number">1</span>);
+		<span class="hljs-built_in">this</span>.closeTriangle.top.element.play();
+		<span class="hljs-built_in">this</span>.closeTriangle.bottom.element.play();
+	}
+
+	<span class="hljs-function"><span class="hljs-title">createCloseTriangle</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.closeTriangle.color = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.close-triangle__top&#x27;</span>).dataset.color;
+		<span class="hljs-built_in">this</span>.closeTriangle.top.element = lottieWeb.loadAnimation({
+			<span class="hljs-attr">container</span>: <span class="hljs-built_in">this</span>.elements.closeTriangle.top,
+			<span class="hljs-attr">renderer</span>: <span class="hljs-string">&#x27;svg&#x27;</span>,
+			<span class="hljs-attr">loop</span>: <span class="hljs-literal">false</span>,
+			<span class="hljs-attr">autoplay</span>: <span class="hljs-literal">false</span>,
+			<span class="hljs-attr">path</span>: <span class="hljs-string">`/media/lotties/close-triangle-<span class="hljs-subst">${ <span class="hljs-built_in">this</span>.closeTriangle.color || <span class="hljs-string">&#x27;orange&#x27;</span> }</span>.json`</span>
+		});
+		<span class="hljs-built_in">this</span>.closeTriangle.top.element.setSpeed(<span class="hljs-number">1.5</span>);
+		<span class="hljs-built_in">this</span>.closeTriangle.bottom.element = lottieWeb.loadAnimation({
+			<span class="hljs-attr">container</span>: <span class="hljs-built_in">this</span>.elements.closeTriangle.bottom,
+			<span class="hljs-attr">renderer</span>: <span class="hljs-string">&#x27;svg&#x27;</span>,
+			<span class="hljs-attr">loop</span>: <span class="hljs-literal">false</span>,
+			<span class="hljs-attr">autoplay</span>: <span class="hljs-literal">false</span>,
+			<span class="hljs-attr">path</span>: <span class="hljs-string">`/media/lotties/close-triangle-<span class="hljs-subst">${ <span class="hljs-built_in">this</span>.closeTriangle.color || <span class="hljs-string">&#x27;orange&#x27;</span> }</span>.json`</span>
+		});
+		<span class="hljs-built_in">this</span>.closeTriangle.bottom.element.setSpeed(<span class="hljs-number">1.5</span>);
 	};
 
   <span class="hljs-function"><span class="hljs-title">addEventListener</span>(<span class="hljs-params"></span>)</span> {
@@ -338,7 +412,7 @@
   
   <span class="hljs-function"><span class="hljs-title">scrollToTop</span>(<span class="hljs-params">event</span>)</span> {
     event.preventDefault();
-    gsap.to(<span class="hljs-built_in">window</span>, { <span class="hljs-attr">scrollTo</span>: <span class="hljs-string">&#x27;#home&#x27;</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;power2&#x27;</span> });
+    gsap.to(<span class="hljs-built_in">window</span>, { <span class="hljs-attr">scrollTo</span>: <span class="hljs-string">&#x27;#home&#x27;</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;circ&#x27;</span> });
   }
 
 	<span class="hljs-function"><span class="hljs-title">createLogo</span>(<span class="hljs-params"></span>)</span> {
@@ -432,12 +506,12 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.9 KB</span>
+                    <span class="Meta-value">5.2 KB</span>
                 </li>
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-a2e7f0c006d579e4b6a0f57922e5e970" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-edfe3885def750ec622aa89985150194" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -449,7 +523,7 @@
   <span class="hljs-attribute">display</span>: none;
   <span class="hljs-attribute">position</span>: fixed;
   inset: <span class="hljs-number">0</span> <span class="hljs-number">0</span> auto <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">z-index</span>: <span class="hljs-number">5</span>;
+  <span class="hljs-attribute">z-index</span>: <span class="hljs-number">15</span>;
 
   &amp;__inner {
     <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$box-shadow</span>;
@@ -461,14 +535,42 @@
     <span class="hljs-attribute">display</span>: flex;
     <span class="hljs-attribute">flex-direction</span>: row;
     <span class="hljs-attribute">justify-content</span>: space-between;
+    <span class="hljs-attribute">align-items</span>: center;
     <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
+    <span class="hljs-attribute">min-height</span>: <span class="hljs-number">60px</span>;
     <span class="hljs-attribute">z-index</span>: <span class="hljs-number">5</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$black</span>;
+    <span class="hljs-attribute">overflow</span>: hidden;
   }
+
+	&amp;__close-triangle, <span class="hljs-selector-class">.close-triangle</span> {
+		<span class="hljs-attribute">width</span>: <span class="hljs-number">60px</span>;
+		<span class="hljs-attribute">height</span>: auto;
+		
+		&amp;__top {
+			<span class="hljs-attribute">position</span>: absolute;
+			<span class="hljs-attribute">top</span>: <span class="hljs-number">100%</span>;
+			<span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+			<span class="hljs-attribute">transform</span>: translateX(-<span class="hljs-number">50%</span>) rotate(<span class="hljs-number">0deg</span>);
+			<span class="hljs-attribute">transition</span>: top <span class="hljs-number">0.3s</span> ease;
+			<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">5</span>;	
+		}
+		
+		&amp;__bottom {
+			<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+			<span class="hljs-attribute">position</span>: fixed <span class="hljs-meta">!important</span>;
+			<span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+			<span class="hljs-attribute">transform</span>: translateX(-<span class="hljs-number">50%</span>) rotate(<span class="hljs-number">180deg</span>);
+			<span class="hljs-attribute">transition</span>: bottom <span class="hljs-number">0.3s</span> ease;
+			<span class="hljs-attribute">z-index</span>: -<span class="hljs-number">5</span>;
+		}
+		
+	}
 
   &amp;__logo {
     <span class="hljs-attribute">width</span>: <span class="hljs-number">120px</span>;
+    <span class="hljs-attribute">display</span>: flex;
   }
 
   &amp;__hamburger {
@@ -499,7 +601,7 @@
   &amp;__link {
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">8px</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease;
+    <span class="hljs-attribute">transition</span>: color <span class="hljs-number">0.3s</span> ease;
 
     &amp;--active,
     &amp;<span class="hljs-selector-pseudo">:hover</span> {
@@ -509,7 +611,7 @@
   }
 
   &amp;__placeholder {
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
     <span class="hljs-attribute">display</span>: none;
   }
 
@@ -546,7 +648,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.2 KB</span>
+                    <span class="Meta-value">1.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -1297,6 +1399,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./content-container.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="content-container"
+                data-handle="content-container"
+            >
+                <span>Content Container</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./double-image.html"
                 data-role="tree-link"
                 
@@ -1555,6 +1691,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./agbs.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="agbs"
+                data-handle="agbs"
+            >
+                <span>AGBS</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./blog-detail.html"
                 data-role="tree-link"
                 
@@ -1691,6 +1861,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./data-privacy.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="data-privacy"
+                data-handle="data-privacy"
+            >
+                <span>Data Privacy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./footer.html"
                 data-role="tree-link"
                 
@@ -1759,6 +1963,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./imprint.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="imprint"
+                data-handle="imprint"
+            >
+                <span>Imprint</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./navigation-desktop.html"
                 data-role="tree-link"
                 
@@ -1801,6 +2039,40 @@
                 data-handle="navigation-mobile"
             >
                 <span>Navigation Mobile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./page-not-found.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="page-not-found"
+                data-handle="page-not-found"
+            >
+                <span>Page Not Found</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2065,6 +2337,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./social-meida-icons.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="social-meida-icons"
+                data-handle="social-meida-icons"
+            >
+                <span>Social Meida Icons</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./team-overview.html"
                 data-role="tree-link"
                 
@@ -2190,11 +2496,11 @@
         
             
             
-            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-06_layouts">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-06_layouts-items">
-                    06 Layouts
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-layouts">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-layouts-items">
+                    Layouts
                 </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-06_layouts-items">
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-layouts-items">
                 
                 
                 
@@ -2303,8 +2609,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-04-09T17:03:35.187Z">
-                                4/9/2022
+                            <time datetime="2022-06-08T13:19:17.217Z">
+                                6/8/2022
                             </time>
                         
                     </dd>

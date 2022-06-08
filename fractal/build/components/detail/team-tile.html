@@ -231,13 +231,99 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-53c2f3ab4ac3fcc4ca7f568d06ba939c">team-tile.scss</option>
+                <option value="file-782566702348fadb40c233f5fe28e803">team-tile.js</option>
+                
+                <option value="file-0de975af4deac95f81a8f19f005a8b2b">team-tile.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-53c2f3ab4ac3fcc4ca7f568d06ba939c" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-782566702348fadb40c233f5fe28e803" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
+                                <pre><span class="hljs-keyword">import</span> { gsap } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;gsap&#x27;</span>;
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TeamTile</span> </span>{
+
+	<span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.elements = {
+			<span class="hljs-attr">tiles</span>: <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.team-tile&#x27;</span>),
+		};
+		<span class="hljs-built_in">this</span>.init();
+	};
+
+	<span class="hljs-function"><span class="hljs-title">init</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.addEventListener();
+	};
+
+	<span class="hljs-function"><span class="hljs-title">addEventListener</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-keyword">const</span> tiles = gsap.utils.toArray(<span class="hljs-built_in">this</span>.elements.tiles);
+		tiles.forEach(<span class="hljs-function">(<span class="hljs-params">tile</span>) =&gt;</span> tile.addEventListener(<span class="hljs-string">&#x27;mouseenter&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> <span class="hljs-built_in">this</span>.showSquare(event.target)));
+		tiles.forEach(<span class="hljs-function">(<span class="hljs-params">tile</span>) =&gt;</span> tile.addEventListener(<span class="hljs-string">&#x27;mouseleave&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> <span class="hljs-built_in">this</span>.hideSquare(event.target)));
+
+	};
+
+	<span class="hljs-function"><span class="hljs-title">showSquare</span>(<span class="hljs-params">element</span>)</span> {
+		<span class="hljs-keyword">const</span> square = element.querySelector(<span class="hljs-string">&#x27;.team-tile__square&#x27;</span>);
+		gsap.fromTo(square, {			
+			<span class="hljs-attr">translateX</span>: <span class="hljs-string">&#x27;-50%&#x27;</span>,
+			<span class="hljs-attr">translateY</span>: <span class="hljs-string">&#x27;-50%&#x27;</span>
+		}, {
+			<span class="hljs-attr">width</span>: <span class="hljs-string">&#x27;150%&#x27;</span>,
+			<span class="hljs-attr">height</span>: <span class="hljs-string">&#x27;150%&#x27;</span>,
+			<span class="hljs-attr">rotate</span>: <span class="hljs-string">&#x27;45&#x27;</span>,
+			<span class="hljs-attr">translateX</span>: <span class="hljs-string">&#x27;-50%&#x27;</span>,
+			<span class="hljs-attr">translateY</span>: <span class="hljs-string">&#x27;-50%&#x27;</span>,
+			<span class="hljs-attr">duration</span>: <span class="hljs-number">0.9</span>,
+			<span class="hljs-attr">delay</span>: <span class="hljs-number">0.6</span>,
+			<span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;power2.easeOut&#x27;</span>
+		});
+	};
+
+	<span class="hljs-function"><span class="hljs-title">hideSquare</span>(<span class="hljs-params">element</span>)</span> {
+		<span class="hljs-keyword">const</span> square = element.querySelector(<span class="hljs-string">&#x27;.team-tile__square&#x27;</span>);
+		gsap.to(square, {
+			<span class="hljs-attr">width</span>: <span class="hljs-string">&#x27;0%&#x27;</span>,
+			<span class="hljs-attr">height</span>: <span class="hljs-string">&#x27;0%&#x27;</span>,
+			<span class="hljs-attr">rotate</span>: <span class="hljs-string">&#x27;-0&#x27;</span>,
+			<span class="hljs-attr">translateX</span>: <span class="hljs-string">&#x27;-50%&#x27;</span>,
+			<span class="hljs-attr">translateY</span>: <span class="hljs-string">&#x27;-50%&#x27;</span>,
+			<span class="hljs-attr">duration</span>: <span class="hljs-number">0.9</span>,
+    	<span class="hljs-attr">delay</span>: <span class="hljs-number">0.6</span>,
+			<span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;power2.easeOut&#x27;</span>
+		});
+	}
+
+};
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> TeamTile;</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/team-tile/team-tile.js"><span>/components/raw/team-tile/team-tile.js</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">components/02-molecules/team-tile/team-tile.js</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">1.1 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-0de975af4deac95f81a8f19f005a8b2b" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -253,19 +339,14 @@
 	<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$blue</span>;
 	
 	&amp;<span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">2</span>) {
-		<span class="hljs-attribute">background-color</span>: darken(<span class="hljs-variable">$blue</span>, <span class="hljs-number">10%</span>)
+		<span class="hljs-attribute">background-color</span>: darken(<span class="hljs-variable">$blue</span>, <span class="hljs-number">10%</span>);
+
+     <span class="hljs-selector-class">.label</span> {
+      <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#EDEDED</span>;
+    }
+
 	}
 
-	&amp;:hover {
-
-		.team-tile__square {
-			transform: translate(-<span class="hljs-number">50%</span>, -<span class="hljs-number">50%</span>) rotate(<span class="hljs-number">360deg</span>);
-			<span class="hljs-attribute">height</span>: <span class="hljs-number">400%</span>;
-			<span class="hljs-attribute">width</span>: <span class="hljs-number">400%</span>;
-		}
-		
-	}
-	
 	&amp;__square {
 		<span class="hljs-attribute">width</span>: <span class="hljs-number">50px</span>;
 		<span class="hljs-attribute">height</span>: <span class="hljs-number">50px</span>;
@@ -273,10 +354,8 @@
 		<span class="hljs-attribute">position</span>: absolute;
 		<span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
 		<span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
-		<span class="hljs-attribute">transform</span>: translate(-<span class="hljs-number">50%</span>, -<span class="hljs-number">50%</span>);
-		<span class="hljs-attribute">transition</span>: all <span class="hljs-number">3s</span> ease;
 	}
-	
+
 	&amp;__image {
 		<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 		<span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
@@ -311,7 +390,6 @@
 		&amp;__role {
 			grid-area: role;
 			<span class="hljs-attribute">color</span>: <span class="hljs-variable">$black</span>;
-			<span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
 		}
 
 		&amp;__icon {
@@ -322,14 +400,6 @@
 			<span class="hljs-attribute">align-self</span>: center;
 		}
 	
-	}
-
-	&amp;<span class="hljs-selector-pseudo">:hover</span> {
-		
-		<span class="hljs-selector-class">.label__title</span> {
-			<span class="hljs-attribute">margin-right</span>: <span class="hljs-number">24px</span>;
-		}
-		
 	}
 
 }</pre>
@@ -348,7 +418,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.3 KB</span>
+                    <span class="Meta-value">1 KB</span>
                 </li>
             </ul>
         </div>
@@ -1110,6 +1180,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./content-container.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="content-container"
+                data-handle="content-container"
+            >
+                <span>Content Container</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./double-image.html"
                 data-role="tree-link"
                 
@@ -1368,6 +1472,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./agbs.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="agbs"
+                data-handle="agbs"
+            >
+                <span>AGBS</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./blog-detail.html"
                 data-role="tree-link"
                 
@@ -1504,6 +1642,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./data-privacy.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="data-privacy"
+                data-handle="data-privacy"
+            >
+                <span>Data Privacy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./footer.html"
                 data-role="tree-link"
                 
@@ -1572,6 +1744,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./imprint.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="imprint"
+                data-handle="imprint"
+            >
+                <span>Imprint</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./navigation-desktop.html"
                 data-role="tree-link"
                 
@@ -1614,6 +1820,40 @@
                 data-handle="navigation-mobile"
             >
                 <span>Navigation Mobile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./page-not-found.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="page-not-found"
+                data-handle="page-not-found"
+            >
+                <span>Page Not Found</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1878,6 +2118,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./social-meida-icons.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="social-meida-icons"
+                data-handle="social-meida-icons"
+            >
+                <span>Social Meida Icons</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./team-overview.html"
                 data-role="tree-link"
                 
@@ -2003,11 +2277,11 @@
         
             
             
-            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-06_layouts">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-06_layouts-items">
-                    06 Layouts
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-layouts">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-layouts-items">
+                    Layouts
                 </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-06_layouts-items">
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-layouts-items">
                 
                 
                 
@@ -2116,8 +2390,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-04-09T17:03:35.187Z">
-                                4/9/2022
+                            <time datetime="2022-06-08T13:19:17.217Z">
+                                6/8/2022
                             </time>
                         
                     </dd>

@@ -50,8 +50,9 @@
   &__submit-button,
   .submit-button {
     grid-area: button;
-    position: relative;
-
+		position: relative;
+		align-self: start;
+		
     &__input {
       width: 100%;
       background-color: $orange;

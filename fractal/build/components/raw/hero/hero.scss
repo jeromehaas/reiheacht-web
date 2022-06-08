@@ -1,9 +1,23 @@
 .hero {
   position: relative;
+ 
+	&__blocker {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: $black;
+		pointer-events: none;
+		z-index: 2;
+		opacity: 1;
+		z-index: 5;
+	}
 
   &__inner {
+    opacity: 0;
     padding-top: 100px;
-    min-height: calc(100vh - 100px);
+    min-height: calc(100vh - 160px);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -23,6 +37,10 @@
 
   &__line {
     margin-bottom: 24px;
+    border-radius: 2px; 
+    background-color: $orange;
+    width: 80px;	
+    height: 4px;
   }
 
   &__teaser {
@@ -36,8 +54,11 @@
   &__button-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 32px;
     margin-bottom: 80px;
+  }
+
+  &__button:not(:last-child) {
+    margin-right: 32px;
   }
 
   &__scroller {
@@ -45,40 +66,64 @@
     justify-self: flex-end;
     margin-bottom: 24px;
   }
-	
-	&__showreel, .showreel {
-		border: 10px solid red;
-		position: fixed;
-		inset: 0 0 0 0;
-		background-color: rgba(0, 0, 0, 0.75);
 
-		&__inner {
-			width: 100%;
-			height: auto;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			border: 10px solid blue;
-			position: relative;
-			max-width: 75%;
-		}
+  &__showreel,
+  .showreel {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: none;
 
-		&__video {
-			border: 10px solid green;
-			display: relative;
-			overflow: unset;
+    &--active {
+      display: block;
+    }
 
-			// &::after {
-			// 	content: "x";
-			// 	position: absolute;
-			// 	right: 0;
-			// 	top: -30px;
-			// }
+    &__inner {
+      height: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: relative;
+      width: 1440px;
+      max-width: min(calc(100% - 80px), 100vh);
+      margin-top: 32px;
+    }
 
-		}
 
-	}
+    &__video {
+      overflow: unset;
+      margin: 0 auto;
+    }
 
+    &__icon {
+      color: $white;
+      width: 32px;
+      height: 32px;
+      font-size: 32px;
+      position: absolute;
+      top: -32px;
+      right: 0;
+      cursor: pointer;
+    }
+
+  }
+
+  @media (orientation: landscape) {
+
+    .showreel__icon {
+      width: 40px;
+      height: 40px;
+      top: 16px;
+      left: 16px;
+      padding: 4px;
+      border-radius: 4px;
+      background-color: #1e1e1ee6;
+    }
+
+  }
 
   @media (max-width: 900px) {
 
@@ -89,14 +134,17 @@
 
   }
 
-  @media (max-width: 650px) {
+  @media (max-width: 750px) {
 
     &__button-wrapper {
       flex-direction: column;
       gap: 16px;
     }
 
-  }
+    &__button:not(:last-child) {
+      margin-right: 0;
+    }
 
+  }
 
 }

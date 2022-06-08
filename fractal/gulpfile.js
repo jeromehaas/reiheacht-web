@@ -195,7 +195,6 @@ const watchTask = () => {
 }
 
 const buildTask = parallel(scssTask, fontTask, jsTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask);
-// const buildTask = parallel(scssTask, fontTask, jsTask, imageTask, iconTask, graphicTask, lottieTask);
 const developTask = series(scssTask, jsTask, watchTask);
 const assetTask = series(fontTask, imageTask, iconTask, graphicTask, faviconTask, lottieTask, watchTask);
 

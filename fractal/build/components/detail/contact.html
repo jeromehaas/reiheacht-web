@@ -177,10 +177,10 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-4ff8df25fa01b5819b7e24a0ea142b64-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact__anchor-target anchor-target&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;kontakt&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact__anchor-target anchor-target js-contact&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;kontakt&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact section section--linked&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact__inner section__inner&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&#x27;teaser&#x27;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&#x27;teaser js-teaser&#x27;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h2    teaser__heading js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[<span class="hljs-symbol">&amp;quot;</span>Leben<span class="hljs-symbol">&amp;quot;</span>]&quot;</span>&gt;</span>Sag Hallo<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;line  line--horizontal  teaser__line&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  teaser__text&quot;</span>&gt;</span>Wir morsen zwar sehr gut, es gibt jedoch einfachere Wege, uns zu kontaktieren.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -189,12 +189,20 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-form__input contact-form__input--name&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;name&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;*Name&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-form__input contact-form__input--email&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;email&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;*Email&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-form__input contact-form__input--phone&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;phone&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;Telefonnummer&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-form__input contact-form__input--message&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;message&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;*Schiess los!&quot;</span> <span class="hljs-attr">cols</span>=<span class="hljs-string">&quot;30&quot;</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">&quot;10&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-form__input contact-form__input--message&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;message&quot;</span> <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;*Schiess los!&quot;</span> <span class="hljs-attr">cols</span>=<span class="hljs-string">&quot;30&quot;</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">&quot;7&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-form__submit-button submit-button&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;submit-button__input&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Senden&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;submit-button__input button&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Senden&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;submit-button__error-label&quot;</span>&gt;</span>Bitte fülle zuerst alle *Felder aus.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-form__flash flash&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flash__message flash__message--success&quot;</span>&gt;</span>
+                    Die Nachricht wurde erfolgreich übermittelt!
+                <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flash__message flash__message--error&quot;</span>&gt;</span>
+                    Ein Fehler ist aufgetreten - wir konnten die Nachricht nicht übermitteln.
+                <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact__animation&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/graphics/logos/reiheacht.gif&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;reiheacht&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></pre>
         
@@ -204,13 +212,14 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-4ff8df25fa01b5819b7e24a0ea142b64-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact__anchor-target anchor-target&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;kontakt&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact__anchor-target anchor-target js-contact&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;kontakt&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact section section--linked&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact__inner section__inner&quot;</span>&gt;</span>
     </span><span class="hljs-template-variable">{{&gt; @<span class="hljs-name">teaser</span>
     <span class="hljs-attr">heading</span>=<span class="hljs-string">&quot;Sag Hallo&quot;</span>
     <span class="hljs-attr">subheading</span>=<span class="hljs-string">&quot;Wir morsen zwar sehr gut, es gibt jedoch einfachere Wege, uns zu kontaktieren.&quot;</span> }}</span><span class="xml">
     </span><span class="hljs-template-variable">{{&gt; @<span class="hljs-name">contact-form</span> }}</span><span class="xml">
+		<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact__animation&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/graphics/logos/reiheacht.gif&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;reiheacht&quot;</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></span></pre>
     </code>
@@ -238,13 +247,13 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-684ab094f8ef0ae2541c015463cecce5">contact.scss</option>
+                <option value="file-e9c9de96787ba37815c905094bef1d50">contact.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-684ab094f8ef0ae2541c015463cecce5" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-e9c9de96787ba37815c905094bef1d50" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -252,7 +261,58 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre></pre>
+                                <pre><span class="hljs-selector-class">.contact</span> {
+
+  &amp;__inner {
+    <span class="hljs-attribute">display</span>: grid;
+    grid-template: auto auto auto / <span class="hljs-number">500px</span> auto;
+    grid-template-areas: 
+      <span class="hljs-string">&quot;teaser teaser&quot;</span>
+      <span class="hljs-string">&quot;form animation&quot;</span>;
+
+  }
+
+  <span class="hljs-selector-class">.teaser</span> {
+    grid-area: teaser;
+
+    &amp;__text, <span class="hljs-selector-tag">p</span> {
+      <span class="hljs-attribute">max-width</span>: <span class="hljs-number">480px</span>;
+    }
+    
+  }
+
+  <span class="hljs-selector-class">.contact-form</span> {
+    grid-area: form;
+  }
+
+  &amp;__animation {
+    grid-area: animation;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">75%</span>;
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">400px</span>;
+    justify-self: center;
+  }
+
+
+  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">950px</span>) {
+  
+    &amp;__inner {
+      <span class="hljs-attribute">display</span>: grid;
+      grid-template: auto auto auto auto / auto;
+      grid-template-areas: 
+        <span class="hljs-string">&quot;teaser&quot;</span>
+        <span class="hljs-string">&quot;form&quot;</span>
+        <span class="hljs-string">&quot;animation&quot;</span>;  
+    } 
+
+    <span class="hljs-selector-class">.contact-form</span> {
+      <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">64px</span>;
+    }
+
+  }
+
+}
+
+</pre>
                             </code>
                             
                         </div>
@@ -268,7 +328,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">0 Byte</span>
+                    <span class="Meta-value">691 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -1021,6 +1081,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./content-container.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="content-container"
+                data-handle="content-container"
+            >
+                <span>Content Container</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./double-image.html"
                 data-role="tree-link"
                 
@@ -1279,6 +1373,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./agbs.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="agbs"
+                data-handle="agbs"
+            >
+                <span>AGBS</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./blog-detail.html"
                 data-role="tree-link"
                 
@@ -1415,6 +1543,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./data-privacy.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="data-privacy"
+                data-handle="data-privacy"
+            >
+                <span>Data Privacy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./footer.html"
                 data-role="tree-link"
                 
@@ -1483,6 +1645,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./imprint.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="imprint"
+                data-handle="imprint"
+            >
+                <span>Imprint</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./navigation-desktop.html"
                 data-role="tree-link"
                 
@@ -1525,6 +1721,40 @@
                 data-handle="navigation-mobile"
             >
                 <span>Navigation Mobile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./page-not-found.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="page-not-found"
+                data-handle="page-not-found"
+            >
+                <span>Page Not Found</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1789,6 +2019,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./social-meida-icons.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="social-meida-icons"
+                data-handle="social-meida-icons"
+            >
+                <span>Social Meida Icons</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./team-overview.html"
                 data-role="tree-link"
                 
@@ -1914,11 +2178,11 @@
         
             
             
-            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-06_layouts">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-06_layouts-items">
-                    06 Layouts
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-layouts">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-layouts-items">
+                    Layouts
                 </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-06_layouts-items">
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-layouts-items">
                 
                 
                 
@@ -2027,8 +2291,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-04-09T17:03:35.187Z">
-                                4/9/2022
+                            <time datetime="2022-06-08T13:19:17.217Z">
+                                6/8/2022
                             </time>
                         
                     </dd>

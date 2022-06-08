@@ -177,13 +177,13 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-af9ed27bec6b275345faba9ebc4a7a74-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-infos&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-infos__logo&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/graphics/logos/sportcard.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Logo&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;line  line--vertical  project-infos__line project-infos__line--vertical&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;line  line--horizontal  project-infos__line project-infos__line--horizontal&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__logo&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/media/graphics/logos/sportcard.svg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Logo&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;line  line--vertical  infobox__line infobox__line--vertical&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;line  line--horizontal  infobox__line infobox__line--horizontal&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-infos__title&quot;</span>&gt;</span>Sporty in Bewegung<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-infos__subtitle&quot;</span>&gt;</span>Illustration, Animation, Sound Design<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__title&quot;</span>&gt;</span>Sporty in Bewegung<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__subtitle&quot;</span>&gt;</span>Illustration, Animation, Sound Design<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
@@ -193,14 +193,14 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-af9ed27bec6b275345faba9ebc4a7a74-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-infos&quot;</span>&gt;</span>
-	<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-infos__logo&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">logo</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Logo&quot;</span>&gt;</span>
-	</span><span class="hljs-template-variable">{{&gt; @<span class="hljs-name">line</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-infos__line project-infos__line--vertical&quot;</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">&quot;vertical&quot;</span> }}</span><span class="xml">
-	</span><span class="hljs-template-variable">{{&gt; @<span class="hljs-name">line</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-infos__line project-infos__line--horizontal&quot;</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">&quot;horizontal&quot;</span> }}</span><span class="xml">
-	<span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>
-		<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-infos__title&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">title</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-		<span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;project-infos__subtitle&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">subtitle</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-	<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__logo&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{ <span class="hljs-name">logo</span> }}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Logo&quot;</span>&gt;</span>
+  </span><span class="hljs-template-variable">{{&gt; @<span class="hljs-name">line</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__line infobox__line--vertical&quot;</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">&quot;vertical&quot;</span> }}</span><span class="xml">
+  </span><span class="hljs-template-variable">{{&gt; @<span class="hljs-name">line</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__line infobox__line--horizontal&quot;</span> <span class="hljs-attr">direction</span>=<span class="hljs-string">&quot;horizontal&quot;</span> }}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__title&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">title</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__subtitle&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{ <span class="hljs-name">subtitle</span> }}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
 </div>
@@ -231,15 +231,15 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-7f18ce153c7fc851c84c7769a9d1da12">infobox.scss</option>
+                <option value="file-f4534ecca47f919bf2d25fa4fb344b0a">infobox.scss</option>
                 
-                <option value="file-6ca5c8017b0dd1e659225978ac734f66">project-infos.js</option>
+                <option value="file-0806408cb572842791b484d79737d8d5">project-infos.js</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-7f18ce153c7fc851c84c7769a9d1da12" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-f4534ecca47f919bf2d25fa4fb344b0a" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -258,6 +258,7 @@
   &amp;__logo {
     grid-area: logo;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">80px</span>;
+    <span class="hljs-attribute">width</span>: unset;
   }
 
   &amp;__line {
@@ -325,12 +326,12 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">820 Bytes</span>
+                    <span class="Meta-value">838 Bytes</span>
                 </li>
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-6ca5c8017b0dd1e659225978ac734f66" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-0806408cb572842791b484d79737d8d5" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -1105,6 +1106,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./content-container.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="content-container"
+                data-handle="content-container"
+            >
+                <span>Content Container</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./double-image.html"
                 data-role="tree-link"
                 
@@ -1363,6 +1398,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./agbs.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="agbs"
+                data-handle="agbs"
+            >
+                <span>AGBS</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./blog-detail.html"
                 data-role="tree-link"
                 
@@ -1499,6 +1568,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./data-privacy.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="data-privacy"
+                data-handle="data-privacy"
+            >
+                <span>Data Privacy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./footer.html"
                 data-role="tree-link"
                 
@@ -1567,6 +1670,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./imprint.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="imprint"
+                data-handle="imprint"
+            >
+                <span>Imprint</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./navigation-desktop.html"
                 data-role="tree-link"
                 
@@ -1609,6 +1746,40 @@
                 data-handle="navigation-mobile"
             >
                 <span>Navigation Mobile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./page-not-found.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="page-not-found"
+                data-handle="page-not-found"
+            >
+                <span>Page Not Found</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1873,6 +2044,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./social-meida-icons.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="social-meida-icons"
+                data-handle="social-meida-icons"
+            >
+                <span>Social Meida Icons</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./team-overview.html"
                 data-role="tree-link"
                 
@@ -1998,11 +2203,11 @@
         
             
             
-            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-06_layouts">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-06_layouts-items">
-                    06 Layouts
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-layouts">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-layouts-items">
+                    Layouts
                 </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-06_layouts-items">
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-layouts-items">
                 
                 
                 
@@ -2111,8 +2316,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-04-09T17:03:35.187Z">
-                                4/9/2022
+                            <time datetime="2022-06-08T13:19:17.217Z">
+                                6/8/2022
                             </time>
                         
                     </dd>
