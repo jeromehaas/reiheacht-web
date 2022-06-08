@@ -7,7 +7,9 @@
 
 		{% include "molecules/teaser" with { class: "contact__teaser", heading: contactTeaser.heading, subheading: contactTeaser.richText } %}
 		{% include "molecules/contact-form" %}
-		<img class="contact__animation" src="{{ contactTeaser.image.one.url }}" alt="reiheacht">
+		{% if contactTeaser.image.one().url() is defined %}
+			<img class="contact__animation" src="{{ contactTeaser.image.one.url }}" alt="reiheacht">
+		{% endif %}
 
 	</div>
 </section>
