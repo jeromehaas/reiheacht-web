@@ -15,7 +15,7 @@ class CookieBanner {
 	init() {
 		if (!document.querySelector(`.js-${this.name}`)) return;
 		this.addEventListeners();
-		setTimeout(() => this.checkCookie(), 5000);
+		setTimeout(() => this.checkCookie(), 10000);
 	};
 
 	addEventListeners() {

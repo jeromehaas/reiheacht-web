@@ -203,6 +203,10 @@
     </span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">each</span></span>}}</span><span class="xml">
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/#home&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__logo&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+		</span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> closeTriangle }}</span><span class="xml">
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__close-triangle close-triangle close-triangle__top&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/#projects&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+			<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__close-triangle close-triangle close-triangle__bottom&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/#projects&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+		</span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-desktop__placeholder&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span></pre>
     </code>
@@ -263,15 +267,15 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-de9228b1caacd412bf9e1996795901aa">navigation-desktop.js</option>
+                <option value="file-b6aef2b22bb39a96e497889a2feae243">navigation-desktop.js</option>
                 
-                <option value="file-b5902b4a4d294151c3d0d70e4083998b">navigation-desktop.scss</option>
+                <option value="file-b32cd8a9b73ab8dfc0ebcf0d53b4735c">navigation-desktop.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-de9228b1caacd412bf9e1996795901aa" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-b6aef2b22bb39a96e497889a2feae243" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -290,11 +294,27 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 	<span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params"></span>)</span> {
 		<span class="hljs-built_in">this</span>.name = <span class="hljs-string">&#x27;navigation-desktop&#x27;</span>;
 		<span class="hljs-built_in">this</span>.elements = {
-			<span class="hljs-attr">logo</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.navigation-desktop__logo&#x27;</span>)
+			<span class="hljs-attr">logo</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.navigation-desktop__logo&#x27;</span>),
+      <span class="hljs-attr">bar</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.navigation-desktop&#x27;</span>),
+			<span class="hljs-attr">closeTriangle</span>: {
+				<span class="hljs-attr">top</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.close-triangle__top&#x27;</span>),
+				<span class="hljs-attr">bottom</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.close-triangle__bottom&#x27;</span>)
+			}
 		};
 		<span class="hljs-built_in">this</span>.logo = {
 			<span class="hljs-attr">element</span>: <span class="hljs-literal">null</span>,
 			<span class="hljs-attr">container</span>: <span class="hljs-built_in">this</span>.elements.logo
+		}
+		<span class="hljs-built_in">this</span>.closeTriangle = {
+			<span class="hljs-attr">color</span>: <span class="hljs-literal">null</span>,
+			<span class="hljs-attr">top</span>: {
+				<span class="hljs-attr">element</span>: <span class="hljs-literal">null</span>,
+				<span class="hljs-attr">container</span>: <span class="hljs-built_in">this</span>.elements.closeTriangleTop
+			},
+			<span class="hljs-attr">bottom</span>: {
+				<span class="hljs-attr">element</span>: <span class="hljs-literal">null</span>,
+				<span class="hljs-attr">container</span>: <span class="hljs-built_in">this</span>.elements.closeTriangleBottom
+			}
 		}
     <span class="hljs-built_in">this</span>.links = {
       <span class="hljs-attr">active</span>: <span class="hljs-literal">null</span>,
@@ -309,23 +329,65 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 	<span class="hljs-function"><span class="hljs-title">init</span>(<span class="hljs-params"></span>)</span> {
     <span class="hljs-keyword">if</span> (<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">`.js-<span class="hljs-subst">${<span class="hljs-built_in">this</span>.name}</span>`</span>)) <span class="hljs-keyword">return</span>;
     gsap.to(<span class="hljs-built_in">window</span>, { <span class="hljs-attr">scrollTo</span>: <span class="hljs-built_in">window</span>.location.hash || <span class="hljs-string">&#x27;#home&#x27;</span> || <span class="hljs-string">&#x27;#&#x27;</span>, <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;none&#x27;</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">0</span> });
+    <span class="hljs-built_in">this</span>.showNavigation();
+		<span class="hljs-built_in">this</span>.createLogo();	
     <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.location.pathname === <span class="hljs-string">&#x27;/components/preview/home&#x27;</span> || <span class="hljs-built_in">window</span>.location.pathname === <span class="hljs-string">&#x27;/&#x27;</span>) {
       <span class="hljs-built_in">this</span>.setupScrollTrigger();
       <span class="hljs-built_in">this</span>.setupLinkObserver();
     }
-    <span class="hljs-built_in">this</span>.createLogo();	
+		<span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.elements.closeTriangle.top) {
+			<span class="hljs-built_in">this</span>.createCloseTriangle();
+			<span class="hljs-built_in">this</span>.checkShowTriangle();
+		}
     <span class="hljs-built_in">this</span>.addEventListener();
 	};
+
+	<span class="hljs-function"><span class="hljs-title">checkShowTriangle</span>(<span class="hljs-params"></span>)</span> {
+		[<span class="hljs-string">&#x27;load&#x27;</span>, <span class="hljs-string">&#x27;scroll&#x27;</span>].forEach(<span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> {
+			<span class="hljs-built_in">window</span>.addEventListener(event, <span class="hljs-function">() =&gt;</span> {
+				<span class="hljs-keyword">const</span> viewportHeight = <span class="hljs-built_in">window</span>.innerHeight;
+				<span class="hljs-keyword">const</span> scrollPosition = <span class="hljs-built_in">window</span>.scrollY;
+				<span class="hljs-keyword">const</span> pageHeight = <span class="hljs-built_in">document</span>.body.offsetHeight;
+				<span class="hljs-keyword">if</span> ((viewportHeight + scrollPosition + <span class="hljs-number">70</span>) &gt;= (pageHeight)) <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.showTriangleBottom();
+				<span class="hljs-keyword">if</span> (scrollPosition == <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.showTriangleTop();
+				<span class="hljs-built_in">this</span>.hideTriangles();	
+			});
+		});
+	};
+
+  <span class="hljs-function"><span class="hljs-title">showNavigation</span>(<span class="hljs-params"></span>)</span> {
+    gsap.to(<span class="hljs-built_in">this</span>.elements.bar, {
+      <span class="hljs-attr">top</span>: <span class="hljs-number">0</span>, 
+      <span class="hljs-attr">duration</span>: <span class="hljs-number">0.6</span>
+    })
+  }
+
+	<span class="hljs-function"><span class="hljs-title">showTriangleTop</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.closeTriangle.top.element.setDirection(<span class="hljs-number">1</span>);
+		<span class="hljs-built_in">this</span>.closeTriangle.top.element.play();
+	}
+	
+	<span class="hljs-function"><span class="hljs-title">showTriangleBottom</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.closeTriangle.bottom.element.setDirection(<span class="hljs-number">1</span>);
+		<span class="hljs-built_in">this</span>.closeTriangle.bottom.element.play();
+	}
+	
+	<span class="hljs-function"><span class="hljs-title">hideTriangles</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.closeTriangle.top.element.setDirection(-<span class="hljs-number">1</span>);
+		<span class="hljs-built_in">this</span>.closeTriangle.bottom.element.setDirection(-<span class="hljs-number">1</span>);
+		<span class="hljs-built_in">this</span>.closeTriangle.top.element.play();
+		<span class="hljs-built_in">this</span>.closeTriangle.bottom.element.play();
+	}
 
   <span class="hljs-function"><span class="hljs-title">addEventListener</span>(<span class="hljs-params"></span>)</span> {
     <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.location.pathname === <span class="hljs-string">&#x27;/components/preview/home&#x27;</span> || <span class="hljs-built_in">window</span>.location.pathname === <span class="hljs-string">&#x27;/&#x27;</span>) {
       <span class="hljs-built_in">this</span>.elements.logo.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> <span class="hljs-built_in">this</span>.scrollToTop(event));
-    }
-  }
+    };
+  };
   
   <span class="hljs-function"><span class="hljs-title">scrollToTop</span>(<span class="hljs-params">event</span>)</span> {
     event.preventDefault();
-    gsap.to(<span class="hljs-built_in">window</span>, { <span class="hljs-attr">scrollTo</span>: <span class="hljs-string">&#x27;#home&#x27;</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;power2&#x27;</span> });
+    gsap.to(<span class="hljs-built_in">window</span>, { <span class="hljs-attr">scrollTo</span>: <span class="hljs-string">&#x27;#home&#x27;</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">1.3</span>, <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;Power4.easeInOut&#x27;</span> });
   }
 
   <span class="hljs-function"><span class="hljs-title">setupScrollTrigger</span>(<span class="hljs-params"></span>)</span> {
@@ -339,7 +401,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
   <span class="hljs-function"><span class="hljs-title">scrollToSection</span>(<span class="hljs-params">hash, event</span>)</span> {
     event.preventDefault();
-    gsap.to(<span class="hljs-built_in">window</span>, { <span class="hljs-attr">scrollTo</span>: hash, <span class="hljs-attr">duration</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;power2&#x27;</span> });
+    gsap.to(<span class="hljs-built_in">window</span>, { <span class="hljs-attr">scrollTo</span>: hash, <span class="hljs-attr">duration</span>: <span class="hljs-number">1.3</span>, <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;Power4.easeInOut&#x27;</span> });
   };
 
   <span class="hljs-function"><span class="hljs-title">removeActiveLink</span>(<span class="hljs-params"></span>)</span> {
@@ -386,6 +448,26 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 		});
 	};
 
+	<span class="hljs-function"><span class="hljs-title">createCloseTriangle</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.closeTriangle.color = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.close-triangle__top&#x27;</span>).dataset.color;
+		<span class="hljs-built_in">this</span>.closeTriangle.top.element = lottieWeb.loadAnimation({
+			<span class="hljs-attr">container</span>: <span class="hljs-built_in">this</span>.elements.closeTriangle.top,
+			<span class="hljs-attr">renderer</span>: <span class="hljs-string">&#x27;svg&#x27;</span>,
+			<span class="hljs-attr">loop</span>: <span class="hljs-literal">false</span>,
+			<span class="hljs-attr">autoplay</span>: <span class="hljs-literal">false</span>,
+			<span class="hljs-attr">path</span>: <span class="hljs-string">`/media/lotties/close-triangle-<span class="hljs-subst">${ <span class="hljs-built_in">this</span>.closeTriangle.color || <span class="hljs-string">&#x27;orange&#x27;</span> }</span>.json`</span>
+		});
+		<span class="hljs-built_in">this</span>.closeTriangle.top.element.setSpeed(<span class="hljs-number">1</span>);
+		<span class="hljs-built_in">this</span>.closeTriangle.bottom.element = lottieWeb.loadAnimation({
+			<span class="hljs-attr">container</span>: <span class="hljs-built_in">this</span>.elements.closeTriangle.bottom,
+			<span class="hljs-attr">renderer</span>: <span class="hljs-string">&#x27;svg&#x27;</span>,
+			<span class="hljs-attr">loop</span>: <span class="hljs-literal">false</span>,
+			<span class="hljs-attr">autoplay</span>: <span class="hljs-literal">false</span>,
+			<span class="hljs-attr">path</span>: <span class="hljs-string">`/media/lotties/close-triangle-<span class="hljs-subst">${ <span class="hljs-built_in">this</span>.closeTriangle.color || <span class="hljs-string">&#x27;orange&#x27;</span> }</span>.json`</span>
+		});
+		<span class="hljs-built_in">this</span>.closeTriangle.bottom.element.setSpeed(<span class="hljs-number">1</span>);
+	};
+
 };
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> NavigationDesktop;</pre>
@@ -404,12 +486,12 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">3.1 KB</span>
+                    <span class="Meta-value">5.4 KB</span>
                 </li>
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-b5902b4a4d294151c3d0d70e4083998b" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-b32cd8a9b73ab8dfc0ebcf0d53b4735c" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -422,27 +504,58 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
   <span class="hljs-attribute">height</span>: <span class="hljs-number">60px</span>;
   <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$box-shadow</span>;
   <span class="hljs-attribute">position</span>: fixed;
-  inset: <span class="hljs-number">0</span> <span class="hljs-number">0</span> unset <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">top</span>: -<span class="hljs-number">60px</span>;
+  <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">z-index</span>: <span class="hljs-number">10</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$black</span>;
 
   &amp;__inner {
     <span class="hljs-attribute">display</span>: flex;
     <span class="hljs-attribute">flex-direction</span>: row;
-    gap: <span class="hljs-number">40px</span>;
     <span class="hljs-attribute">align-items</span>: center;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
   }
 
+  &amp;__close-triangle,
+  <span class="hljs-selector-class">.close-triangle</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">60px</span>;
+    <span class="hljs-attribute">height</span>: auto;
+
+    &amp;__top {
+      <span class="hljs-attribute">position</span>: absolute;
+      <span class="hljs-attribute">top</span>: <span class="hljs-number">100%</span>;
+      <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+      <span class="hljs-attribute">transform</span>: translateX(-<span class="hljs-number">50%</span>) rotate(<span class="hljs-number">0deg</span>);
+      <span class="hljs-attribute">transition</span>: top <span class="hljs-number">0.3s</span> ease;
+      <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">5</span>;
+    }
+
+    &amp;__bottom {
+      <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">position</span>: fixed <span class="hljs-meta">!important</span>;
+      <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+      <span class="hljs-attribute">transform</span>: translateX(-<span class="hljs-number">50%</span>) rotate(<span class="hljs-number">180deg</span>);
+      <span class="hljs-attribute">transition</span>: bottom <span class="hljs-number">0.3s</span> ease;
+    }
+
+  }
+
   &amp;__logo {
     <span class="hljs-attribute">margin-left</span>: auto;
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">112px</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">120px</span>;
+    <span class="hljs-attribute">display</span>: flex;
   }
 
   &amp;__link {
     <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
-    <span class="hljs-attribute">transition</span>: all <span class="hljs-number">0.3s</span> ease <span class="hljs-number">0.3s</span>;
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">12px</span>;
+    <span class="hljs-attribute">transition</span>: color <span class="hljs-number">0.3s</span> ease <span class="hljs-number">0.3s</span>;
+
+    &amp;<span class="hljs-selector-pseudo">:not</span>(:first-child) {
+      <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">40px</span>;
+    }
 
     &amp;--active {
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$orange</span>;
@@ -451,15 +564,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
   }
 
   &amp;__placeholder {
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">100px</span>;
-  }
-
-  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">1050px</span>) {
-
-    &amp;__inner {
-      gap: <span class="hljs-number">24px</span>;
-    }
-
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">120px</span>;
   }
 
   <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">900px</span>) {
@@ -487,7 +592,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">705 Bytes</span>
+                    <span class="Meta-value">1.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -1238,6 +1343,40 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./content-container.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="content-container"
+                data-handle="content-container"
+            >
+                <span>Content Container</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./double-image.html"
                 data-role="tree-link"
                 
@@ -1496,6 +1635,40 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./agbs.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="agbs"
+                data-handle="agbs"
+            >
+                <span>AGBS</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./blog-detail.html"
                 data-role="tree-link"
                 
@@ -1632,6 +1805,40 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./data-privacy.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="data-privacy"
+                data-handle="data-privacy"
+            >
+                <span>Data Privacy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./footer.html"
                 data-role="tree-link"
                 
@@ -1674,6 +1881,40 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
                 data-handle="hero"
             >
                 <span>Hero</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./imprint.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="imprint"
+                data-handle="imprint"
+            >
+                <span>Imprint</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1742,6 +1983,40 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
                 data-handle="navigation-mobile"
             >
                 <span>Navigation Mobile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./page-not-found.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="page-not-found"
+                data-handle="page-not-found"
+            >
+                <span>Page Not Found</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2006,6 +2281,40 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./social-meida-icons.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="social-meida-icons"
+                data-handle="social-meida-icons"
+            >
+                <span>Social Meida Icons</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./team-overview.html"
                 data-role="tree-link"
                 
@@ -2131,11 +2440,11 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
         
             
             
-            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-06_layouts">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-06_layouts-items">
-                    06 Layouts
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-layouts">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-layouts-items">
+                    Layouts
                 </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-06_layouts-items">
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-layouts-items">
                 
                 
                 
@@ -2244,8 +2553,8 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-04-09T17:03:35.187Z">
-                                4/9/2022
+                            <time datetime="2022-06-08T13:19:17.217Z">
+                                6/8/2022
                             </time>
                         
                     </dd>

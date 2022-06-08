@@ -21,9 +21,8 @@ class ReferenceSlider {
 				prevEl: ".swiper-button-prev",
 			},
 		});
-	}
-}
+	};
 
-
+};
 
 export default ReferenceSlider;

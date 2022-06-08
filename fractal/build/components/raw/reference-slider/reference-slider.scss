@@ -11,6 +11,11 @@
   &__wrapper {
     transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
     cursor: default;
+    box-sizing: border-box !important;
+  }
+
+  .swiper-wrapper {
+    box-sizing: border-box !important;
   }
 
   &__slide {
@@ -24,7 +29,8 @@
       "author logo";
     grid-template-columns: auto 1fr;
     align-items: center;
-    padding: 64px 140px 64px 140px;
+    padding: 64px 200px;
+    box-sizing: border-box !important;
   }
 
   &__quote {
@@ -138,6 +144,7 @@
         "author"
         "logo";
       grid-template-columns: auto;
+			padding: 64px 32px;
     }
 
     &__author {
@@ -149,6 +156,24 @@
       padding-left: 0;
     }
 
+  }
+
+  @media (max-width: 500px) {
+   
+    &__quote {
+  
+      &::before {
+        left: -48px;
+        top: -16px;
+      }
+  
+      &::after {
+        right: -48px;
+        bottom: -16px;
+      }
+  
+    }
+  
   }
 
 }
@@ -167,3 +192,4 @@
   transition-delay: .0s;
   color: white;
 }
+

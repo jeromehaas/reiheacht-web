@@ -1,5 +1,5 @@
 * {
-  font-family: 'Helvetica Neue'serif;
+  font-family: 'Helvetica Neue', serif;
   line-height: 1;
   color: $white;
 }
@@ -10,13 +10,16 @@ h2,
 h3,
 h4,
 h5,
-.paragraph,
-p,
 .link,
-a {
+a, li {
   line-height: 1.25;
   font-weight: 400;
   color: $white;
+}
+
+.paragraph,
+p {
+	line-height: 1.5;
 }
 
 .heading--h1,
@@ -36,23 +39,30 @@ h2 {
 
 .heading--h3,
 h3 {
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 40px;
+  font-weight: 800;
 }
 
 .heading--h4,
 h4 {
-  font-size: 20px;
+  font-size: 27px;
   font-weight: 500;
 }
 
 .heading--h5,
-h4 {
+h5 {
   font-size: 20px;
 }
 
+
+
 .paragraph,
 p {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+li {
   font-size: 25px;
   font-weight: 300;
 }
@@ -78,6 +88,12 @@ a {
 
 .scroller__text {
   font-weight: 300;
+}
+
+.button {
+	line-height: 1.25;
+	font-weight: 300;
+	font-size: 25px;
 }
 
 .navigation-mobile__link {
@@ -142,11 +158,11 @@ textarea {
   line-height: 1.5;
 }
 
-.project-infos__subtitle {
+.infobox__subtitle {
   font-size: 14px;
 }
 
-.project-infos__title {
+.infobox__title {
   font-size: 25px;
   font-weight: 500;
 }
@@ -161,6 +177,33 @@ textarea {
   line-height: 1.5;
 }
 
+.project-switcher .control__icon {
+	font-size: 24px;
+}
+
+.team-tile .label__role {
+  font-size: 18px;
+}
+
+
+
+.reference-slider__slide {
+  font-size: 18px;
+}
+
+.contact-form .submit-button__error-label {
+  font-size: 12px;
+}
+
+.project-tile .front__subtitle {
+	font-size: 22px;
+}
+
+.cookie-banner__text, 
+.cookie-banner__link {
+  font-size: 16px;
+} 
+
 @media (max-width: 900px) {
   .heading--h1 {
     font-size: 60px;
@@ -168,45 +211,49 @@ textarea {
 }
 
 @media (max-width: 750px) {
-  .heading--h1 {
+  .heading--h1, h1 {
     font-size: 50px;
   }
 }
 
 @media (max-width: 600px) {
-  .heading--h1 {
+  .heading--h1, h1 {
     font-size: 40px;
   }
 
-  .heading--h2 {
+  .heading--h2, h2 {
     font-size: 40px;
   }
 }
 
 @media (max-width: 450px) {
-  .heading--h1 {
+  .heading--h1, h1 {
     font-size: 30px;
   }
 
-  .heading--h2 {
+  .heading--h2, h2 {
     font-size: 30px;
   }
+
+	.paragraph, p,
+	.link, a, 
+	li {
+		font-size: 20px;
+	}
+	
 }
 
 @media (max-width: 350px) {
-  .heading--h1 {
-    font-size: 22px;
+
+  .heading--h2, h2 {
+    font-size: 25px;
   }
 
-  .heading--h2 {
-    font-size: 22px;
-  }
-
-  .heading--h3 {
+  .heading--h3, h3 {
     font-size: 18px;
   }
 
-  .heading--h4 {
+  .heading--h4, h4 {
     font-size: 18px;
   }
 }

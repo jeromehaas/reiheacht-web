@@ -1,9 +1,11 @@
 .teaser {
+  opacity: 0;
 
   &__heading,
   h2 {
     margin-bottom: 24px;
     max-width: 580px;
+
   }
 
   &__line {

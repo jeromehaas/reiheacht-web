@@ -51,6 +51,27 @@ body,
   top: -88px;
 }
 
+strong {
+	font-weight: inherit;
+	color: $blue;
+
+	&.bold { font-weight: 800; }	
+	&.blue { color: $blue; }	
+	&.orange { color: $orange; }	
+	&.underline { 
+		text-decoration: underline;
+		text-decoration-color: $white;
+		text-decoration-thickness: 2px;
+		text-underline-position: under;
+	 }	
+
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
 button {
   background-color: transparent;
   border: none;

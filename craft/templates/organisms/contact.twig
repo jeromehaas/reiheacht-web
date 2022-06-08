@@ -7,8 +7,7 @@
 
 		{% include "molecules/teaser" with { class: "contact__teaser", heading: contactTeaser.heading, subheading: contactTeaser.richText } %}
 		{% include "molecules/contact-form" %}
-		<div class="contact__observer contact__observer--left"></div>
-    <div class="contact__observer contact__observer--up"></div>
+		<img class="contact__animation" src="{{ contactTeaser.image.one.url }}" alt="reiheacht">
 
 	</div>
 </section>

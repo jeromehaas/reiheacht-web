@@ -182,8 +182,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hero__inner section__inner&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;heading  heading--h1    heading--white  hero__heading js-heading&quot;</span> <span class="hljs-attr">data-highlight</span>=<span class="hljs-string">&quot;[]&quot;</span>&gt;</span>Hallo, wir sind reiheacht, eine Motion Design
             und
-            Werbefilm Agentur aus Luzern.<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;line  line--horizontal  hero__line&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+            Werbefilm Agentur aus Luzern.<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hero__line&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;paragraph  paragraph--white  hero__teaser&quot;</span>&gt;</span>reiheacht ist eine digitale Kreativagentur, die mit
             Innovation und Zusammenarbeit einzigartige Motion Design- und Filmlösungen anbietet, damit du deine Marke da stärken
             kannst, wo du deine Kunden am besten erreichst. Wir bringen deine Botschaft in Bewegung und machen diese zu einer
@@ -200,10 +199,11 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hero__showreel showreel&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;showreel__inner&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;video showreel__video&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;video__player&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;video&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://player.vimeo.com/video/546612359&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">iframe</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;video__player&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://player.vimeo.com/video/546612359&quot;</span> <span class="hljs-attr">allow</span>=<span class="hljs-string">&quot;autoplay&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">iframe</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;showreel__icon icon-close icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;hero__blocker&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -218,7 +218,8 @@
     {{&gt; <a href="./heading.html">@heading</a> class=&quot;hero__heading&quot; type=&quot;h1&quot; color=&quot;white&quot; text=&quot;Hallo, wir sind reiheacht, eine Motion Design
     und
     Werbefilm Agentur aus Luzern.&quot; }}
-    {{&gt; <a href="./line.html">@line</a> class=&quot;hero__line&quot; direction=&quot;horizontal&quot; }}
+    &lt;span class=&quot;hero__line&quot;&gt;&lt;/span&gt;
+    {{!-- {{&gt; <a href="./line.html">@line</a> class=&quot;hero__line&quot; direction=&quot;horizontal&quot; }} --}}
     {{&gt; <a href="./paragraph.html">@paragraph</a> class=&quot;hero__teaser&quot; color=&quot;white&quot; text=&quot;reiheacht ist eine digitale Kreativagentur, die mit
     Innovation und Zusammenarbeit einzigartige Motion Design- und Filmlösungen anbietet, damit du deine Marke da stärken
     kannst, wo du deine Kunden am besten erreichst. Wir bringen deine Botschaft in Bewegung und machen diese zu einer
@@ -230,12 +231,14 @@
       {{&gt; <a href="./button.html">@button</a> text=&quot;Sitzplatz buchen&quot; class=&quot;hero__button hero__button--contact&quot; color=&quot;orange&quot; }}
     &lt;/div&gt;
     {{&gt; <a href="./scroller.html">@scroller</a> class=&quot;hero__scroller&quot; text=&quot;Popcorn nicht vergessen&quot; }}
-		&lt;/div&gt;
-		&lt;div class=&quot;hero__showreel showreel&quot;&gt;
-			&lt;div class=&quot;showreel__inner&quot;&gt;
-				{{&gt; <a href="./video.html">@video</a> class=&quot;showreel__video&quot; src=&quot;https://player.vimeo.com/video/546612359&quot; }}
-			&lt;/div&gt;
-		&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;hero__showreel showreel&quot;&gt;
+    &lt;div class=&quot;showreel__inner&quot;&gt;
+      {{&gt; <a href="./video.html">@video</a> class=&quot;showreel__video&quot; src=&quot;https://player.vimeo.com/video/546612359&quot; }}
+      &lt;i class=&quot;showreel__icon icon-close icon&quot;&gt;&lt;/i&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+	&lt;div class=&quot;hero__blocker&quot;&gt;&lt;/div&gt;
 &lt;/div&gt;</pre>
     </code>
 </div>
@@ -262,15 +265,15 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-c436fafb26e19008c9e79c1d92f1a5d8">hero.js</option>
+                <option value="file-58576f5f4f1af1f5744eff7970b651ed">hero.js</option>
                 
-                <option value="file-65fa419676bd9acfb2eeb784c770c073">hero.scss</option>
+                <option value="file-cb1ec79e3e18983f6834262d3266e53a">hero.scss</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-c436fafb26e19008c9e79c1d92f1a5d8" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-58576f5f4f1af1f5744eff7970b651ed" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -280,37 +283,115 @@
                             <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
                                 <pre><span class="hljs-keyword">import</span> { gsap } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;gsap&#x27;</span>;
 <span class="hljs-keyword">import</span> { ScrollPlugin } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;gsap/ScrollToPlugin&#x27;</span>;
+<span class="hljs-keyword">import</span> Vimeo <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@vimeo/player&#x27;</span>;
+<span class="hljs-keyword">import</span> Cookies <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;js-cookie&#x27;</span>;
+<span class="hljs-keyword">import</span> moment <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;moment&#x27;</span>;
 
 <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Hero</span> </span>{
 
 	<span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params"></span>)</span> {
 		<span class="hljs-built_in">this</span>.name = <span class="hljs-string">&#x27;hero&#x27;</span>;
 		<span class="hljs-built_in">this</span>.elements = {
+      <span class="hljs-attr">heading</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.hero h1&#x27;</span>),
+      <span class="hljs-attr">line</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.hero__line&#x27;</span>),
+      <span class="hljs-attr">teaser</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.hero__teaser&#x27;</span>),
+      <span class="hljs-attr">slogan</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.hero__slogan&#x27;</span>),
+      <span class="hljs-attr">scroller</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.hero__scroller&#x27;</span>),
+			<span class="hljs-attr">blocker</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.hero__blocker&#x27;</span>),
+      <span class="hljs-attr">section</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.hero__inner&#x27;</span>),
 			<span class="hljs-attr">buttons</span>: {
+        <span class="hljs-attr">all</span>: <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.button&#x27;</span>),
 				<span class="hljs-attr">showreel</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.hero__button--showreel&#x27;</span>),
 				<span class="hljs-attr">projects</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.hero__button--projects&#x27;</span>),
 				<span class="hljs-attr">contact</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.hero__button--contact&#x27;</span>),
+			},
+			<span class="hljs-attr">showreel</span>: {
+				<span class="hljs-attr">container</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.hero__showreel&#x27;</span>),
+				<span class="hljs-attr">video</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.showreel__video&#x27;</span>),
+				<span class="hljs-attr">icon</span>: <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.showreel__icon&#x27;</span>),
+				<span class="hljs-attr">player</span>: <span class="hljs-literal">null</span>
 			}
-		}
+		};
+    <span class="hljs-built_in">this</span>.timelines = {
+      <span class="hljs-attr">long</span>: <span class="hljs-literal">null</span>,
+      <span class="hljs-attr">short</span>: <span class="hljs-literal">null</span>, 
+			<span class="hljs-attr">blocker</span>: <span class="hljs-literal">null</span>
+    };
 		<span class="hljs-built_in">this</span>.init()
 	}
-
+	
 	<span class="hljs-function"><span class="hljs-title">init</span>(<span class="hljs-params"></span>)</span> {
 		<span class="hljs-keyword">if</span> (!<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">`.js-<span class="hljs-subst">${<span class="hljs-built_in">this</span>.name}</span>`</span>)) <span class="hljs-keyword">return</span>;
+		<span class="hljs-built_in">this</span>.removeBlocker();
+		<span class="hljs-built_in">this</span>.setupPlayer();
 		<span class="hljs-built_in">this</span>.addEventListener();
-	}
+    <span class="hljs-built_in">this</span>.checkAnimationCookie();
+	};
+	
+	<span class="hljs-function"><span class="hljs-title">setupPlayer</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.elements.showreel.player = <span class="hljs-keyword">new</span> Vimeo(<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.video__player&#x27;</span>))
+	};
 
 	<span class="hljs-function"><span class="hljs-title">addEventListener</span>(<span class="hljs-params"></span>)</span> {
 		<span class="hljs-built_in">this</span>.elements.buttons.projects.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> <span class="hljs-built_in">this</span>.scrollTo(<span class="hljs-string">&#x27;#projekte&#x27;</span>, event));
 		<span class="hljs-built_in">this</span>.elements.buttons.contact.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> <span class="hljs-built_in">this</span>.scrollTo(<span class="hljs-string">&#x27;#kontakt&#x27;</span>, event));
-	}
+		<span class="hljs-built_in">this</span>.elements.buttons.showreel.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> <span class="hljs-built_in">this</span>.showShowreel());
+		<span class="hljs-built_in">this</span>.elements.showreel.icon.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">event</span>) =&gt;</span> <span class="hljs-built_in">this</span>.hideShowreel());
+	};
 
 	<span class="hljs-function"><span class="hljs-title">scrollTo</span>(<span class="hljs-params">target, event</span>)</span> {
 		event.preventDefault();
-		gsap.to(<span class="hljs-built_in">window</span>, { <span class="hljs-attr">scrollTo</span>: target, <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;power2&#x27;</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">1</span> })
+		gsap.to(<span class="hljs-built_in">window</span>, { <span class="hljs-attr">scrollTo</span>: target, <span class="hljs-attr">duration</span>: <span class="hljs-number">1.3</span>, <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;Power4.easeInOut&#x27;</span> })
+	};
+
+	<span class="hljs-function"><span class="hljs-title">showShowreel</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.elements.showreel.container.classList.add(<span class="hljs-string">&#x27;showreel--active&#x27;</span>)
+		<span class="hljs-built_in">this</span>.elements.showreel.player.play();
+	};
+	
+	<span class="hljs-function"><span class="hljs-title">hideShowreel</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.elements.showreel.container.classList.remove(<span class="hljs-string">&#x27;showreel--active&#x27;</span>)
+		<span class="hljs-built_in">this</span>.elements.showreel.player.pause();
+	};
+
+  <span class="hljs-function"><span class="hljs-title">playLongAnimation</span>(<span class="hljs-params"></span>)</span> {
+    <span class="hljs-built_in">this</span>.timelines.long = gsap.timeline({ <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;expo&#x27;</span> });
+    <span class="hljs-built_in">this</span>.timelines.long.to( <span class="hljs-built_in">this</span>.elements.section, { <span class="hljs-attr">autoAlpha</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">1</span> } );
+    <span class="hljs-built_in">this</span>.timelines.long.from( <span class="hljs-built_in">this</span>.elements.heading, { <span class="hljs-attr">autoAlpha</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: -<span class="hljs-number">30</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">1</span> } );
+    <span class="hljs-built_in">this</span>.timelines.long.from( <span class="hljs-built_in">this</span>.elements.line, { <span class="hljs-attr">width</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">0.5</span> } );
+    <span class="hljs-built_in">this</span>.timelines.long.from( <span class="hljs-built_in">this</span>.elements.teaser, { <span class="hljs-attr">autoAlpha</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">30</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">1</span> } );
+    <span class="hljs-built_in">this</span>.timelines.long.from( <span class="hljs-built_in">this</span>.elements.slogan, { <span class="hljs-attr">autoAlpha</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">30</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">1</span> },  <span class="hljs-string">&quot;-=1&quot;</span> );
+    <span class="hljs-built_in">this</span>.timelines.long.from( <span class="hljs-built_in">this</span>.elements.buttons.all, { <span class="hljs-attr">autoAlpha</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">30</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">0.5</span>, <span class="hljs-attr">stagger</span>: <span class="hljs-number">0.3</span> } );
+    <span class="hljs-built_in">this</span>.timelines.long.from( <span class="hljs-built_in">this</span>.elements.scroller, { <span class="hljs-attr">autoAlpha</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">0.5</span> } );
+  }
+
+  <span class="hljs-function"><span class="hljs-title">playShortAnimation</span>(<span class="hljs-params"></span>)</span> {
+    <span class="hljs-built_in">this</span>.timelines.short = gsap.timeline({ <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;expo&#x27;</span> });
+    <span class="hljs-built_in">this</span>.timelines.short.to( <span class="hljs-built_in">this</span>.elements.section, { <span class="hljs-attr">autoAlpha</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">y</span>: <span class="hljs-number">30</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">1.5</span> });
+  }
+
+
+  <span class="hljs-function"><span class="hljs-title">checkAnimationCookie</span>(<span class="hljs-params"></span>)</span> {
+    <span class="hljs-keyword">const</span> animationCookie = Cookies.get(<span class="hljs-string">&#x27;last-hero-animation-render&#x27;</span>);
+    <span class="hljs-keyword">if</span> (!animationCookie) {
+      <span class="hljs-built_in">this</span>.playLongAnimation();
+      <span class="hljs-keyword">const</span> today = moment().format();
+      Cookies.set(<span class="hljs-string">&#x27;last-hero-animation-render&#x27;</span>, today, { <span class="hljs-attr">expires</span>: <span class="hljs-number">1</span> });
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-built_in">this</span>.playShortAnimation();
+    };
+  };
+
+	<span class="hljs-function"><span class="hljs-title">removeBlocker</span>(<span class="hljs-params"></span>)</span> {
+		<span class="hljs-built_in">this</span>.timelines.blocker = gsap.timeline({ <span class="hljs-attr">ease</span>: <span class="hljs-string">&#x27;expo&#x27;</span> });
+		<span class="hljs-built_in">this</span>.timelines.blocker.to(<span class="hljs-built_in">this</span>.elements.blocker, { <span class="hljs-attr">autoAlpha</span>: <span class="hljs-number">0</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">0.5</span> }, <span class="hljs-string">&#x27;+=1&#x27;</span>)
+		<span class="hljs-built_in">this</span>.timelines.blocker.to(<span class="hljs-built_in">this</span>.elements.blocker, { <span class="hljs-attr">display</span>: <span class="hljs-string">&#x27;none&#x27;</span>, <span class="hljs-attr">duration</span>: <span class="hljs-number">0</span> })
+		gsap.to(<span class="hljs-built_in">this</span>.elements.blocker, {
+			
+		})
 	}
 
-}
+};
 
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> Hero;</pre>
                             </code>
@@ -328,12 +409,12 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">874 Bytes</span>
+                    <span class="Meta-value">3.9 KB</span>
                 </li>
             </ul>
         </div>
         
-        <div class="FileBrowser-item" id="file-65fa419676bd9acfb2eeb784c770c073" data-role="resource-preview">
+        <div class="FileBrowser-item" id="file-cb1ec79e3e18983f6834262d3266e53a" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -343,10 +424,24 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-selector-class">.hero</span> {
   <span class="hljs-attribute">position</span>: relative;
+ 
+	&amp;__blocker {
+		<span class="hljs-attribute">position</span>: fixed;
+		<span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+		<span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$black</span>;
+		<span class="hljs-attribute">pointer-events</span>: none;
+		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">2</span>;
+		<span class="hljs-attribute">opacity</span>: <span class="hljs-number">1</span>;
+		<span class="hljs-attribute">z-index</span>: <span class="hljs-number">5</span>;
+	}
 
   &amp;__inner {
+    <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">100px</span>;
-    <span class="hljs-attribute">min-height</span>: calc(<span class="hljs-number">100vh</span> - <span class="hljs-number">100px</span>);
+    <span class="hljs-attribute">min-height</span>: calc(<span class="hljs-number">100vh</span> - <span class="hljs-number">160px</span>);
     <span class="hljs-attribute">display</span>: flex;
     <span class="hljs-attribute">flex-direction</span>: column;
     <span class="hljs-attribute">justify-content</span>: flex-start;
@@ -366,6 +461,10 @@
 
   &amp;__line {
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">24px</span>;
+    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">2px</span>; 
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$orange</span>;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">80px</span>;	
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">4px</span>;
   }
 
   &amp;__teaser {
@@ -379,8 +478,11 @@
   &amp;__button-wrapper {
     <span class="hljs-attribute">display</span>: flex;
     <span class="hljs-attribute">flex-direction</span>: row;
-    gap: <span class="hljs-number">32px</span>;
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">80px</span>;
+  }
+
+  &amp;__button<span class="hljs-selector-pseudo">:not</span>(:last-child) {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">32px</span>;
   }
 
   &amp;__scroller {
@@ -388,40 +490,64 @@
     justify-self: flex-end;
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">24px</span>;
   }
-	
-	&amp;__showreel, <span class="hljs-selector-class">.showreel</span> {
-		<span class="hljs-attribute">border</span>: <span class="hljs-number">10px</span> solid red;
-		<span class="hljs-attribute">position</span>: fixed;
-		inset: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
-		<span class="hljs-attribute">background-color</span>: rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.75</span>);
 
-		&amp;__inner {
-			<span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-			<span class="hljs-attribute">height</span>: auto;
-			<span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
-			<span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
-			<span class="hljs-attribute">transform</span>: translate(-<span class="hljs-number">50%</span>, -<span class="hljs-number">50%</span>);
-			<span class="hljs-attribute">border</span>: <span class="hljs-number">10px</span> solid blue;
-			<span class="hljs-attribute">position</span>: relative;
-			<span class="hljs-attribute">max-width</span>: <span class="hljs-number">75%</span>;
-		}
+  &amp;__showreel,
+  <span class="hljs-selector-class">.showreel</span> {
+    <span class="hljs-attribute">position</span>: fixed;
+    <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">background-color</span>: rgba(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.75</span>);
+    <span class="hljs-attribute">display</span>: none;
 
-		&amp;__video {
-			<span class="hljs-attribute">border</span>: <span class="hljs-number">10px</span> solid green;
-			<span class="hljs-attribute">display</span>: relative;
-			<span class="hljs-attribute">overflow</span>: unset;
+    &amp;--active {
+      <span class="hljs-attribute">display</span>: block;
+    }
 
-			<span class="hljs-comment">// &amp;::after {</span>
-			<span class="hljs-comment">// 	content: &quot;x&quot;;</span>
-			<span class="hljs-comment">// 	position: absolute;</span>
-			<span class="hljs-comment">// 	right: 0;</span>
-			<span class="hljs-comment">// 	top: -30px;</span>
-			<span class="hljs-comment">// }</span>
+    &amp;__inner {
+      <span class="hljs-attribute">height</span>: auto;
+      <span class="hljs-attribute">top</span>: <span class="hljs-number">50%</span>;
+      <span class="hljs-attribute">left</span>: <span class="hljs-number">50%</span>;
+      <span class="hljs-attribute">transform</span>: translate(-<span class="hljs-number">50%</span>, -<span class="hljs-number">50%</span>);
+      <span class="hljs-attribute">position</span>: relative;
+      <span class="hljs-attribute">width</span>: <span class="hljs-number">1440px</span>;
+      <span class="hljs-attribute">max-width</span>: min(calc(<span class="hljs-number">100%</span> - <span class="hljs-number">80px</span>), <span class="hljs-number">100vh</span>);
+      <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">32px</span>;
+    }
 
-		}
 
-	}
+    &amp;__video {
+      <span class="hljs-attribute">overflow</span>: unset;
+      <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
+    }
 
+    &amp;__icon {
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$white</span>;
+      <span class="hljs-attribute">width</span>: <span class="hljs-number">32px</span>;
+      <span class="hljs-attribute">height</span>: <span class="hljs-number">32px</span>;
+      <span class="hljs-attribute">font-size</span>: <span class="hljs-number">32px</span>;
+      <span class="hljs-attribute">position</span>: absolute;
+      <span class="hljs-attribute">top</span>: -<span class="hljs-number">32px</span>;
+      <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">cursor</span>: pointer;
+    }
+
+  }
+
+  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">orientation</span>: landscape) {
+
+    <span class="hljs-selector-class">.showreel__icon</span> {
+      <span class="hljs-attribute">width</span>: <span class="hljs-number">40px</span>;
+      <span class="hljs-attribute">height</span>: <span class="hljs-number">40px</span>;
+      <span class="hljs-attribute">top</span>: <span class="hljs-number">16px</span>;
+      <span class="hljs-attribute">left</span>: <span class="hljs-number">16px</span>;
+      <span class="hljs-attribute">padding</span>: <span class="hljs-number">4px</span>;
+      <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">4px</span>;
+      <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#1e1e1e</span>e6;
+    }
+
+  }
 
   <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">900px</span>) {
 
@@ -432,15 +558,18 @@
 
   }
 
-  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">650px</span>) {
+  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">750px</span>) {
 
     &amp;__button-wrapper {
       <span class="hljs-attribute">flex-direction</span>: column;
       gap: <span class="hljs-number">16px</span>;
     }
 
-  }
+    &amp;__button<span class="hljs-selector-pseudo">:not</span>(:last-child) {
+      <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">0</span>;
+    }
 
+  }
 
 }</pre>
                             </code>
@@ -458,7 +587,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.4 KB</span>
+                    <span class="Meta-value">2.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -1228,6 +1357,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./content-container.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="content-container"
+                data-handle="content-container"
+            >
+                <span>Content Container</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./double-image.html"
                 data-role="tree-link"
                 
@@ -1486,6 +1649,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./agbs.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="agbs"
+                data-handle="agbs"
+            >
+                <span>AGBS</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./blog-detail.html"
                 data-role="tree-link"
                 
@@ -1622,6 +1819,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./data-privacy.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="data-privacy"
+                data-handle="data-privacy"
+            >
+                <span>Data Privacy</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./footer.html"
                 data-role="tree-link"
                 
@@ -1690,6 +1921,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./imprint.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="imprint"
+                data-handle="imprint"
+            >
+                <span>Imprint</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./navigation-desktop.html"
                 data-role="tree-link"
                 
@@ -1732,6 +1997,40 @@
                 data-handle="navigation-mobile"
             >
                 <span>Navigation Mobile</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./page-not-found.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="page-not-found"
+                data-handle="page-not-found"
+            >
+                <span>Page Not Found</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1996,6 +2295,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./social-meida-icons.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="social-meida-icons"
+                data-handle="social-meida-icons"
+            >
+                <span>Social Meida Icons</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./team-overview.html"
                 data-role="tree-link"
                 
@@ -2121,11 +2454,11 @@
         
             
             
-            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-06_layouts">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-06_layouts-items">
-                    06 Layouts
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-components-collection-layouts">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-layouts-items">
+                    Layouts
                 </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-06_layouts-items">
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-layouts-items">
                 
                 
                 
@@ -2234,8 +2567,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-04-09T17:03:35.187Z">
-                                4/9/2022
+                            <time datetime="2022-06-08T13:19:17.217Z">
+                                6/8/2022
                             </time>
                         
                     </dd>
