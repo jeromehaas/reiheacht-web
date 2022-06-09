@@ -18,6 +18,7 @@
     border-radius: 4px;
     padding: 16px;
 		padding-bottom: 12px;
+		resize: none; 
   }
 
   &__input {
@@ -130,6 +131,10 @@
 
 		}
 
+	}
+
+	@media (max-width: 950px) {
+		max-width: unset;
 	}
 
   @media (max-width: 600px) {
