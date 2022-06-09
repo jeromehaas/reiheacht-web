@@ -2,6 +2,9 @@
 All notable changes to this project will be documented in this file.
 
 
+## [1.0.13] - 2022-06-09
+- Fix style of contact form and gif
+	
 ## [1.0.12] - 2022-06-08
 - Change lottie in contact section to gif
 	
