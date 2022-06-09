@@ -17,7 +17,7 @@ class Hero {
 			blocker: document.querySelector('.hero__blocker'),
       section: document.querySelector('.hero__inner'),
 			buttons: {
-        all: document.querySelectorAll('.button'),
+        all: document.querySelectorAll('.hero .button'),
 				showreel: document.querySelector('.hero__button--showreel'),
 				projects: document.querySelector('.hero__button--projects'),
 				contact: document.querySelector('.hero__button--contact'),
