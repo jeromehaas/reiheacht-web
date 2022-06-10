@@ -1,9 +1,9 @@
-columnSuffix: aieahwti
+columnSuffix: fdmwssae
 contentColumnType: string(255)
 fieldGroup: 4d0c44d3-2a40-4862-bbb6-3e65820d886b # Social Media Links
-handle: youtube
+handle: instagram
 instructions: ''
-name: YouTube
+name: Instagram
 searchable: false
 settings:
   maxLength: '255'
