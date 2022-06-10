@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 
 
+
+## [1.0.16] - 2022-06-10
+- Remove YouTube icon from footer
+- Replace Twitter icon with Instagram icon
+
 ## [1.0.15] - 2022-06-10
 - Change postition of animation in contact form
 
