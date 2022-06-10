@@ -34,6 +34,7 @@ $icon-linkedin: unicode(ea08);
 $icon-youtube: unicode(ea09);
 $icon-email: unicode(ea0b);
 $icon-close: unicode(ea0c);
+$icon-instagram: unicode(ea0d);
 
 .icon-double-arrow::before { content: $icon-double-arrow; }
 .icon-arrow::before { content: $icon-arrow; }
@@ -43,4 +44,5 @@ $icon-close: unicode(ea0c);
 .icon-youtube::before { content: $icon-youtube; }
 .icon-email::before { content: $icon-email; }
 .icon-close::before { content: $icon-close; }
+.icon-instagram::before { content: $icon-instagram; }
 

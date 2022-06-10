@@ -4,7 +4,7 @@ fieldLayouts:
       -
         elements:
           -
-            fieldUid: 917d1883-78ae-422c-89bb-5a5af3a60c82 # YouTube
+            fieldUid: 917d1883-78ae-422c-89bb-5a5af3a60c82
             instructions: null
             label: null
             required: false
@@ -31,7 +31,7 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            fieldUid: c3c44ca0-1763-4a9f-bc07-38869342d4be # Twitter
+            fieldUid: c3c44ca0-1763-4a9f-bc07-38869342d4be # Instagram
             instructions: null
             label: null
             required: false
