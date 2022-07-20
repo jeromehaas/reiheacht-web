@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 
 
+## [1.0.17] - 2022-07-20
+- Remove close top close triangle for detail pages
+- Add z-index to cookie-bar
+- Set max-width to content in services-detail pages
 
 ## [1.0.16] - 2022-06-10
 - Remove YouTube icon from footer
