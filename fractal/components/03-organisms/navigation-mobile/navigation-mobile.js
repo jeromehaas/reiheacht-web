@@ -59,7 +59,7 @@ class NavigationMobile {
 				const scrollPosition = window.scrollY;
 				const pageHeight = document.body.offsetHeight;
 				if ((viewportHeight + scrollPosition + 70) >= (pageHeight)) return this.showTriangleBottom();
-				if (scrollPosition == 0) return this.showTriangleTop();
+				// if (scrollPosition == 0) return this.showTriangleTop();
 				this.hideTriangles();	
 			});
 		});
