@@ -66,13 +66,14 @@ class Hero {
 		this.introAnimation.element.setSpeed(1);
 		this.introAnimation.element.addEventListener('complete',() => {
 			this.removeIntroAnimation();
-			this.playLongAnimation();
+			// this.playLongAnimation();
+			this.playShortAnimation();
 		}); 
 	};
 
 	removeIntroAnimation = () => {
 		this.timelines.introAnimation = gsap.timeline({ ease: 'expo' });
-		this.timelines.introAnimation.to(this.elements.introAnimation, { autoAlpha: 0, duration: 0.5 }, '+=1')
+		this.timelines.introAnimation.to(this.elements.introAnimation, { autoAlpha: 0, duration: 0.5 }, '+=0.2')
 		this.timelines.introAnimation.to(this.elements.introAnimation, { display: 'none', duration: 0 })
 	}
 	
