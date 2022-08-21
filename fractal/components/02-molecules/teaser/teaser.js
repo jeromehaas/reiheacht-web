@@ -23,7 +23,7 @@ class Teaser {
       gsap.to(teaser, {
         scrollTrigger: {
           trigger: teaser,
-          markers: true,
+          markers: false,
           once: true,
           start: "top 90%",
           end: "top 100%",

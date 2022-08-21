@@ -10,7 +10,7 @@
 
 		<div class="project-tile-set">
 			{% for item in projectItems %}
-				{% include "molecules/project-tile" with { class: "project-tile-set__item", heading: item.projectTileHeading, subheading: item.projectTileSubheading, href: item.uri, color: item.projectTileColor, image: item.projectTileImage.one().url() } %}
+				{% include "molecules/project-tile" with { class: "project-tile-set__item", heading: item.projectTileHeading, subheading: item.projectTileSubheading, href: item.uri, color: item.projectTileColor, image: item.projectTileImage.one().url(), order: item.projectTileOrder } %}
 			{% endfor %}
 		</div>
 
