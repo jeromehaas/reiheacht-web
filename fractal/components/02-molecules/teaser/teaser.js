@@ -23,14 +23,14 @@ class Teaser {
       gsap.to(teaser, {
         scrollTrigger: {
           trigger: teaser,
-          markers: false,
+          markers: true,
           once: true,
-          start: "bottom 100%",
+          start: "top 90%",
           end: "top 100%",
           onEnter: () => { 
             gsap.fromTo(teaser, 
               { y: -24, opacity: 0 },
-              { y: 0, opacity: 1, duration: 1, delay: 0.1, ease: "power4" });
+              { y: 0, opacity: 1, duration: 1, delay: 0.2, ease: "power4" });
           }
         }
       });
