@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.18] - 2022-08-22
+- Remove animation of teaser
+- Reduce delay of site build up and intro-animation
+- Fix order of project tiles
 
 ## [1.0.17] - 2022-07-20
 - Remove close top close triangle for detail pages
