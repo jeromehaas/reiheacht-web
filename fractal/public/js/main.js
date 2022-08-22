@@ -18,5 +18,4 @@ const contactForm = new ContactForm();
 const scroller = new Scroller();
 const hero = new Hero();
 const pageNotFound = new PageNotFound();
-const teaser = new Teaser();
 const teamTile = new TeamTile();
