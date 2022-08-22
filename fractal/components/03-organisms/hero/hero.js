@@ -3,6 +3,7 @@ import { ScrollPlugin } from 'gsap/ScrollToPlugin';
 import Vimeo from '@vimeo/player';
 import Cookies from 'js-cookie';
 import moment from 'moment';
+import lottieWeb from 'lottie-web';
 
 class Hero {
 
@@ -16,6 +17,8 @@ class Hero {
       scroller: document.querySelector('.hero__scroller'),
 			blocker: document.querySelector('.hero__blocker'),
       section: document.querySelector('.hero__inner'),
+			introAnimation: document.querySelector('.hero__intro-animation'),
+			introAnimationLottie: document.querySelector('.hero .intro-animation__lottie'),
 			buttons: {
         all: document.querySelectorAll('.hero .button'),
 				showreel: document.querySelector('.hero__button--showreel'),
@@ -29,13 +32,18 @@ class Hero {
 				player: null
 			}
 		};
+		this.introAnimation = {
+			element: null,
+			container: this.elements.introAnimation
+		};
     this.timelines = {
       long: null,
       short: null, 
-			blocker: null
+			blocker: null,
+			introAnimation: null
     };
 		this.init()
-	}
+	};
 	
 	init() {
 		if (!document.querySelector(`.js-${this.name}`)) return;
@@ -44,6 +52,30 @@ class Hero {
 		this.addEventListener();
     this.checkAnimationCookie();
 	};
+
+	createIntroAnimation() {
+		gsap.to(this.elements.introAnimation, { display: 'grid' })
+		this.introAnimation.element = lottieWeb.loadAnimation({
+			container: this.elements.introAnimationLottie,
+			renderer: 'svg',
+			loop: false,
+			speed: 0.1,
+			autoplay: true,
+			path: '/media/lotties/introducer.json',
+		});
+		this.introAnimation.element.setSpeed(1);
+		this.introAnimation.element.addEventListener('complete',() => {
+			this.removeIntroAnimation();
+			// this.playLongAnimation();
+			this.playShortAnimation();
+		}); 
+	};
+
+	removeIntroAnimation = () => {
+		this.timelines.introAnimation = gsap.timeline({ ease: 'expo' });
+		this.timelines.introAnimation.to(this.elements.introAnimation, { autoAlpha: 0, duration: 0.5 }, '+=0.2')
+		this.timelines.introAnimation.to(this.elements.introAnimation, { display: 'none', duration: 0 })
+	}
 	
 	setupPlayer() {
 		this.elements.showreel.player = new Vimeo(document.querySelector('.video__player'))
@@ -87,13 +119,17 @@ class Hero {
     this.timelines.short.to( this.elements.section, { autoAlpha: 1, y: 30, duration: 1.5 });
   }
 
+	setCookie() {
+    const today = moment().format();
+    Cookies.set('last-hero-animation-render', today, { expires: 1 });
+	}
+
 
   checkAnimationCookie() {
     const animationCookie = Cookies.get('last-hero-animation-render');
     if (!animationCookie) {
-      this.playLongAnimation();
-      const today = moment().format();
-      Cookies.set('last-hero-animation-render', today, { expires: 1 });
+			this.setCookie();
+			this.createIntroAnimation();
     } else {
       this.playShortAnimation();
     };
@@ -103,9 +139,6 @@ class Hero {
 		this.timelines.blocker = gsap.timeline({ ease: 'expo' });
 		this.timelines.blocker.to(this.elements.blocker, { autoAlpha: 0, duration: 0.5 }, '+=1')
 		this.timelines.blocker.to(this.elements.blocker, { display: 'none', duration: 0 })
-		gsap.to(this.elements.blocker, {
-			
-		})
 	}
 
 };
