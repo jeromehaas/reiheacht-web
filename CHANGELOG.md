@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.19] - 2022-08-23
+- Fix z-index for showreel
+
 ## [1.0.18] - 2022-08-22
 - Remove animation of teaser
 - Reduce delay of site build up and intro-animation
