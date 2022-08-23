@@ -102,6 +102,7 @@
 
     &--active {
       display: block;
+			z-index: 10;
     }
 
     &__inner {
