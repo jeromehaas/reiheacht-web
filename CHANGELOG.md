@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.20] - 2022-10-08
+- Change style of project pages to meet Google Search Console criteria
+
 ## [1.0.19] - 2022-08-23
 - Fix z-index for showreel
 
