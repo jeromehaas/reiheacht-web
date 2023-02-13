@@ -1,6 +1,9 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [1.0.21] - 2023-02-13
+- Remove margin of h3 in blog-detail
+
 ## [1.0.20] - 2022-10-08
 - Change style of project pages to meet Google Search Console criteria
 
