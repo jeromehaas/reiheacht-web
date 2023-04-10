@@ -6,7 +6,7 @@
 {% set closeTriangleColor = 'blue' %}
 {% set closeTriangleTarget = '/#home' %}
 {% set blogOverview = craft.entries.section('blogOverview').slug('blog-overview').one() %}
-{% set blogItems = craft.entries.section('blogPosts').orderBy('dateCreated asc').all() %}
+{% set blogItems = craft.entries.section('blogPosts').orderBy('dateCreated desc').all() %}
 
 {% block main %}
 	<section class="blog-overview section">
